@@ -12,9 +12,32 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        var startStamp = Double()
+        
+        var lastTimeString = "2019-03-22 09:40:00"
+        lastTimeString = lastTimeString.replacingOccurrences(of: "T", with: " ")
+        lastTimeString = lastTimeString.replacingOccurrences(of: "Z", with: "")
+        
+        startStamp =  lastTimeString.convertToDate().convertToStamp()
+        
+//        let aa = lastTimeString.convertUTC0ToCurrent(dateFormat: DateFormatter.ixFormat).convertToDate().convertToStamp().converStampToString(dateFormat: DateFormatter.ixFormat)
+//        let aa = lastTimeString.convertUTC0ToCurrent(dateFormat: DateFormatter.ixFormat)
+        
+//        print("!!\(aa)")
+        let xx = startStamp.convertStampToCurrentString(dateFormat: DateFormatter.ixFormat)
+        
+        print("???@\(xx)")
+        
+        let yy = lastTimeString.convertUTC0ToCurrent(dateFormat: DateFormatter.ixFormat)
+//        let yy = aa.convertCurrentToUTC0(dateFormat: DateFormatter.ixFormat)
+        
+        
+//        let gg = yy.converStampToUTC0String(dateFormat: DateFormatter.ixFormat)
+        
+        print(yy)
 
+    }
+   
 
 }
 
