@@ -26,10 +26,10 @@ extension Double{
         let date = Date(timeIntervalSince1970: TimeInterval(self))
         
         let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = TimeZone.current//Set timezone that you want
-        dateFormatter.locale = NSLocale.current
+        dateFormatter.timeZone = Date.currentTimezone//Set timezone that you want
         dateFormatter.dateFormat = dateFormat //Specify your format that you want
-        
+        dateFormatter.locale = NSLocale.current
+
         let dateString = dateFormatter.string(from: date)
         
         return dateString
