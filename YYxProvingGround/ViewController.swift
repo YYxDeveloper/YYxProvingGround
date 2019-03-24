@@ -20,13 +20,23 @@ class ViewController: UIViewController {
         let lastTimeString = "2019-03-22 09:40:00"
         
         let currentDateString = lastTimeString.converUTC0DateStringToCurrentDateString(dateFormat: DateFormatter.ixFormat)
+        print(currentDateString)
         
+        let aaa = currentDateString.convertToUTC0Date(dateFormate:  DateFormatter.ixFormat)
+        
+        print(aaa)
+        
+        
+        
+        let bb = lastTimeString.convertToUTC0Date(dateFormate: DateFormatter.ixFormat)
+        print(bb)
+        
+
         let utc0DateString = currentDateString.convertCurrentDateStringToUTC0DateString(dateFormat: DateFormatter.ixFormat)
         print(utc0DateString)
         
         
         
-        print(currentDateString)
        
         
         let utcDate = currentDateString.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
