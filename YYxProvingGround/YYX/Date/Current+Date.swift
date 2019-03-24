@@ -15,7 +15,7 @@ extension Date{
     static let  currentDay =  Calendar.current.component(.day, from: Date())
     static let  currentDate:Date =  Calendar.current.date(from: DateComponents(year: Date.currentYear, month: Date.currentMonth)) ?? Date()
     static let  currentTimezone = TimeZone.current
-    static var  currentAbbreviation:String{ return TimeZone.current.abbreviation() ?? "UTC" }
+ 
     static func howManyCurrentMonthDays()-> Int{
         let range =  Calendar.current.range(of: .day, in: .month, for: Date.currentDate)
         let numDays = range?.count

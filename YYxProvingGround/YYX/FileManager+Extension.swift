@@ -11,6 +11,7 @@ enum fileType:String {
     case json,txt,plist
 }
 extension FileManager{
+    
      //MARK: - to Bundle path
     func readJsonFileFromBundle(_ fileName: String) throws -> String{
         guard let pathForResource = Bundle.main.path(forResource: fileName, ofType: fileType.json.rawValue) else {

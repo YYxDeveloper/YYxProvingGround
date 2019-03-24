@@ -24,16 +24,24 @@ extension Date {
         
         
     }
-   
+     
     func convertToStamp() -> Double {
         return self.timeIntervalSince1970
 
     }
-    
-    static func convertUTC0DateToLocal(uTC0DateStr:String,dateFormat:String)->String{
-        guard let uTC0Date = Date.giveMeUTC0Date(uTC0DateStr: uTC0DateStr, dateFormat: dateFormat) else {
-            YYxErrorHandler.printGuardFail() ;return String()
-        }
-        return DateFormatter.giveMeCurrentFormatter(dateFormate: DateFormatter.ixFormat).string(from: uTC0Date )
+    func convertToCurrentDateString(dateFormat:String) -> String {
+        return DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat).string(from: self)
     }
+    func convertToUTC0DateString(dateFormat:String) -> String {
+    return DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormat).string(from: self)
+    }
+    func convertUTC0DateToCurrentDateString(dateFormat:String) -> String {
+        
+        let currentFormatter = DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat)
+        
+        return currentFormatter.string(from: self)
+    }
+    
+    
+    
 }

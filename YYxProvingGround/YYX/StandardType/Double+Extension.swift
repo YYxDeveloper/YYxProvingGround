@@ -8,10 +8,6 @@
 
 import Foundation
 import UIKit
-enum UTCZone:String{
-    case zero = "UTC"
-    case plus8 = "UTC+8"
-}
 extension Double{
     var randomRation:Double{
         return Double.random(in: 0...1)
@@ -22,29 +18,23 @@ extension Double{
     func convertInt() -> Int {
         return Int(self)
     }
+    func converStampToString(dateFormat: String) -> String {
+        var localTimeZoneAbbreviation: String { return TimeZone.current.abbreviation() ?? "GMT" }
+        let date = Date(timeIntervalSince1970: TimeInterval(self))
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(abbreviation: localTimeZoneAbbreviation) //Set timezone that you want
+        dateFormatter.locale = NSLocale.current
+        dateFormatter.dateFormat = dateFormat //Specify your format that you want
+        
+        let dateString = dateFormatter.string(from: date)
+        
+        return dateString
+    }
     func convertStampToCurrentString(dateFormat: String) -> String {
         let date = Date(timeIntervalSince1970: TimeInterval(self))
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = Date.currentTimezone//Set timezone that you want
-        dateFormatter.dateFormat = dateFormat //Specify your format that you want
-        dateFormatter.locale = NSLocale.current
-
-        let dateString = dateFormatter.string(from: date)
+        let dateString = DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat).string(from: date)
         
         return dateString
     }
-    func converStampToString(dateFormat: String,utcZone:UTCZone) -> String {
-        let date = Date(timeIntervalSince1970: TimeInterval(self))
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = TimeZone(abbreviation: utcZone.rawValue) //Set timezone that you want
-        dateFormatter.locale = NSLocale.current
-        dateFormatter.dateFormat = dateFormat //Specify your format that you want
-        
-        let dateString = dateFormatter.string(from: date)
-        
-        return dateString
-    }
-   
 }

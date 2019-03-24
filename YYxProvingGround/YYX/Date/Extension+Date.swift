@@ -19,7 +19,8 @@ extension Date{
     static func giveMeUTC0Date(uTC0DateStr:String,dateFormat:String) -> Date? {
         return DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormat).date(from: uTC0DateStr)
     }
-    static func giveMeCurentDate(currentStr:String,dateFormat:String) ->Date?{
-        return DateFormatter.giveMeCurrentFormatter(dateFormate: dateFormat).date(from: currentStr)
+    static func giveMeStringOfCurrentDate(dateFormat:String) -> String{
+        return DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat).string(from: Date())
     }
+    
 }

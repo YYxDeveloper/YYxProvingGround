@@ -12,19 +12,37 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        dateTest()
+        dateTest()
         
 
     }
     func dateTest() {
         let lastTimeString = "2019-03-22 09:40:00"
         
-        let yy = lastTimeString.convertUTC0ToCurrent(dateFormat: DateFormatter.ixFormat)
+        let yy = lastTimeString.converUTC0DateStringToCurrentDateString(dateFormat: DateFormatter.ixFormat)
+        
+        let aa = yy.convertCurrentDateStringToUTC0DateString(dateFormat: DateFormatter.ixFormat)
+        print(aa)
+        
+        
         
         print(yy)
+       
         
-        let xx = yy.convertCurrentToUTC0(dateFormat: DateFormatter.ixFormat)
+        let xx = yy.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
         print(xx)
+        
+        
+        
+        //convert date(utc0) to currentDateString
+        let gg = xx.convertUTC0DateToCurrentDateString(dateFormat: DateFormatter.ixFormat)
+        print(gg)
+        
+        let tt = gg.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
+        print(tt)
+        
+        
     }
+   
 }
 

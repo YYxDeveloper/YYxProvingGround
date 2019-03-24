@@ -9,16 +9,18 @@
 import Foundation
 extension DateFormatter{
     static let ixFormat = "yyyy-MM-dd HH:mm:ss"
+    
     static func giveMeUTC0DateFormatter(dateFormate:String)->DateFormatter{
-        let uTCDateFormatter = DateFormatter()
-        uTCDateFormatter.dateFormat = dateFormate
-        uTCDateFormatter.timeZone = TimeZone.init(identifier: "UTC")
-        return uTCDateFormatter
+        let uTC0DateFormatter = DateFormatter()
+        uTC0DateFormatter.dateFormat = dateFormate
+        uTC0DateFormatter.timeZone = TimeZone.init(identifier: UTCZone.zero.rawValue)
+        return uTC0DateFormatter
     }
-    static func giveMeCurrentFormatter(dateFormate:String) -> DateFormatter{
-        let localDateFormatter = DateFormatter()
-        localDateFormatter.dateFormat = dateFormate
-        localDateFormatter.timeZone = TimeZone.current
-        return localDateFormatter
+  
+    static func giveMeCurrentDateFormatter(dateFormate:String) -> DateFormatter{
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone =  TimeZone.current//Set timezone that you want
+        dateFormatter.dateFormat = dateFormate //Specify your format that you want
+        return dateFormatter
     }
 }
