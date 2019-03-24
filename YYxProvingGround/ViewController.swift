@@ -19,27 +19,27 @@ class ViewController: UIViewController {
     func dateTest() {
         let lastTimeString = "2019-03-22 09:40:00"
         
-        let yy = lastTimeString.converUTC0DateStringToCurrentDateString(dateFormat: DateFormatter.ixFormat)
+        let currentDateString = lastTimeString.converUTC0DateStringToCurrentDateString(dateFormat: DateFormatter.ixFormat)
         
-        let aa = yy.convertCurrentDateStringToUTC0DateString(dateFormat: DateFormatter.ixFormat)
-        print(aa)
+        let utc0DateString = currentDateString.convertCurrentDateStringToUTC0DateString(dateFormat: DateFormatter.ixFormat)
+        print(utc0DateString)
         
         
         
-        print(yy)
+        print(currentDateString)
        
         
-        let xx = yy.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
-        print(xx)
+        let utcDate = currentDateString.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
+        print(utcDate)
         
         
         
         //convert date(utc0) to currentDateString
-        let gg = xx.convertUTC0DateToCurrentDateString(dateFormat: DateFormatter.ixFormat)
-        print(gg)
+        let currentDateString2 = utcDate.convertUTC0DateToCurrentDateString(dateFormat: DateFormatter.ixFormat)
+        print(currentDateString2)
         
-        let tt = gg.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
-        print(tt)
+        let utc0Date2 = currentDateString.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
+        print(utc0Date2)
         
         
     }
