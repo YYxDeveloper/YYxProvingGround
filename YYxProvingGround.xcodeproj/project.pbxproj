@@ -184,6 +184,7 @@
 				E856874D2247209C00BF66F1 /* UICollectionViewController */,
 				E85687542247209C00BF66F1 /* Date */,
 				E856875A2247209C00BF66F1 /* Extension+NSPredicate.swift */,
+				E85687582247209C00BF66F1 /* NSCache+Extension.swift */,
 				E856875B2247209C00BF66F1 /* FileManager+Extension.swift */,
 				E856875C2247209C00BF66F1 /* YYxInfo.txt */,
 				E856875D2247209C00BF66F1 /* HorizontalSlider */,
@@ -238,7 +239,6 @@
 				E85687552247209C00BF66F1 /* Convert+Date.swift */,
 				E85687562247209C00BF66F1 /* DateFormatter+Extension.swift */,
 				E85687572247209C00BF66F1 /* Current+Date.swift */,
-				E85687582247209C00BF66F1 /* NSCache+Extension.swift */,
 				E85687592247209C00BF66F1 /* Extension+Date.swift */,
 			);
 			path = Date;

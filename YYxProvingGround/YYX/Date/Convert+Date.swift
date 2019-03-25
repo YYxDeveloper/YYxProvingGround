@@ -27,21 +27,21 @@ extension Date {
      
     func convertToStamp() -> Double {
         return self.timeIntervalSince1970
+    }
+    //MARK:  - Covert Current to UTC0
+    func convertCurrentDateToCurrentDateString(dateFormat:String) -> String {
+        return DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormat).string(from: self)
+    }
 
+    func convertCurrentDateToUTC0(dateFormat:String) -> String {
+         return DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormat).string(from: self)
     }
-    func convertToCurrentDateString(dateFormat:String) -> String {
-        return DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat).string(from: self)
-    }
-    func convertToUTC0DateString(dateFormat:String) -> String {
-    return DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormat).string(from: self)
+    //MARK: - Convert UTC0 to Current
+    func convertUTC0DateToUTC0DateString(dateFormat:String) -> String {
+        return DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormat).string(from: self)
     }
     func convertUTC0DateToCurrentDateString(dateFormat:String) -> String {
-        
         let currentFormatter = DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat)
-        
         return currentFormatter.string(from: self)
     }
-    
-    
-    
 }

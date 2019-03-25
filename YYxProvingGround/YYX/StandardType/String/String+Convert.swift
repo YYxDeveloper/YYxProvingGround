@@ -8,47 +8,37 @@
 
 import Foundation
 extension String{
+    
+    //MARK: Convert UTC0 To Current
+    func convertUTC0DateStringToCurrentDate(dateFormat:String) ->Date  {
+        let currentDateString = self.converUTC0DateStringToCurrentDateString(dateFormat: dateFormat)
+        return  currentDateString.convertToUTC0Date(dateFormate:  DateFormatter.ixFormat)
+    }
+    func converUTC0DateStringToCurrentDateString(dateFormat:String) -> String {
+        let theStr = self.convertToDate(witchFormat: dateFormat, utcZone: .zero).convertToStamp().convertStampToCurrentString(dateFormat: dateFormat)
+        return theStr
+    }
+    //MARK: Convert IXFormatDate
     func convertToIXFormatDate() -> Date {
         let localDateFormatter = DateFormatter()
         localDateFormatter.dateFormat = DateFormatter.ixFormat
         
         return localDateFormatter.date(from: self) ?? Date()
     }
-    func convertUTC0DateStringToCurrentDate(witchFormat:String) -> Date {
-        let currentDate = self.convertTOCurrentDate(dateFormate:witchFormat )
-        let utc0String = currentDate.convertToCurrentDateString(dateFormat: witchFormat)
-        let uTCD0teFormatter = DateFormatter.giveMeCurrentDateFormatter(dateFormate: witchFormat)
-        let utc0Date = uTCD0teFormatter.date(from: utc0String) ?? Date()
-        return utc0Date
-    }
-    func convertCurrentDateStringToUTC0Date(witchFormat:String) -> Date {
-        let currentDate = self.convertTOCurrentDate(dateFormate: witchFormat)
-        let currentString = currentDate.convertToUTC0DateString(dateFormat: witchFormat)
-        let uTCDateFormatter = DateFormatter()
-        uTCDateFormatter.dateFormat = witchFormat
-        uTCDateFormatter.timeZone = TimeZone.init(identifier: UTCZone.zero.rawValue)
-        return uTCDateFormatter.date(from: currentString) ?? Date()
-        
-        
-    }
-    func converUTC0DateStringToCurrentDateString(dateFormat:String) -> String {
-        let theStr = self.convertToDate(witchFormat: dateFormat, utcZone: .zero).convertToStamp().convertStampToCurrentString(dateFormat: dateFormat)
-        return theStr
-    }
+   
+    
+    //MARK: Convert Current To UTC0
+   
     func convertCurrentDateStringToUTC0DateString(dateFormat:String) -> String {
         let utc0Date = DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat).date(from: self)
-        return utc0Date!.convertToUTC0DateString(dateFormat:dateFormat)
+        return utc0Date!.convertUTC0DateToUTC0DateString(dateFormat:dateFormat)
     }
-    func convertToUTC0Date(dateFormate:String) -> Date {
+     //MARK: Privat
+    private func convertToUTC0Date(dateFormate:String) -> Date {
         let uTC0Date = DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormate).date(from: self) ?? Date()
         return uTC0Date
     }
-    func convertTOCurrentDate(dateFormate:String) -> Date {
-        let currentDate = DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormate).date(from: self) ?? Date()
-        return currentDate
-    }
-    func convertToDate(witchFormat:String,utcZone:UTCZone) -> Date {
-        
+    private func convertToDate(witchFormat:String,utcZone:UTCZone) -> Date {
         let uTCDateFormatter = DateFormatter()
         uTCDateFormatter.dateFormat = witchFormat
         uTCDateFormatter.timeZone = TimeZone.init(identifier: utcZone.rawValue)

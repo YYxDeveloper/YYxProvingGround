@@ -9,50 +9,54 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let dateFomat = DateFormatter.ixFormat
     override func viewDidLoad() {
         super.viewDidLoad()
         dateTest()
-        
+//        aa()
 
+    }
+    func aa()  {
+        let currentDateString2 = "2019-03-22 09:40:00"
+        //        print(currentDateString2)
+        //
+        let currentDate2 = currentDateString2.convertUTC0DateStringToCurrentDate(dateFormat: dateFomat)
+        print(currentDate2)
+        //2019-03-22 17:40:00 +0000
+        
+        //convert utc0 date to utc0 string
+        
+        //convert utc0 date to current string
+        
+        //convert current date to utc0 date
+        
+        //convrtt current date current string
+        
+//        print(currentDate2.convertCurrentDateToCurrentDateString(dateFormat: dateFomat))
+        
     }
     func dateTest() {
         let lastTimeString = "2019-03-22 09:40:00"
-        
-        let currentDateString = lastTimeString.converUTC0DateStringToCurrentDateString(dateFormat: DateFormatter.ixFormat)
-        print(currentDateString)
-        
-        let aaa = currentDateString.convertToUTC0Date(dateFormate:  DateFormatter.ixFormat)
-        
-        print(aaa)
+      
+        print(lastTimeString.convertUTC0DateStringToCurrentDate(dateFormat: dateFomat))
+        print(lastTimeString.converUTC0DateStringToCurrentDateString(dateFormat: dateFomat))
         
         
-        
-        let bb = lastTimeString.convertToUTC0Date(dateFormate: DateFormatter.ixFormat)
-        print(bb)
-        
+//        let aa = lastTimeString.convertUTC0DateStringToCurrentDate()
+//        print(aa)
+//
+//
+//
 
-        let utc0DateString = currentDateString.convertCurrentDateStringToUTC0DateString(dateFormat: DateFormatter.ixFormat)
-        print(utc0DateString)
-        
-        
-        
+//
+//
+//
+//        //convert date(utc0) to currentDateString
        
-        
-        let utcDate = currentDateString.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
-        print(utcDate)
-        
-        
-        
-        //convert date(utc0) to currentDateString
-        let currentDateString2 = utcDate.convertUTC0DateToCurrentDateString(dateFormat: DateFormatter.ixFormat)
-        print(currentDateString2)
-        
-        let utc0Date2 = currentDateString.convertCurrentDateStringToUTC0Date(witchFormat: DateFormatter.ixFormat)
-        print(utc0Date2)
-        
-        
-    }
+//
+//
+//
    
 }
 
+}
