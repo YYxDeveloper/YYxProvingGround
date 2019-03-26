@@ -16,8 +16,8 @@ extension Date{
                                            for: date)
         return range?.count ?? 0
     }
-    static func giveMeUTC0Date(uTC0DateStr:String,dateFormat:String) -> Date? {
-        return DateFormatter.giveMeUTC0DateFormatter(dateFormate: dateFormat).date(from: uTC0DateStr)
+    static func giveMeUTC0Date(uTC0DateStr:String,dateFormat:String) -> Date {
+        return DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: dateFormat).date(from: uTC0DateStr) ?? Date()
     }
     static func giveMeStringOfCurrentDate(dateFormat:String) -> String{
         return DateFormatter.giveMeCurrentDateFormatter(dateFormate: dateFormat).string(from: Date())

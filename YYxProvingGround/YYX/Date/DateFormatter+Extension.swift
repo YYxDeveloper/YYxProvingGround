@@ -10,7 +10,7 @@ import Foundation
 extension DateFormatter{
     static let ixFormat = "yyyy-MM-dd HH:mm:ss"
     
-    static func giveMeUTC0DateFormatter(dateFormate:String)->DateFormatter{
+    static func giveMeGreenwichOriginDateFormatter(dateFormate:String)->DateFormatter{
         let uTC0DateFormatter = DateFormatter()
         uTC0DateFormatter.dateFormat = dateFormate
         uTC0DateFormatter.timeZone = TimeZone.init(identifier: UTCZone.zero.rawValue)
