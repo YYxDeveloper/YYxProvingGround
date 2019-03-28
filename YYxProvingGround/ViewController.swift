@@ -10,15 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     let dateFomat = DateFormatter.ixFormat
+    @IBOutlet weak var sliderView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
 //        ee()
-        gg()
+//        gg()
 //        let aa = 1553247600.0
 //        let gg = aa.converGreenwichStampToString()
 //        print(gg)
 //        uu()
+        
+        addHorizontalSliderWithHeigh50(toWitchView: sliderView)
+        
+    }
+    func tt()  {
+        
     }
     func uu() {
         var date:NSDate = NSDate()
@@ -38,7 +45,8 @@ class ViewController: UIViewController {
     }
     func gg()  {
          let utc0String = "2019-03-22 17:40:00"
-        let yyxDate = YYxDate.init(initDateString: utc0String, format: DateFormatter.ixFormat, initTimeZone: .current)
+        let yyxDate = GreenwichDateConverter.init(initDateString: utc0String, format: DateFormatter.ixFormat, initTimeZone: .current)
+    
     }
     
    

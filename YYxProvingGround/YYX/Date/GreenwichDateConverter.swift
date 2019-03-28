@@ -11,7 +11,7 @@ enum timeZone {
     case GMT
     case current
 }
-class YYxDate {
+class GreenwichDateConverter {
     
     private let initTimeZone:timeZone
     let dateFormatter :DateFormatter
