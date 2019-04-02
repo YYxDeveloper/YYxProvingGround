@@ -328,7 +328,6 @@
 			children = (
 				E83CDF8D22531A36008F2961 /* UICollectionView */,
 				E83CDF8F22531A36008F2961 /* UICollectionViewCell */,
-				E83CDF9322531A36008F2961 /* Substring+Extension.swift */,
 			);
 			path = UICollectionViewController;
 			sourceTree = "<group>";
@@ -450,6 +449,7 @@
 		E83CDFC222531A36008F2961 /* StandardType */ = {
 			isa = PBXGroup;
 			children = (
+				E83CDF9322531A36008F2961 /* Substring+Extension.swift */,
 				E83CDFC322531A36008F2961 /* Data+Convert.swift */,
 				E83CDFC422531A36008F2961 /* Int+Extension.swift */,
 				E83CDFC522531A36008F2961 /* Bool+Extension.swift */,
