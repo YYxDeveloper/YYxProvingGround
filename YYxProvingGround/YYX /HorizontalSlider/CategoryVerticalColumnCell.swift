@@ -38,7 +38,7 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     }()
     
     func setupViews() {
-        backgroundColor = UIColor.clear
+//        backgroundColor = UIColor.clear
      
         addSubview(appsCollectionView)
         appsCollectionView.dataSource = self
@@ -53,6 +53,7 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
         appsCollectionView.preprocessWithYYxCell()
         
     }
+    
     func reloadDataWhenCellPress() {
         func cleanAllBackgroudColor(){
             
@@ -66,11 +67,15 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
         
         return 10
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AppCell
-         let cell = collectionView.giveMeCategoryHorizenTalRowCell(indexPatht: indexPath)
-       
+        func setOriginState(witchCell:CategoryHorizenTalRowCell){
+            witchCell.titleLabel.text = "aaa"
+            witchCell.backgroundColor = .green
+        }
+        let cell = collectionView.giveMeCategoryHorizenTalRowCell(indexPatht: indexPath)
+       setOriginState(witchCell: cell)
+//  
+     
         return cell
     }
     
@@ -81,13 +86,15 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryHorizenTalRowCell
-        cell.hasSelected = true
+
+        let cell = collectionView.cellForItem(at: indexPath) as! CategoryHorizenTalRowCell
+
+        cell.backgroundColor = .orange
+        cell.titleLabel.text = "t"
         
-        reloadDataWhenCellPress()
     }
     
 }

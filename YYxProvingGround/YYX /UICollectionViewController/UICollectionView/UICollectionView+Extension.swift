@@ -25,12 +25,10 @@ extension UICollectionView{
      need preprocess first
      */
     func giveMeCategoryHorizenTalRowCell(witchIdentifier:String = UICollectionView.CategoryHorizontalRowCell,indexPatht:IndexPath) -> CategoryHorizenTalRowCell{
+        
             let cell = self.dequeueReusableCell(withReuseIdentifier: witchIdentifier, for: indexPatht) as! CategoryHorizenTalRowCell
-        cell.titleLabel.text = "gggg"
-      
         
         
-        cell.backgroundColor = cell.hasSelected == true ? .yellow:.purple
         return cell
     }
     
