@@ -9,9 +9,7 @@
 import UIKit
 
 class CategoryHorizenTalRowCell: UICollectionViewCell {
-   
-    @IBOutlet weak var indicator: UIView!
-    
+       
     @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
