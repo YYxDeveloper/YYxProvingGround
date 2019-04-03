@@ -8,13 +8,15 @@
 
 import UIKit
 
+
 class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     
     let cellId = "CategoryHorizenTalRowCell"
     let cellH = 70
     let cellW = 70
-    var hasSelected = false
+    var datas: [CategoryVerticalColumnModel] = [CategoryVerticalColumnModel(titleText: "qwe"),CategoryVerticalColumnModel(titleText: "tt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ooooo")]
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -65,15 +67,13 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return datas.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        func setOriginState(witchCell:CategoryHorizenTalRowCell){
-            witchCell.titleLabel.text = "aaa"
-            witchCell.backgroundColor = .green
-        }
+       
         let cell = collectionView.giveMeCategoryHorizenTalRowCell(indexPatht: indexPath)
-       setOriginState(witchCell: cell)
+        cell.titleLabel.text = datas[indexPath.row].titleText
+        cell.backgroundColor = .orange
 //  
      
         return cell
@@ -89,12 +89,15 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
         return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
         let cell = collectionView.cellForItem(at: indexPath) as! CategoryHorizenTalRowCell
-
-        cell.backgroundColor = .orange
-        cell.titleLabel.text = "t"
+      
+        cell.backgroundColor = .green
         
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+         let cell = collectionView.cellForItem(at: indexPath) as! CategoryHorizenTalRowCell
+        cell.backgroundColor = .orange
     }
     
 }

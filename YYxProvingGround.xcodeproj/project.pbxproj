@@ -175,6 +175,9 @@
 		E83CE07C22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */; };
 		E83CE07D22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */; };
 		E83CE07E22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */; };
+		E83CE08022546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */; };
+		E83CE08122546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */; };
+		E83CE08222546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
 		E879C1B622421012006904A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B522421012006904A5 /* ViewController.swift */; };
 		E879C1B922421012006904A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1B722421012006904A5 /* Main.storyboard */; };
@@ -259,6 +262,7 @@
 		E83CDFCF22531A36008F2961 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StandardTypeUnwrappedable+Protocol.swift"; sourceTree = "<group>"; };
 		E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHorizenTalRowCell.swift; sourceTree = "<group>"; };
+		E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVerticalColumnModel.swift; sourceTree = "<group>"; };
 		E879C1B022421012006904A5 /* YYxProvingGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxProvingGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1B322421012006904A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E879C1B522421012006904A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -374,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				E83CDF9E22531A36008F2961 /* CategoryVerticalColumnCell.swift */,
+				E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */,
 				E83CDF9F22531A36008F2961 /* HorizontalSlider.swift */,
 			);
 			path = HorizontalSlider;
@@ -722,6 +727,7 @@
 				E83CE02422531A37008F2961 /* YYxErrorHandler.swift in Sources */,
 				E83CE02A22531A37008F2961 /* UIColor+Extension.swift in Sources */,
 				E83CE03622531A37008F2961 /* UIButton+Extension.swift in Sources */,
+				E83CE08022546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */,
 				E83CDFFD22531A37008F2961 /* HorizontalSlider.swift in Sources */,
 				E83CE01B22531A37008F2961 /* Photo+UIViewController.swift in Sources */,
 				E83CE078225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
@@ -790,6 +796,7 @@
 				E83CDFD122531A37008F2961 /* constant.swift in Sources */,
 				E83CE06A22531A37008F2961 /* String+Extension.swift in Sources */,
 				E83CDFD422531A37008F2961 /* Global.swift in Sources */,
+				E83CE08122546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */,
 				E83CDFF522531A37008F2961 /* FileManager+Extension.swift in Sources */,
 				E83CDFE322531A37008F2961 /* Convert+Date.swift in Sources */,
 				E83CDFEC22531A37008F2961 /* Current+Date.swift in Sources */,
@@ -848,6 +855,7 @@
 				E83CDFD222531A37008F2961 /* constant.swift in Sources */,
 				E83CE06B22531A37008F2961 /* String+Extension.swift in Sources */,
 				E83CDFD522531A37008F2961 /* Global.swift in Sources */,
+				E83CE08222546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */,
 				E83CDFF622531A37008F2961 /* FileManager+Extension.swift in Sources */,
 				E83CDFE422531A37008F2961 /* Convert+Date.swift in Sources */,
 				E83CDFED22531A37008F2961 /* Current+Date.swift in Sources */,
