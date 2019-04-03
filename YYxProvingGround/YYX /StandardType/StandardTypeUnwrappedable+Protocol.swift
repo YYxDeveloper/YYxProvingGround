@@ -7,27 +7,28 @@
 //
 
 import Foundation
-protocol Unwrappedable {
+import UIKit
+protocol StandardTypeUnwrappedable {
     static var defaultValue: Self { get }
 }
 
-extension Optional where Wrapped: Unwrappedable {
+extension Optional where Wrapped: StandardTypeUnwrappedable {
     var unwrappedValue: Wrapped { return self ?? Wrapped.defaultValue }
 }
 
-extension Int: Unwrappedable {
+extension Int: StandardTypeUnwrappedable {
     static var defaultValue: Int { return 0 }
 }
-extension Double: Unwrappedable {
+extension Double: StandardTypeUnwrappedable {
     static var defaultValue: Double { return 0.0 }
 }
-extension Float: Unwrappedable {
+extension Float: StandardTypeUnwrappedable {
     static var defaultValue: Float { return 0.0 }
 }
-extension String: Unwrappedable {
+extension String: StandardTypeUnwrappedable {
     static var defaultValue: String { return "" }
 }
 
-extension Array: Unwrappedable {
+extension Array: StandardTypeUnwrappedable {
     static var defaultValue: Array<Element> { return [] }
 }

@@ -172,7 +172,9 @@
 		E83CE07222531A37008F2961 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDFCF22531A36008F2961 /* Array+Extension.swift */; };
 		E83CE07322531A37008F2961 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDFCF22531A36008F2961 /* Array+Extension.swift */; };
 		E83CE07422531A37008F2961 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDFCF22531A36008F2961 /* Array+Extension.swift */; };
-		E83CE07622535334008F2961 /* Unwrapped+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07522535334008F2961 /* Unwrapped+Protocol.swift */; };
+		E83CE078225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */; };
+		E83CE079225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */; };
+		E83CE07A225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
 		E879C1B622421012006904A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B522421012006904A5 /* ViewController.swift */; };
 		E879C1B922421012006904A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1B722421012006904A5 /* Main.storyboard */; };
@@ -256,7 +258,7 @@
 		E83CDFCD22531A36008F2961 /* String+Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convert.swift"; sourceTree = "<group>"; };
 		E83CDFCE22531A36008F2961 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		E83CDFCF22531A36008F2961 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
-		E83CE07522535334008F2961 /* Unwrapped+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unwrapped+Protocol.swift"; sourceTree = "<group>"; };
+		E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StandardTypeUnwrappedable+Protocol.swift"; sourceTree = "<group>"; };
 		E879C1B022421012006904A5 /* YYxProvingGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxProvingGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1B322421012006904A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E879C1B522421012006904A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -302,7 +304,6 @@
 			isa = PBXGroup;
 			children = (
 				E83CDF8A22531A36008F2961 /* constant.swift */,
-				E83CE07522535334008F2961 /* Unwrapped+Protocol.swift */,
 				E83CDF8B22531A36008F2961 /* Global.swift */,
 				E83CDF8C22531A36008F2961 /* UICollectionViewController */,
 				E83CDF9422531A36008F2961 /* Date */,
@@ -449,6 +450,7 @@
 		E83CDFC222531A36008F2961 /* StandardType */ = {
 			isa = PBXGroup;
 			children = (
+				E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */,
 				E83CDF9322531A36008F2961 /* Substring+Extension.swift */,
 				E83CDFC322531A36008F2961 /* Data+Convert.swift */,
 				E83CDFC422531A36008F2961 /* Int+Extension.swift */,
@@ -698,7 +700,6 @@
 				E83CE02122531A37008F2961 /* CookingTimer.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				E83CE03F22531A37008F2961 /* Extension+UITextField.swift in Sources */,
-				E83CE07622535334008F2961 /* Unwrapped+Protocol.swift in Sources */,
 				E83CDFF122531A37008F2961 /* Extension+NSPredicate.swift in Sources */,
 				E83CE06622531A37008F2961 /* String+Greenwich.swift in Sources */,
 				E83CDFE822531A37008F2961 /* GreenwichDateConverter.swift in Sources */,
@@ -723,6 +724,7 @@
 				E83CE03622531A37008F2961 /* UIButton+Extension.swift in Sources */,
 				E83CDFFD22531A37008F2961 /* HorizontalSlider.swift in Sources */,
 				E83CE01B22531A37008F2961 /* Photo+UIViewController.swift in Sources */,
+				E83CE078225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
 				E83CE06C22531A37008F2961 /* String+Convert.swift in Sources */,
 				E83CDFFA22531A37008F2961 /* CategoryCell.swift in Sources */,
 				E83CE00922531A37008F2961 /* ToolBoxManager.swift in Sources */,
@@ -777,6 +779,7 @@
 				E83CE07322531A37008F2961 /* Array+Extension.swift in Sources */,
 				E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */,
 				E83CE00D22531A37008F2961 /* ToolBoxViewController.swift in Sources */,
+				E83CE079225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
 				E83CE00A22531A37008F2961 /* ToolBoxManager.swift in Sources */,
 				E83CDFEF22531A37008F2961 /* Extension+Date.swift in Sources */,
 				E83CE06D22531A37008F2961 /* String+Convert.swift in Sources */,
@@ -834,6 +837,7 @@
 				E83CE07422531A37008F2961 /* Array+Extension.swift in Sources */,
 				E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */,
 				E83CE00E22531A37008F2961 /* ToolBoxViewController.swift in Sources */,
+				E83CE07A225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
 				E83CE00B22531A37008F2961 /* ToolBoxManager.swift in Sources */,
 				E83CDFF022531A37008F2961 /* Extension+Date.swift in Sources */,
 				E83CE06E22531A37008F2961 /* String+Convert.swift in Sources */,
