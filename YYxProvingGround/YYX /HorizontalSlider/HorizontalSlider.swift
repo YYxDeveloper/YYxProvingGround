@@ -9,7 +9,7 @@
 import UIKit
 
 class HorizontalSlider: UICollectionViewController {
-   
+    // refer: https://ithelp.ithome.com.tw/articles/10197250?sc=iThelpR
     let cellId = "HorizontalSliderCell"
     let horizontalModel = 1
     static  func giveMeHorizontalSlider() -> HorizontalSlider {

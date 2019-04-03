@@ -15,11 +15,16 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     let cellId = "CategoryHorizenTalRowCell"
     let cellH = 70
     let cellW = 70
-    var datas: [CategoryVerticalColumnModel] = [CategoryVerticalColumnModel(titleText: "qwe"),CategoryVerticalColumnModel(titleText: "tt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ooooo")]
+//    var datas: [CategoryVerticalColumnModel] = [CategoryVerticalColumnModel(titleText: "qwe"),CategoryVerticalColumnModel(titleText: "tt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ooooo")]
+    var datas: [CategoryVerticalColumnModel]?
     
-
+    static func giveMeTestDatas()->[CategoryVerticalColumnModel]{
+         let datas: [CategoryVerticalColumnModel] = [CategoryVerticalColumnModel(titleText: "qwe"),CategoryVerticalColumnModel(titleText: "tt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ooooo")]
+        return datas
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
+        datas = CategoryVerticalColumnCell.giveMeTestDatas()
         setupViews()
     }
     
@@ -40,11 +45,10 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     }()
     
     func setupViews() {
-//        backgroundColor = UIColor.clear
-     
         addSubview(appsCollectionView)
         appsCollectionView.dataSource = self
         appsCollectionView.delegate = self
+        appsCollectionView.hideIndicator(witchIndicator: .both)
         
         appsCollectionView.register(AppCell.self, forCellWithReuseIdentifier: cellId)
         
@@ -67,12 +71,12 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return datas.count
+        return datas.unwrappedValue.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
         let cell = collectionView.giveMeCategoryHorizenTalRowCell(indexPatht: indexPath)
-        cell.titleLabel.text = datas[indexPath.row].titleText
+        cell.titleLabel.text = datas.unwrappedValue[indexPath.row].titleText
         cell.backgroundColor = .orange
 //  
      

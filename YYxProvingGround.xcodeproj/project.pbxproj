@@ -178,6 +178,9 @@
 		E83CE08022546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */; };
 		E83CE08122546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */; };
 		E83CE08222546FBB008F2961 /* CategoryVerticalColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */; };
+		E83CE08822548235008F2961 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE08722548235008F2961 /* UIScrollView+Extension.swift */; };
+		E83CE08922548235008F2961 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE08722548235008F2961 /* UIScrollView+Extension.swift */; };
+		E83CE08A22548235008F2961 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE08722548235008F2961 /* UIScrollView+Extension.swift */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
 		E879C1B622421012006904A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B522421012006904A5 /* ViewController.swift */; };
 		E879C1B922421012006904A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1B722421012006904A5 /* Main.storyboard */; };
@@ -263,6 +266,7 @@
 		E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StandardTypeUnwrappedable+Protocol.swift"; sourceTree = "<group>"; };
 		E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHorizenTalRowCell.swift; sourceTree = "<group>"; };
 		E83CE07F22546FBB008F2961 /* CategoryVerticalColumnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVerticalColumnModel.swift; sourceTree = "<group>"; };
+		E83CE08722548235008F2961 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Extension.swift"; path = "YYxProvingGround/YYX /UIScrollView+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		E879C1B022421012006904A5 /* YYxProvingGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxProvingGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1B322421012006904A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E879C1B522421012006904A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -419,6 +423,7 @@
 		E83CDFB122531A36008F2961 /* UIKit+Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E83CE08722548235008F2961 /* UIScrollView+Extension.swift */,
 				E83CDFB222531A36008F2961 /* UIColor+Extension.swift */,
 				E83CDFB322531A36008F2961 /* TintView */,
 				E83CDFB622531A36008F2961 /* UILabel+Extension.swift */,
@@ -724,6 +729,7 @@
 				E83CE06922531A37008F2961 /* String+Extension.swift in Sources */,
 				E83CE04E22531A37008F2961 /* UINib+Extension.swift in Sources */,
 				E83CDFDF22531A37008F2961 /* Substring+Extension.swift in Sources */,
+				E83CE08822548235008F2961 /* UIScrollView+Extension.swift in Sources */,
 				E83CE02422531A37008F2961 /* YYxErrorHandler.swift in Sources */,
 				E83CE02A22531A37008F2961 /* UIColor+Extension.swift in Sources */,
 				E83CE03622531A37008F2961 /* UIButton+Extension.swift in Sources */,
@@ -778,6 +784,7 @@
 				E83CE06722531A37008F2961 /* String+Greenwich.swift in Sources */,
 				E83CE05522531A37008F2961 /* Data+Convert.swift in Sources */,
 				E83CDFE622531A37008F2961 /* DateFormatter+Extension.swift in Sources */,
+				E83CE08922548235008F2961 /* UIScrollView+Extension.swift in Sources */,
 				E83CE07D22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */,
 				E83CE02522531A37008F2961 /* YYxErrorHandler.swift in Sources */,
 				E83CE01622531A37008F2961 /* Extension+UIViewController.swift in Sources */,
@@ -837,6 +844,7 @@
 				E83CE06822531A37008F2961 /* String+Greenwich.swift in Sources */,
 				E83CE05622531A37008F2961 /* Data+Convert.swift in Sources */,
 				E83CDFE722531A37008F2961 /* DateFormatter+Extension.swift in Sources */,
+				E83CE08A22548235008F2961 /* UIScrollView+Extension.swift in Sources */,
 				E83CE07E22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */,
 				E83CE02622531A37008F2961 /* YYxErrorHandler.swift in Sources */,
 				E83CE01722531A37008F2961 /* Extension+UIViewController.swift in Sources */,

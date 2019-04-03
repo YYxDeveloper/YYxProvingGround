@@ -20,7 +20,6 @@ extension UICollectionView{
     func preprocessWithYYxCell(registerNibClassName:String = UICollectionView.CategoryHorizontalRowCell) {
         self.register(UINib.giveMeTheNib(witchNibName: registerNibClassName), forCellWithReuseIdentifier: registerNibClassName)
     }
-    
     /**
      need preprocess first
      */
