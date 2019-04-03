@@ -10,24 +10,27 @@ import Foundation
 import UIKit
 
 extension UICollectionView{
-    static let YYxCollectionViewCell = "CategoryHorizenTalRowCell"
+    static let CategoryHorizontalRowCell = "CategoryHorizenTalRowCell"
     static func giveMeEmptyUICollectionView()->UICollectionView{
         return UICollectionView(frame: CGRect(), collectionViewLayout: UICollectionViewLayout())
     }
     func preprocess(registerNibClassName:String) {
         self.register(UINib.giveMeTheNib(witchNibName: registerNibClassName), forCellWithReuseIdentifier: registerNibClassName)
     }
-    func preprocessWithYYxCell(registerNibClassName:String = UICollectionView.YYxCollectionViewCell) {
+    func preprocessWithYYxCell(registerNibClassName:String = UICollectionView.CategoryHorizontalRowCell) {
         self.register(UINib.giveMeTheNib(witchNibName: registerNibClassName), forCellWithReuseIdentifier: registerNibClassName)
     }
     
     /**
      need preprocess first
      */
-    func giveMeCategoryHorizenTalRowCell(witchIdentifier:String = UICollectionView.YYxCollectionViewCell,indexPatht:IndexPath) -> CategoryHorizenTalRowCell{
+    func giveMeCategoryHorizenTalRowCell(witchIdentifier:String = UICollectionView.CategoryHorizontalRowCell,indexPatht:IndexPath) -> CategoryHorizenTalRowCell{
             let cell = self.dequeueReusableCell(withReuseIdentifier: witchIdentifier, for: indexPatht) as! CategoryHorizenTalRowCell
         cell.titleLabel.text = "gggg"
-        cell.backgroundColor = .blue
+      
+        
+        
+        cell.backgroundColor = cell.hasSelected == true ? .yellow:.purple
         return cell
     }
     

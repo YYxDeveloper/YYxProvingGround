@@ -11,9 +11,11 @@ import UIKit
 class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     
-    let cellId = "cellId"
+    let cellId = "CategoryHorizenTalRowCell"
     let cellH = 70
     let cellW = 70
+    var hasSelected = false
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -51,6 +53,14 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
         appsCollectionView.preprocessWithYYxCell()
         
     }
+    func reloadDataWhenCellPress() {
+        func cleanAllBackgroudColor(){
+            
+        }
+        
+        cleanAllBackgroudColor()
+        appsCollectionView.reloadData()
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -72,6 +82,12 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
         return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryHorizenTalRowCell
+        cell.hasSelected = true
+        
+        reloadDataWhenCellPress()
     }
     
 }

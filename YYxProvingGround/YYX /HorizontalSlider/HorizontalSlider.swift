@@ -26,14 +26,7 @@ class HorizontalSlider: UICollectionViewController {
         collectionView?.register(CategoryVerticalColumnCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.backgroundColor = .red
     }
-    func reloadDataWhenCellPress() {
-        func cleanAllBackgroudColor(){
-            
-        }
-        
-        cleanAllBackgroudColor()
-        collectionView.reloadData()
-    }
+    
     
 
 }
@@ -55,12 +48,7 @@ extension HorizontalSlider:UICollectionViewDelegateFlowLayout{
         
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryVerticalColumnCell
-        
-        
-        reloadDataWhenCellPress()
-    }
+   
 }
 
 
