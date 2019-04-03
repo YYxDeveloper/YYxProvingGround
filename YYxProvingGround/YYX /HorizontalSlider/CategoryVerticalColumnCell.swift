@@ -15,7 +15,6 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     let cellId = "CategoryHorizenTalRowCell"
     let cellH = 70
     let cellW = 70
-//    var datas: [CategoryVerticalColumnModel] = [CategoryVerticalColumnModel(titleText: "qwe"),CategoryVerticalColumnModel(titleText: "tt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ttt"),CategoryVerticalColumnModel(titleText: "ooooo")]
     var datas: [CategoryVerticalColumnModel]?
     
     static func giveMeTestDatas()->[CategoryVerticalColumnModel]{
@@ -94,7 +93,7 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CategoryHorizenTalRowCell
-      
+        
         cell.backgroundColor = .green
         
         
