@@ -46,9 +46,10 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="56" height="95"/>
             <connections>
+                <outlet property="indicator" destination="fqk-An-Ffi" id="eYH-Ul-tKD"/>
                 <outlet property="titleLabel" destination="Fsx-JQ-W5k" id="8mf-6X-Z1O"/>
             </connections>
-            <point key="canvasLocation" x="144" y="247"/>
+            <point key="canvasLocation" x="144" y="246.9265367316342"/>
         </collectionViewCell>
     </objects>
 </document>
