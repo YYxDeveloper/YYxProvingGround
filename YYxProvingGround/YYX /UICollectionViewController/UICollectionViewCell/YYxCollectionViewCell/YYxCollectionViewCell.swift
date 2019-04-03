@@ -11,6 +11,7 @@ import UIKit
 class YYxCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
+    var hasSelected = false
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

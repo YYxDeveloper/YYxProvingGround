@@ -22,7 +22,9 @@ extension UIViewController{
         toWitchView.addSubview(addSubViewController.view)
     }
     func addHorizontalSliderWithHeigh50(toWitchView:UIView) {
-         self.addSubViewWithChildController(addSubViewController: HorizontalSlider.giveMeHorizontalSlider(), toWitchView:toWitchView)
+        let horizontalSlider = HorizontalSlider.giveMeHorizontalSlider()
+        horizontalSlider.setupHorizontalSlider()
+         self.addSubViewWithChildController(addSubViewController: horizontalSlider, toWitchView:toWitchView)
     }
     func giveMeButton(with title:String) -> UIButton {
         var theBtn:UIButton?

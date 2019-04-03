@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var horizontalSliderContainerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        aa()
     }
-
+    
+    func aa()  {
+        self.addHorizontalSliderWithHeigh50(toWitchView: horizontalSliderContainerView)
+    }
 
 }
 

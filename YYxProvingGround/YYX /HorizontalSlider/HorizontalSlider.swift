@@ -8,9 +8,9 @@
 
 import UIKit
 
-class HorizontalSlider: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class HorizontalSlider: UICollectionViewController {
    
-    let cellId = "CellId"
+    let cellId = "HorizontalSliderCell"
     let horizontalModel = 1
     static  func giveMeHorizontalSlider() -> HorizontalSlider {
         let emptyFlowlayout = UICollectionViewFlowLayout()
@@ -18,11 +18,27 @@ class HorizontalSlider: UICollectionViewController, UICollectionViewDelegateFlow
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+    }
     
-        collectionView?.backgroundColor = UIColor.blue
+   
+    func setupHorizontalSlider()  {
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.backgroundColor = .red
     }
+    func reloadDataWhenCellPress() {
+        func cleanAllBackgroudColor(){
+            
+        }
+        
+        cleanAllBackgroudColor()
+        collectionView.reloadData()
+    }
+    
+
+}
+
+extension HorizontalSlider:UICollectionViewDelegateFlowLayout{
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -32,7 +48,6 @@ class HorizontalSlider: UICollectionViewController, UICollectionViewDelegateFlow
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCell
         
-        
         return cell
     }
     
@@ -40,9 +55,12 @@ class HorizontalSlider: UICollectionViewController, UICollectionViewDelegateFlow
         
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
-    
-
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCell
+        
+        
+        reloadDataWhenCellPress()
+    }
 }
-
 
 
