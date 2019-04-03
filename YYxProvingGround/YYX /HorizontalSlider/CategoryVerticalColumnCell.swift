@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     
     let cellId = "cellId"
@@ -59,7 +59,7 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! AppCell
-         let cell = collectionView.giveMeYYxCollectionViewCell(indexPatht: indexPath)
+         let cell = collectionView.giveMeCategoryHorizenTalRowCell(indexPatht: indexPath)
        
         return cell
     }

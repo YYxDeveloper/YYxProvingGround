@@ -23,7 +23,7 @@ class HorizontalSlider: UICollectionViewController {
     
    
     func setupHorizontalSlider()  {
-        collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(CategoryVerticalColumnCell.self, forCellWithReuseIdentifier: cellId)
         collectionView.backgroundColor = .red
     }
     func reloadDataWhenCellPress() {
@@ -46,7 +46,7 @@ extension HorizontalSlider:UICollectionViewDelegateFlowLayout{
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryVerticalColumnCell
         
         return cell
     }
@@ -56,7 +56,7 @@ extension HorizontalSlider:UICollectionViewDelegateFlowLayout{
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryVerticalColumnCell
         
         
         reloadDataWhenCellPress()

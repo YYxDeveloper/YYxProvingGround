@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YYxCollectionViewCell: UICollectionViewCell {
+class CategoryHorizenTalRowCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     var hasSelected = false

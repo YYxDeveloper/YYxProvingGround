@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UICollectionView{
-    static let YYxCollectionViewCell = "YYxCollectionViewCell"
+    static let YYxCollectionViewCell = "CategoryHorizenTalRowCell"
     static func giveMeEmptyUICollectionView()->UICollectionView{
         return UICollectionView(frame: CGRect(), collectionViewLayout: UICollectionViewLayout())
     }
@@ -24,8 +24,8 @@ extension UICollectionView{
     /**
      need preprocess first
      */
-    func giveMeYYxCollectionViewCell(witchIdentifier:String = UICollectionView.YYxCollectionViewCell,indexPatht:IndexPath) -> YYxCollectionViewCell{
-            let cell = self.dequeueReusableCell(withReuseIdentifier: witchIdentifier, for: indexPatht) as! YYxCollectionViewCell
+    func giveMeCategoryHorizenTalRowCell(witchIdentifier:String = UICollectionView.YYxCollectionViewCell,indexPatht:IndexPath) -> CategoryHorizenTalRowCell{
+            let cell = self.dequeueReusableCell(withReuseIdentifier: witchIdentifier, for: indexPatht) as! CategoryHorizenTalRowCell
         cell.titleLabel.text = "gggg"
         cell.backgroundColor = .blue
         return cell

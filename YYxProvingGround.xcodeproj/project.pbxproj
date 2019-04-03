@@ -16,12 +16,9 @@
 		E83CDFD622531A37008F2961 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF8E22531A36008F2961 /* UICollectionView+Extension.swift */; };
 		E83CDFD722531A37008F2961 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF8E22531A36008F2961 /* UICollectionView+Extension.swift */; };
 		E83CDFD822531A37008F2961 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF8E22531A36008F2961 /* UICollectionView+Extension.swift */; };
-		E83CDFD922531A37008F2961 /* YYxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9122531A36008F2961 /* YYxCollectionViewCell.swift */; };
-		E83CDFDA22531A37008F2961 /* YYxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9122531A36008F2961 /* YYxCollectionViewCell.swift */; };
-		E83CDFDB22531A37008F2961 /* YYxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9122531A36008F2961 /* YYxCollectionViewCell.swift */; };
-		E83CDFDC22531A37008F2961 /* YYxCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9222531A36008F2961 /* YYxCollectionViewCell.xib */; };
-		E83CDFDD22531A37008F2961 /* YYxCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9222531A36008F2961 /* YYxCollectionViewCell.xib */; };
-		E83CDFDE22531A37008F2961 /* YYxCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9222531A36008F2961 /* YYxCollectionViewCell.xib */; };
+		E83CDFDC22531A37008F2961 /* CategoryHorizenTalRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9222531A36008F2961 /* CategoryHorizenTalRowCell.xib */; };
+		E83CDFDD22531A37008F2961 /* CategoryHorizenTalRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9222531A36008F2961 /* CategoryHorizenTalRowCell.xib */; };
+		E83CDFDE22531A37008F2961 /* CategoryHorizenTalRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9222531A36008F2961 /* CategoryHorizenTalRowCell.xib */; };
 		E83CDFDF22531A37008F2961 /* Substring+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9322531A36008F2961 /* Substring+Extension.swift */; };
 		E83CDFE022531A37008F2961 /* Substring+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9322531A36008F2961 /* Substring+Extension.swift */; };
 		E83CDFE122531A37008F2961 /* Substring+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9322531A36008F2961 /* Substring+Extension.swift */; };
@@ -49,9 +46,9 @@
 		E83CDFF722531A37008F2961 /* YYxInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9C22531A36008F2961 /* YYxInfo.txt */; };
 		E83CDFF822531A37008F2961 /* YYxInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9C22531A36008F2961 /* YYxInfo.txt */; };
 		E83CDFF922531A37008F2961 /* YYxInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = E83CDF9C22531A36008F2961 /* YYxInfo.txt */; };
-		E83CDFFA22531A37008F2961 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9E22531A36008F2961 /* CategoryCell.swift */; };
-		E83CDFFB22531A37008F2961 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9E22531A36008F2961 /* CategoryCell.swift */; };
-		E83CDFFC22531A37008F2961 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9E22531A36008F2961 /* CategoryCell.swift */; };
+		E83CDFFA22531A37008F2961 /* CategoryVerticalColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9E22531A36008F2961 /* CategoryVerticalColumnCell.swift */; };
+		E83CDFFB22531A37008F2961 /* CategoryVerticalColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9E22531A36008F2961 /* CategoryVerticalColumnCell.swift */; };
+		E83CDFFC22531A37008F2961 /* CategoryVerticalColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9E22531A36008F2961 /* CategoryVerticalColumnCell.swift */; };
 		E83CDFFD22531A37008F2961 /* HorizontalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9F22531A36008F2961 /* HorizontalSlider.swift */; };
 		E83CDFFE22531A37008F2961 /* HorizontalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9F22531A36008F2961 /* HorizontalSlider.swift */; };
 		E83CDFFF22531A37008F2961 /* HorizontalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CDF9F22531A36008F2961 /* HorizontalSlider.swift */; };
@@ -175,6 +172,9 @@
 		E83CE078225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */; };
 		E83CE079225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */; };
 		E83CE07A225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */; };
+		E83CE07C22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */; };
+		E83CE07D22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */; };
+		E83CE07E22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
 		E879C1B622421012006904A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B522421012006904A5 /* ViewController.swift */; };
 		E879C1B922421012006904A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1B722421012006904A5 /* Main.storyboard */; };
@@ -206,8 +206,7 @@
 		E83CDF8A22531A36008F2961 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		E83CDF8B22531A36008F2961 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		E83CDF8E22531A36008F2961 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		E83CDF9122531A36008F2961 /* YYxCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYxCollectionViewCell.swift; sourceTree = "<group>"; };
-		E83CDF9222531A36008F2961 /* YYxCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYxCollectionViewCell.xib; sourceTree = "<group>"; };
+		E83CDF9222531A36008F2961 /* CategoryHorizenTalRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryHorizenTalRowCell.xib; sourceTree = "<group>"; };
 		E83CDF9322531A36008F2961 /* Substring+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Substring+Extension.swift"; sourceTree = "<group>"; };
 		E83CDF9522531A36008F2961 /* Convert+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Convert+Date.swift"; sourceTree = "<group>"; };
 		E83CDF9622531A36008F2961 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
@@ -217,7 +216,7 @@
 		E83CDF9A22531A36008F2961 /* Extension+NSPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+NSPredicate.swift"; sourceTree = "<group>"; };
 		E83CDF9B22531A36008F2961 /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		E83CDF9C22531A36008F2961 /* YYxInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxInfo.txt; sourceTree = "<group>"; };
-		E83CDF9E22531A36008F2961 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		E83CDF9E22531A36008F2961 /* CategoryVerticalColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVerticalColumnCell.swift; sourceTree = "<group>"; };
 		E83CDF9F22531A36008F2961 /* HorizontalSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSlider.swift; sourceTree = "<group>"; };
 		E83CDFA122531A36008F2961 /* JsonDIctonaryExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonDIctonaryExample.json; sourceTree = "<group>"; };
 		E83CDFA222531A36008F2961 /* JsonArrayExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonArrayExample.json; sourceTree = "<group>"; };
@@ -259,6 +258,7 @@
 		E83CDFCE22531A36008F2961 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		E83CDFCF22531A36008F2961 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		E83CE077225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StandardTypeUnwrappedable+Protocol.swift"; sourceTree = "<group>"; };
+		E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHorizenTalRowCell.swift; sourceTree = "<group>"; };
 		E879C1B022421012006904A5 /* YYxProvingGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxProvingGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1B322421012006904A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E879C1B522421012006904A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -352,8 +352,8 @@
 		E83CDF9022531A36008F2961 /* YYxCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				E83CDF9122531A36008F2961 /* YYxCollectionViewCell.swift */,
-				E83CDF9222531A36008F2961 /* YYxCollectionViewCell.xib */,
+				E83CE07B22545098008F2961 /* CategoryHorizenTalRowCell.swift */,
+				E83CDF9222531A36008F2961 /* CategoryHorizenTalRowCell.xib */,
 			);
 			path = YYxCollectionViewCell;
 			sourceTree = "<group>";
@@ -373,7 +373,7 @@
 		E83CDF9D22531A36008F2961 /* HorizontalSlider */ = {
 			isa = PBXGroup;
 			children = (
-				E83CDF9E22531A36008F2961 /* CategoryCell.swift */,
+				E83CDF9E22531A36008F2961 /* CategoryVerticalColumnCell.swift */,
 				E83CDF9F22531A36008F2961 /* HorizontalSlider.swift */,
 			);
 			path = HorizontalSlider;
@@ -647,7 +647,7 @@
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
 				E879C1B922421012006904A5 /* Main.storyboard in Resources */,
-				E83CDFDC22531A37008F2961 /* YYxCollectionViewCell.xib in Resources */,
+				E83CDFDC22531A37008F2961 /* CategoryHorizenTalRowCell.xib in Resources */,
 				E83CDFF722531A37008F2961 /* YYxInfo.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,7 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83CE00122531A37008F2961 /* JsonDIctonaryExample.json in Resources */,
-				E83CDFDD22531A37008F2961 /* YYxCollectionViewCell.xib in Resources */,
+				E83CDFDD22531A37008F2961 /* CategoryHorizenTalRowCell.xib in Resources */,
 				E83CE01322531A37008F2961 /* ToolBox.storyboard in Resources */,
 				E83CE00422531A37008F2961 /* JsonArrayExample.json in Resources */,
 				E83CDFF822531A37008F2961 /* YYxInfo.txt in Resources */,
@@ -670,7 +670,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83CE00222531A37008F2961 /* JsonDIctonaryExample.json in Resources */,
-				E83CDFDE22531A37008F2961 /* YYxCollectionViewCell.xib in Resources */,
+				E83CDFDE22531A37008F2961 /* CategoryHorizenTalRowCell.xib in Resources */,
 				E83CE01422531A37008F2961 /* ToolBox.storyboard in Resources */,
 				E83CE00522531A37008F2961 /* JsonArrayExample.json in Resources */,
 				E83CDFF922531A37008F2961 /* YYxInfo.txt in Resources */,
@@ -686,6 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83CDFE222531A37008F2961 /* Convert+Date.swift in Sources */,
+				E83CE07C22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */,
 				E83CE04522531A37008F2961 /* Extension+UIView.swift in Sources */,
 				E83CE01E22531A37008F2961 /* Alert+UIViewController.swift in Sources */,
 				E83CE06022531A37008F2961 /* Double+Greenwich.swift in Sources */,
@@ -720,13 +721,12 @@
 				E83CDFDF22531A37008F2961 /* Substring+Extension.swift in Sources */,
 				E83CE02422531A37008F2961 /* YYxErrorHandler.swift in Sources */,
 				E83CE02A22531A37008F2961 /* UIColor+Extension.swift in Sources */,
-				E83CDFD922531A37008F2961 /* YYxCollectionViewCell.swift in Sources */,
 				E83CE03622531A37008F2961 /* UIButton+Extension.swift in Sources */,
 				E83CDFFD22531A37008F2961 /* HorizontalSlider.swift in Sources */,
 				E83CE01B22531A37008F2961 /* Photo+UIViewController.swift in Sources */,
 				E83CE078225442DC008F2961 /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
 				E83CE06C22531A37008F2961 /* String+Convert.swift in Sources */,
-				E83CDFFA22531A37008F2961 /* CategoryCell.swift in Sources */,
+				E83CDFFA22531A37008F2961 /* CategoryVerticalColumnCell.swift in Sources */,
 				E83CE00922531A37008F2961 /* ToolBoxManager.swift in Sources */,
 				E83CE06F22531A37008F2961 /* CGFloat+Extension.swift in Sources */,
 				E83CDFF422531A37008F2961 /* FileManager+Extension.swift in Sources */,
@@ -759,7 +759,7 @@
 				E83CE03422531A37008F2961 /* UILabel+Extension.swift in Sources */,
 				E83CDFD722531A37008F2961 /* UICollectionView+Extension.swift in Sources */,
 				E83CDFE022531A37008F2961 /* Substring+Extension.swift in Sources */,
-				E83CDFFB22531A37008F2961 /* CategoryCell.swift in Sources */,
+				E83CDFFB22531A37008F2961 /* CategoryVerticalColumnCell.swift in Sources */,
 				E83CE04022531A37008F2961 /* Extension+UITextField.swift in Sources */,
 				E83CE04F22531A37008F2961 /* UINib+Extension.swift in Sources */,
 				E83CE06422531A37008F2961 /* numeric.swift in Sources */,
@@ -772,6 +772,7 @@
 				E83CE06722531A37008F2961 /* String+Greenwich.swift in Sources */,
 				E83CE05522531A37008F2961 /* Data+Convert.swift in Sources */,
 				E83CDFE622531A37008F2961 /* DateFormatter+Extension.swift in Sources */,
+				E83CE07D22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */,
 				E83CE02522531A37008F2961 /* YYxErrorHandler.swift in Sources */,
 				E83CE01622531A37008F2961 /* Extension+UIViewController.swift in Sources */,
 				E83CE04C22531A37008F2961 /* Constraint+UIView.swift in Sources */,
@@ -785,7 +786,6 @@
 				E83CE06D22531A37008F2961 /* String+Convert.swift in Sources */,
 				E83CDFFE22531A37008F2961 /* HorizontalSlider.swift in Sources */,
 				E83CE03722531A37008F2961 /* UIButton+Extension.swift in Sources */,
-				E83CDFDA22531A37008F2961 /* YYxCollectionViewCell.swift in Sources */,
 				E83CE06122531A37008F2961 /* Double+Greenwich.swift in Sources */,
 				E83CDFD122531A37008F2961 /* constant.swift in Sources */,
 				E83CE06A22531A37008F2961 /* String+Extension.swift in Sources */,
@@ -817,7 +817,7 @@
 				E83CE03522531A37008F2961 /* UILabel+Extension.swift in Sources */,
 				E83CDFD822531A37008F2961 /* UICollectionView+Extension.swift in Sources */,
 				E83CDFE122531A37008F2961 /* Substring+Extension.swift in Sources */,
-				E83CDFFC22531A37008F2961 /* CategoryCell.swift in Sources */,
+				E83CDFFC22531A37008F2961 /* CategoryVerticalColumnCell.swift in Sources */,
 				E83CE04122531A37008F2961 /* Extension+UITextField.swift in Sources */,
 				E83CE05022531A37008F2961 /* UINib+Extension.swift in Sources */,
 				E83CE06522531A37008F2961 /* numeric.swift in Sources */,
@@ -830,6 +830,7 @@
 				E83CE06822531A37008F2961 /* String+Greenwich.swift in Sources */,
 				E83CE05622531A37008F2961 /* Data+Convert.swift in Sources */,
 				E83CDFE722531A37008F2961 /* DateFormatter+Extension.swift in Sources */,
+				E83CE07E22545098008F2961 /* CategoryHorizenTalRowCell.swift in Sources */,
 				E83CE02622531A37008F2961 /* YYxErrorHandler.swift in Sources */,
 				E83CE01722531A37008F2961 /* Extension+UIViewController.swift in Sources */,
 				E83CE04D22531A37008F2961 /* Constraint+UIView.swift in Sources */,
@@ -843,7 +844,6 @@
 				E83CE06E22531A37008F2961 /* String+Convert.swift in Sources */,
 				E83CDFFF22531A37008F2961 /* HorizontalSlider.swift in Sources */,
 				E83CE03822531A37008F2961 /* UIButton+Extension.swift in Sources */,
-				E83CDFDB22531A37008F2961 /* YYxCollectionViewCell.swift in Sources */,
 				E83CE06222531A37008F2961 /* Double+Greenwich.swift in Sources */,
 				E83CDFD222531A37008F2961 /* constant.swift in Sources */,
 				E83CE06B22531A37008F2961 /* String+Extension.swift in Sources */,
