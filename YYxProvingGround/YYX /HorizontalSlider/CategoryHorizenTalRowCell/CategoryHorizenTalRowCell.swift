@@ -9,12 +9,14 @@
 import UIKit
 
 class CategoryHorizenTalRowCell: UICollectionViewCell {
-
+   
+    @IBOutlet weak var indicator: UIView!
+    
     @IBOutlet weak var titleLabel: UILabel!
-    var hasSelected = false
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+       
     }
 
 }
