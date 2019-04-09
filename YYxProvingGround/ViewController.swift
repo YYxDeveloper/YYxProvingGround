@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     
     func aa()  {
-        self.addHorizontalSliderWithHeigh50(toWitchView: horizontalSliderContainerView)
+        
     }
 
 }
