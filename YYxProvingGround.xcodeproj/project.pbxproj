@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E85415C5225D94C40031FA68 /* Timezone+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85415C4225D94C40031FA68 /* Timezone+Extension.swift */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
 		E879C1B622421012006904A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B522421012006904A5 /* ViewController.swift */; };
 		E879C1B922421012006904A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1B722421012006904A5 /* Main.storyboard */; };
@@ -93,6 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E85415C4225D94C40031FA68 /* Timezone+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timezone+Extension.swift"; sourceTree = "<group>"; };
 		E879C1B022421012006904A5 /* YYxProvingGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxProvingGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1B322421012006904A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E879C1B522421012006904A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				E8AE4F732254BCBA00AA661F /* GreenwichDateConverter.swift */,
 				E8AE4F742254BCBA00AA661F /* Current+Date.swift */,
 				E8AE4F752254BCBA00AA661F /* Extension+Date.swift */,
+				E85415C4225D94C40031FA68 /* Timezone+Extension.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				E8AE4FCB2254BCBA00AA661F /* URLSession+UIViewController.swift in Sources */,
 				E8AE4FDF2254BCBA00AA661F /* AppDelegate+Extension.swift in Sources */,
 				E8AE4FD22254BCBA00AA661F /* UIColor+Extension.swift in Sources */,
+				E85415C5225D94C40031FA68 /* Timezone+Extension.swift in Sources */,
 				E8AE4FDD2254BCBA00AA661F /* Constraint+UIView.swift in Sources */,
 				E8AE4FB72254BCBA00AA661F /* DateFormatter+Extension.swift in Sources */,
 				E8AE4FD02254BCBA00AA661F /* YYxErrorHandler.swift in Sources */,

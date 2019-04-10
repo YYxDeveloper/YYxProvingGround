@@ -15,4 +15,13 @@ extension String{
     func replaceChartTo1Blank(changeChart:String) -> String{
         return self.replacingOccurrences(of: changeChart, with: " ")
     }
+    func giveMeRangeOfString(theStartIndex:Int,theEndIndex:Int) -> String {
+        guard theEndIndex < self.count && theStartIndex > 0 && theEndIndex > 0 else {
+            YYxErrorHandler.printGuardFail() ;return String()
+        }
+        
+        let startIndex = self.index(self.startIndex, offsetBy: theStartIndex)
+        let endIndex = self.index(self.startIndex, offsetBy: theEndIndex)
+        return self[startIndex ..< endIndex].convertToString()
+    }
 }
