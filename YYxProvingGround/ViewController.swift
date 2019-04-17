@@ -20,9 +20,13 @@ class ViewController: UIViewController {
     func aa()  {
         let aa = "2019-04-12 12:59:00"
         
-        let gg = aa.convertToGreenwichStamp()
-        print(gg)
-        let timezone = Date.currentTimezone
+//        let gg = aa.convertToGreenwichStamp().convertStampToCurrentString(dateFormat: DateFormatter.defaultFormat)
+//        let bb =
+        let bb = aa.convertToCurrentDate()
+//        print(bb)
+        
+//        print(Date.giveMeCurrentDateString(format: DateFormatter.defaultFormat))
+        
     }
 
 }

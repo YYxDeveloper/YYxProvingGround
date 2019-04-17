@@ -10,7 +10,6 @@ import Foundation
 extension String{
     func convertToGreenwichStamp() -> Double {
         let uTC0Date = DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: DateFormatter.defaultFormat).date(from: self) ?? Date()
-        print(uTC0Date)
         return  uTC0Date.timeIntervalSince1970
     }
 }
