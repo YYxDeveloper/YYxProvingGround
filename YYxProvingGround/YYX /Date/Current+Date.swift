@@ -38,6 +38,18 @@ extension Date{
             return 0}
         return Calendar.current.component(.weekday, from: date)
     }
+    static func giveMeCurrentDateString(format:String) -> String{
+        let now = Date()
+        
+        let formatter = DateFormatter()
+        
+        formatter.timeZone = TimeZone.current
+        
+        formatter.dateFormat = format
+       
+        return formatter.string(from: now)
+        
+    }
     static func convertDayNumberToString(dayNumber:Int) -> String {
         enum DayName:String {
             case Sun,Mon,Tue,Wen,Tur,Fri,Sat

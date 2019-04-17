@@ -24,14 +24,14 @@ extension String{
 extension String{
     //MARK: Convert IXFormatDate
     func convertCurrentDateFormatToIXFormatUTP0Date() -> Date {
-        let localDateFormatter = DateFormatter.giveMeCurrentDateFormatter(dateFormate: DateFormatter.ixFormat)
-        localDateFormatter.dateFormat = DateFormatter.ixFormat
+        let localDateFormatter = DateFormatter.giveMeCurrentDateFormatter(dateFormate: DateFormatter.defaultFormat)
+        localDateFormatter.dateFormat = DateFormatter.defaultFormat
         
         return localDateFormatter.date(from: self) ?? Date()
     }
     func convertToDate() -> Date {
         let localDateFormatter = DateFormatter()
-        localDateFormatter.dateFormat = DateFormatter.ixFormat
+        localDateFormatter.dateFormat = DateFormatter.defaultFormat
         
         return localDateFormatter.date(from: self) ?? Date()
     }

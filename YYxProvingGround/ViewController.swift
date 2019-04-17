@@ -18,7 +18,11 @@ class ViewController: UIViewController {
     }
     
     func aa()  {
+        let aa = "2019-04-12 12:59:00"
         
+        let gg = aa.convertToGreenwichStamp()
+        print(gg)
+        let timezone = Date.currentTimezone
     }
 
 }

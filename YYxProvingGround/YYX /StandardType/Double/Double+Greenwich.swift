@@ -13,7 +13,7 @@ extension Double{
     }
     func converGreenwichStampToString() -> String {
         let date = self.convertGreenwichStampToDate()
-        let dateString = DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: DateFormatter.ixFormat).string(from: date)
+        let dateString = DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: DateFormatter.defaultFormat).string(from: date)
         
         return dateString
     }

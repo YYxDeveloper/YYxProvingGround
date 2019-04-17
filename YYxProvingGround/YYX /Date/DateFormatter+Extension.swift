@@ -8,7 +8,7 @@
 
 import Foundation
 extension DateFormatter{
-    static let ixFormat = "yyyy-MM-dd HH:mm:ss"
+    static let defaultFormat = "yyyy-MM-dd HH:mm:ss"
     
     static func giveMeGreenwichOriginDateFormatter(dateFormate:String)->DateFormatter{
         let uTC0DateFormatter = DateFormatter()
