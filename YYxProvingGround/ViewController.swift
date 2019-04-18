@@ -18,14 +18,14 @@ class ViewController: UIViewController {
     }
     
     func aa()  {
-        let aa = "2019-04-12 12:59:00"
+//        let aa = "2019-04-12 12:59:00"
+        let bb = "17:54:50"
+        let cc = "09:45:00"
         
-//        let gg = aa.convertToGreenwichStamp().convertStampToCurrentString(dateFormat: DateFormatter.defaultFormat)
-//        let bb =
-        let bb = aa.convertToCurrentDate()
-//        print(bb)
-        
-//        print(Date.giveMeCurrentDateString(format: DateFormatter.defaultFormat))
+
+        let yy = String.compare2Stamp(format: DateFormatter.defaultTimeFormat, timeStr1: cc, timeStr2: bb)
+        print(yy)
+//        print(aa.giveMeRangeOfString(theStartIndex: 11, theEndIndex: 19))
         
     }
 

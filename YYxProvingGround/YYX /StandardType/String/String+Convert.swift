@@ -8,14 +8,14 @@
 
 import Foundation
 extension String{
-    func convertToCurrentDate() -> Date {
-        let currentString = self.convertToGreenwichStamp().convertStampToCurrentString(dateFormat: DateFormatter.defaultFormat)
-        let formatter = DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: DateFormatter.defaultFormat)
+    func convertToCurrentDate(format:String) -> Date {
+        let currentString = self.convertToGreenwichStamp(format: format).convertStampToCurrentString(dateFormat: format)
+        let formatter = DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: format)
         return formatter.date(from: currentString) ?? Date()
     }
-    func convertToGreenwichDate() -> Date {
+    func convertToGreenwichDate(format:String) -> Date {
         let localDateFormatter = DateFormatter()
-        localDateFormatter.dateFormat = DateFormatter.defaultFormat
+        localDateFormatter.dateFormat = format
         
         return localDateFormatter.date(from: self) ?? Date()
     }

@@ -9,7 +9,7 @@
 import Foundation
 extension DateFormatter{
     static let defaultFormat = "yyyy-MM-dd HH:mm:ss"
-    
+    static let defaultTimeFormat = "HH:mm:ss"
     static func giveMeGreenwichOriginDateFormatter(dateFormate:String)->DateFormatter{
         let uTC0DateFormatter = DateFormatter()
         uTC0DateFormatter.dateFormat = dateFormate

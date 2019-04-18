@@ -16,7 +16,7 @@ extension String{
         return self.replacingOccurrences(of: changeChart, with: " ")
     }
     func giveMeRangeOfString(theStartIndex:Int,theEndIndex:Int) -> String {
-        guard theEndIndex < self.count && theStartIndex > 0 && theEndIndex > 0 else {
+        guard theEndIndex <= self.count && theStartIndex > 0 && theEndIndex > 0 else {
             YYxErrorHandler.printGuardFail() ;return String()
         }
         
@@ -26,5 +26,13 @@ extension String{
     }
     func removeFromBehind(count:Int) -> String {
         return String(self.dropLast(count))
+    }
+    static func compare2Stamp(format:String,timeStr1:String,timeStr2:String) -> String {
+        let stamp1 = timeStr1.convertToGreenwichStamp(format: format).convertInt()
+        let stamp2 = timeStr2.convertToGreenwichStamp(format: format).convertInt()
+        
+        
+        return stamp1 > stamp2 ? timeStr1:timeStr2
+        
     }
 }
