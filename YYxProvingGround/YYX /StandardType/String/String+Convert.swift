@@ -13,6 +13,12 @@ extension String{
         let formatter = DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: DateFormatter.defaultFormat)
         return formatter.date(from: currentString) ?? Date()
     }
+    func convertToGreenwichDate() -> Date {
+        let localDateFormatter = DateFormatter()
+        localDateFormatter.dateFormat = DateFormatter.defaultFormat
+        
+        return localDateFormatter.date(from: self) ?? Date()
+    }
 }
 
 extension String{

@@ -513,8 +513,8 @@
 		E879C1B222421012006904A5 /* YYxProvingGround */ = {
 			isa = PBXGroup;
 			children = (
-				E820671822672D520065C818 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
+				E820671822672D520065C818 /* YYX  */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
