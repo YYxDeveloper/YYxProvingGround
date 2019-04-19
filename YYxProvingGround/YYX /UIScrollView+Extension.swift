@@ -26,4 +26,13 @@ extension UIScrollView{
             self.showsVerticalScrollIndicator = false
         }
     }
+    func scrollToTop(animated: Bool) {
+        setContentOffset(CGPoint(x: 0, y: -contentInset.top),
+                         animated: animated)
+    }
+    
+    func scrollToBottom(animated: Bool) {
+        setContentOffset(CGPoint(x: 0, y: CGFloat.greatestFiniteMagnitude),
+                         animated: animated)
+    }
 }

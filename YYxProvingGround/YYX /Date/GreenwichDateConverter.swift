@@ -47,10 +47,10 @@ class GreenwichDateConverter {
         
         switch  self.initTimeZone {
         case .GMT:
-            interval = TimeInterval(TimeZone.current.secondsFromGMT() - TimeZone.init(identifier: UTCZone.zero.rawValue)!.secondsFromGMT())
+            interval = TimeInterval(TimeZone.current.secondsFromGMT() - TimeZone.giveMEGreenwichTimezone().secondsFromGMT())
            
         case .current:
-              interval = TimeInterval(TimeZone.init(identifier: UTCZone.zero.rawValue)!.secondsFromGMT() - TimeZone.current.secondsFromGMT())
+              interval = TimeInterval(TimeZone.giveMEGreenwichTimezone().secondsFromGMT() - TimeZone.current.secondsFromGMT())
         }
        
         

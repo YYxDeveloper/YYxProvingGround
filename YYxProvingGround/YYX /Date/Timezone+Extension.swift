@@ -11,4 +11,7 @@ extension TimeZone{
     static func giveMeAllTimezoneIdentifiers() -> [String] {
         return TimeZone.knownTimeZoneIdentifiers
     }
+    static func giveMEGreenwichTimezone()->TimeZone{
+        return TimeZone.init(identifier: UTCZone.zero.rawValue)!
+    }
 }

@@ -50,6 +50,9 @@ extension Date{
         return formatter.string(from: now)
         
     }
+    static func giveMeCurrentGreenwichDateString(format:String) -> String{
+        return DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: format).string(from: Date())
+    }
     static func convertDayNumberToString(dayNumber:Int) -> String {
         enum DayName:String {
             case Sun,Mon,Tue,Wen,Tur,Fri,Sat
