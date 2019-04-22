@@ -10,11 +10,15 @@ import Foundation
 import UIKit
 
 extension UIViewController{
+    
     static func giveMeViewControllerFromStoryBoard(storyBoardName:String,storyBoardID:String) -> UIViewController {
         
         let storyboard = UIStoryboard(name: storyBoardName, bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: storyBoardID)
         return controller
+    }
+    static func giveMeViewControllerFromMainStoryBoard(storyBoardID:String) -> UIViewController {
+        return UIStoryboard.giveMeMainStoryboard().instantiateViewController(withIdentifier: storyBoardID)
     }
     func addSubViewWithChildController(addSubViewController:UIViewController, toWitchView:UIView) {
         addSubViewController.view.frame.size = toWitchView.frame.size
