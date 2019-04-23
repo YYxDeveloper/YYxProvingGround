@@ -24,15 +24,9 @@ class ViewController: UIViewController {
     }
     
     func aa()  {
-//        let aa = "2019-04-12 12:59:00"
-//        let bb = "17:54:50"
-//        let cc = "09:45:00"
-        let ff = giveMeCurrentGreenwichDateString(format: DateFormatter.defaultFormat)
-        print(ff)
-//        print(aa.giveMeRangeOfString(theStartIndex: 11, theEndIndex: 19))
-//        let yy = String.compare2Stamp(format: DateFormatter.defaultTimeFormat, timeStr1: cc, timeStr2: bb)
-//        print(yy)
-//        print(aa.giveMeRangeOfString(theStartIndex: 11, theEndIndex: 19))
+      let aa = CookingTimer()
+        aa.start()
+    
         
     }
 

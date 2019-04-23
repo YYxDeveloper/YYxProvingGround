@@ -11,6 +11,7 @@ class CookingTimer {
     let sixtyConst = 60
     var isStarted = false
     var theTimer : Timer?
+    var milSec          = 0
     var second          = 0
     var min             = 0
     var hour            = 0
@@ -22,9 +23,11 @@ class CookingTimer {
     func reset() {
         isStarted = false
         theTimer?.invalidate()
+        milSec      = 0
         second      = 0
         min         = 0
         hour        = 0
+        
         currentTimeString = CookingTimer.atFirstTimeString
         
     }
@@ -34,15 +37,28 @@ class CookingTimer {
     }
     func start() {
         guard isStarted == false else {return}
-        theTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timeRepeat(_:)), userInfo: nil, repeats: true)
+        theTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(timeRepeat(_:)), userInfo: nil, repeats: true)
         isStarted = true
     }
     @objc func timeRepeat(_ time:Timer) -> Void {
         func calculateTime_2(){
-            second = second + 1
+           
+             milSec = milSec + 1
+            if milSec == 99 {
+                second = second + 1
+                milSec = 0
+            }
+            if second == 60 {
+               min = min + 1
+               second = 0
+            }
+            if min == 60 {
+               hour = hour + 1
+               min = 0
+            }
         }
         func showTheTime_1(){
-            currentTimeString =  "\(hour.convetToLeadingZeroString()):\(min.convetToLeadingZeroString()):\(second.convetToLeadingZeroString())"
+            currentTimeString =  "\(hour.convetToLeadingZeroString()):\(min.convetToLeadingZeroString()):\(second.convetToLeadingZeroString()):\(milSec.convetToLeadingZeroString())"
             print(currentTimeString)
         }
         showTheTime_1()

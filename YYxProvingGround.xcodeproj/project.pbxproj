@@ -74,7 +74,7 @@
 		E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1BF22421013006904A5 /* LaunchScreen.storyboard */; };
 		E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1CB22421013006904A5 /* YYxProvingGroundTests.swift */; };
 		E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1D622421013006904A5 /* YYxProvingGroundUITests.swift */; };
-		E8E16331226D5A5B00996E7D /* StoryBoard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E16330226D5A5B00996E7D /* StoryBoard+Extension.swift */; };
+		E8E16331226D5A5B00996E7D /* UIStoryBoard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E16330226D5A5B00996E7D /* UIStoryBoard+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,7 +168,7 @@
 		E879C1D222421013006904A5 /* YYxProvingGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYxProvingGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1D622421013006904A5 /* YYxProvingGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxProvingGroundUITests.swift; sourceTree = "<group>"; };
 		E879C1D822421013006904A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8E16330226D5A5B00996E7D /* StoryBoard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryBoard+Extension.swift"; sourceTree = "<group>"; };
+		E8E16330226D5A5B00996E7D /* UIStoryBoard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +214,6 @@
 				E8206A4D2269D0110065C818 /* UIScrollView+Extension.swift */,
 				E8206A4E2269D0110065C818 /* YYxErrorHandler.swift */,
 				E8206A4F2269D0110065C818 /* NSCache+Extension.swift */,
-				E8E16330226D5A5B00996E7D /* StoryBoard+Extension.swift */,
 				E8206A502269D0110065C818 /* UIKit+Extension */,
 				E8206A602269D0110065C818 /* AppDelegate+Extension.swift */,
 				E8206A612269D0110065C818 /* StandardType */,
@@ -304,6 +303,7 @@
 		E8206A502269D0110065C818 /* UIKit+Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E8E16330226D5A5B00996E7D /* UIStoryBoard+Extension.swift */,
 				E8206A512269D0110065C818 /* UIColor+Extension.swift */,
 				E8206A522269D0110065C818 /* TintView */,
 				E8206A552269D0110065C818 /* UILabel+Extension.swift */,
@@ -625,7 +625,7 @@
 				E8206A792269D0110065C818 /* Extension+Date.swift in Sources */,
 				E8206A772269D0110065C818 /* Timezone+Extension.swift in Sources */,
 				E8206A742269D0110065C818 /* Convert+Date.swift in Sources */,
-				E8E16331226D5A5B00996E7D /* StoryBoard+Extension.swift in Sources */,
+				E8E16331226D5A5B00996E7D /* UIStoryBoard+Extension.swift in Sources */,
 				E8206A892269D0110065C818 /* Extension+UIViewController.swift in Sources */,
 				E8206A842269D0110065C818 /* ExampleFileNames.swift in Sources */,
 				E8206A902269D0110065C818 /* NSCache+Extension.swift in Sources */,
