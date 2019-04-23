@@ -19,4 +19,7 @@ extension Int{
     func convetToLeadingZeroString() -> String{
         return String(format: "%02d", self)
     }
+    func convertToString() -> String {
+        return String(self)
+    }
 }

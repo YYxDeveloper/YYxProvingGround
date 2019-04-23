@@ -43,6 +43,9 @@ struct YYxErrorHandler {
     static func addAseert(erroTyperMsg:ErroTyperMsg)  {
         assert(true, YYxErrorHandler.giveMeTroubleLocation(erroTyperMsg.rawValue))
     }
+    static func printTestLog(withMark:String = "$$",witchStep:Int){
+         Swift.print(withMark + witchStep.convertToString() + withMark)
+    }
     
 
 }
