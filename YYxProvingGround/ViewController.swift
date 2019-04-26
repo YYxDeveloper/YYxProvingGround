@@ -9,26 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
-     func giveMeCurrentGreenwichDateString(format:String) -> String{
-       
-        
-        
-        
-        return DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: format).string(from: Date())
-    }
-    @IBOutlet weak var horizontalSliderContainerView: UIView!
+    @IBOutlet weak var turnBtn: UIButton!
+    @IBOutlet weak var containerView: UIView!
+    var sideBar:SideBar?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         aa()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        
     }
     
     func aa()  {
-      let aa = CookingTimer()
-        aa.start()
-    
-        
+      self.sideBar =  SideBar(containerView: containerView, parentViewController: self, BundleButton: turnBtn)
+       
+        self.sideBar!.isLoading.addObserver { [weak self] (isLoading) in
+            if isLoading {
+                self?.containerView.frame.origin.x = -20
+            } else {
+                
+            }
+        }
     }
+    @IBAction func turn(_ sender: Any) {
+        sideBar?.turn()
+    }
+    
+    
 
 }
-
+extension Int{
+   
+}

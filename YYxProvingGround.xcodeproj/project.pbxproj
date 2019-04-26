@@ -67,6 +67,7 @@
 		E84FC7002272EDE00094D4C4 /* StandardTypeUnwrappedable+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6C42272EDE00094D4C4 /* StandardTypeUnwrappedable+Protocol.swift */; };
 		E84FC7012272EDE00094D4C4 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6C52272EDE00094D4C4 /* CGFloat+Extension.swift */; };
 		E84FC7022272EDE00094D4C4 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6C62272EDE00094D4C4 /* Array+Extension.swift */; };
+		E84FC70522730B2A0094D4C4 /* SidBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC70422730B2A0094D4C4 /* SidBar.swift */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
 		E879C1B622421012006904A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B522421012006904A5 /* ViewController.swift */; };
 		E879C1B922421012006904A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1B722421012006904A5 /* Main.storyboard */; };
@@ -155,6 +156,7 @@
 		E84FC6C42272EDE00094D4C4 /* StandardTypeUnwrappedable+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StandardTypeUnwrappedable+Protocol.swift"; sourceTree = "<group>"; };
 		E84FC6C52272EDE00094D4C4 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		E84FC6C62272EDE00094D4C4 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		E84FC70422730B2A0094D4C4 /* SidBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidBar.swift; sourceTree = "<group>"; };
 		E879C1B022421012006904A5 /* YYxProvingGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxProvingGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1B322421012006904A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E879C1B522421012006904A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				E84FC6892272EDE00094D4C4 /* Extension+NSPredicate.swift */,
 				E84FC68A2272EDE00094D4C4 /* FileManager+Extension.swift */,
 				E84FC68B2272EDE00094D4C4 /* YYxInfo.txt */,
+				E84FC70322730B0F0094D4C4 /* SideBar */,
 				E84FC68C2272EDE00094D4C4 /* HorizontalSlider */,
 				E84FC6932272EDE00094D4C4 /* TestExampleDatas */,
 				E84FC6972272EDE00094D4C4 /* ToolBoxStoryboard */,
@@ -381,6 +384,14 @@
 				E84FC6C32272EDE00094D4C4 /* String+Convert.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		E84FC70322730B0F0094D4C4 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				E84FC70422730B2A0094D4C4 /* SidBar.swift */,
+			);
+			path = SideBar;
 			sourceTree = "<group>";
 		};
 		E879C1A722421012006904A5 = {
@@ -625,6 +636,7 @@
 				E84FC6CD2272EDE00094D4C4 /* DateFormatter+Extension.swift in Sources */,
 				E84FC6CF2272EDE00094D4C4 /* Timezone+Extension.swift in Sources */,
 				E84FC6FA2272EDE00094D4C4 /* Double+Extension.swift in Sources */,
+				E84FC70522730B2A0094D4C4 /* SidBar.swift in Sources */,
 				E84FC6CA2272EDE00094D4C4 /* Convert+Date.swift in Sources */,
 				E84FC6DF2272EDE00094D4C4 /* Extension+UIViewController.swift in Sources */,
 				E84FC6DA2272EDE00094D4C4 /* ExampleFileNames.swift in Sources */,

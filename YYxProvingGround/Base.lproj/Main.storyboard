@@ -18,24 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twp-He-wVZ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.81568627449999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChX-Ii-k7S">
+                                <rect key="frame" x="164.5" y="20" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="IdB-v8-377"/>
+                                    <constraint firstAttribute="width" constant="46" id="EFC-Zv-wpZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="nnk-Pk-dmW"/>
                                 </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="turn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPa-Qq-o2A"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6i1-5e-wqM">
+                                <rect key="frame" x="5" y="60" width="365" height="607"/>
+                                <color key="backgroundColor" red="1" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="twp-He-wVZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2UZ-AE-5xr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="twp-He-wVZ" secondAttribute="trailing" id="5QS-1N-NN1"/>
-                            <constraint firstItem="twp-He-wVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i26-TM-qoI"/>
+                            <constraint firstItem="6i1-5e-wqM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="7zD-cJ-qpa"/>
+                            <constraint firstItem="6i1-5e-wqM" firstAttribute="top" secondItem="ChX-Ii-k7S" secondAttribute="bottom" constant="10" id="8xb-6X-JRO"/>
+                            <constraint firstItem="ChX-Ii-k7S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I1R-VF-zNS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6i1-5e-wqM" secondAttribute="bottom" id="OXu-tV-8Mv"/>
+                            <constraint firstItem="ChX-Ii-k7S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f8f-Jo-pXu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6i1-5e-wqM" secondAttribute="trailing" constant="5" id="sNa-no-fEa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="horizontalSliderContainerView" destination="twp-He-wVZ" id="yI9-ci-KFY"/>
+                        <outlet property="containerView" destination="6i1-5e-wqM" id="x3G-ck-nub"/>
+                        <outlet property="turnBtn" destination="ChX-Ii-k7S" id="zrP-hl-fCD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
