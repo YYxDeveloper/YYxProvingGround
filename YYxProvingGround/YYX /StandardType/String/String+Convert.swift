@@ -8,6 +8,7 @@
 
 import Foundation
 extension String{
+     //MARK: Convert Date
     func convertToCurrentDate(format:String) -> Date {
         let currentString = self.convertToGreenwichStamp(format: format).convertStampToCurrentString(dateFormat: format)
         let formatter = DateFormatter.giveMeGreenwichOriginDateFormatter(dateFormate: format)
@@ -19,6 +20,15 @@ extension String{
         
         return localDateFormatter.date(from: self) ?? Date()
     }
+    //MARK: Convert Number Value
+    func convertToDouble() -> Double {
+        return Double(self) ?? Double.defaultValue
+    }
+    func convertToFloat() -> Float {
+        return Float(self) ?? Float.defaultValue
+    }
+    
+    
 }
 
 extension String{
