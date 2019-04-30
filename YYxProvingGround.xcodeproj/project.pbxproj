@@ -203,6 +203,7 @@
 		E84FC67B2272EDE00094D4C4 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
+				E8AC197F2277EE1A00538C5A /* Custom UIView */,
 				E8AC197A2277EBF700538C5A /* CALayer */,
 				E84FC67C2272EDE00094D4C4 /* constant.swift */,
 				E84FC67D2272EDE00094D4C4 /* Global.swift */,
@@ -320,7 +321,6 @@
 			isa = PBXGroup;
 			children = (
 				E84FC6A62272EDE00094D4C4 /* UIColor+Extension.swift */,
-				E84FC6A72272EDE00094D4C4 /* TintView */,
 				E84FC6AA2272EDE00094D4C4 /* UILabel+Extension.swift */,
 				E84FC6AB2272EDE00094D4C4 /* UIButton+Extension.swift */,
 				E84FC6AC2272EDE00094D4C4 /* Extension+UINavigationController.swift */,
@@ -461,9 +461,17 @@
 		E8AC197B2277EC1B00538C5A /* Custom Shape */ = {
 			isa = PBXGroup;
 			children = (
-				E8AC197C2277EC3100538C5A /* ProgressingDashedLineCircleView.swift */,
 			);
 			path = "Custom Shape";
+			sourceTree = "<group>";
+		};
+		E8AC197F2277EE1A00538C5A /* Custom UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E8AC197C2277EC3100538C5A /* ProgressingDashedLineCircleView.swift */,
+				E84FC6A72272EDE00094D4C4 /* TintView */,
+			);
+			path = "Custom UIView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
