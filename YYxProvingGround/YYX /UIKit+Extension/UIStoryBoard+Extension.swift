@@ -12,5 +12,7 @@ extension UIStoryboard{
     static func giveMeMainStoryboard() -> UIStoryboard{
         return  UIStoryboard(name: "Main", bundle: nil)
     }
-    
+    static func giveMeStoryBoard(storyBoardId:String) -> UIStoryboard{
+       return UIStoryboard(name: storyBoardId, bundle: nil)
+    }
 }

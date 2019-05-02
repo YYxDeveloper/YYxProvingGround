@@ -77,6 +77,7 @@
 		E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1CB22421013006904A5 /* YYxProvingGroundTests.swift */; };
 		E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1D622421013006904A5 /* YYxProvingGroundUITests.swift */; };
 		E89324F2227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89324F1227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift */; };
+		E89324F4227A95D400064706 /* IndexPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89324F3227A95D400064706 /* IndexPath+Extension.swift */; };
 		E8AC197D2277EC3100538C5A /* ProgressingDashedLineCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AC197C2277EC3100538C5A /* ProgressingDashedLineCircleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +175,7 @@
 		E879C1D622421013006904A5 /* YYxProvingGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxProvingGroundUITests.swift; sourceTree = "<group>"; };
 		E879C1D822421013006904A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E89324F1227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Extension.swift"; sourceTree = "<group>"; };
+		E89324F3227A95D400064706 /* IndexPath+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+Extension.swift"; sourceTree = "<group>"; };
 		E8AC197C2277EC3100538C5A /* ProgressingDashedLineCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressingDashedLineCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +222,7 @@
 				E84FC6972272EDE00094D4C4 /* ToolBoxStoryboard */,
 				E84FC69C2272EDE00094D4C4 /* UIViewController+Extension */,
 				E84FC6A12272EDE00094D4C4 /* CookingTimer.swift */,
+				E89324F3227A95D400064706 /* IndexPath+Extension.swift */,
 				E84FC6A22272EDE00094D4C4 /* UIScrollView+Extension.swift */,
 				E84FC6A32272EDE00094D4C4 /* YYxErrorHandler.swift */,
 				E84FC6A42272EDE00094D4C4 /* NSCache+Extension.swift */,
@@ -665,6 +668,7 @@
 				E89324F2227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				E84FC6E32272EDE00094D4C4 /* CookingTimer.swift in Sources */,
 				E84FC6EC2272EDE00094D4C4 /* Extension+UINavigationController.swift in Sources */,
+				E89324F4227A95D400064706 /* IndexPath+Extension.swift in Sources */,
 				E84FC6DB2272EDE00094D4C4 /* ToolBoxManager.swift in Sources */,
 				E84FC6F02272EDE00094D4C4 /* UIStoryBoard+Extension.swift in Sources */,
 				E84FC6F22272EDE00094D4C4 /* Animation+UIView.swift in Sources */,
