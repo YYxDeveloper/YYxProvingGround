@@ -76,6 +76,7 @@
 		E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E879C1BF22421013006904A5 /* LaunchScreen.storyboard */; };
 		E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1CB22421013006904A5 /* YYxProvingGroundTests.swift */; };
 		E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1D622421013006904A5 /* YYxProvingGroundUITests.swift */; };
+		E89324F2227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89324F1227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift */; };
 		E8AC197D2277EC3100538C5A /* ProgressingDashedLineCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AC197C2277EC3100538C5A /* ProgressingDashedLineCircleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +173,7 @@
 		E879C1D222421013006904A5 /* YYxProvingGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYxProvingGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1D622421013006904A5 /* YYxProvingGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxProvingGroundUITests.swift; sourceTree = "<group>"; };
 		E879C1D822421013006904A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E89324F1227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Extension.swift"; sourceTree = "<group>"; };
 		E8AC197C2277EC3100538C5A /* ProgressingDashedLineCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressingDashedLineCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +233,7 @@
 		E84FC67E2272EDE00094D4C4 /* UICollectionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E89324F0227A81B700064706 /* UICollectionViewFlowLayout+Extension */,
 				E84FC67F2272EDE00094D4C4 /* UICollectionView */,
 			);
 			path = UICollectionViewController;
@@ -450,6 +453,14 @@
 			path = YYxProvingGroundUITests;
 			sourceTree = "<group>";
 		};
+		E89324F0227A81B700064706 /* UICollectionViewFlowLayout+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E89324F1227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift */,
+			);
+			path = "UICollectionViewFlowLayout+Extension";
+			sourceTree = "<group>";
+		};
 		E8AC197A2277EBF700538C5A /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,6 +662,7 @@
 				E84FC6E22272EDE00094D4C4 /* Alert+UIViewController.swift in Sources */,
 				E84FC6D02272EDE00094D4C4 /* Extension+NSPredicate.swift in Sources */,
 				E84FC6C72272EDE00094D4C4 /* constant.swift in Sources */,
+				E89324F2227A821C00064706 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				E84FC6E32272EDE00094D4C4 /* CookingTimer.swift in Sources */,
 				E84FC6EC2272EDE00094D4C4 /* Extension+UINavigationController.swift in Sources */,
 				E84FC6DB2272EDE00094D4C4 /* ToolBoxManager.swift in Sources */,

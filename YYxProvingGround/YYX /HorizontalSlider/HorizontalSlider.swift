@@ -11,16 +11,15 @@ import UIKit
 class HorizontalSlider: UICollectionViewController {
     // refer: https://ithelp.ithome.com.tw/articles/10197250?sc=iThelpR
     let cellId = "HorizontalSliderCell"
-    let horizontalModel = 1
+    let horizontalModel = 1;
+
+    /**
+     parentView hight  must smaller than CategoryVerticalColumnCell.cellH
+     */
     static  func giveMeHorizontalSlider() -> HorizontalSlider {
         let emptyFlowlayout = UICollectionViewFlowLayout()
         return HorizontalSlider(collectionViewLayout: emptyFlowlayout)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
-    }
-    
    
     func setupHorizontalSlider()  {
         collectionView?.register(CategoryVerticalColumnCell.self, forCellWithReuseIdentifier: cellId)
@@ -45,7 +44,12 @@ extension HorizontalSlider:UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
+        let w = view.frame.width.convertInt()
+        guard   w <= CategoryVerticalColumnCell.cellW else {
+            assertionFailure("------error following-----")
+            YYxErrorHandler.printGuardFail()
+            return CGSize()
+        }
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
    

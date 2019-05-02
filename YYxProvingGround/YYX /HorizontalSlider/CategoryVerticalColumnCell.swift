@@ -13,8 +13,8 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     
     
     let cellId = "CategoryHorizenTalRowCell"
-    let cellH = 70
-    let cellW = 70
+    static let cellH = 70
+    static let cellW = 70
     var datas: [CategoryVerticalColumnModel]?
     
     static func giveMeTestDatas()->[CategoryVerticalColumnModel]{
@@ -84,7 +84,7 @@ class CategoryVerticalColumnCell: UICollectionViewCell, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //yyx
-        return CGSize(width: self.cellW, height: self.cellH)
+        return CGSize(width: CategoryVerticalColumnCell.cellW, height: CategoryVerticalColumnCell.cellH)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

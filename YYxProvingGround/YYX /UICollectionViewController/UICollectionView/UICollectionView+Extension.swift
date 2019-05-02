@@ -30,5 +30,8 @@ extension UICollectionView{
         
         return cell
     }
+    func checkParentViewWidthIsSmallerThanCellHeight()  {
+        
+    }
     
 }
