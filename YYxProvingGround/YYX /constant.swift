@@ -8,17 +8,15 @@
 
 import Foundation
 import UIKit
-class constant {
-   
-    static let TRUE1 = 1
-    static let RGB_MAX:CGFloat = 255
-    
-    //MARK: - About 0
-    static let zero:Int = 0
-    static let ZERO_STR = "0"
-    static let FALES0 = 0
-    static let zeroPoint = CGPoint(x: 0, y: 0)
-     //MARK: - About Empty
-    static let EMPTY_STR = ""
-    static let ABLANK_STR = " "
-}
+
+ let TRUE1 = 1
+ let RGB_MAX:CGFloat = 255
+
+//MARK: - About 0
+ let IntZero:Int = 0
+ let FloatZero = 0.0
+ let ZERO_STR = "0"
+ let FALES0 = 0
+//MARK: - About Empty
+ let EMPTY_STR = ""
+ let ABLANK_STR = " "

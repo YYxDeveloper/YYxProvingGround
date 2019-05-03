@@ -8,6 +8,9 @@
 
 import Foundation
 class CookingTimer {
+    
+    let countingTime = Observable<(String,Double)>(value: (CookingTimer.atFirstTimeString,0.0))
+    
     let sixtyConst = 60
     var isStarted = false
     var theTimer : Timer?
@@ -15,10 +18,10 @@ class CookingTimer {
     var second          = 0
     var min             = 0
     var hour            = 0
+    var totalSec        = 0.0
     
     static let atFirstTimeString = "00:00:00"
-    lazy var currentTimeString  = "\(hour.convetToLeadingZeroString()):\(min.convetToLeadingZeroString()):\(second.convetToLeadingZeroString())"
-    
+  
     
     func reset() {
         isStarted = false
@@ -28,7 +31,6 @@ class CookingTimer {
         min         = 0
         hour        = 0
         
-        currentTimeString = CookingTimer.atFirstTimeString
         
     }
     func pause() {
@@ -45,8 +47,10 @@ class CookingTimer {
            
              milSec = milSec + 1
             if milSec == 99 {
+                totalSec = totalSec + 1
                 second = second + 1
                 milSec = 0
+                
             }
             if second == 60 {
                min = min + 1
@@ -58,8 +62,9 @@ class CookingTimer {
             }
         }
         func showTheTime_1(){
-            currentTimeString =  "\(hour.convetToLeadingZeroString()):\(min.convetToLeadingZeroString()):\(second.convetToLeadingZeroString()):\(milSec.convetToLeadingZeroString())"
-            print(currentTimeString)
+           let countStr = "\(hour.convetToLeadingZeroString()):\(min.convetToLeadingZeroString()):\(second.convetToLeadingZeroString()):\(milSec.convetToLeadingZeroString())"
+            self.countingTime.value = (countStr,totalSec)
+//            print(currentTimeString)
         }
         showTheTime_1()
         calculateTime_2()

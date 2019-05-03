@@ -74,7 +74,7 @@ extension Date{
             return DayName.Sat.rawValue
         default:
             YYxErrorHandler.addAseert(erroTyperMsg:.OptionalError)
-            return constant.EMPTY_STR
+            return EMPTY_STR
         }
     
     

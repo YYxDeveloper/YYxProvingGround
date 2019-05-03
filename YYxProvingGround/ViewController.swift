@@ -12,43 +12,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     var sideBar:SideBar?
+    var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        aa()
-       
+       gg()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
     }
-    
-    func cc() {
-        let border: CAShapeLayer = CAShapeLayer()
-        //線的顏色
-        border.strokeColor = UIColor.black.cgColor
-        //設置填充色
-        border.fillColor = UIColor.darkGray.cgColor
-        //虛線大小
-        border.lineDashPattern = [3,3]
-        //添加到layer
-        self.view.layer.addSublayer(border)
-        
-        let path = UIBezierPath()
-        // 添加路徑[1條點(100,100)到點(200,100)的線段]到path
-        path.move(to: CGPoint(x:50, y:100))
-        path.addLine(to: CGPoint(x:50, y:200))
-        //添加路徑3
-        border.path = path.cgPath
-        
-        let bezierAnimation = CABasicAnimation.init(keyPath: "strokeEnd")
-        bezierAnimation.duration = 3
-        bezierAnimation.fromValue = 0
-        bezierAnimation.toValue = 1
-        bezierAnimation.isRemovedOnCompletion = false
-        
-        border.add(bezierAnimation, forKey: nil)
-        containerView.layer.addSublayer(border)
+    func gg()  {
+        self.cookingTimer.start()
+        self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in
+            print("!!\(timeStr)")
+             print("!!@\(sec)")
+            
+            
+        }
     }
     func aa()  {
       self.sideBar =  SideBar(containerView: containerView, parentViewController: self, BundleButton: turnBtn)
@@ -56,6 +37,8 @@ class ViewController: UIViewController {
         self.sideBar!.isLoading.addObserver { [weak self] (isLoading) in
             self?.containerView.frame.origin.x = isLoading == true ? -20:0
         }
+        
+    
     }
     @IBAction func turn(_ sender: Any) {
         sideBar?.turn()
@@ -63,7 +46,4 @@ class ViewController: UIViewController {
     
     
 
-}
-extension Int{
-   
 }

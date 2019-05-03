@@ -9,6 +9,15 @@
 import Foundation
 import UIKit
 extension UIView{
+    var isSquare:Bool{
+        return self.width == self.height ? true : false
+    }
+    var height:CGFloat{
+        return self.frame.size.height
+    }
+    var width:CGFloat{
+        return self.frame.size.width
+    }
     var firstSuperView:UIView{
         if let theSuperView = self.superview {
             return theSuperView
@@ -46,7 +55,14 @@ extension UIView{
         return theView
     }
     func becomeCircle() {
-        self.layer.cornerRadius = self.frame.height / 2
+        self.layer.cornerRadius = self.height / 2
+    }
+    func addCircleLayer(strokeColor:UIColor,anitmation:Bool,duration:Double?) {
+        let layer = CAShapeLayer.giveMeCircleLayer(addView: self, strokeColor: strokeColor)
+        if anitmation {
+            layer.addStrokeEndAnimation(duration: duration!)
+        }
+        self.layer.addSublayer(layer)
     }
     
 }

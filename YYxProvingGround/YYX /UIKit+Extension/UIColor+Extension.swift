@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 extension UIColor{
     static func giveRGBColor(red:CGFloat,green:CGFloat,blue:CGFloat,opcity:Double)->UIColor{
-        return UIColor(red: red/constant.RGB_MAX, green: green/constant.RGB_MAX, blue: blue/constant.RGB_MAX, alpha: 0.3)
+        return UIColor(red: red/RGB_MAX, green: green/RGB_MAX, blue: blue/RGB_MAX, alpha: 0.3)
     }
     func convertColorToImage() -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)

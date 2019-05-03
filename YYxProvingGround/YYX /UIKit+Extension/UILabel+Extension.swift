@@ -11,7 +11,7 @@ import UIKit
 
 extension UILabel{
     var fontWidth:CGFloat{
-        let count = CGFloat((self.text?.count ?? constant.zero))
+        let count = CGFloat((self.text?.count ?? IntZero))
         let fontSize = self.font.pointSize
         return count * fontSize
     }

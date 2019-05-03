@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C26C6C63227BE8C4008E32CB /* CAShapeLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */; };
+		C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */; };
 		E84FC6C72272EDE00094D4C4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67C2272EDE00094D4C4 /* constant.swift */; };
 		E84FC6C82272EDE00094D4C4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67D2272EDE00094D4C4 /* Global.swift */; };
 		E84FC6C92272EDE00094D4C4 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6802272EDE00094D4C4 /* UICollectionView+Extension.swift */; };
@@ -99,6 +101,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Extension.swift"; sourceTree = "<group>"; };
+		C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
 		E84FC67C2272EDE00094D4C4 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		E84FC67D2272EDE00094D4C4 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		E84FC6802272EDE00094D4C4 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
@@ -467,16 +471,10 @@
 		E8AC197A2277EBF700538C5A /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
-				E8AC197B2277EC1B00538C5A /* Custom Shape */,
+				C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */,
+				C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */,
 			);
 			path = CALayer;
-			sourceTree = "<group>";
-		};
-		E8AC197B2277EC1B00538C5A /* Custom Shape */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Custom Shape";
 			sourceTree = "<group>";
 		};
 		E8AC197F2277EE1A00538C5A /* Custom UIView */ = {
@@ -638,6 +636,7 @@
 				E84FC6CC2272EDE00094D4C4 /* Extension+Date.swift in Sources */,
 				E84FC6EF2272EDE00094D4C4 /* UITableViewCell+Extension.swift in Sources */,
 				E84FC6F42272EDE00094D4C4 /* UINib+Extension.swift in Sources */,
+				C26C6C63227BE8C4008E32CB /* CAShapeLayer+Extension.swift in Sources */,
 				E84FC6EE2272EDE00094D4C4 /* Extension+UITextField.swift in Sources */,
 				E84FC6F92272EDE00094D4C4 /* Substring+Extension.swift in Sources */,
 				E84FC6ED2272EDE00094D4C4 /* Extension+UITableView.swift in Sources */,
@@ -657,6 +656,7 @@
 				E84FC6E52272EDE00094D4C4 /* YYxErrorHandler.swift in Sources */,
 				E84FC7022272EDE00094D4C4 /* Array+Extension.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
+				C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */,
 				E84FC6D32272EDE00094D4C4 /* CategoryVerticalColumnModel.swift in Sources */,
 				E84FC6FC2272EDE00094D4C4 /* numeric.swift in Sources */,
 				E879C1B422421012006904A5 /* AppDelegate.swift in Sources */,
