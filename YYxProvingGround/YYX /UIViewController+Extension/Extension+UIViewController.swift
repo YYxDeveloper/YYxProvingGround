@@ -25,6 +25,21 @@ extension UIViewController{
         self.addChild(addSubViewController)
         toWitchView.addSubview(addSubViewController.view)
     }
+    func addToolBoxStaticTableViewController(toWitchView:UIView,toolBoxVCType:ToolBoxManager.witchTypeViewController)  {
+        
+        switch toolBoxVCType {
+        case .ToolBoxViewController:
+            let aa = ToolBoxManager.giveMeToolBoxViewController()
+            self.addSubViewWithChildController(addSubViewController: aa, toWitchView: toWitchView)
+        case .StaticTableViewController:
+            let aa = ToolBoxManager.giveMeStaticTableViewController()
+            self.addSubViewWithChildController(addSubViewController: aa, toWitchView: toWitchView)
+        case .StaticCollectionViewController:
+            //還沒做,but seem can,t do that
+            break
+        }
+      
+    }
     func addHorizontalSliderWithHeigh50(toWitchView:UIView) {
         let horizontalSlider = HorizontalSlider.giveMeHorizontalSlider()
         horizontalSlider.setupHorizontalSlider()

@@ -16,16 +16,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //       gg()
-        dd()
+//        dd()
+        uu()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
     }
     func uu()  {
-      let aa = ToolBoxManager.giveMeStaticTableViewController(witchTypeViewController: .StaticTableViewController)
-        
+        self.addToolBoxStaticTableViewController(toWitchView: self.view, toolBoxVCType: .ToolBoxViewController)
     }
+  
     func dd() {
         containerView.addCircleLayer(strokeColor: .blue, anitmation: true, duration: 5)
     }

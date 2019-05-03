@@ -16,21 +16,21 @@ class ToolBoxManager {
         case StaticCollectionViewController
     }
     static let storyboardID = "ToolBox"
-    static func giveMeStaticTableViewController(witchTypeViewController:witchTypeViewController) -> UITableViewController{
-        if let tableViewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.rawValue) as? UITableViewController{
+    static func giveMeStaticTableViewController() -> UITableViewController{
+        if let tableViewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.StaticTableViewController.rawValue) as? UITableViewController{
             return tableViewController
         }else{
             YYxErrorHandler.printOptionFail()
             return UITableViewController()
         }
     }
-//    static func giveMeStaticCollectionViewController(witchTypeViewController:witchTypeViewController) -> uicollecvewc{
-//        if let tableViewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.rawValue) as? UITableViewController{
-//            return tableViewController
-//        }else{
-//            YYxErrorHandler.printOptionFail()
-//            return UITableViewController()
-//        }
-//        
-//    }
+    static func giveMeToolBoxViewController() -> UIViewController{
+        if let viewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.ToolBoxViewController.rawValue) as? UIViewController{
+            return viewController
+        }else{
+            YYxErrorHandler.printOptionFail()
+            return UIViewController()
+        }
+    }
+
 }

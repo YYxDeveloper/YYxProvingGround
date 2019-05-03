@@ -15,7 +15,7 @@ class SideBar{
     let isLoading = Observable<Bool>(value: false)
     let isTableViewHidden = Observable<Bool>(value: false)
     
-    private let vc = ToolBoxManager.giveMeStaticTableViewController(witchTypeViewController: .StaticTableViewController)
+    private let vc = ToolBoxManager.giveMeStaticTableViewController()
     let containerView:UIView
     let tableView:UITableView
    
