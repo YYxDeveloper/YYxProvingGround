@@ -16,6 +16,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         aa()
+       
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
+    func cc() {
         let border: CAShapeLayer = CAShapeLayer()
         //線的顏色
         border.strokeColor = UIColor.black.cgColor
@@ -42,24 +50,12 @@ class ViewController: UIViewController {
         border.add(bezierAnimation, forKey: nil)
         containerView.layer.addSublayer(border)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
-    
-    func cc() {
-        
-    }
     func aa()  {
-//      self.sideBar =  SideBar(containerView: containerView, parentViewController: self, BundleButton: turnBtn)
-//
-//        self.sideBar!.isLoading.addObserver { [weak self] (isLoading) in
-//            if isLoading {
-//                self?.containerView.frame.origin.x = -20
-//            } else {
-//
-//            }
-//        }
+      self.sideBar =  SideBar(containerView: containerView, parentViewController: self, BundleButton: turnBtn)
+
+        self.sideBar!.isLoading.addObserver { [weak self] (isLoading) in
+            self?.containerView.frame.origin.x = isLoading == true ? -20:0
+        }
     }
     @IBAction func turn(_ sender: Any) {
         sideBar?.turn()
