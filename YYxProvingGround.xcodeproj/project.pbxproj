@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2458415227C320E001D4656 /* StaticCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2458414227C320E001D4656 /* StaticCollectionViewController.swift */; };
 		C26C6C63227BE8C4008E32CB /* CAShapeLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */; };
 		C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */; };
 		E84FC6C72272EDE00094D4C4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67C2272EDE00094D4C4 /* constant.swift */; };
@@ -101,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2458414227C320E001D4656 /* StaticCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticCollectionViewController.swift; sourceTree = "<group>"; };
 		C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Extension.swift"; sourceTree = "<group>"; };
 		C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
 		E84FC67C2272EDE00094D4C4 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				E84FC6982272EDE00094D4C4 /* ToolBoxManager.swift */,
 				E84FC6992272EDE00094D4C4 /* ToolBoxViewController.swift */,
 				E84FC69A2272EDE00094D4C4 /* StaticTableViewController.swift */,
+				C2458414227C320E001D4656 /* StaticCollectionViewController.swift */,
 				E84FC69B2272EDE00094D4C4 /* ToolBox.storyboard */,
 			);
 			path = ToolBoxStoryboard;
@@ -641,6 +644,7 @@
 				E84FC6F92272EDE00094D4C4 /* Substring+Extension.swift in Sources */,
 				E84FC6ED2272EDE00094D4C4 /* Extension+UITableView.swift in Sources */,
 				E84FC6F62272EDE00094D4C4 /* Data+Convert.swift in Sources */,
+				C2458415227C320E001D4656 /* StaticCollectionViewController.swift in Sources */,
 				E84FC6DC2272EDE00094D4C4 /* ToolBoxViewController.swift in Sources */,
 				E84FC6CE2272EDE00094D4C4 /* GreenwichDateConverter.swift in Sources */,
 				E84FC6F72272EDE00094D4C4 /* Int+Extension.swift in Sources */,

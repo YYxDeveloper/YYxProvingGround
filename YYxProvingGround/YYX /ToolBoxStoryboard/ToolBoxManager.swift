@@ -13,6 +13,7 @@ class ToolBoxManager {
     enum witchTypeViewController :String{
         case StaticTableViewController
         case ToolBoxViewController
+        case StaticCollectionViewController
     }
     static let storyboardID = "ToolBox"
     static func giveMeStaticTableViewController(witchTypeViewController:witchTypeViewController) -> UITableViewController{
@@ -23,4 +24,13 @@ class ToolBoxManager {
             return UITableViewController()
         }
     }
+//    static func giveMeStaticCollectionViewController(witchTypeViewController:witchTypeViewController) -> uicollecvewc{
+//        if let tableViewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.rawValue) as? UITableViewController{
+//            return tableViewController
+//        }else{
+//            YYxErrorHandler.printOptionFail()
+//            return UITableViewController()
+//        }
+//        
+//    }
 }

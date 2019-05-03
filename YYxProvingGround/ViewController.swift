@@ -15,18 +15,25 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-       gg()
-        
+//       gg()
+        dd()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
     }
+    func uu()  {
+      let aa = ToolBoxManager.giveMeStaticTableViewController(witchTypeViewController: .StaticTableViewController)
+        
+    }
+    func dd() {
+        containerView.addCircleLayer(strokeColor: .blue, anitmation: true, duration: 5)
+    }
     func gg()  {
         self.cookingTimer.start()
         self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in
-            print("!!\(timeStr)")
-             print("!!@\(sec)")
+//            print("!!\(timeStr)")
+//             print("!!@\(sec)")
             
             
         }
