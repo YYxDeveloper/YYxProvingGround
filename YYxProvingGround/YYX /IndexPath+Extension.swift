@@ -10,6 +10,11 @@ import Foundation
 
 extension IndexPath{
     func isOutOfArrayRange(withcArray:Array<Any>) -> Bool {
-        return self.row > withcArray.count ? true : false
+        if self.row > withcArray.count {
+            assertionFailure()
+            return true
+        }else{
+            return false
+        }
     }
 }
