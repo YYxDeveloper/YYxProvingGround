@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 //       gg()
 //        dd()
 //        uu()
-        ll()
+//        ll()
     }
     
     override func viewWillAppear(_ animated: Bool) {
