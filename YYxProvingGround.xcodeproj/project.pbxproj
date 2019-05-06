@@ -227,15 +227,31 @@
 		C23606E92280004F00EEFFFE /* PageViewController+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C23606F12280008B00EEFFFE /* FirstPageViewController.swift */,
+				C2A0887D22800E9F00CF4595 /* BasicPageViewController */,
 				C23606F62280014400EEFFFE /* PageViewController+Extension.swift */,
-				C23606EE2280008A00EEFFFE /* PageContainerViewController.swift */,
-				C23606EF2280008B00EEFFFE /* SecondPageViewController.swift */,
-				C23606F02280008B00EEFFFE /* ThirdPageViewController.swift */,
-				C23606EC2280008300EEFFFE /* PageViewController.swift */,
-				C23606EA2280007900EEFFFE /* PageViewController.storyboard */,
 			);
 			path = "PageViewController+Extension";
+			sourceTree = "<group>";
+		};
+		C2A0887C22800E7300CF4595 /* SubViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C23606F12280008B00EEFFFE /* FirstPageViewController.swift */,
+				C23606EF2280008B00EEFFFE /* SecondPageViewController.swift */,
+				C23606F02280008B00EEFFFE /* ThirdPageViewController.swift */,
+			);
+			path = SubViewControllers;
+			sourceTree = "<group>";
+		};
+		C2A0887D22800E9F00CF4595 /* BasicPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0887C22800E7300CF4595 /* SubViewControllers */,
+				C23606EC2280008300EEFFFE /* PageViewController.swift */,
+				C23606EE2280008A00EEFFFE /* PageContainerViewController.swift */,
+				C23606EA2280007900EEFFFE /* PageViewController.storyboard */,
+			);
+			path = BasicPageViewController;
 			sourceTree = "<group>";
 		};
 		E84FC67B2272EDE00094D4C4 /* YYX  */ = {
