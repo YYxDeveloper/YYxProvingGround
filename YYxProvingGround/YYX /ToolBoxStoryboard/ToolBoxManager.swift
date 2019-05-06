@@ -16,6 +16,9 @@ class ToolBoxManager {
         case StaticCollectionViewController
     }
     static let storyboardID = "ToolBox"
+    static func giveMeToolBoxStoryBoard() -> UIStoryboard{
+        return UIStoryboard.giveMeStoryBoard(storyBoardId: storyboardID)
+    }
     static func giveMeStaticTableViewController() -> UITableViewController{
         if let tableViewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.StaticTableViewController.rawValue) as? UITableViewController{
             return tableViewController
@@ -25,12 +28,8 @@ class ToolBoxManager {
         }
     }
     static func giveMeToolBoxViewController() -> UIViewController{
-        if let viewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.ToolBoxViewController.rawValue) as? UIViewController{
+        let viewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.ToolBoxViewController.rawValue)
             return viewController
-        }else{
-            YYxErrorHandler.printOptionFail()
-            return UIViewController()
-        }
     }
 
 }
