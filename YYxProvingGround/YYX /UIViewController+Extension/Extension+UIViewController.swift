@@ -26,18 +26,16 @@ extension UIViewController{
         toWitchView.addSubview(addSubViewController.view)
     }
     func addToolBoxStaticTableViewController(toWitchView:UIView,toolBoxVCType:ToolBoxManager.witchTypeViewController)  {
-        
+        var vc = UIViewController()
         switch toolBoxVCType {
         case .ToolBoxViewController:
-            let vc = ToolBoxManager.giveMeToolBoxViewController()
-            self.addSubViewWithChildController(addSubViewController: vc, toWitchView: toWitchView)
+             vc = ToolBoxManager.giveMeToolBoxViewController()
         case .StaticTableViewController:
-            let vc = ToolBoxManager.giveMeStaticTableViewController()
-            self.addSubViewWithChildController(addSubViewController: vc, toWitchView: toWitchView)
+             vc = ToolBoxManager.giveMeStaticTableViewController()
         case .StaticCollectionViewController:
-            //還沒做,but seem can,t do that
-            break
+             vc = ToolBoxManager.giveMeStaticCollectionViewController()
         }
+         self.addSubViewWithChildController(addSubViewController: vc, toWitchView: toWitchView)
       
     }
     func addDefaultPageViewController(witchView:UIView) {

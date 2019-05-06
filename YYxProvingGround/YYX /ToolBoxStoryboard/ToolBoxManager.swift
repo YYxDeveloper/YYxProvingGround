@@ -31,5 +31,15 @@ class ToolBoxManager {
         let viewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.ToolBoxViewController.rawValue)
             return viewController
     }
+    static func giveMeStaticCollectionViewController() -> UIViewController{
+//        if let cVC = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.StaticCollectionViewController.rawValue) {
+//            return cVC
+//        }else{
+//            YYxErrorHandler.printOptionFail()
+//            return UIViewController()
+//        }
+        let cVC = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.StaticCollectionViewController.rawValue) 
+        return cVC
+    }
 
 }

@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
     }
     func ll()  {
-       self.addDefaultPageViewController(witchView: containerView)
+       self.addToolBoxStaticTableViewController(toWitchView: view, toolBoxVCType: .StaticCollectionViewController)
     }
     func uu()  {
         self.addToolBoxStaticTableViewController(toWitchView: self.view, toolBoxVCType: .ToolBoxViewController)
