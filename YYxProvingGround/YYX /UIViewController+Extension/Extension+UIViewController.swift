@@ -29,11 +29,11 @@ extension UIViewController{
         
         switch toolBoxVCType {
         case .ToolBoxViewController:
-            let aa = ToolBoxManager.giveMeToolBoxViewController()
-            self.addSubViewWithChildController(addSubViewController: aa, toWitchView: toWitchView)
+            let vc = ToolBoxManager.giveMeToolBoxViewController()
+            self.addSubViewWithChildController(addSubViewController: vc, toWitchView: toWitchView)
         case .StaticTableViewController:
-            let aa = ToolBoxManager.giveMeStaticTableViewController()
-            self.addSubViewWithChildController(addSubViewController: aa, toWitchView: toWitchView)
+            let vc = ToolBoxManager.giveMeStaticTableViewController()
+            self.addSubViewWithChildController(addSubViewController: vc, toWitchView: toWitchView)
         case .StaticCollectionViewController:
             //還沒做,but seem can,t do that
             break
