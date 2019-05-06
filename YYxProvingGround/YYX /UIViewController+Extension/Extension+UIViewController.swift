@@ -40,6 +40,10 @@ extension UIViewController{
         }
       
     }
+    func addDefaultPageViewController(witchView:UIView) {
+        let pVC = UIPageViewController.giveMeAPageViewController()
+        self.addSubViewWithChildController(addSubViewController: pVC, toWitchView:witchView)
+    }
     func addHorizontalSliderWithHeigh50(toWitchView:UIView) {
         let horizontalSlider = HorizontalSlider.giveMeHorizontalSlider()
         horizontalSlider.setupHorizontalSlider()

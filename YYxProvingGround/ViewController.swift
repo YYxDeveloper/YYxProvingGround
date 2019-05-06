@@ -17,11 +17,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //       gg()
 //        dd()
-        uu()
+//        uu()
+        ll()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
+    }
+    func ll()  {
+       self.addDefaultPageViewController(witchView: containerView)
     }
     func uu()  {
         self.addToolBoxStaticTableViewController(toWitchView: self.view, toolBoxVCType: .ToolBoxViewController)
