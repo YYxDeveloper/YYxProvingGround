@@ -18,6 +18,7 @@
 		C26C6C63227BE8C4008E32CB /* CAShapeLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */; };
 		C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */; };
 		C26FDD5F228049A600A7997D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FDD5E228049A600A7997D /* Observable.swift */; };
+		C2FD8CCB228162B600282F1F /* OptionalType+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */; };
 		E84FC6C72272EDE00094D4C4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67C2272EDE00094D4C4 /* constant.swift */; };
 		E84FC6C82272EDE00094D4C4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67D2272EDE00094D4C4 /* Global.swift */; };
 		E84FC6C92272EDE00094D4C4 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6802272EDE00094D4C4 /* UICollectionView+Extension.swift */; };
@@ -121,6 +122,7 @@
 		C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Extension.swift"; sourceTree = "<group>"; };
 		C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
 		C26FDD5E228049A600A7997D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionalType+Protocol.swift"; sourceTree = "<group>"; };
 		E84FC67C2272EDE00094D4C4 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		E84FC67D2272EDE00094D4C4 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		E84FC6802272EDE00094D4C4 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				E8AC197F2277EE1A00538C5A /* Custom UIView */,
 				E8AC197A2277EBF700538C5A /* CALayer */,
 				E84FC67C2272EDE00094D4C4 /* constant.swift */,
+				C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */,
 				E84FC67D2272EDE00094D4C4 /* Global.swift */,
 				E84FC67E2272EDE00094D4C4 /* UICollectionViewController */,
 				E84FC6812272EDE00094D4C4 /* Date */,
@@ -694,6 +697,7 @@
 				C26C6C63227BE8C4008E32CB /* CAShapeLayer+Extension.swift in Sources */,
 				E84FC6EE2272EDE00094D4C4 /* Extension+UITextField.swift in Sources */,
 				E84FC6F92272EDE00094D4C4 /* Substring+Extension.swift in Sources */,
+				C2FD8CCB228162B600282F1F /* OptionalType+Protocol.swift in Sources */,
 				E84FC6ED2272EDE00094D4C4 /* Extension+UITableView.swift in Sources */,
 				E84FC6F62272EDE00094D4C4 /* Data+Convert.swift in Sources */,
 				C2458415227C320E001D4656 /* StaticCollectionViewController.swift in Sources */,

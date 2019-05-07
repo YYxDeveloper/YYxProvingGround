@@ -13,40 +13,7 @@ import Foundation
 import UIKit
 import CoreData
 
-// MARK: - PROTOCOL
-protocol OptionalType { init() }
 
-// MARK: - EXTENSIONS
-extension String: OptionalType {}
-extension Int: OptionalType {}
-extension Double: OptionalType {}
-extension Bool: OptionalType {}
-extension Float: OptionalType {}
-extension CGFloat: OptionalType {}
-extension CGRect: OptionalType {}
-extension UIImage: OptionalType {}
-extension IndexPath: OptionalType {}
-extension Date: OptionalType {}
-extension UIFont: OptionalType {}
-extension UIColor: OptionalType {}
-extension UIViewController: OptionalType {}
-extension UIView: OptionalType {}
-extension NSMutableDictionary: OptionalType {}
-extension NSMutableArray: OptionalType {}
-extension NSMutableSet: OptionalType {}
-extension NSEntityDescription: OptionalType {}
-extension Int64: OptionalType {}
-extension CGPoint: OptionalType {}
-extension Data: OptionalType {}
-extension NSManagedObjectContext: OptionalType {}
-
-prefix operator ?*
-
-//unwrapping values
-prefix func ?*<T: OptionalType>( value: T?) -> T {
-    guard let validValue = value else { return T() }
-    return validValue
-}
 //------------
 //https://stackoverflow.com/questions/37442593/custom-operator-to-simplify-if-let
 infix operator ?=
@@ -92,8 +59,8 @@ class ViewController: UIViewController {
         
     }
     func oo() {
-        var name: String? = nil
-       print(?*name)
+        var name: String? = "aaa"
+       print(name~!)
         
 
     }
