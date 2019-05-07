@@ -31,12 +31,20 @@ func ?= <T>( left: inout T?, right: T?) {
 }
 //---------
 class ColumnTableViewController: UITableViewController {
- 
+    
+    
+}
+class FormRows {
+    var columns = [UICollectionViewCell]()
 }
 class FormPresenter {
-    var columns:Int?
-    var row:    Int?
+
+    private var oringinalDatas = [FormRows]()
     
+    var  columns = [UITableViewCell]()
+    var  rows    = [UICollectionViewCell]()
+    
+  
     
 }
 
@@ -59,8 +67,31 @@ class ViewController: UIViewController {
         
     }
     func oo() {
-        var name: String? = "aaa"
-       print(name~!)
+        do {
+            
+            let dicData = try  FileManager.default.readPlistDictionaryFromBundle(fileName: "PlistDictionaryExample")
+//            print(dicData)
+            let arrData = try FileManager.default.readPlistArrayFromBundle(fileName: "PlistArrayExample")
+            print(arrData)
+            // json 還沒轉型
+            //refer : JSONDecoder() ;;ever
+            
+            /**
+             do {
+             let JsonStruct = try JSONDecoder().decode(ZooModel.self, from: content.data(using: .utf8)!)
+             print(JsonStruct.result.results[0].A_Name_Ch)
+             } catch  {
+             print(error)
+             }
+             */
+            
+            
+            
+        } catch  {
+            print(error.localizedDescription)
+        }
+      
+        
         
 
     }

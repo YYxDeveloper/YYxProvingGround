@@ -24,7 +24,10 @@ extension FileManager{
             throw error
         }
     }
-    static func readArrayFromBundle(fileName:String)->[Any]{
+    /**
+      let arrData = try FileManager.default.readPlistArrayFromBundle(fileName: "PlistArrayExample")
+     */
+    func readPlistArrayFromBundle(fileName:String)->[Any]{
         let url = Bundle.main.url(forResource: fileName, withExtension: fileType.plist.rawValue)!
         
         do {
@@ -37,7 +40,11 @@ extension FileManager{
         }
         
     }
-    static func readDictionaryFromBundle(fileName:String)->[String:AnyObject]{
+    
+    /**
+            let dicData = try  FileManager.default.readPlistDictionaryFromBundle(fileName: "PlistDictionaryExample")
+     */
+     func readPlistDictionaryFromBundle(fileName:String)->[String:AnyObject]{
         var propertyListForamt =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: AnyObject] = [:] //Our data
         let plistPath: String? = Bundle.main.path(forResource: fileName, ofType: fileType.plist.rawValue)! //the path of the data
@@ -52,7 +59,7 @@ extension FileManager{
         }
     }
      //MARK: - to Sandbox path
-    static func writeUtf8TexttoSand(fileName:String,content:String,filetype:fileType){
+     func writeUtf8TexttoSand(fileName:String,content:String,filetype:fileType){
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             
             let fileURL = dir.appendingPathComponent("\(fileName).\(filetype.rawValue)")
@@ -62,7 +69,7 @@ extension FileManager{
             catch {YYxErrorHandler.printDoCatchErrorFail()}
         }
     }
-    static func readUtf8TextFromSand(fileName:String,filetype:fileType) -> String {
+     func readUtf8TextFromSand(fileName:String,filetype:fileType) -> String {
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
             let fileURL = dir.appendingPathComponent("\(fileName).\(filetype.rawValue)")
             do {
@@ -77,7 +84,7 @@ extension FileManager{
         }
          return String()
     }
-    static func writeDictionaryToSand(nameFile:String,witchDictionary:[String:AnyObject]){
+     func writeDictionaryToSand(nameFile:String,witchDictionary:[String:AnyObject]){
         let docsBaseURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let customPlistURL = docsBaseURL.appendingPathComponent("\(nameFile).plist")
         print(customPlistURL.absoluteString)
@@ -85,7 +92,7 @@ extension FileManager{
             let data = try PropertyListSerialization.data(fromPropertyList: witchDictionary, format: PropertyListSerialization.PropertyListFormat.binary, options: 0)
             do {
                 try data.write(to: customPlistURL, options: .atomic)
-                print("Successfully write \n \(FileManager.giveMesSandboxPath())")
+                print("Successfully write \n \(FileManager.default.giveMesSandboxPath())")
             }catch{
                 print(error.localizedDescription)
             }
@@ -93,7 +100,7 @@ extension FileManager{
             print(error.localizedDescription)
         }
     }
-    static func writeArrayToSand<T:Codable>(nameFile:String,witchArray:[T]) {
+     func writeArrayToSand<T:Codable>(nameFile:String,witchArray:[T]) {
         let docsBaseURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let customPlistURL = docsBaseURL.appendingPathComponent("\(nameFile).plist")
         print(customPlistURL.absoluteString)
@@ -102,7 +109,7 @@ extension FileManager{
             let data = try PropertyListSerialization.data(fromPropertyList: witchArray, format: PropertyListSerialization.PropertyListFormat.xml, options: 0)
             do {
                 try data.write(to: customPlistURL, options: .atomic)
-                print("Successfully write \n \(FileManager.giveMesSandboxPath())")
+                print("Successfully write \n \(FileManager.default.giveMesSandboxPath())")
             }catch{
                 YYxErrorHandler.printDoCatchErrorFail();print(error.localizedDescription)
             }
@@ -110,12 +117,12 @@ extension FileManager{
             print(err.localizedDescription)
         }
     }
-    static func giveMesSandboxPath() -> String {
+     func giveMesSandboxPath() -> String {
         return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         
     }
     // MARK: - about Jailbtoken
-    static func isJailbtoken() -> Bool {
+     func isJailbtoken() -> Bool {
         
         #if targetEnvironment(simulator)
         return true

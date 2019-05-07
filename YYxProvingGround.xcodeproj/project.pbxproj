@@ -19,6 +19,11 @@
 		C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */; };
 		C26FDD5F228049A600A7997D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FDD5E228049A600A7997D /* Observable.swift */; };
 		C2FD8CCB228162B600282F1F /* OptionalType+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */; };
+		C2FD8CCD228172CB00282F1F /* YYxTestMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */; };
+		C2FD8CCF2281737100282F1F /* FakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCE2281737100282F1F /* FakeDataManager.swift */; };
+		C2FD8CD12281773E00282F1F /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CD02281773E00282F1F /* DriverModel.swift */; };
+		C2FD8CD322817DB500282F1F /* PlistDictionaryExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2FD8CD222817DB500282F1F /* PlistDictionaryExample.plist */; };
+		C2FD8CD522817E9800282F1F /* PlistArrayExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2FD8CD422817E9800282F1F /* PlistArrayExample.plist */; };
 		E84FC6C72272EDE00094D4C4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67C2272EDE00094D4C4 /* constant.swift */; };
 		E84FC6C82272EDE00094D4C4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67D2272EDE00094D4C4 /* Global.swift */; };
 		E84FC6C92272EDE00094D4C4 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6802272EDE00094D4C4 /* UICollectionView+Extension.swift */; };
@@ -123,6 +128,11 @@
 		C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
 		C26FDD5E228049A600A7997D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionalType+Protocol.swift"; sourceTree = "<group>"; };
+		C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxTestMananger.swift; sourceTree = "<group>"; };
+		C2FD8CCE2281737100282F1F /* FakeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataManager.swift; sourceTree = "<group>"; };
+		C2FD8CD02281773E00282F1F /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		C2FD8CD222817DB500282F1F /* PlistDictionaryExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlistDictionaryExample.plist; sourceTree = "<group>"; };
+		C2FD8CD422817E9800282F1F /* PlistArrayExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlistArrayExample.plist; sourceTree = "<group>"; };
 		E84FC67C2272EDE00094D4C4 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		E84FC67D2272EDE00094D4C4 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		E84FC6802272EDE00094D4C4 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
@@ -351,9 +361,14 @@
 		E84FC6932272EDE00094D4C4 /* TestExampleDatas */ = {
 			isa = PBXGroup;
 			children = (
+				C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */,
+				C2FD8CD02281773E00282F1F /* DriverModel.swift */,
+				C2FD8CD422817E9800282F1F /* PlistArrayExample.plist */,
+				C2FD8CD222817DB500282F1F /* PlistDictionaryExample.plist */,
 				E84FC6942272EDE00094D4C4 /* JsonDIctonaryExample.json */,
 				E84FC6952272EDE00094D4C4 /* JsonArrayExample.json */,
 				E84FC6962272EDE00094D4C4 /* ExampleFileNames.swift */,
+				C2FD8CCE2281737100282F1F /* FakeDataManager.swift */,
 			);
 			path = TestExampleDatas;
 			sourceTree = "<group>";
@@ -651,6 +666,8 @@
 				C23606EB2280007900EEFFFE /* PageViewController.storyboard in Resources */,
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
 				E84FC6D42272EDE00094D4C4 /* CategoryHorizenTalRowCell.xib in Resources */,
+				C2FD8CD322817DB500282F1F /* PlistDictionaryExample.plist in Resources */,
+				C2FD8CD522817E9800282F1F /* PlistArrayExample.plist in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
 				E879C1B922421012006904A5 /* Main.storyboard in Resources */,
 				E84FC6D22272EDE00094D4C4 /* YYxInfo.txt in Resources */,
@@ -717,6 +734,7 @@
 				E84FC7022272EDE00094D4C4 /* Array+Extension.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */,
+				C2FD8CD12281773E00282F1F /* DriverModel.swift in Sources */,
 				E84FC6D32272EDE00094D4C4 /* CategoryVerticalColumnModel.swift in Sources */,
 				C23606ED2280008300EEFFFE /* PageViewController.swift in Sources */,
 				C23606F52280008B00EEFFFE /* FirstPageViewController.swift in Sources */,
@@ -724,6 +742,7 @@
 				E879C1B422421012006904A5 /* AppDelegate.swift in Sources */,
 				E84FC6C82272EDE00094D4C4 /* Global.swift in Sources */,
 				E84FC6E12272EDE00094D4C4 /* Photo+UIViewController.swift in Sources */,
+				C2FD8CCD228172CB00282F1F /* YYxTestMananger.swift in Sources */,
 				E84FC6E22272EDE00094D4C4 /* Alert+UIViewController.swift in Sources */,
 				E84FC6D02272EDE00094D4C4 /* Extension+NSPredicate.swift in Sources */,
 				E84FC6C72272EDE00094D4C4 /* constant.swift in Sources */,
@@ -737,6 +756,7 @@
 				E84FC6D62272EDE00094D4C4 /* CategoryVerticalColumnCell.swift in Sources */,
 				E84FC6FB2272EDE00094D4C4 /* Double+Greenwich.swift in Sources */,
 				E84FC6FD2272EDE00094D4C4 /* String+Greenwich.swift in Sources */,
+				C2FD8CCF2281737100282F1F /* FakeDataManager.swift in Sources */,
 				E84FC6D72272EDE00094D4C4 /* HorizontalSlider.swift in Sources */,
 				E84FC6CD2272EDE00094D4C4 /* DateFormatter+Extension.swift in Sources */,
 				E84FC6CF2272EDE00094D4C4 /* Timezone+Extension.swift in Sources */,
