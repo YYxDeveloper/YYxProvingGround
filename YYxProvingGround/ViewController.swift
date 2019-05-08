@@ -56,20 +56,8 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-//       gg()
-//        dd()
-//        uu()
-//        ll()
-//        oo()
-        do {
-            let ss = try FileManager.default.readJsonFileFromBundle("UserInformationsJsonExample").data(using: .utf8)
-            ss?.decodeJsonDatabyUtf8(modelType: UserInformations.self, compelete: {data in
-                  print(data.userProfiles)
-                
-            })
-        } catch  {
-            print(error)
-        }
+
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -86,26 +74,12 @@ class ViewController: UIViewController {
             for user in JsonStruct.userProfiles {
                 print(user.name)
             }
-            
-            
         } catch  {
             print(error)
         }
-      
-        
-        
-
-    }
-    func ll()  {
-       self.addToolBoxStaticTableViewController(toWitchView: view, toolBoxVCType: .StaticCollectionViewController)
-    }
-    func uu()  {
-        self.addToolBoxStaticTableViewController(toWitchView: self.view, toolBoxVCType: .ToolBoxViewController)
     }
   
-    func dd() {
-        containerView.addCircleLayer(strokeColor: .blue, anitmation: true, duration: 5)
-    }
+   
     func mvvmBindingForInstance()  {
         self.cookingTimer.start()
         self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in
