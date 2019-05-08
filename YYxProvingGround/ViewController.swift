@@ -106,7 +106,7 @@ class ViewController: UIViewController {
     func dd() {
         containerView.addCircleLayer(strokeColor: .blue, anitmation: true, duration: 5)
     }
-    func gg()  {
+    func mvvmBindingForInstance()  {
         self.cookingTimer.start()
         self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in
 //            print("!!\(timeStr)")
@@ -115,15 +115,7 @@ class ViewController: UIViewController {
             
         }
     }
-    func aa()  {
-      self.sideBar =  SideBar(containerView: containerView, parentViewController: self, BundleButton: turnBtn)
-
-        self.sideBar!.isLoading.addObserver { [weak self] (isLoading) in
-            self?.containerView.frame.origin.x = isLoading == true ? -20:0
-        }
-        
-    
-    }
+ 
     @IBAction func turn(_ sender: Any) {
         sideBar?.turn()
     }
