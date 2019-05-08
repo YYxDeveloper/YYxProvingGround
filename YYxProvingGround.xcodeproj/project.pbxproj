@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22E72B12282C1C200D030A0 /* UserInformationsJsonExample.json in Resources */ = {isa = PBXBuildFile; fileRef = C22E72B02282C1C200D030A0 /* UserInformationsJsonExample.json */; };
 		C23606EB2280007900EEFFFE /* PageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23606EA2280007900EEFFFE /* PageViewController.storyboard */; };
 		C23606ED2280008300EEFFFE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23606EC2280008300EEFFFE /* PageViewController.swift */; };
 		C23606F22280008B00EEFFFE /* PageContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23606EE2280008A00EEFFFE /* PageContainerViewController.swift */; };
@@ -21,7 +22,7 @@
 		C2FD8CCB228162B600282F1F /* OptionalType+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */; };
 		C2FD8CCD228172CB00282F1F /* YYxTestMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */; };
 		C2FD8CCF2281737100282F1F /* FakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCE2281737100282F1F /* FakeDataManager.swift */; };
-		C2FD8CD12281773E00282F1F /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CD02281773E00282F1F /* DriverModel.swift */; };
+		C2FD8CD12281773E00282F1F /* UserInformationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CD02281773E00282F1F /* UserInformationsModel.swift */; };
 		C2FD8CD322817DB500282F1F /* PlistDictionaryExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2FD8CD222817DB500282F1F /* PlistDictionaryExample.plist */; };
 		C2FD8CD522817E9800282F1F /* PlistArrayExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2FD8CD422817E9800282F1F /* PlistArrayExample.plist */; };
 		E84FC6C72272EDE00094D4C4 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC67C2272EDE00094D4C4 /* constant.swift */; };
@@ -41,8 +42,6 @@
 		E84FC6D52272EDE00094D4C4 /* CategoryHorizenTalRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6902272EDE00094D4C4 /* CategoryHorizenTalRowCell.swift */; };
 		E84FC6D62272EDE00094D4C4 /* CategoryVerticalColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6912272EDE00094D4C4 /* CategoryVerticalColumnCell.swift */; };
 		E84FC6D72272EDE00094D4C4 /* HorizontalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6922272EDE00094D4C4 /* HorizontalSlider.swift */; };
-		E84FC6D82272EDE00094D4C4 /* JsonDIctonaryExample.json in Resources */ = {isa = PBXBuildFile; fileRef = E84FC6942272EDE00094D4C4 /* JsonDIctonaryExample.json */; };
-		E84FC6D92272EDE00094D4C4 /* JsonArrayExample.json in Resources */ = {isa = PBXBuildFile; fileRef = E84FC6952272EDE00094D4C4 /* JsonArrayExample.json */; };
 		E84FC6DA2272EDE00094D4C4 /* ExampleFileNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6962272EDE00094D4C4 /* ExampleFileNames.swift */; };
 		E84FC6DB2272EDE00094D4C4 /* ToolBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6982272EDE00094D4C4 /* ToolBoxManager.swift */; };
 		E84FC6DC2272EDE00094D4C4 /* ToolBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FC6992272EDE00094D4C4 /* ToolBoxViewController.swift */; };
@@ -116,6 +115,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C22E72B02282C1C200D030A0 /* UserInformationsJsonExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserInformationsJsonExample.json; sourceTree = "<group>"; };
 		C23606EA2280007900EEFFFE /* PageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageViewController.storyboard; sourceTree = "<group>"; };
 		C23606EC2280008300EEFFFE /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		C23606EE2280008A00EEFFFE /* PageContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainerViewController.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionalType+Protocol.swift"; sourceTree = "<group>"; };
 		C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxTestMananger.swift; sourceTree = "<group>"; };
 		C2FD8CCE2281737100282F1F /* FakeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataManager.swift; sourceTree = "<group>"; };
-		C2FD8CD02281773E00282F1F /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		C2FD8CD02281773E00282F1F /* UserInformationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationsModel.swift; sourceTree = "<group>"; };
 		C2FD8CD222817DB500282F1F /* PlistDictionaryExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlistDictionaryExample.plist; sourceTree = "<group>"; };
 		C2FD8CD422817E9800282F1F /* PlistArrayExample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlistArrayExample.plist; sourceTree = "<group>"; };
 		E84FC67C2272EDE00094D4C4 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
@@ -150,8 +150,6 @@
 		E84FC6902272EDE00094D4C4 /* CategoryHorizenTalRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHorizenTalRowCell.swift; sourceTree = "<group>"; };
 		E84FC6912272EDE00094D4C4 /* CategoryVerticalColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVerticalColumnCell.swift; sourceTree = "<group>"; };
 		E84FC6922272EDE00094D4C4 /* HorizontalSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSlider.swift; sourceTree = "<group>"; };
-		E84FC6942272EDE00094D4C4 /* JsonDIctonaryExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonDIctonaryExample.json; sourceTree = "<group>"; };
-		E84FC6952272EDE00094D4C4 /* JsonArrayExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonArrayExample.json; sourceTree = "<group>"; };
 		E84FC6962272EDE00094D4C4 /* ExampleFileNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleFileNames.swift; sourceTree = "<group>"; };
 		E84FC6982272EDE00094D4C4 /* ToolBoxManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBoxManager.swift; sourceTree = "<group>"; };
 		E84FC6992272EDE00094D4C4 /* ToolBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBoxViewController.swift; sourceTree = "<group>"; };
@@ -362,11 +360,10 @@
 			isa = PBXGroup;
 			children = (
 				C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */,
-				C2FD8CD02281773E00282F1F /* DriverModel.swift */,
+				C2FD8CD02281773E00282F1F /* UserInformationsModel.swift */,
 				C2FD8CD422817E9800282F1F /* PlistArrayExample.plist */,
 				C2FD8CD222817DB500282F1F /* PlistDictionaryExample.plist */,
-				E84FC6942272EDE00094D4C4 /* JsonDIctonaryExample.json */,
-				E84FC6952272EDE00094D4C4 /* JsonArrayExample.json */,
+				C22E72B02282C1C200D030A0 /* UserInformationsJsonExample.json */,
 				E84FC6962272EDE00094D4C4 /* ExampleFileNames.swift */,
 				C2FD8CCE2281737100282F1F /* FakeDataManager.swift */,
 			);
@@ -659,10 +656,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22E72B12282C1C200D030A0 /* UserInformationsJsonExample.json in Resources */,
 				E84FC6DE2272EDE00094D4C4 /* ToolBox.storyboard in Resources */,
-				E84FC6D92272EDE00094D4C4 /* JsonArrayExample.json in Resources */,
 				E84FC6E92272EDE00094D4C4 /* TintView.xib in Resources */,
-				E84FC6D82272EDE00094D4C4 /* JsonDIctonaryExample.json in Resources */,
 				C23606EB2280007900EEFFFE /* PageViewController.storyboard in Resources */,
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
 				E84FC6D42272EDE00094D4C4 /* CategoryHorizenTalRowCell.xib in Resources */,
@@ -734,7 +730,7 @@
 				E84FC7022272EDE00094D4C4 /* Array+Extension.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */,
-				C2FD8CD12281773E00282F1F /* DriverModel.swift in Sources */,
+				C2FD8CD12281773E00282F1F /* UserInformationsModel.swift in Sources */,
 				E84FC6D32272EDE00094D4C4 /* CategoryVerticalColumnModel.swift in Sources */,
 				C23606ED2280008300EEFFFE /* PageViewController.swift in Sources */,
 				C23606F52280008B00EEFFFE /* FirstPageViewController.swift in Sources */,

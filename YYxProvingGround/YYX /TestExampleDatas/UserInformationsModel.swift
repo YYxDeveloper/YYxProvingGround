@@ -8,11 +8,14 @@
 
 import Foundation
 
-class DreiverModel: Codable {
+class UserInformations: Codable {
+    let userProfiles:[userProfile]
+}
+class userProfile: Codable {
 //    "name":"John",
 //    "age":30,
 //    "cars":[ "Ford", "BMW", "Fiat" ]
     let name:String
-    let age:Int
+    let age:String
     let cars:[String]
 }

@@ -60,35 +60,36 @@ class ViewController: UIViewController {
 //        dd()
 //        uu()
 //        ll()
-        oo()
+//        oo()
+        do {
+            let ss = try FileManager.default.readJsonFileFromBundle("UserInformationsJsonExample").data(using: .utf8)
+            ss?.decodeJsonDatabyUtf8(modelType: UserInformations.self, compelete: {data in
+                  print(data.userProfiles)
+                
+            })
+        } catch  {
+            print(error)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
     }
+  
     func oo() {
         do {
-            
-            let dicData = try  FileManager.default.readPlistDictionaryFromBundle(fileName: "PlistDictionaryExample")
-//            print(dicData)
-            let arrData = try FileManager.default.readPlistArrayFromBundle(fileName: "PlistArrayExample")
-            print(arrData)
+            //PlistDictionaryExample
+            let ss = try FileManager.default.readJsonFileFromBundle("UserInformationsJsonExample").data(using: .utf8)
             // json 還沒轉型
             //refer : JSONDecoder() ;;ever
-            
-            /**
-             do {
-             let JsonStruct = try JSONDecoder().decode(ZooModel.self, from: content.data(using: .utf8)!)
-             print(JsonStruct.result.results[0].A_Name_Ch)
-             } catch  {
-             print(error)
-             }
-             */
-            
+            let JsonStruct = try JSONDecoder().decode(UserInformations.self, from: ss!)
+            for user in JsonStruct.userProfiles {
+                print(user.name)
+            }
             
             
         } catch  {
-            print(error.localizedDescription)
+            print(error)
         }
       
         

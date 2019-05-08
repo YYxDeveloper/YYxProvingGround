@@ -15,4 +15,18 @@ extension Data{
         }
         return data
     }
+    func decodeJsonDatabyUtf8<T:Codable>(modelType:T.Type,compelete:(T)->()) {
+        do {
+            //PlistDictionaryExample
+            
+            // json 還沒轉型
+            //refer : JSONDecoder() ;;ever
+            let JsonStruct = try JSONDecoder().decode(modelType, from: self)
+            
+            compelete(JsonStruct)
+        } catch  {
+            print(error)
+            
+        }
+    }
 }
