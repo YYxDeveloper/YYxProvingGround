@@ -13,6 +13,9 @@ extension UITableView{
     func scrollFirstIndex() {
         scrollToRow(at: IndexPath(row: 0, section: 0), at: ScrollPosition.middle, animated: true)
     }
+    func disableDeselectCellButButton() {
+        self.allowsSelection = false
+    }
     func scrollLastInd()  {
         scrollToRow(at: IndexPath(row: self.numberOfRows(inSection: 0)-1, section: 0), at: ScrollPosition.middle, animated: true)
     }

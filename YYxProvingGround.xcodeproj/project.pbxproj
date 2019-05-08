@@ -19,6 +19,8 @@
 		C26C6C63227BE8C4008E32CB /* CAShapeLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */; };
 		C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */; };
 		C26FDD5F228049A600A7997D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FDD5E228049A600A7997D /* Observable.swift */; };
+		C2B02E4D2282FA9200821587 /* PresenterInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B02E4C2282FA9200821587 /* PresenterInTableViewController.swift */; };
+		C2B02E502282FAD400821587 /* TableViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B02E4F2282FAD400821587 /* TableViewControllerPresenter.swift */; };
 		C2FD8CCB228162B600282F1F /* OptionalType+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */; };
 		C2FD8CCD228172CB00282F1F /* YYxTestMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */; };
 		C2FD8CCF2281737100282F1F /* FakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCE2281737100282F1F /* FakeDataManager.swift */; };
@@ -127,6 +129,8 @@
 		C26C6C62227BE8C4008E32CB /* CAShapeLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Extension.swift"; sourceTree = "<group>"; };
 		C26C6C64227BF44A008E32CB /* CALayer+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Animation.swift"; sourceTree = "<group>"; };
 		C26FDD5E228049A600A7997D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		C2B02E4C2282FA9200821587 /* PresenterInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInTableViewController.swift; sourceTree = "<group>"; };
+		C2B02E4F2282FAD400821587 /* TableViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPresenter.swift; sourceTree = "<group>"; };
 		C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionalType+Protocol.swift"; sourceTree = "<group>"; };
 		C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxTestMananger.swift; sourceTree = "<group>"; };
 		C2FD8CCE2281737100282F1F /* FakeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataManager.swift; sourceTree = "<group>"; };
@@ -266,6 +270,25 @@
 			path = BasicPageViewController;
 			sourceTree = "<group>";
 		};
+		C2B02E4B2282F96300821587 /* UITableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E84FC6AD2272EDE00094D4C4 /* Extension+UITableView.swift */,
+				E84FC6AF2272EDE00094D4C4 /* UITableViewCell+Extension.swift */,
+				C2B02E4E2282FAA800821587 /* PresenterInTableViewController */,
+			);
+			path = UITableViewController;
+			sourceTree = "<group>";
+		};
+		C2B02E4E2282FAA800821587 /* PresenterInTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2B02E4C2282FA9200821587 /* PresenterInTableViewController.swift */,
+				C2B02E4F2282FAD400821587 /* TableViewControllerPresenter.swift */,
+			);
+			path = PresenterInTableViewController;
+			sourceTree = "<group>";
+		};
 		E84FC67B2272EDE00094D4C4 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,9 +423,8 @@
 				E84FC6AA2272EDE00094D4C4 /* UILabel+Extension.swift */,
 				E84FC6AB2272EDE00094D4C4 /* UIButton+Extension.swift */,
 				E84FC6AC2272EDE00094D4C4 /* Extension+UINavigationController.swift */,
-				E84FC6AD2272EDE00094D4C4 /* Extension+UITableView.swift */,
 				E84FC6AE2272EDE00094D4C4 /* Extension+UITextField.swift */,
-				E84FC6AF2272EDE00094D4C4 /* UITableViewCell+Extension.swift */,
+				C2B02E4B2282F96300821587 /* UITableViewController */,
 				E84FC6B02272EDE00094D4C4 /* UIStoryBoard+Extension.swift */,
 				E84FC6B12272EDE00094D4C4 /* UIView+Extension */,
 				E84FC6B52272EDE00094D4C4 /* UINib+Extension.swift */,
@@ -695,6 +717,7 @@
 				C23606F72280014400EEFFFE /* PageViewController+Extension.swift in Sources */,
 				E84FC6C92272EDE00094D4C4 /* UICollectionView+Extension.swift in Sources */,
 				E84FC6F12272EDE00094D4C4 /* Extension+UIView.swift in Sources */,
+				C2B02E502282FAD400821587 /* TableViewControllerPresenter.swift in Sources */,
 				E84FC6CB2272EDE00094D4C4 /* Current+Date.swift in Sources */,
 				E84FC6FF2272EDE00094D4C4 /* String+Convert.swift in Sources */,
 				E84FC6EB2272EDE00094D4C4 /* UIButton+Extension.swift in Sources */,
@@ -704,6 +727,7 @@
 				E84FC6F32272EDE00094D4C4 /* Constraint+UIView.swift in Sources */,
 				C23606F32280008B00EEFFFE /* SecondPageViewController.swift in Sources */,
 				E84FC6CC2272EDE00094D4C4 /* Extension+Date.swift in Sources */,
+				C2B02E4D2282FA9200821587 /* PresenterInTableViewController.swift in Sources */,
 				C23606F22280008B00EEFFFE /* PageContainerViewController.swift in Sources */,
 				E84FC6EF2272EDE00094D4C4 /* UITableViewCell+Extension.swift in Sources */,
 				E84FC6F42272EDE00094D4C4 /* UINib+Extension.swift in Sources */,

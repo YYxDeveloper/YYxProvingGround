@@ -52,18 +52,26 @@ class FormPresenter {
 class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
+    
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
 
        
+       createOwnDynamicTableViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
     }
   
+    func createOwnDynamicTableViewController()   {
+        let vc = PresenterInTableViewController()
+       
+        self.addSubViewWithChildController(addSubViewController: vc, toWitchView: view)
+        
+    }
     func oo() {
         do {
             //PlistDictionaryExample
