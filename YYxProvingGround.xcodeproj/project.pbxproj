@@ -21,6 +21,7 @@
 		C26FDD5F228049A600A7997D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FDD5E228049A600A7997D /* Observable.swift */; };
 		C2B02E4D2282FA9200821587 /* PresenterInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B02E4C2282FA9200821587 /* PresenterInTableViewController.swift */; };
 		C2B02E502282FAD400821587 /* TableViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B02E4F2282FAD400821587 /* TableViewControllerPresenter.swift */; };
+		C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */; };
 		C2FD8CCB228162B600282F1F /* OptionalType+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */; };
 		C2FD8CCD228172CB00282F1F /* YYxTestMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */; };
 		C2FD8CCF2281737100282F1F /* FakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD8CCE2281737100282F1F /* FakeDataManager.swift */; };
@@ -131,6 +132,7 @@
 		C26FDD5E228049A600A7997D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C2B02E4C2282FA9200821587 /* PresenterInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInTableViewController.swift; sourceTree = "<group>"; };
 		C2B02E4F2282FAD400821587 /* TableViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPresenter.swift; sourceTree = "<group>"; };
+		C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
 		C2FD8CCA228162B600282F1F /* OptionalType+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionalType+Protocol.swift"; sourceTree = "<group>"; };
 		C2FD8CCC228172CB00282F1F /* YYxTestMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxTestMananger.swift; sourceTree = "<group>"; };
 		C2FD8CCE2281737100282F1F /* FakeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataManager.swift; sourceTree = "<group>"; };
@@ -521,6 +523,7 @@
 				E84FC67B2272EDE00094D4C4 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
+				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
 				E879C1BF22421013006904A5 /* LaunchScreen.storyboard */,
@@ -755,6 +758,7 @@
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				C26C6C65227BF44A008E32CB /* CALayer+Animation.swift in Sources */,
 				C2FD8CD12281773E00282F1F /* UserInformationsModel.swift in Sources */,
+				C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */,
 				E84FC6D32272EDE00094D4C4 /* CategoryVerticalColumnModel.swift in Sources */,
 				C23606ED2280008300EEFFFE /* PageViewController.swift in Sources */,
 				C23606F52280008B00EEFFFE /* FirstPageViewController.swift in Sources */,

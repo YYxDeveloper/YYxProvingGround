@@ -14,40 +14,6 @@ import UIKit
 import CoreData
 
 
-//------------
-//https://stackoverflow.com/questions/37442593/custom-operator-to-simplify-if-let
-infix operator ?=
-func ?= <T>( left: inout T, right: T?) {
-    if let right = right {
-        left = right
-    }
-}
-
-// overload to deal with an optional left handed side
-func ?= <T>( left: inout T?, right: T?) {
-    if let right = right {
-        left = right
-    }
-}
-//---------
-class ColumnTableViewController: UITableViewController {
-    
-    
-}
-class FormRows {
-    var columns = [UICollectionViewCell]()
-}
-class FormPresenter {
-
-    private var oringinalDatas = [FormRows]()
-    
-    var  columns = [UITableViewCell]()
-    var  rows    = [UICollectionViewCell]()
-    
-  
-    
-}
-
 
 class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
@@ -58,46 +24,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
-       createOwnDynamicTableViewController()
+       eampleDecodeJsonDatabyUtf8()
+//       exampleCreateOwnDynamicTableViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
     }
-  
-    func createOwnDynamicTableViewController()   {
-        let vc = PresenterInTableViewController()
-       
-        self.addSubViewWithChildController(addSubViewController: vc, toWitchView: view)
-        
-    }
-    func oo() {
-        do {
-            //PlistDictionaryExample
-            let ss = try FileManager.default.readJsonFileFromBundle("UserInformationsJsonExample").data(using: .utf8)
-            // json 還沒轉型
-            //refer : JSONDecoder() ;;ever
-            let JsonStruct = try JSONDecoder().decode(UserInformations.self, from: ss!)
-            for user in JsonStruct.userProfiles {
-                print(user.name)
-            }
-        } catch  {
-            print(error)
-        }
-    }
-  
-   
-    func mvvmBindingForInstance()  {
-        self.cookingTimer.start()
-        self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in
-//            print("!!\(timeStr)")
-//             print("!!@\(sec)")
-            
-            
-        }
-    }
- 
+
     @IBAction func turn(_ sender: Any) {
         sideBar?.turn()
     }
