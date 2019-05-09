@@ -24,8 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       eampleDecodeJsonDatabyUtf8()
-//       exampleCreateOwnDynamicTableViewController()
+       exampleCreateOwnDynamicTableViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {

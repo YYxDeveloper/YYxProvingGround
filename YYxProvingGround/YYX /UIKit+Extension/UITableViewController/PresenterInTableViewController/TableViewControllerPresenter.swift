@@ -8,14 +8,16 @@
 
 import Foundation
 class TableViewControllerPresenter {
-    var rowDatas = [String]()
+    private var orginalDatas = [Any]()
+    private var allDataS = [Any]()
+    var cellDatas = [Any]()
     
     init() {
-        updateDatasFirstTime()
+       
     }
-    func updateDatasFirstTime()  {
-        let fakeDatas = ["ray","sam","bill","jay"]
-        rowDatas = fakeDatas
+    func updateDatasFirstTime<T>(cellRequiment:[T])  {
+       
+        cellDatas = cellRequiment
     }
     func updateDatas() {
         

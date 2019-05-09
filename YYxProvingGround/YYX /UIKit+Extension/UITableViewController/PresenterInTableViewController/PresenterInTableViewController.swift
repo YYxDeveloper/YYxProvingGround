@@ -31,15 +31,18 @@ class PresenterInTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return presenter.rowDatas.count
+        return presenter.cellDatas.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // !!register withIdentifier must same
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
-
-        cell.textLabel?.text = presenter.rowDatas[indexPath.row]
+        
+//        if presenter.rowDatas as? [String]{
+            cell.textLabel?.text = presenter.cellDatas[indexPath.row] as! String
+//        }
+       
         
         return cell
     }
