@@ -50,10 +50,11 @@ extension ViewController{
     }
     //
     func exampleCreateOwnDynamicTableViewController()   {
-        let vc = PresenterInTableViewController()
-        self.addSubViewWithChildController(addSubViewController: vc, toWitchView: view)
+        
+        self.addSubViewWithChildController(addSubViewController: dynamicTableVC, toWitchView: view)
          let fakeDatas = ["ray","sam","bill","jay"]
-        vc.presenter.updateDatasFirstTime(cellRequiment: fakeDatas)
+        dynamicTableVC.presenter.updateDatasFirstTime(cellRequiment: fakeDatas)
+        
 
         
     }

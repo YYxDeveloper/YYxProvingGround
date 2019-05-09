@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 extension UITableView{
-    var defaultCellId:String {return "Cell"}
+    var defaultCellId:String {return "defaultCellId"}
     func scrollFirstIndex() {
         scrollToRow(at: IndexPath(row: 0, section: 0), at: ScrollPosition.middle, animated: true)
     }

@@ -13,8 +13,8 @@ class PresenterInTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
-
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier:tableView.defaultCellId)
+        presenter.delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -37,13 +37,8 @@ class PresenterInTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // !!register withIdentifier must same
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
-        
-//        if presenter.rowDatas as? [String]{
-            cell.textLabel?.text = presenter.cellDatas[indexPath.row] as! String
-//        }
-       
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: tableView.defaultCellId, for: indexPath)
+            cell.textLabel?.text = (presenter.cellDatas[indexPath.row] as? String)~!
         return cell
     }
     
@@ -93,4 +88,11 @@ class PresenterInTableViewController: UITableViewController {
     }
     */
 
+}
+extension PresenterInTableViewController:TableViewControllerPresenterDelegate{
+    func dataIsUpdate() {
+        self.tableView.reloadData()
+    }
+    
+    
 }

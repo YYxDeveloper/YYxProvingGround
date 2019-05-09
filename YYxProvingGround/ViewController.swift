@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     
+    let dynamicTableVC = PresenterInTableViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
@@ -28,7 +29,10 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        dynamicTableVC.presenter.updateDatas()
+
     }
 
     @IBAction func turn(_ sender: Any) {
