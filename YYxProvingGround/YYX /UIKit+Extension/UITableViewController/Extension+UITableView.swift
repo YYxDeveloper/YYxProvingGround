@@ -19,14 +19,12 @@ extension UITableView{
     func scrollLastInd()  {
         scrollToRow(at: IndexPath(row: self.numberOfRows(inSection: 0)-1, section: 0), at: ScrollPosition.middle, animated: true)
     }
-    func giveMeDefaultCell(witchLabelText:String) -> UITableViewCell?{
+    func giveMeDefaultCell(indexPath:IndexPath) -> UITableViewCell{
         
-        var cell = self.dequeueReusableCell(withIdentifier:defaultCellId)
-        if cell == nil {
-            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: defaultCellId)
-            cell?.setSelectionStyleIsNone()
-            cell?.textLabel?.text = witchLabelText
-        }
+        let cell = self.dequeueReusableCell(withIdentifier: self.defaultCellId, for: indexPath)~!
+            cell.setSelectionStyleIsNone()
+        
+        
         return cell
     }
 }

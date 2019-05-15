@@ -37,8 +37,12 @@ class PresenterInTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // !!register withIdentifier must same
-        let cell = tableView.dequeueReusableCell(withIdentifier: tableView.defaultCellId, for: indexPath)
-            cell.textLabel?.text = (presenter.cellDatas[indexPath.row] as? String)~!
+//        let cell = tableView.dequeueReusableCell(withIdentifier: tableView.defaultCellId, for: indexPath)
+        guard let texts = presenter.cellDatas as? [String] else {
+            return UITableViewCell()
+        }
+        let cell = tableView.giveMeDefaultCell(indexPath: indexPath)
+            cell.textLabel?.text = texts[indexPath.row]
         return cell
     }
     

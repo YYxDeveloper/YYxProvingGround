@@ -12,7 +12,7 @@ protocol TableViewControllerPresenterDelegate {
 }
 class TableViewControllerPresenter {
     private var orginalDatas = [Any]()
-    private var allDataS = [Any]()
+    private var allDatas = [Any]()
     var cellDatas = [Any]()
     
     var delegate:TableViewControllerPresenterDelegate?
