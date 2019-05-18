@@ -10,7 +10,11 @@ import UIKit
 
 class PresenterInTableViewController: UITableViewController {
     let presenter = TableViewControllerPresenter()
-    
+    var height:CGFloat = 100{
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier:tableView.defaultCellId)
@@ -34,7 +38,9 @@ class PresenterInTableViewController: UITableViewController {
         return presenter.cellDatas.count
     }
 
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return height
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // !!register withIdentifier must same
 //        let cell = tableView.dequeueReusableCell(withIdentifier: tableView.defaultCellId, for: indexPath)
@@ -45,8 +51,6 @@ class PresenterInTableViewController: UITableViewController {
             cell.textLabel?.text = texts[indexPath.row]
         return cell
     }
-    
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
