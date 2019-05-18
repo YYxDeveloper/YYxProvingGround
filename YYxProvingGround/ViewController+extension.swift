@@ -54,7 +54,6 @@ extension ViewController{
         self.addSubViewWithChildController(addSubViewController: reactDefaultUITableViewController, toWitchView: view)
          let fakeDatas = ["ray","sam","bill","jay","11ray","11sam","11bill","j11ay","11ray","22sam","22bill","22jay","r22ay","33sam","33bill","33jay","ray","sam","bill","jay","ray","sam","bill","jay","ray","sam","bill","jay","ray","sam","bill","jay"]
         reactDefaultUITableViewController.presenter.updateDatasFirstTime(cellRequiment: fakeDatas)
-        reactDefaultUITableViewController.height = 60
         
 
         
