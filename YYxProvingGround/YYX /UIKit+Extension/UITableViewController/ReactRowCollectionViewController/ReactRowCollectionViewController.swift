@@ -34,5 +34,18 @@ class CustomContentTableViewCell: UITableViewCell {
     }
 }
 class ReactRowCollectionViewController: ReactDefaultUITableViewController {
-    
+    override func viewDidLoad() {
+        tableView.register(CustomContentTableViewCell.self, forCellReuseIdentifier:tableView.defaultCellId)
+        presenter.delegate = self
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = (tableView.dequeueReusableCell(withIdentifier: tableView.defaultCellId, for: indexPath) as? CustomContentTableViewCell)!
+        if ( indexPath.row % 2) == 0{
+            cell.contentView.backgroundColor = .blue
+        }else{
+            cell.contentView.backgroundColor = .red
+        }
+        
+        return cell
+    }
 }
