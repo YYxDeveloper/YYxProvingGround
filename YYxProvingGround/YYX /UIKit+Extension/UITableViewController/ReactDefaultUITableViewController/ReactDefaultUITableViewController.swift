@@ -10,7 +10,8 @@ import UIKit
 
 class ReactDefaultUITableViewController: UITableViewController {
     let presenter = TableViewControllerPresenter()
-    var height:CGFloat = 100{
+    
+    var height:CGFloat = whatEverInt.convertCGFloat(){
         didSet{
             self.tableView.reloadData()
         }

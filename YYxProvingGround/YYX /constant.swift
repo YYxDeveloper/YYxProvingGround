@@ -21,4 +21,5 @@ import UIKit
  let EMPTY_STR = ""
  let ABLANK_STR = " "
 
-
+//
+let whatEverInt = 100
