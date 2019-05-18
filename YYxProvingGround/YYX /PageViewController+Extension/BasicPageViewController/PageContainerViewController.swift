@@ -81,7 +81,7 @@ extension PageContainerViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         // 取得當前頁數的 index(未翻頁前)
-        let currentIndex: Int =  self.viewControllerList.index(of: viewController)!
+        let currentIndex: Int =  self.viewControllerList.firstIndex(of: viewController)!
         
         // 設定上一頁的 index
         let priviousIndex: Int = currentIndex - 1
@@ -99,7 +99,7 @@ extension PageContainerViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         // 取得當前頁數的 index(未翻頁前)
-        let currentIndex: Int =  self.viewControllerList.index(of: viewController)!
+        let currentIndex: Int =  self.viewControllerList.firstIndex(of: viewController)!
         
         // 設定下一頁的 index
         let nextIndex: Int = currentIndex + 1
@@ -125,7 +125,7 @@ extension PageContainerViewController: UIPageViewControllerDelegate {
         let currentViewController: UIViewController = (self.viewControllers?.first)!
         
         // 取得當前頁數的 index
-        let currentIndex: Int =  self.viewControllerList.index(of: currentViewController)!
+        let currentIndex: Int =  self.viewControllerList.firstIndex(of: currentViewController)!
         
         self.pageViewControllerDelegate?.pageViewController(self, didUpdatePageIndex: currentIndex)
     }

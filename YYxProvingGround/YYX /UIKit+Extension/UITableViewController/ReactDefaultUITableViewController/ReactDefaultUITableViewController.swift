@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PresenterInTableViewController: UITableViewController {
+class ReactDefaultUITableViewController: UITableViewController {
     let presenter = TableViewControllerPresenter()
     var height:CGFloat = 100{
         didSet{
@@ -97,7 +97,7 @@ class PresenterInTableViewController: UITableViewController {
     */
 
 }
-extension PresenterInTableViewController:TableViewControllerPresenterDelegate{
+extension ReactDefaultUITableViewController:TableViewControllerPresenterDelegate{
     func dataIsUpdate() {
         self.tableView.reloadData()
     }

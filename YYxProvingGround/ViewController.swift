@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     
-    let dynamicTableVC = PresenterInTableViewController()
+    let dynamicTableVC = ReactDefaultUITableViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {

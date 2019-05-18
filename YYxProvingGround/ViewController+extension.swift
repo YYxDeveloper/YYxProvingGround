@@ -42,7 +42,7 @@ extension ViewController{
     func exampleMVVMBindingForInstance()  {
         self.cookingTimer.start()
         self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in
-            //            print("!!\(timeStr)")
+                        print("!!\(timeStr)")
             //             print("!!@\(sec)")
             
             
