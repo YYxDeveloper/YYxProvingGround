@@ -246,14 +246,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2157BCF2292814C00171535 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2A61A6B228FD00600CCCFE8 /* Extension+UINavigationController.swift */,
+				C2A61A73228FD00600CCCFE8 /* PageViewController+Extension */,
+				C2A61A62228FD00600CCCFE8 /* UITableViewController */,
+				C2A61A4E228FD00600CCCFE8 /* UIViewController+Extension */,
+				C2A61A2B228FD00600CCCFE8 /* UICollectionViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
 				C2A61A26228FD00600CCCFE8 /* constant.swift */,
+				C2157BCF2292814C00171535 /* Controllers */,
 				C2A61A27228FD00600CCCFE8 /* SideBar */,
 				C2A61A29228FD00600CCCFE8 /* Global.swift */,
 				C2A61A2A228FD00600CCCFE8 /* OptionalType+Protocol.swift */,
-				C2A61A2B228FD00600CCCFE8 /* UICollectionViewController */,
 				C2A61A30228FD00600CCCFE8 /* Date */,
 				C2A61A38228FD00600CCCFE8 /* Extension+NSPredicate.swift */,
 				C2A61A39228FD00600CCCFE8 /* FileManager+Extension.swift */,
@@ -262,8 +274,6 @@
 				C2A61A42228FD00600CCCFE8 /* IndexPath+Extension.swift */,
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A4B228FD00600CCCFE8 /* Protocol+Extension */,
-				C2A61A62228FD00600CCCFE8 /* UITableViewController */,
-				C2A61A4E228FD00600CCCFE8 /* UIViewController+Extension */,
 				C2A61A53228FD00600CCCFE8 /* ToolBox */,
 				C2A61A59228FD00600CCCFE8 /* CookingTimer.swift */,
 				C2A61A5A228FD00600CCCFE8 /* UIScrollView+Extension.swift */,
@@ -272,7 +282,6 @@
 				C2A61A5F228FD00600CCCFE8 /* YYxErrorHandler.swift */,
 				C2A61A60228FD00600CCCFE8 /* NSCache+Extension.swift */,
 				C2A61A61228FD00600CCCFE8 /* UIKit+Extension */,
-				C2A61A73228FD00600CCCFE8 /* PageViewController+Extension */,
 				C2A61A7D228FD00600CCCFE8 /* AppDelegate+Extension.swift */,
 				C2A61A7E228FD00600CCCFE8 /* Custom UIView */,
 				C2A61A83228FD00600CCCFE8 /* StandardType */,
@@ -338,20 +347,20 @@
 			isa = PBXGroup;
 			children = (
 				C2A61A3C228FD00600CCCFE8 /* CategoryVerticalColumnModel.swift */,
-				C2A61A3D228FD00600CCCFE8 /* CategoryHorizenTalRowCell */,
+				C2A61A3D228FD00600CCCFE8 /* CategoryHorizentalRowCell */,
 				C2A61A40228FD00600CCCFE8 /* CategoryVerticalColumnCell.swift */,
 				C2A61A41228FD00600CCCFE8 /* HorizontalSlider.swift */,
 			);
 			path = HorizontalSlider;
 			sourceTree = "<group>";
 		};
-		C2A61A3D228FD00600CCCFE8 /* CategoryHorizenTalRowCell */ = {
+		C2A61A3D228FD00600CCCFE8 /* CategoryHorizentalRowCell */ = {
 			isa = PBXGroup;
 			children = (
 				C2A61A3E228FD00600CCCFE8 /* CategoryHorizenTalRowCell.xib */,
 				C2A61A3F228FD00600CCCFE8 /* CategoryHorizenTalRowCell.swift */,
 			);
-			path = CategoryHorizenTalRowCell;
+			path = CategoryHorizentalRowCell;
 			sourceTree = "<group>";
 		};
 		C2A61A43228FD00600CCCFE8 /* TestExampleDatas */ = {
@@ -415,7 +424,6 @@
 				C2A61A68228FD00600CCCFE8 /* UIColor+Extension.swift */,
 				C2A61A69228FD00600CCCFE8 /* UILabel+Extension.swift */,
 				C2A61A6A228FD00600CCCFE8 /* UIButton+Extension.swift */,
-				C2A61A6B228FD00600CCCFE8 /* Extension+UINavigationController.swift */,
 				C2A61A6C228FD00600CCCFE8 /* Extension+UITextField.swift */,
 				C2A61A6D228FD00600CCCFE8 /* UIStoryBoard+Extension.swift */,
 				C2A61A6E228FD00600CCCFE8 /* UIView+Extension */,
@@ -432,8 +440,7 @@
 				C2A61A63228FD00600CCCFE8 /* Extension+UITableView.swift */,
 				C2A61A67228FD00600CCCFE8 /* UITableViewCell+Extension.swift */,
 			);
-			name = UITableViewController;
-			path = "UIKit+Extension/UITableViewController";
+			path = UITableViewController;
 			sourceTree = "<group>";
 		};
 		C2A61A64228FD00600CCCFE8 /* ReactDefaultUITableViewController */ = {

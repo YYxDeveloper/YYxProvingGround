@@ -58,4 +58,7 @@ extension ViewController{
 
         
     }
+    func exampleColumnCollectionView() {
+        addHorizontalSliderWithHeigh50(toWitchView: containerView)
+    }
 }

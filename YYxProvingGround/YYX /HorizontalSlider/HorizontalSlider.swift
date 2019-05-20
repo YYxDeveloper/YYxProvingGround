@@ -44,8 +44,8 @@ extension HorizontalSlider:UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let w = view.frame.width.convertInt()
-        guard   w <= CategoryVerticalColumnCell.cellW else {
+        let h = view.frame.height.convertInt()
+        guard   h <= CategoryVerticalColumnCell.cellH else {
             assertionFailure("------error following-----")
             YYxErrorHandler.printGuardFail()
             return CGSize()
