@@ -16,6 +16,9 @@ class HorizontalSlider: UICollectionViewController {
     /**
      parentView hight  must smaller than CategoryVerticalColumnCell.cellH
      */
+    /*
+     scrollView的控制在CategoryVerticalColumnCell,這是可以二維的框架
+     */
     static  func giveMeHorizontalSlider() -> HorizontalSlider {
         let emptyFlowlayout = UICollectionViewFlowLayout()
         return HorizontalSlider(collectionViewLayout: emptyFlowlayout)
