@@ -18,5 +18,12 @@ extension AppDelegate{
         self.window!.rootViewController = nav1
         self.window?.makeKeyAndVisible()
     }
+    func launcFirsthVeiwControllerpPogrammatically(firstViewController:UIViewController) {
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController = UINavigationController(rootViewController: firstViewController)
+        
+    }
 }
 //"ViewController"

@@ -59,6 +59,15 @@ extension ViewController{
         
     }
     func exampleColumnCollectionView() {
+        
+        let layout = UICollectionViewFlowLayout()
+        let featuredAppController = FormCollectionVeiwController(collectionViewLayout: layout)
+        
+        addSubViewWithChildController(addSubViewController: featuredAppController, toWitchView: view)
+        
+        
+    }
+    func exampleHorizontalSlider() {
         addHorizontalSliderWithHeigh50(toWitchView: containerView)
     }
 }

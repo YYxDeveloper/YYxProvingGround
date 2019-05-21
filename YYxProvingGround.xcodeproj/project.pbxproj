@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */; };
+		C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */; };
+		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
 		C2A61A93228FD00600CCCFE8 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A26228FD00600CCCFE8 /* constant.swift */; };
 		C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A28228FD00600CCCFE8 /* SidBar.swift */; };
 		C2A61A95228FD00600CCCFE8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A29228FD00600CCCFE8 /* Global.swift */; };
@@ -120,6 +123,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
+		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
 		C2A61A26228FD00600CCCFE8 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		C2A61A28228FD00600CCCFE8 /* SidBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidBar.swift; sourceTree = "<group>"; };
 		C2A61A29228FD00600CCCFE8 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -258,6 +264,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		C2157BD52293CF8200171535 /* FormCollectionVeiwController */ = {
+			isa = PBXGroup;
+			children = (
+				C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */,
+				C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */,
+				C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */,
+			);
+			path = FormCollectionVeiwController;
+			sourceTree = "<group>";
+		};
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +316,7 @@
 		C2A61A2B228FD00600CCCFE8 /* UICollectionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C2157BD52293CF8200171535 /* FormCollectionVeiwController */,
 				C2A61A2C228FD00600CCCFE8 /* UICollectionViewFlowLayout+Extension */,
 				C2A61A2E228FD00600CCCFE8 /* UICollectionView */,
 			);
@@ -755,6 +772,7 @@
 				C2A61AA7228FD00600CCCFE8 /* IndexPath+Extension.swift in Sources */,
 				E879C1BC22421012006904A5 /* YYxProvingGround.xcdatamodeld in Sources */,
 				C2A61A97228FD00600CCCFE8 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
+				C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				C2A61AB4228FD00600CCCFE8 /* Alert+UIViewController.swift in Sources */,
 				C2A61ABE228FD00600CCCFE8 /* CAShapeLayer+Extension.swift in Sources */,
@@ -769,6 +787,7 @@
 				C2A61AD4228FD00600CCCFE8 /* PageViewController.swift in Sources */,
 				C2A61AAF228FD00600CCCFE8 /* FloatingPoint+Extension.swift in Sources */,
 				C2A61A9A228FD00600CCCFE8 /* Current+Date.swift in Sources */,
+				C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */,
 				C2A61AB1228FD00600CCCFE8 /* Extension+UIViewController.swift in Sources */,
 				C2A61AB3228FD00600CCCFE8 /* Photo+UIViewController.swift in Sources */,
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
@@ -790,6 +809,7 @@
 				C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */,
 				C2A61ACA228FD00600CCCFE8 /* UIStoryBoard+Extension.swift in Sources */,
 				C2A61AA6228FD00600CCCFE8 /* HorizontalSlider.swift in Sources */,
+				C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */,
 				C2A61AD5228FD00600CCCFE8 /* PageViewController+Extension.swift in Sources */,
 				E879C1B422421012006904A5 /* AppDelegate.swift in Sources */,
 				C2A61A9F228FD00600CCCFE8 /* Extension+NSPredicate.swift in Sources */,
