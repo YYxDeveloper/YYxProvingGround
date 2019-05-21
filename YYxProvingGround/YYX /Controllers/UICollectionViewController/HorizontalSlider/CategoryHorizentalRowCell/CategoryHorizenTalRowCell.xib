@@ -34,6 +34,7 @@
                     </view>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Fsx-JQ-W5k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Zk-bt-TKz"/>
                 <constraint firstItem="Fsx-JQ-W5k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Oka-lx-KP1"/>

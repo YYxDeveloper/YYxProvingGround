@@ -42,7 +42,7 @@ class RowCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate, UIC
         appsCollectionView.dataSource = self
         appsCollectionView.delegate = self
         
-        appsCollectionView.register(ColumnCollectionViewCell.self, forCellWithReuseIdentifier: FormCollectionVeiwController.columnId)
+        appsCollectionView.preprocess(registerNibClassName: UICollectionView.CategoryHorizontalRowCellId)
         
         appsCollectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         appsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8 ).isActive = true
@@ -57,7 +57,9 @@ class RowCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FormCollectionVeiwController.columnId, for: indexPath) as! ColumnCollectionViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FormCollectionVeiwController.columnId, for: indexPath) as! ColumnCollectionViewCell
+        let cell = collectionView.giveMeCategoryHorizenTalRowCell(indexPatht: indexPath) 
+        
         
         return cell
     }

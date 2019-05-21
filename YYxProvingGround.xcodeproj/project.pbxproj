@@ -286,7 +286,6 @@
 				C2A61A38228FD00600CCCFE8 /* Extension+NSPredicate.swift */,
 				C2A61A39228FD00600CCCFE8 /* FileManager+Extension.swift */,
 				C2A61A3A228FD00600CCCFE8 /* YYxInfo.txt */,
-				C2A61A3B228FD00600CCCFE8 /* HorizontalSlider */,
 				C2A61A42228FD00600CCCFE8 /* IndexPath+Extension.swift */,
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A4B228FD00600CCCFE8 /* Protocol+Extension */,
@@ -316,6 +315,7 @@
 		C2A61A2B228FD00600CCCFE8 /* UICollectionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C2A61A3B228FD00600CCCFE8 /* HorizontalSlider */,
 				C2157BD52293CF8200171535 /* FormCollectionVeiwController */,
 				C2A61A2C228FD00600CCCFE8 /* UICollectionViewFlowLayout+Extension */,
 				C2A61A2E228FD00600CCCFE8 /* UICollectionView */,
