@@ -25,8 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//       exampleCreateOwnDynamicTableViewController()
-        exampleColumnCollectionView()
+     exampleTabbedViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -10,6 +10,9 @@
 		C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */; };
 		C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */; };
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
+		C254F223229535B300C36CBF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F220229535B300C36CBF /* FirstViewController.swift */; };
+		C254F224229535B300C36CBF /* TabbedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C254F221229535B300C36CBF /* TabbedViewController.storyboard */; };
+		C254F225229535B300C36CBF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F222229535B300C36CBF /* SecondViewController.swift */; };
 		C2A61A93228FD00600CCCFE8 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A26228FD00600CCCFE8 /* constant.swift */; };
 		C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A28228FD00600CCCFE8 /* SidBar.swift */; };
 		C2A61A95228FD00600CCCFE8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A29228FD00600CCCFE8 /* Global.swift */; };
@@ -126,6 +129,9 @@
 		C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
+		C254F220229535B300C36CBF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C254F221229535B300C36CBF /* TabbedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabbedViewController.storyboard; sourceTree = "<group>"; };
+		C254F222229535B300C36CBF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C2A61A26228FD00600CCCFE8 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		C2A61A28228FD00600CCCFE8 /* SidBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidBar.swift; sourceTree = "<group>"; };
 		C2A61A29228FD00600CCCFE8 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -255,6 +261,7 @@
 		C2157BCF2292814C00171535 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C254F21F2295358200C36CBF /* UITabbedViewController */,
 				C2A61A6B228FD00600CCCFE8 /* Extension+UINavigationController.swift */,
 				C2A61A73228FD00600CCCFE8 /* PageViewController+Extension */,
 				C2A61A62228FD00600CCCFE8 /* UITableViewController */,
@@ -272,6 +279,16 @@
 				C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */,
 			);
 			path = FormCollectionVeiwController;
+			sourceTree = "<group>";
+		};
+		C254F21F2295358200C36CBF /* UITabbedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C254F220229535B300C36CBF /* FirstViewController.swift */,
+				C254F221229535B300C36CBF /* TabbedViewController.storyboard */,
+				C254F222229535B300C36CBF /* SecondViewController.swift */,
+			);
+			path = UITabbedViewController;
 			sourceTree = "<group>";
 		};
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
@@ -734,6 +751,7 @@
 				C2A61AB9228FD00600CCCFE8 /* ToolBox.storyboard in Resources */,
 				C2A61AAC228FD00600CCCFE8 /* UserInformationsJsonExample.json in Resources */,
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
+				C254F224229535B300C36CBF /* TabbedViewController.storyboard in Resources */,
 				C2A61AA3228FD00600CCCFE8 /* CategoryHorizenTalRowCell.xib in Resources */,
 				C2A61AD0228FD00600CCCFE8 /* PageViewController.storyboard in Resources */,
 				C2A61AA9228FD00600CCCFE8 /* PlistArrayExample.plist in Resources */,
@@ -784,6 +802,7 @@
 				C2A61ABA228FD00600CCCFE8 /* CookingTimer.swift in Sources */,
 				C2A61ACD228FD00600CCCFE8 /* Constraint+UIView.swift in Sources */,
 				C2A61A96228FD00600CCCFE8 /* OptionalType+Protocol.swift in Sources */,
+				C254F225229535B300C36CBF /* SecondViewController.swift in Sources */,
 				C2A61AD4228FD00600CCCFE8 /* PageViewController.swift in Sources */,
 				C2A61AAF228FD00600CCCFE8 /* FloatingPoint+Extension.swift in Sources */,
 				C2A61A9A228FD00600CCCFE8 /* Current+Date.swift in Sources */,
@@ -793,6 +812,7 @@
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
 				C2A61A9E228FD00600CCCFE8 /* Timezone+Extension.swift in Sources */,
 				C2A61AB2228FD00600CCCFE8 /* URLSession+UIViewController.swift in Sources */,
+				C254F223229535B300C36CBF /* FirstViewController.swift in Sources */,
 				C2A61AC1228FD00600CCCFE8 /* Extension+UITableView.swift in Sources */,
 				C2A61AC9228FD00600CCCFE8 /* Extension+UITextField.swift in Sources */,
 				C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */,

@@ -70,4 +70,8 @@ extension ViewController{
     func exampleHorizontalSlider() {
         addHorizontalSliderWithHeigh50(toWitchView: containerView)
     }
+    func exampleTabbedViewController() {
+        let tVC = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: "TabbedViewController", storyBoardID: "TabbedViewController")
+        addSubViewWithChildController(addSubViewController: tVC, toWitchView: view)
+    }
 }
