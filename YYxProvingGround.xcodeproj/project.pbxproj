@@ -12,6 +12,7 @@
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
 		C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */; };
 		C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */; };
+		C22DA3442296C19B00CB4538 /* HttpsTestPostExample.json in Resources */ = {isa = PBXBuildFile; fileRef = C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */; };
 		C22EA54822967E68006FC04B /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EA54722967E68006FC04B /* Timer+Extension.swift */; };
 		C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22EA549229688E2006FC04B /* RefreshContents.xib */; };
 		C254F223229535B300C36CBF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F220229535B300C36CBF /* FirstViewController.swift */; };
@@ -135,6 +136,7 @@
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
 		C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestViewController.swift; sourceTree = "<group>"; };
 		C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTestViewController+Extension.swift"; sourceTree = "<group>"; };
+		C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HttpsTestPostExample.json; sourceTree = "<group>"; };
 		C22EA54722967E68006FC04B /* Timer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		C22EA549229688E2006FC04B /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
 		C254F220229535B300C36CBF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				C2A61A46228FD00600CCCFE8 /* ExampleFileNames.swift */,
 				C2A61A47228FD00600CCCFE8 /* YYxTestMananger.swift */,
 				C2A61A48228FD00600CCCFE8 /* UserInformationsJsonExample.json */,
+				C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */,
 				C2A61A49228FD00600CCCFE8 /* UserInformationsModel.swift */,
 				C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */,
 			);
@@ -769,6 +772,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A61AB9228FD00600CCCFE8 /* ToolBox.storyboard in Resources */,
+				C22DA3442296C19B00CB4538 /* HttpsTestPostExample.json in Resources */,
 				C2A61AAC228FD00600CCCFE8 /* UserInformationsJsonExample.json in Resources */,
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
 				C254F224229535B300C36CBF /* TabbedViewController.storyboard in Resources */,
