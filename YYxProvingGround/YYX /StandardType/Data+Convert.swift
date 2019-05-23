@@ -15,6 +15,9 @@ extension Data{
         }
         return data
     }
+    func convertToUTF8String() -> String {
+        return (String(data: self, encoding: .utf8))~!
+    }
     func decodeJsonDatabyUtf8<T:Codable>(modelType:T.Type,compelete:(T)->()) {
         do {
             //PlistDictionaryExample
