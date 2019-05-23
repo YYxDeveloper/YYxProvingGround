@@ -286,6 +286,7 @@
 		C22EA54622967E4D006FC04B /* Timer+Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C2A61A59228FD00600CCCFE8 /* CookingTimer.swift */,
 				C22EA54722967E68006FC04B /* Timer+Extension.swift */,
 			);
 			path = "Timer+Extension";
@@ -308,7 +309,6 @@
 				C2A61A26228FD00600CCCFE8 /* constant.swift */,
 				C2157BCF2292814C00171535 /* Controllers */,
 				C2A61A27228FD00600CCCFE8 /* SideBar */,
-				C2A61A29228FD00600CCCFE8 /* Global.swift */,
 				C2A61A2A228FD00600CCCFE8 /* OptionalType+Protocol.swift */,
 				C2A61A30228FD00600CCCFE8 /* Date */,
 				C2A61A38228FD00600CCCFE8 /* Extension+NSPredicate.swift */,
@@ -318,7 +318,6 @@
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A4B228FD00600CCCFE8 /* Protocol+Extension */,
 				C2A61A53228FD00600CCCFE8 /* ToolBox */,
-				C2A61A59228FD00600CCCFE8 /* CookingTimer.swift */,
 				C2A61A5A228FD00600CCCFE8 /* UIScrollView+Extension.swift */,
 				C2A61A5B228FD00600CCCFE8 /* Observable.swift */,
 				C2A61A5C228FD00600CCCFE8 /* CALayer */,
@@ -466,6 +465,7 @@
 		C2A61A61228FD00600CCCFE8 /* UIKit+Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C2A61A29228FD00600CCCFE8 /* Global.swift */,
 				C2A61A68228FD00600CCCFE8 /* UIColor+Extension.swift */,
 				C2A61A69228FD00600CCCFE8 /* UILabel+Extension.swift */,
 				C2A61A6A228FD00600CCCFE8 /* UIButton+Extension.swift */,
