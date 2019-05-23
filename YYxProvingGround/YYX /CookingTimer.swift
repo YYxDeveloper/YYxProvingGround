@@ -36,6 +36,7 @@ class CookingTimer {
     func pause() {
         isStarted = false
         theTimer?.invalidate()
+        theTimer = nil
     }
     func start() {
         guard isStarted == false else {return}
