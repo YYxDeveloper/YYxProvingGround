@@ -13,7 +13,7 @@ extension UIViewController{
     
     static func giveMeViewControllerFromStoryBoard(storyBoardName:String,storyBoardID:String) -> UIViewController {
         
-        let storyboard = UIStoryboard.giveMeStoryBoard(storyBoardId: storyBoardName)
+        let storyboard = UIStoryboard.giveMeStoryBoard(storyBordFileName: storyBoardName)
         let controller = storyboard.instantiateViewController(withIdentifier: storyBoardID)
         return controller
     }

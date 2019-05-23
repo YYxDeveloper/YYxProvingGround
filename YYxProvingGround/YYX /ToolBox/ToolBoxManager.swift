@@ -17,7 +17,7 @@ class ToolBoxManager {
     }
     static let storyboardID = "ToolBox"
     static func giveMeToolBoxStoryBoard() -> UIStoryboard{
-        return UIStoryboard.giveMeStoryBoard(storyBoardId: storyboardID)
+        return UIStoryboard.giveMeStoryBoard(storyBordFileName: storyboardID)
     }
     static func giveMeStaticTableViewController() -> UITableViewController{
         if let tableViewController = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: ToolBoxManager.storyboardID, storyBoardID: witchTypeViewController.StaticTableViewController.rawValue) as? UITableViewController{
