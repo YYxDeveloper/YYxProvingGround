@@ -19,13 +19,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     var refreshControl: UIRefreshControl!
+
     let reactDefaultUITableViewController = ReactRowCollectionViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-     examplePullRefrsh()
+     exampleWakeMeOnce()
     }
     
     override func viewWillAppear(_ animated: Bool) {

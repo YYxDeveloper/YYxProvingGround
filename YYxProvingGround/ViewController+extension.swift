@@ -75,11 +75,12 @@ extension ViewController{
         addSubViewWithChildController(addSubViewController: tVC, toWitchView: view)
     }
     func examplePullRefrsh() {
+        //https://www.appcoda.com.tw/custom-pull-to-refresh/
         let tb = UITableView(frame: containerView.bounds)
         tb.backgroundColor = .red
         containerView.addSubview(tb)
         
-
+        
         refreshControl = UIRefreshControl()
         
         refreshControl.backgroundColor = UIColor.yellow
@@ -90,4 +91,29 @@ extension ViewController{
         //close:  refreshControl.endRefreshing()
         
     }
+    func exampleWakeMeOnce() {
+      Timer.wakeMeOnce(duration: 5, repeats: false, timeUp: {
+            print(("sss"))
+      })
+    }
+}
+extension UITableView{
+    func preprocessDefaultRefreshControl() {
+        var refreshControl: UIRefreshControl!
+        refreshControl = UIRefreshControl()
+        
+        refreshControl.backgroundColor = UIColor.yellow
+        refreshControl.tintColor = UIColor.blue
+        
+        self.addSubview(refreshControl)
+        /*
+         close::
+         func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+            refreshControl.endRefreshing()
+         }
+         */
+        
+       
+    }
+  
 }

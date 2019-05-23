@@ -23,3 +23,6 @@ import UIKit
 
 //
 let whatEverInt = 100
+//
+typealias voidClosur = ()->()
+
