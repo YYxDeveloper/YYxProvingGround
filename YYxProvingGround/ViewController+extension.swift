@@ -74,4 +74,18 @@ extension ViewController{
         let tVC = UIViewController.giveMeViewControllerFromStoryBoard(storyBoardName: "TabbedViewController", storyBoardID: "TabbedViewController")
         addSubViewWithChildController(addSubViewController: tVC, toWitchView: view)
     }
+    func examplePullRefrsh() {
+        let tb = UITableView(frame: containerView.bounds)
+        tb.backgroundColor = .red
+        containerView.addSubview(tb)
+        
+
+        refreshControl = UIRefreshControl()
+        
+        refreshControl.backgroundColor = UIColor.yellow
+        refreshControl.tintColor = UIColor.blue
+        
+        tb.addSubview(refreshControl)
+        
+    }
 }

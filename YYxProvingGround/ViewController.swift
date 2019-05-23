@@ -18,14 +18,14 @@ import CoreData
 class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
-    
+    var refreshControl: UIRefreshControl!
     let reactDefaultUITableViewController = ReactRowCollectionViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-     exampleTabbedViewController()
+     examplePullRefrsh()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,7 +36,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func turn(_ sender: Any) {
-        sideBar?.turn()
+//        sideBar?.turn()
+         refreshControl.endRefreshing()
     }
     
     
