@@ -11,6 +11,7 @@
 		C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */; };
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
 		C22EA54822967E68006FC04B /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EA54722967E68006FC04B /* Timer+Extension.swift */; };
+		C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22EA549229688E2006FC04B /* RefreshContents.xib */; };
 		C254F223229535B300C36CBF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F220229535B300C36CBF /* FirstViewController.swift */; };
 		C254F224229535B300C36CBF /* TabbedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C254F221229535B300C36CBF /* TabbedViewController.storyboard */; };
 		C254F225229535B300C36CBF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F222229535B300C36CBF /* SecondViewController.swift */; };
@@ -131,6 +132,7 @@
 		C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
 		C22EA54722967E68006FC04B /* Timer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
+		C22EA549229688E2006FC04B /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
 		C254F220229535B300C36CBF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C254F221229535B300C36CBF /* TabbedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabbedViewController.storyboard; sourceTree = "<group>"; };
 		C254F222229535B300C36CBF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -625,6 +627,7 @@
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
+				C22EA549229688E2006FC04B /* RefreshContents.xib */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
 				E879C1BF22421013006904A5 /* LaunchScreen.storyboard */,
@@ -766,6 +769,7 @@
 				C2A61AA3228FD00600CCCFE8 /* CategoryHorizenTalRowCell.xib in Resources */,
 				C2A61AD0228FD00600CCCFE8 /* PageViewController.storyboard in Resources */,
 				C2A61AA9228FD00600CCCFE8 /* PlistArrayExample.plist in Resources */,
+				C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */,
 				C2A61AAE228FD00600CCCFE8 /* PlistDictionaryExample.plist in Resources */,
 				C2A61AD8228FD00600CCCFE8 /* TintView.xib in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
