@@ -1,0 +1,6 @@
+framework module Pods_YYxProvingGroundUITests {
+  umbrella header "Pods-YYxProvingGroundUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

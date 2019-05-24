@@ -1,0 +1,6 @@
+framework module Pods_YYxProvingGround {
+  umbrella header "Pods-YYxProvingGround-umbrella.h"
+
+  export *
+  module * { export * }
+}
