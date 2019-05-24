@@ -13,9 +13,7 @@ class NetworkTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-       examplePostData()
-//        exampleTestURLconnect()
+     exampleSheetsu_Create1User()
     }
     
 

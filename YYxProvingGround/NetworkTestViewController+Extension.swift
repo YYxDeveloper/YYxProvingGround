@@ -45,3 +45,34 @@ extension NetworkTestViewController{
     }
     
 }
+extension NetworkTestViewController{
+    func exampleSheetsu_Create1User()  {
+       
+        
+        // Adds single row to spreadsheet
+        let url = String(format: "https://sheetsu.com/apis/v1.0su/10b85fba966d")
+        let serviceUrl = URL(string: url)
+        let parameterDictionary = ["id" : "6", "name" : "Glenn", "score": "44"]
+        var request = URLRequest(url: serviceUrl!)
+        
+        request.httpMethod = "POST"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        
+        let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: [])
+        
+        request.httpBody = httpBody
+        
+        let session = URLSession.shared
+        
+        session.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+    }
+}
