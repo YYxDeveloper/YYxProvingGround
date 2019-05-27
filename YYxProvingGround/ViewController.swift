@@ -46,11 +46,8 @@ class ViewController: UIViewController {
         
     }
     func exampleCoreDate_Read() {
-        
           let viewContext = NSManagedObjectContext.giveMeViewContext()
             viewContext.readDrivers()
-            
-            
     }
     
     
