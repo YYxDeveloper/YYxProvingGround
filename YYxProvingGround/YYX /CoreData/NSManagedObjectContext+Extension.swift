@@ -23,8 +23,9 @@ extension NSManagedObjectContext{
         
         appDelegate.saveContext()
     }
-    func readDrivers<T:NSManagedObject>(entity: T.Type) {
+    func readDrivers<T:NSManagedObject>(entity: T.Type,hasPredicate:NSPredicate?) {
         let request = T.fetchRequest()
+        request.predicate = hasPredicate
         let viewContext = NSManagedObjectContext.giveMeViewContext()
         
         do {

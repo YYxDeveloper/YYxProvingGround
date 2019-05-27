@@ -52,41 +52,8 @@ class ViewController: UIViewController {
     }
     func exampleCoreDate_Read() {
           let viewContext = NSManagedObjectContext.giveMeViewContext()
-        viewContext.readDrivers(entity: Driver.self)
+//          let predicate = NSPredicate(format: "chineseName like 'b*'")
+          let predicate2 =  NSPredicate(format: "iid == 999")
+        viewContext.readDrivers(entity: Driver.self, hasPredicate: predicate2)
     }
-    func exampleCoreDataWithPredicate() {
-        let predicate = NSPredicate(format: "chineseName like 'b*'")
-        let viewContext = NSManagedObjectContext.giveMeViewContext()
-        let request:NSFetchRequest<Driver> = Driver.fetchRequest()
-        
-        request.predicate = predicate
-        do {
-            let arr = try viewContext.fetch(request)
-            //                print(arr)
-            _ = arr.map({print($0.chineseName ?? "XXX")})
-            _ = arr.map({print($0.iid)})
-            
-            
-        }catch{
-            print(error)
-        }
-        
-    }
-    func fetchData<T:NSManagedObject>(entity: T.Type) {
-        let fetchRequest = T.fetchRequest()
-        let viewContext = NSManagedObjectContext.giveMeViewContext()
-
-        do {
-            fetchRequest.predicate = NSPredicate(format: "questionWasShown == %@", NSNumber(value: false))
-            let result = try viewContext.fetch(fetchRequest)
-            if result.count > 0 {
-                // do some stuff
-            }
-        } catch {
-            
-        }
-    }
-    
-    
-
 }
