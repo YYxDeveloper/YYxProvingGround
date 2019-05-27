@@ -23,20 +23,18 @@ extension NSManagedObjectContext{
         
         appDelegate.saveContext()
     }
-    func readDrivers() {
-        let request:NSFetchRequest<Driver> = Driver.fetchRequest()
+    func readDrivers<T:NSManagedObject>(entity: T.Type) {
+        let request = T.fetchRequest()
         let viewContext = NSManagedObjectContext.giveMeViewContext()
         
         do {
-            let arr = try viewContext.fetch(request)
-            //                print(arr)
-            _ = arr.map({print($0.chineseName ?? "XXX")})
-            _ = arr.map({print($0.iid)})
-            
-            
+            if let arr = try viewContext.fetch(request) as? [Driver] {
+                _ = arr.map({print($0.chineseName ?? "XXX")})
+                _ = arr.map({print($0.iid)})
+            }
         }catch{
+            YYxErrorHandler.printConvertErrorFail()
             print(error)
         }
-        
     }
 }
