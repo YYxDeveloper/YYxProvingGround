@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 extension ViewController{
     //(Create)、讀取(Read)、更新(Update)、刪除(Delete)
     func exampleCoreData_Create()  {
@@ -23,4 +24,13 @@ extension ViewController{
         let predicate2 =  NSPredicate(format: "iid == 999")
         viewContext.readDrivers(entity: Driver.self, hasPredicate: predicate2)
     }
+    func exampleCoreDataFetchWithTemplate() {
+
+        let model: NSManagedObjectModel = AppDelegate.giveMeAppDelegate().persistentContainer.managedObjectModel
+        
+        let request = model.fetchRequestTemplate(forName: "MY_REQUEST1")
+        NSManagedObjectContext.showDriverDatas(request: request!)
+        
+    }
+    
 }

@@ -9,8 +9,9 @@
         <attribute name="iid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="betweenCar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Car" inverseName="betwweenDriver" inverseEntity="Car" syncable="YES"/>
     </entity>
+    <fetchRequest name="MY_REQUEST1" entity="Driver" predicateString="chineseName == &quot;CiCi&quot;"/>
     <elements>
-        <element name="Driver" positionX="-63" positionY="-18" width="128" height="88"/>
         <element name="Car" positionX="140.01953125" positionY="67.14453125" width="128" height="73"/>
+        <element name="Driver" positionX="-63" positionY="-18" width="128" height="88"/>
     </elements>
 </model>

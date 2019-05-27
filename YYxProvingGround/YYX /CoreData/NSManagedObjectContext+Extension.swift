@@ -13,6 +13,18 @@ extension NSManagedObjectContext{
     static func giveMeViewContext() -> NSManagedObjectContext{
         return AppDelegate.giveMeAppDelegate().persistentContainer.viewContext
     }
+    static func showDriverDatas(request:NSFetchRequest<NSFetchRequestResult>) {
+        let viewContext = NSManagedObjectContext.giveMeViewContext()
+        do {
+            if let arr = try viewContext.fetch(request) as? [Driver] {
+                _ = arr.map({print($0.chineseName ?? "XXX")})
+                _ = arr.map({print($0.iid)})
+            }
+        }catch{
+            YYxErrorHandler.printConvertErrorFail()
+            print(error)
+        }
+    }
     func create1Driver(chineseName:String?,iid:Int) {
         let appDelegate = AppDelegate.giveMeAppDelegate()
         let viewContext = NSManagedObjectContext.giveMeViewContext()
@@ -26,16 +38,7 @@ extension NSManagedObjectContext{
     func readDrivers<T:NSManagedObject>(entity: T.Type,hasPredicate:NSPredicate?) {
         let request = T.fetchRequest()
         request.predicate = hasPredicate
-        let viewContext = NSManagedObjectContext.giveMeViewContext()
-        
-        do {
-            if let arr = try viewContext.fetch(request) as? [Driver] {
-                _ = arr.map({print($0.chineseName ?? "XXX")})
-                _ = arr.map({print($0.iid)})
-            }
-        }catch{
-            YYxErrorHandler.printConvertErrorFail()
-            print(error)
-        }
+        NSManagedObjectContext.showDriverDatas(request: request)
+       
     }
 }
