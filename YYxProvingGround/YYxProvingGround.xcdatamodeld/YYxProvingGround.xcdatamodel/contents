@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Car" representedClassName="Car" syncable="YES" codeGenerationType="class">
+        <attribute name="ownerChineseName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="betwweenDriver" maxCount="1" deletionRule="Nullify" destinationEntity="Driver" inverseName="betweenCar" inverseEntity="Driver" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <entity name="Driver" representedClassName="Driver" syncable="YES" codeGenerationType="class">
+        <attribute name="chineseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="betweenCar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Car" inverseName="betwweenDriver" inverseEntity="Car" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Driver" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Car" positionX="140.01953125" positionY="67.14453125" width="128" height="73"/>
+    </elements>
 </model>

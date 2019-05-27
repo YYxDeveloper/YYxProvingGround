@@ -25,8 +25,7 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-     exampleWakeMeOnce()
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +38,19 @@ class ViewController: UIViewController {
     @IBAction func turn(_ sender: Any) {
 //        sideBar?.turn()
          refreshControl.endRefreshing()
+    }
+    //(Create)、讀取(Read)、更新(Update)、刪除(Delete)
+    func exampleCoreData_Create()  {
+        let viewContext = NSManagedObjectContext.giveMeViewContext()
+        viewContext.create1Driver(chineseName: "CiCi", iid: 999)
+        
+    }
+    func exampleCoreDate_Read() {
+        
+          let viewContext = NSManagedObjectContext.giveMeViewContext()
+            viewContext.readDrivers()
+            
+            
     }
     
     

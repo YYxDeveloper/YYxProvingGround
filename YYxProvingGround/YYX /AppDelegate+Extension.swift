@@ -25,5 +25,14 @@ extension AppDelegate{
         window?.rootViewController = UINavigationController(rootViewController: firstViewController)
         
     }
+    static func giveMeAppDelegate() -> AppDelegate{
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            return appDelegate
+        }else{
+            assert(false)
+            return AppDelegate()
+        }
+        
+    }
 }
 //"ViewController"
