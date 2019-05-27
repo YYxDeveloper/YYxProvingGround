@@ -10,6 +10,7 @@
 		51288774F1D4ED37E2D93083 /* Pods_YYxProvingGroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB664A0C1A3B1830D0DD12D8 /* Pods_YYxProvingGroundUITests.framework */; };
 		C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */; };
 		C205949F229BE24C00E57B51 /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */; };
+		C20594A1229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20594A0229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift */; };
 		C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */; };
 		C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */; };
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
@@ -145,6 +146,7 @@
 		8FC9D9E82FF8E0AA0A7AF675 /* Pods-YYxProvingGroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundUITests/Pods-YYxProvingGroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
 		C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreData.swift"; sourceTree = "<group>"; };
+		C20594A0229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectModel+Extension.swift"; sourceTree = "<group>"; };
 		C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */,
+				C20594A0229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -981,6 +984,7 @@
 				C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */,
 				C22EA54822967E68006FC04B /* Timer+Extension.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
+				C20594A1229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift in Sources */,
 				C2A61AB4228FD00600CCCFE8 /* Alert+UIViewController.swift in Sources */,
 				C205949F229BE24C00E57B51 /* ViewController+CoreData.swift in Sources */,
 				C2A61ABE228FD00600CCCFE8 /* CAShapeLayer+Extension.swift in Sources */,

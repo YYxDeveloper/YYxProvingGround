@@ -26,7 +26,7 @@ extension ViewController{
     }
     func exampleCoreDataFetchWithTemplate() {
 
-        let model: NSManagedObjectModel = AppDelegate.giveMeAppDelegate().persistentContainer.managedObjectModel
+        let model: NSManagedObjectModel = NSManagedObjectModel.giveMeInstance()
         
         let request = model.fetchRequestTemplate(forName: "MY_REQUEST1")
         NSManagedObjectContext.showDriverDatas(request: request!)
