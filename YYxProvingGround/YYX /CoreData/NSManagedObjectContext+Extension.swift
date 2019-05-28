@@ -26,14 +26,11 @@ extension NSManagedObjectContext{
         }
     }
     func create1Driver(chineseName:String?,iid:Int) {
-        let appDelegate = AppDelegate.giveMeAppDelegate()
         let viewContext = NSManagedObjectContext.giveMeViewContext()
         
         let driver1 = Driver(context:viewContext )
         driver1.chineseName = chineseName
         driver1.iid = Int64(iid)
-        
-        appDelegate.saveContext()
     }
     func readDrivers<T:NSManagedObject>(entity: T.Type,hasPredicate:NSPredicate?) {
         let request = T.fetchRequest()

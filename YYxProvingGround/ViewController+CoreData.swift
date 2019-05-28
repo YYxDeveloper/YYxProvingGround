@@ -16,6 +16,7 @@ extension ViewController{
         viewContext.create1Driver(chineseName: "CiCi", iid: 999)
         viewContext.create1Driver(chineseName: "bill", iid: 999)
         viewContext.create1Driver(chineseName: "bill1", iid: 999)
+        AppDelegate.giveMeAppDelegate().saveContext()
         
     }
     func exampleCoreDate_Read() {
