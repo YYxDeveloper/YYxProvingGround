@@ -27,4 +27,21 @@ extension UITableView{
         
         return cell
     }
+    func preprocessDefaultRefreshControl() {
+        var refreshControl: UIRefreshControl!
+        refreshControl = UIRefreshControl()
+        
+        refreshControl.backgroundColor = UIColor.yellow
+        refreshControl.tintColor = UIColor.blue
+        
+        self.addSubview(refreshControl)
+        /*
+         close::
+         func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+         refreshControl.endRefreshing()
+         }
+         */
+        
+        
+    }
 }
