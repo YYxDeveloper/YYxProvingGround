@@ -96,6 +96,9 @@ extension ViewController{
             print(("sss"))
       })
     }
+    func exampleLocalization() {
+        turnBtn.setTitle(NSLocalizedString("aa", comment: EMPTY_STR), for: .normal)
+    }
 }
 extension UITableView{
     func preprocessDefaultRefreshControl() {

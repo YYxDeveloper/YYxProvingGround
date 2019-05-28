@@ -27,8 +27,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        exampleCoreData_Create()
         
-        exampleCoreDate_Read()
+//        exampleCoreDate_Read()
 //        exampleCoreDataFetchWithTemplate()
+        exampleLocalization()
     }
     
     override func viewWillAppear(_ animated: Bool) {
