@@ -1,0 +1,20 @@
+{
+    "part":{
+        "PushUp":
+        {
+            "English":"Push up",
+            "Chinese":"伏地挺身"
+        },
+        "ChestFly":
+        {
+            "English":"Chest Fly ",
+            "Chinese":"胸飛鳥"
+        },
+        "InclinePushup":
+        {
+            "English":"Push up",
+            "Chinese":"上斜伏地挺身"
+        }
+    }
+    
+}

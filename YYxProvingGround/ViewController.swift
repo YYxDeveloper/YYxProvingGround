@@ -25,11 +25,7 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        exampleCoreData_Create()
-        
-//        exampleCoreDate_Read()
-//        exampleCoreDataFetchWithTemplate()
-        exampleLocalization()
+        exampleCoreDate_Read()
     }
     
     override func viewWillAppear(_ animated: Bool) {

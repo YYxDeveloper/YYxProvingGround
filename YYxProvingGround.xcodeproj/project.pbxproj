@@ -14,6 +14,8 @@
 		C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */; };
 		C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */; };
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
+		C21BA5B1229E29C900DCABD1 /* exampleDictionaryStructure.json in Resources */ = {isa = PBXBuildFile; fileRef = C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */; };
+		C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */; };
 		C22688712298267800E2884E /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22688702298267800E2884E /* Moya.swift */; };
 		C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */; };
 		C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */; };
@@ -152,6 +154,8 @@
 		C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
+		C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleDictionaryStructure.json; sourceTree = "<group>"; };
+		C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleDictionaryStructure.swift; sourceTree = "<group>"; };
 		C22688702298267800E2884E /* Moya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestViewController.swift; sourceTree = "<group>"; };
 		C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTestViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -353,12 +357,12 @@
 			path = FormCollectionVeiwController;
 			sourceTree = "<group>";
 		};
-		C226886E2298264E00E2884E /* 3rd */ = {
+		C21BA5B3229E336F00DCABD1 /* YYX3rd */ = {
 			isa = PBXGroup;
 			children = (
 				C226886F2298266800E2884E /* Moya */,
 			);
-			path = 3rd;
+			path = YYX3rd;
 			sourceTree = "<group>";
 		};
 		C226886F2298266800E2884E /* Moya */ = {
@@ -392,7 +396,6 @@
 			isa = PBXGroup;
 			children = (
 				C205949B229BC86000E57B51 /* CoreData */,
-				C226886E2298264E00E2884E /* 3rd */,
 				C22EA54622967E4D006FC04B /* Timer+Extension */,
 				C2A61A26228FD00600CCCFE8 /* constant.swift */,
 				C2157BCF2292814C00171535 /* Controllers */,
@@ -416,6 +419,7 @@
 				C2A61A7E228FD00600CCCFE8 /* Custom UIView */,
 				C2A61A83228FD00600CCCFE8 /* StandardType */,
 				C2656D9C229D209D00781200 /* LocalizableMan.swift */,
+				E879C1BA22421012006904A5 /* YYxProvingGround.xcdatamodeld */,
 			);
 			path = "YYX ";
 			sourceTree = "<group>";
@@ -499,6 +503,8 @@
 		C2A61A43228FD00600CCCFE8 /* TestExampleDatas */ = {
 			isa = PBXGroup;
 			children = (
+				C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */,
+				C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */,
 				C2A61A44228FD00600CCCFE8 /* FakeDataManager.swift */,
 				C2A61A45228FD00600CCCFE8 /* PlistArrayExample.plist */,
 				C2A61A46228FD00600CCCFE8 /* ExampleFileNames.swift */,
@@ -714,6 +720,7 @@
 		E879C1B222421012006904A5 /* YYxProvingGround */ = {
 			isa = PBXGroup;
 			children = (
+				C21BA5B3229E336F00DCABD1 /* YYX3rd */,
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
@@ -726,7 +733,6 @@
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
 				E879C1BF22421013006904A5 /* LaunchScreen.storyboard */,
 				E879C1C222421013006904A5 /* Info.plist */,
-				E879C1BA22421012006904A5 /* YYxProvingGround.xcdatamodeld */,
 			);
 			path = YYxProvingGround;
 			sourceTree = "<group>";
@@ -871,6 +877,7 @@
 				C2A61AA9228FD00600CCCFE8 /* PlistArrayExample.plist in Resources */,
 				C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */,
 				C2A61AAE228FD00600CCCFE8 /* PlistDictionaryExample.plist in Resources */,
+				C21BA5B1229E29C900DCABD1 /* exampleDictionaryStructure.json in Resources */,
 				C2656D97229D1EF200781200 /* Localizable.strings in Resources */,
 				C2A61AD8228FD00600CCCFE8 /* TintView.xib in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
@@ -1074,6 +1081,7 @@
 				C2A61ACF228FD00600CCCFE8 /* PageContainerViewController.swift in Sources */,
 				C2A61ADB228FD00600CCCFE8 /* Int+Extension.swift in Sources */,
 				C2A61A9B228FD00600CCCFE8 /* Extension+Date.swift in Sources */,
+				C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */,
 				C2A61AA0228FD00600CCCFE8 /* FileManager+Extension.swift in Sources */,
 				C2A61AD9228FD00600CCCFE8 /* ProgressingDashedLineCircleView.swift in Sources */,
 				C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */,

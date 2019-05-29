@@ -13,6 +13,16 @@ enum fileType:String {
 extension FileManager{
     
      //MARK: - to Bundle path
+    func decodeJsonDatabyUtf8FromBundle <T:Codable>(fileName:String,modelType:T.Type,compelete:@escaping (T)->()){
+        do {
+            let ss = try FileManager.default.readJsonFileFromBundle(fileName).data(using: .utf8)
+            ss~!.decodeJsonDatabyUtf8(modelType: modelType.self, compelete: {data in
+                compelete(data)
+            })
+        } catch  {
+            print(error)
+        }
+    }
     func readJsonFileFromBundle(_ fileName: String) throws -> String{
         guard let pathForResource = Bundle.main.path(forResource: fileName, ofType: fileType.json.rawValue) else {
             YYxErrorHandler.printOptionFail();return String()

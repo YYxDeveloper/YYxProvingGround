@@ -25,19 +25,23 @@ func ?= <T>( left: inout T?, right: T?) {
 }
 //---------
 extension ViewController{
-    func eampleDecodeJsonDatabyUtf8() {
-        do {
-            //PlistDictionaryExample
-            let ss = try FileManager.default.readJsonFileFromBundle("UserInformationsJsonExample").data(using: .utf8)
-            
-            ss~!.decodeJsonDatabyUtf8(modelType: UserInformations.self, compelete: {data in
+    enum theJSonModel {
+        case UserInformationsJsonExample
+        case exampleDictionaryStructure
+    }
+    func exampleDecodeJsonDatabyUtf8(witchModel:theJSonModel) {
+        switch witchModel {
+        case .exampleDictionaryStructure:
+            FileManager.default.decodeJsonDatabyUtf8FromBundle(fileName: "exampleDictionaryStructure", modelType: EachPartItems.self, compelete: { data in
                 print(data)
-                
+            })
+        case .UserInformationsJsonExample:
+            FileManager.default.decodeJsonDatabyUtf8FromBundle(fileName: "UserInformationsJsonExample", modelType: UserInformations.self.self, compelete: { data in
+                print(data)
             })
             
-        } catch  {
-            print(error)
         }
+       
     }
     func exampleMVVMBindingForInstance()  {
         self.cookingTimer.start()
