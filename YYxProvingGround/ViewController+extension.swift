@@ -103,4 +103,11 @@ extension ViewController{
     func exampleLocalization() {
         turnBtn.setTitle(LocalizableMan.giveMeLocalizedString(withKey: "aa"), for: .normal)
     }
+    func exampleReadJsonFileWithBundle() {
+        FileManager.default.decodeJsonDatabyUtf8FromBundle(fileName: "exampleTOEICVocabulary", modelType: TOEICVocabularyModel.self, compelete: {data in
+            
+            print(data)
+        })
+    }
+    
 }

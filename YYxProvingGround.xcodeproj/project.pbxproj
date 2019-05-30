@@ -22,6 +22,8 @@
 		C22DA3442296C19B00CB4538 /* HttpsTestPostExample.json in Resources */ = {isa = PBXBuildFile; fileRef = C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */; };
 		C22EA54822967E68006FC04B /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EA54722967E68006FC04B /* Timer+Extension.swift */; };
 		C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22EA549229688E2006FC04B /* RefreshContents.xib */; };
+		C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */; };
+		C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */; };
 		C254F223229535B300C36CBF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F220229535B300C36CBF /* FirstViewController.swift */; };
 		C254F224229535B300C36CBF /* TabbedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C254F221229535B300C36CBF /* TabbedViewController.storyboard */; };
 		C254F225229535B300C36CBF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F222229535B300C36CBF /* SecondViewController.swift */; };
@@ -162,6 +164,8 @@
 		C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HttpsTestPostExample.json; sourceTree = "<group>"; };
 		C22EA54722967E68006FC04B /* Timer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		C22EA549229688E2006FC04B /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
+		C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exampleTOEICVocabulary.json; sourceTree = "<group>"; };
+		C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOEICVocabularyModel.swift; sourceTree = "<group>"; };
 		C254F220229535B300C36CBF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C254F221229535B300C36CBF /* TabbedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabbedViewController.storyboard; sourceTree = "<group>"; };
 		C254F222229535B300C36CBF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -382,6 +386,33 @@
 			path = "Timer+Extension";
 			sourceTree = "<group>";
 		};
+		C23AEC46229FC58B00334BB1 /* TOEICVocabularyModel */ = {
+			isa = PBXGroup;
+			children = (
+				C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */,
+				C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */,
+			);
+			path = TOEICVocabularyModel;
+			sourceTree = "<group>";
+		};
+		C23AEC47229FC59800334BB1 /* exampleDictionaryStructure */ = {
+			isa = PBXGroup;
+			children = (
+				C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */,
+				C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */,
+			);
+			path = exampleDictionaryStructure;
+			sourceTree = "<group>";
+		};
+		C23AEC48229FC5A300334BB1 /* UserInformationsModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2A61A48228FD00600CCCFE8 /* UserInformationsJsonExample.json */,
+				C2A61A49228FD00600CCCFE8 /* UserInformationsModel.swift */,
+			);
+			path = UserInformationsModel;
+			sourceTree = "<group>";
+		};
 		C254F21F2295358200C36CBF /* UITabbedViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,7 +437,6 @@
 				C2A61A39228FD00600CCCFE8 /* FileManager+Extension.swift */,
 				C2A61A3A228FD00600CCCFE8 /* YYxInfo.txt */,
 				C2A61A42228FD00600CCCFE8 /* IndexPath+Extension.swift */,
-				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A4B228FD00600CCCFE8 /* Protocol+Extension */,
 				C2A61A53228FD00600CCCFE8 /* ToolBox */,
 				C2A61A5A228FD00600CCCFE8 /* UIScrollView+Extension.swift */,
@@ -419,7 +449,6 @@
 				C2A61A7E228FD00600CCCFE8 /* Custom UIView */,
 				C2A61A83228FD00600CCCFE8 /* StandardType */,
 				C2656D9C229D209D00781200 /* LocalizableMan.swift */,
-				E879C1BA22421012006904A5 /* YYxProvingGround.xcdatamodeld */,
 			);
 			path = "YYX ";
 			sourceTree = "<group>";
@@ -503,15 +532,14 @@
 		C2A61A43228FD00600CCCFE8 /* TestExampleDatas */ = {
 			isa = PBXGroup;
 			children = (
-				C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */,
-				C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */,
+				C23AEC47229FC59800334BB1 /* exampleDictionaryStructure */,
+				C23AEC46229FC58B00334BB1 /* TOEICVocabularyModel */,
 				C2A61A44228FD00600CCCFE8 /* FakeDataManager.swift */,
 				C2A61A45228FD00600CCCFE8 /* PlistArrayExample.plist */,
 				C2A61A46228FD00600CCCFE8 /* ExampleFileNames.swift */,
 				C2A61A47228FD00600CCCFE8 /* YYxTestMananger.swift */,
-				C2A61A48228FD00600CCCFE8 /* UserInformationsJsonExample.json */,
+				C23AEC48229FC5A300334BB1 /* UserInformationsModel */,
 				C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */,
-				C2A61A49228FD00600CCCFE8 /* UserInformationsModel.swift */,
 				C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */,
 				C2656D99229D1EF200781200 /* Localizable.strings */,
 			);
@@ -721,6 +749,7 @@
 			isa = PBXGroup;
 			children = (
 				C21BA5B3229E336F00DCABD1 /* YYX3rd */,
+				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
@@ -733,6 +762,7 @@
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
 				E879C1BF22421013006904A5 /* LaunchScreen.storyboard */,
 				E879C1C222421013006904A5 /* Info.plist */,
+				E879C1BA22421012006904A5 /* YYxProvingGround.xcdatamodeld */,
 			);
 			path = YYxProvingGround;
 			sourceTree = "<group>";
@@ -879,6 +909,7 @@
 				C2A61AAE228FD00600CCCFE8 /* PlistDictionaryExample.plist in Resources */,
 				C21BA5B1229E29C900DCABD1 /* exampleDictionaryStructure.json in Resources */,
 				C2656D97229D1EF200781200 /* Localizable.strings in Resources */,
+				C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */,
 				C2A61AD8228FD00600CCCFE8 /* TintView.xib in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
 				E879C1B922421012006904A5 /* Main.storyboard in Resources */,
@@ -1014,6 +1045,7 @@
 				C2A61AD2228FD00600CCCFE8 /* ThirdPageViewController.swift in Sources */,
 				C2A61ABA228FD00600CCCFE8 /* CookingTimer.swift in Sources */,
 				C2A61ACD228FD00600CCCFE8 /* Constraint+UIView.swift in Sources */,
+				C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */,
 				C2A61A96228FD00600CCCFE8 /* OptionalType+Protocol.swift in Sources */,
 				C254F225229535B300C36CBF /* SecondViewController.swift in Sources */,
 				C2A61AD4228FD00600CCCFE8 /* PageViewController.swift in Sources */,
