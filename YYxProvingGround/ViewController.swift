@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-      exampleReadJsonFileWithBundle()
+      exampleCoreDataFetchWithTemplate()
     }
     
     override func viewWillAppear(_ animated: Bool) {

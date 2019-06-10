@@ -22,6 +22,7 @@
 		C22DA3442296C19B00CB4538 /* HttpsTestPostExample.json in Resources */ = {isa = PBXBuildFile; fileRef = C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */; };
 		C22EA54822967E68006FC04B /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EA54722967E68006FC04B /* Timer+Extension.swift */; };
 		C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22EA549229688E2006FC04B /* RefreshContents.xib */; };
+		C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231FF4422AE45B400B15482 /* Driver+Extension.swift */; };
 		C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */; };
 		C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */; };
 		C254F223229535B300C36CBF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F220229535B300C36CBF /* FirstViewController.swift */; };
@@ -163,6 +164,7 @@
 		C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HttpsTestPostExample.json; sourceTree = "<group>"; };
 		C22EA54722967E68006FC04B /* Timer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		C22EA549229688E2006FC04B /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
+		C231FF4422AE45B400B15482 /* Driver+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extension.swift"; sourceTree = "<group>"; };
 		C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exampleTOEICVocabulary.json; sourceTree = "<group>"; };
 		C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOEICVocabularyModel.swift; sourceTree = "<group>"; };
 		C254F220229535B300C36CBF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -384,6 +386,14 @@
 			path = "Timer+Extension";
 			sourceTree = "<group>";
 		};
+		C231FF4622AE46C000B15482 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C231FF4422AE45B400B15482 /* Driver+Extension.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		C23AEC46229FC58B00334BB1 /* TOEICVocabularyModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +540,7 @@
 		C2A61A43228FD00600CCCFE8 /* TestExampleDatas */ = {
 			isa = PBXGroup;
 			children = (
+				C231FF4622AE46C000B15482 /* CoreData */,
 				C23AEC47229FC59800334BB1 /* exampleDictionaryStructure */,
 				C23AEC46229FC58B00334BB1 /* TOEICVocabularyModel */,
 				C2A61A44228FD00600CCCFE8 /* FakeDataManager.swift */,
@@ -1081,6 +1092,7 @@
 				C2A61AA5228FD00600CCCFE8 /* CategoryVerticalColumnCell.swift in Sources */,
 				C2A61ADA228FD00600CCCFE8 /* Data+Convert.swift in Sources */,
 				C2A61ACB228FD00600CCCFE8 /* Extension+UIView.swift in Sources */,
+				C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */,
 				C2A61AB8228FD00600CCCFE8 /* StaticCollectionViewController.swift in Sources */,
 				C2A61ADD228FD00600CCCFE8 /* Substring+Extension.swift in Sources */,
 				C2A61AEA228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift in Sources */,
