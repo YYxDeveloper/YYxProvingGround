@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import Reachability
 extension NetworkTestViewController{
+    func exampleReachability() {
+        Reachability.checkState()
+    }
     func exampleTestURLconnect()  {
         requestData(urlString: "https://my-json-server.typicode.com/YYxDeveloper/FakeAPI/posts", completion: {data in
             YYxErrorHandler.printTestLog(witchStep: 1, message: data.convertToUTF8String())
