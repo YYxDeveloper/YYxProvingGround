@@ -109,5 +109,10 @@ extension ViewController{
             print(data.eachVocabularys)
         })
     }
+    func exampleGenerateUUID() {
+        let uuid = String.giveMeRandomUUID()
+        print(uuid)
+
+    }
     
 }

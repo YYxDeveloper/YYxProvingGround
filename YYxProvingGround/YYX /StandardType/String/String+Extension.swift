@@ -36,3 +36,9 @@ extension String{
         
     }
 }
+extension String{
+    //MARK: - GiveME
+    static func giveMeRandomUUID() -> String{
+        return UUID().uuidString
+    }
+}

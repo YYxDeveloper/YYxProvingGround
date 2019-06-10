@@ -14,5 +14,7 @@ class EachPartItems: Codable {
 class EachItem: Codable {
     let English:String
     let Chinese:String
+    let uuid:String
+    
     
 }
