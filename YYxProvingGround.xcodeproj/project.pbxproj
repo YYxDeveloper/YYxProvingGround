@@ -53,7 +53,6 @@
 		C2A61AA8228FD00600CCCFE8 /* FakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A44228FD00600CCCFE8 /* FakeDataManager.swift */; };
 		C2A61AA9228FD00600CCCFE8 /* PlistArrayExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2A61A45228FD00600CCCFE8 /* PlistArrayExample.plist */; };
 		C2A61AAA228FD00600CCCFE8 /* ExampleFileNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A46228FD00600CCCFE8 /* ExampleFileNames.swift */; };
-		C2A61AAB228FD00600CCCFE8 /* YYxTestMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A47228FD00600CCCFE8 /* YYxTestMananger.swift */; };
 		C2A61AAC228FD00600CCCFE8 /* UserInformationsJsonExample.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A61A48228FD00600CCCFE8 /* UserInformationsJsonExample.json */; };
 		C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A49228FD00600CCCFE8 /* UserInformationsModel.swift */; };
 		C2A61AAE228FD00600CCCFE8 /* PlistDictionaryExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */; };
@@ -198,7 +197,6 @@
 		C2A61A44228FD00600CCCFE8 /* FakeDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDataManager.swift; sourceTree = "<group>"; };
 		C2A61A45228FD00600CCCFE8 /* PlistArrayExample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlistArrayExample.plist; sourceTree = "<group>"; };
 		C2A61A46228FD00600CCCFE8 /* ExampleFileNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleFileNames.swift; sourceTree = "<group>"; };
-		C2A61A47228FD00600CCCFE8 /* YYxTestMananger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYxTestMananger.swift; sourceTree = "<group>"; };
 		C2A61A48228FD00600CCCFE8 /* UserInformationsJsonExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserInformationsJsonExample.json; sourceTree = "<group>"; };
 		C2A61A49228FD00600CCCFE8 /* UserInformationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformationsModel.swift; sourceTree = "<group>"; };
 		C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlistDictionaryExample.plist; sourceTree = "<group>"; };
@@ -537,7 +535,6 @@
 				C2A61A44228FD00600CCCFE8 /* FakeDataManager.swift */,
 				C2A61A45228FD00600CCCFE8 /* PlistArrayExample.plist */,
 				C2A61A46228FD00600CCCFE8 /* ExampleFileNames.swift */,
-				C2A61A47228FD00600CCCFE8 /* YYxTestMananger.swift */,
 				C23AEC48229FC5A300334BB1 /* UserInformationsModel */,
 				C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */,
 				C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */,
@@ -1062,7 +1059,6 @@
 				C2A61AC1228FD00600CCCFE8 /* Extension+UITableView.swift in Sources */,
 				C2A61AC9228FD00600CCCFE8 /* Extension+UITextField.swift in Sources */,
 				C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */,
-				C2A61AAB228FD00600CCCFE8 /* YYxTestMananger.swift in Sources */,
 				C2A61AC7228FD00600CCCFE8 /* UIButton+Extension.swift in Sources */,
 				C2A61AC4228FD00600CCCFE8 /* UITableViewCell+Extension.swift in Sources */,
 				C2A61ABC228FD00600CCCFE8 /* Observable.swift in Sources */,

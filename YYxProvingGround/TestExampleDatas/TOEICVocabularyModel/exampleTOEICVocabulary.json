@@ -4,6 +4,67 @@
         {
             "english":"synonym",
             "chinese":"同義字",
+            
+        },{
+            "english":"abstain",
+            "chinese":"棄權",
+            "relateKeyword":"athlete"
+        },{
+            "english":"abstinence",
+            "chinese":"戒食、戒酒",
+            "relateKeyword":"oenophilist"
+        },{
+            "english":"acolade",
+            "chinese":"獎賞",
+            "relateKeyword":"wanted"
+        },
+        {
+            "english":"abstruse",
+            "chinese":"深奧的",
+            "relateKeyword":"deep hard to understand"
+        },
+        {
+            "english":"acidulus",
+            "chinese":"諷刺的",
+            "relateKeyword":"acid talking"
+        },
+        {
+            "english":"acoustic",
+            "chinese":"原聲的",
+            "relateKeyword":"acoustic guitar"
+        },
+        {
+            "english":"aerial",
+            "chinese":"空中",
+            "prnounceTip":"ae rial"
+        },
+        {
+            "english":"aesthetic",
+            "chinese":"美學的",
+            "relateKeyword":"beautiful",
+            "prnounceTip":"aes thetic"
+        },
+        {
+            "english":"allege",
+            "chinese":"宣告",
+            "prnounceTip":"a lle ge"
+        },
+        {
+            "english":"anonymous",
+            "chinese":"宣告",
+            "relateKeyword":"firfox anonymous version",
+            "prnounceTip":"a no ny mous"
+        },
+        {
+            "english":"apartheid",
+            "chinese":"隔離",
+            "relateKeyword":"racial discrimination ",
+            "prnounceTip":"a par teid"
+        },
+        {
+            "english":"approximate",
+            "chinese":"概略",
+            "prnounceTip":"a prx si mt"
         }
         
         

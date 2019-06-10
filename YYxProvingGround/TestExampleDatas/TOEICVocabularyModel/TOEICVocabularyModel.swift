@@ -15,4 +15,6 @@ class TOEICVocabularyModel:Codable {
 class eachVocabulary: Codable {
     let chinese:String
     let english:String
+    let relateKeyword:String?
+    let prnounceTip:String?
 }

@@ -106,7 +106,7 @@ extension ViewController{
     func exampleReadJsonFileWithBundle() {
         FileManager.default.decodeJsonDatabyUtf8FromBundle(fileName: "exampleTOEICVocabulary", modelType: TOEICVocabularyModel.self, compelete: {data in
             
-            print(data)
+            print(data.eachVocabularys)
         })
     }
     
