@@ -11,6 +11,8 @@
 		C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */; };
 		C205949F229BE24C00E57B51 /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */; };
 		C20594A1229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20594A0229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift */; };
+		C211F99722AFCA3B00A76693 /* YYxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C211F99622AFCA3B00A76693 /* YYxViewController.swift */; };
+		C211F99922AFD09000A76693 /* ViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C211F99822AFD09000A76693 /* ViewTestViewController.swift */; };
 		C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */; };
 		C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */; };
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
@@ -154,6 +156,8 @@
 		C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
 		C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreData.swift"; sourceTree = "<group>"; };
 		C20594A0229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectModel+Extension.swift"; sourceTree = "<group>"; };
+		C211F99622AFCA3B00A76693 /* YYxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxViewController.swift; sourceTree = "<group>"; };
+		C211F99822AFD09000A76693 /* ViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTestViewController.swift; sourceTree = "<group>"; };
 		C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
@@ -771,11 +775,13 @@
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
+				C211F99622AFCA3B00A76693 /* YYxViewController.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
 				C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */,
 				C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */,
 				C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */,
+				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
@@ -1109,6 +1115,7 @@
 				C2A61AEA228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift in Sources */,
 				C2A61AD7228FD00600CCCFE8 /* TintView.swift in Sources */,
 				C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */,
+				C211F99722AFCA3B00A76693 /* YYxViewController.swift in Sources */,
 				C2A61AC3228FD00600CCCFE8 /* ReactDefaultUITableViewController.swift in Sources */,
 				C2A61AE1228FD00600CCCFE8 /* String+Greenwich.swift in Sources */,
 				C2A61AC2228FD00600CCCFE8 /* TableViewControllerPresenter.swift in Sources */,
@@ -1139,6 +1146,7 @@
 				C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */,
 				C2A61AB6228FD00600CCCFE8 /* ToolBoxViewController.swift in Sources */,
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
+				C211F99922AFD09000A76693 /* ViewTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
