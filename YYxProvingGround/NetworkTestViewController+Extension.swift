@@ -70,7 +70,7 @@ extension NetworkTestViewController{
         
         request.httpBody = httpBody
         
-        let session = URLSession.shared
+        let session = URLSession.giveMeURLSession()
         
         session.dataTask(with: request) { (data, response, error) in
             if let data = data {
