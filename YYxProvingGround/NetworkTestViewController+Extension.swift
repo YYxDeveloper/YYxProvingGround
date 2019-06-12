@@ -13,7 +13,7 @@ extension NetworkTestViewController{
         Reachability.checkState()
     }
     func exampleTestURLconnect()  {
-        requestData(urlString: "https://my-json-server.typicode.com/YYxDeveloper/FakeAPI/posts", completion: {data in
+        CheckMan.checkDefaultRequestData(urlString: "https://my-json-server.typicode.com/YYxDeveloper/FakeAPI/posts", completion: {data in
             YYxErrorHandler.printTestLog(witchStep: 1, message: data.convertToUTF8String())
         })
     }
@@ -51,7 +51,11 @@ extension NetworkTestViewController{
 }
 extension NetworkTestViewController{
     func exampleSheetsu_Create1User()  {
-       
+       /**
+         why use resume
+        https://medium.com/@apppeterpan/%E7%82%BA%E4%BB%80%E9%BA%BC-urlsessiontask-%E8%A6%81%E5%91%BC%E5%8F%AB-resume-%E6%89%8D%E6%9C%83%E5%95%9F%E5%8B%95-27e0aaba57ef
+         
+        */
         
         // Adds single row to spreadsheet
         let url = String(format: "https://sheetsu.com/apis/v1.0su/10b85fba966d")
