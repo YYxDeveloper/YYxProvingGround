@@ -33,6 +33,8 @@
 		C254F225229535B300C36CBF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254F222229535B300C36CBF /* SecondViewController.swift */; };
 		C2656D97229D1EF200781200 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2656D99229D1EF200781200 /* Localizable.strings */; };
 		C2656D9D229D209D00781200 /* LocalizableMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2656D9C229D209D00781200 /* LocalizableMan.swift */; };
+		C277937D22B0F1F600E13109 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277937B22B0F1F600E13109 /* MyCollectionViewCell.swift */; };
+		C277937E22B0F1F600E13109 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277937C22B0F1F600E13109 /* BasicCollectionViewController.swift */; };
 		C2A61A93228FD00600CCCFE8 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A26228FD00600CCCFE8 /* constant.swift */; };
 		C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A28228FD00600CCCFE8 /* SidBar.swift */; };
 		C2A61A95228FD00600CCCFE8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A29228FD00600CCCFE8 /* Global.swift */; };
@@ -181,6 +183,8 @@
 		C2656D98229D1EF200781200 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C2656D9A229D1EF700781200 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C2656D9C229D209D00781200 /* LocalizableMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableMan.swift; sourceTree = "<group>"; };
+		C277937B22B0F1F600E13109 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		C277937C22B0F1F600E13109 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
 		C2A61A26228FD00600CCCFE8 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		C2A61A28228FD00600CCCFE8 /* SidBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidBar.swift; sourceTree = "<group>"; };
 		C2A61A29228FD00600CCCFE8 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -347,6 +351,7 @@
 		C2157BCF2292814C00171535 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C277937A22B0F1F600E13109 /* BasicCollectionViewController */,
 				C254F21F2295358200C36CBF /* UITabbedViewController */,
 				C2A61A6B228FD00600CCCFE8 /* Extension+UINavigationController.swift */,
 				C2A61A73228FD00600CCCFE8 /* PageViewController+Extension */,
@@ -444,6 +449,15 @@
 				C254F222229535B300C36CBF /* SecondViewController.swift */,
 			);
 			path = UITabbedViewController;
+			sourceTree = "<group>";
+		};
+		C277937A22B0F1F600E13109 /* BasicCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C277937B22B0F1F600E13109 /* MyCollectionViewCell.swift */,
+				C277937C22B0F1F600E13109 /* BasicCollectionViewController.swift */,
+			);
+			path = BasicCollectionViewController;
 			sourceTree = "<group>";
 		};
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
@@ -1060,9 +1074,11 @@
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				C20594A1229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift in Sources */,
 				C2A61AB4228FD00600CCCFE8 /* Alert+UIViewController.swift in Sources */,
+				C277937D22B0F1F600E13109 /* MyCollectionViewCell.swift in Sources */,
 				C205949F229BE24C00E57B51 /* ViewController+CoreData.swift in Sources */,
 				C2A61ABE228FD00600CCCFE8 /* CAShapeLayer+Extension.swift in Sources */,
 				C2A61ADF228FD00600CCCFE8 /* Double+Greenwich.swift in Sources */,
+				C277937E22B0F1F600E13109 /* BasicCollectionViewController.swift in Sources */,
 				C2A61AD3228FD00600CCCFE8 /* FirstPageViewController.swift in Sources */,
 				C2A61A93228FD00600CCCFE8 /* constant.swift in Sources */,
 				C2A61AD1228FD00600CCCFE8 /* SecondPageViewController.swift in Sources */,
