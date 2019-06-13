@@ -60,18 +60,11 @@ extension NetworkTestViewController{
         // Adds single row to spreadsheet
         let url = String(format: "https://sheetsu.com/apis/v1.0su/10b85fba966d")
         let serviceUrl = URL(string: url)
-        let parameterDictionary = ["id" : "6", "name" : "Glenn", "score": "44"]
+        let parameterDictionary = ["id" : "33", "name" : "1Glenn", "score": "999"]
         var request = URLRequest(url: serviceUrl!)
-        
-        request.httpMethod = "POST"
-        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        
-        let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: [])
-        
-        request.httpBody = httpBody
+        request.setDefaultSetting(body: parameterDictionary, witchHttpMethod: .POST)
         
         let session = URLSession.giveMeURLSession()
-        
         session.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {

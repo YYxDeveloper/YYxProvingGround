@@ -121,6 +121,8 @@
 		C2A61AE6228FD00600CCCFE8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A92228FD00600CCCFE8 /* Array+Extension.swift */; };
 		C2A61AEA228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61AE9228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift */; };
 		C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */; };
+		C2F152D722B23493006956C8 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F152D622B23493006956C8 /* URLRequest+Extension.swift */; };
+		C2F152D922B23656006956C8 /* HttpMethod+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F152D822B23656006956C8 /* HttpMethod+Enum.swift */; };
 		D5BF3C2CDC8A2E7686475A0B /* Pods_YYxProvingGroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0709F111CC381F5E0E0E9F91 /* Pods_YYxProvingGroundTests.framework */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
 		E879C1B622421012006904A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B522421012006904A5 /* ViewController.swift */; };
@@ -273,6 +275,8 @@
 		C2A61A92228FD00600CCCFE8 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		C2A61AE9228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactRowCollectionViewController.swift; sourceTree = "<group>"; };
 		C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
+		C2F152D622B23493006956C8 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		C2F152D822B23656006956C8 /* HttpMethod+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpMethod+Enum.swift"; sourceTree = "<group>"; };
 		D40AB8845881983AC8989955 /* Pods-YYxProvingGround.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3ABBC6B65EFCD9C60DC259 /* Pods_YYxProvingGround.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxProvingGround.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879C1B022421012006904A5 /* YYxProvingGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYxProvingGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -477,7 +481,9 @@
 		C277938422B0FF4800E13109 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C2F152D822B23656006956C8 /* HttpMethod+Enum.swift */,
 				C277938522B0FF8800E13109 /* URLSession+Extension.swift */,
+				C2F152D622B23493006956C8 /* URLRequest+Extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1117,6 +1123,8 @@
 				C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */,
 				C2A61AB1228FD00600CCCFE8 /* Extension+UIViewController.swift in Sources */,
 				C22688712298267800E2884E /* Moya.swift in Sources */,
+				C2F152D722B23493006956C8 /* URLRequest+Extension.swift in Sources */,
+				C2F152D922B23656006956C8 /* HttpMethod+Enum.swift in Sources */,
 				C2A61AB3228FD00600CCCFE8 /* Photo+UIViewController.swift in Sources */,
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
 				C2A61A9E228FD00600CCCFE8 /* Timezone+Extension.swift in Sources */,
