@@ -11,8 +11,41 @@ enum fileType:String {
     case json,txt,plist
 }
 extension FileManager{
-    
+    func checkInfoPlistData() {
+        func checkNSAllowsArbitraryLoads(InfoDic:[String:Any]) -> Bool{
+            guard let values = InfoDic["NSAppTransportSecurity"] as? [String:Any] else {
+                assert(false);return false
+            }
+            guard let arbitraryLaods = values["NSAllowsArbitraryLoads"] as? Bool else {
+                assert(false);return false
+            }
+            return arbitraryLaods
+        }
+        let InfoDic = FileManager.default.giveMeInfoPlistDic()
+        
+        let hasNSAllowsArbitraryLoad = checkNSAllowsArbitraryLoads(InfoDic: InfoDic)
+        print(hasNSAllowsArbitraryLoad)
+        
+    }
      //MARK: - to Bundle path
+    func giveMeInfoPlistDic() -> [String:Any] {
+        var propertyListForamt =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
+        var plistData: [String: AnyObject] = [:] //Our data
+        let plistPath: String? = Bundle.main.path(forResource: "Info", ofType: "plist")! //the path of the data
+        let plistXML = FileManager.default.contents(atPath: plistPath!)!
+        do {//convert the data to a dictionary and handle errors.
+            plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListForamt) as! [String:AnyObject]
+            //            print(plistData)
+            //            let aa = plistData["NSAppTransportSecurity"] as? [String:Any]
+            //            print("aaaa\(aa!["NSAllowsArbitraryLoads"])")
+//            self.checkInfoPlistData(InfoDic: plistData)
+            return plistData
+            
+        } catch {
+            print("Error reading plist: \(error), format: \(propertyListForamt)")
+            return [String:Any]()
+        }
+    }
     func showInfoPlistData() {
         var propertyListForamt =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: AnyObject] = [:] //Our data
@@ -21,6 +54,7 @@ extension FileManager{
         do {//convert the data to a dictionary and handle errors.
             plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListForamt) as! [String:AnyObject]
             print(plistData)
+//            let aa = plistData["NSAppTransportSecurity"] as? [String:Any]
             
         } catch {
             print("Error reading plist: \(error), format: \(propertyListForamt)")

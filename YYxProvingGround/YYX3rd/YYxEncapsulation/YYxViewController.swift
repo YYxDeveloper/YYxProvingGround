@@ -13,9 +13,10 @@ class YYxViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        //網路狀態
         checkNetworkState()
         checkJailbreak()
+        checkInfoPlist()
+        
         // Do any additional setup after loading the view.
     }
     func checkNetworkState() {
@@ -23,6 +24,9 @@ class YYxViewController: UIViewController {
     }
     func checkJailbreak() {
         
+    }
+    func checkInfoPlist() {
+        FileManager.default.checkInfoPlistData()
     }
 
     /*

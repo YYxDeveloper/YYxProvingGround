@@ -44,7 +44,9 @@ extension ViewController{
        
     }
     func exmapleGetInfoPlistData()  {
-        FileManager.default.showInfoPlistData()
+//        FileManager.default.showInfoPlistData()
+       _ = FileManager.default.checkInfoPlistData()
+        
     }
     func exampleMVVMBindingForInstance()  {
         self.cookingTimer.start()
