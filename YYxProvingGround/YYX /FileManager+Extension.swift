@@ -13,6 +13,19 @@ enum fileType:String {
 extension FileManager{
     
      //MARK: - to Bundle path
+    func showInfoPlistData() {
+        var propertyListForamt =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
+        var plistData: [String: AnyObject] = [:] //Our data
+        let plistPath: String? = Bundle.main.path(forResource: "Info", ofType: "plist")! //the path of the data
+        let plistXML = FileManager.default.contents(atPath: plistPath!)!
+        do {//convert the data to a dictionary and handle errors.
+            plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListForamt) as! [String:AnyObject]
+            print(plistData)
+            
+        } catch {
+            print("Error reading plist: \(error), format: \(propertyListForamt)")
+        }
+    }
     func decodeJsonDatabyUtf8FromBundle <T:Codable>(fileName:String,modelType:T.Type,compelete:@escaping (T)->()){
         do {
             let ss = try FileManager.default.readJsonFileFromBundle(fileName).data(using: .utf8)

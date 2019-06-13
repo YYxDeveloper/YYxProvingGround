@@ -43,6 +43,9 @@ extension ViewController{
         }
        
     }
+    func exmapleGetInfoPlistData()  {
+        FileManager.default.showInfoPlistData()
+    }
     func exampleMVVMBindingForInstance()  {
         self.cookingTimer.start()
         self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in

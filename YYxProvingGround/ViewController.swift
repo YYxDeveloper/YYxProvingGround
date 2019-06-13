@@ -52,14 +52,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //      exampleDecodeJsonDatabyUtf8(witchModel: .exampleDictionaryStructure)
-        exampleGenerateUUID()
+//        exampleGenerateUUID()
+        exmapleGetInfoPlistData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
     }
     override func viewDidAppear(_ animated: Bool) {
 //        dynamicTableVC.presenter.updateDatas()
-        print("xxxx\(connectedToNetwork())")
+//        print("xxxx\(connectedToNetwork())")
 
     }
 
