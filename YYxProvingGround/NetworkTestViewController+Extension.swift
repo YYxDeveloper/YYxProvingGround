@@ -8,6 +8,7 @@
 
 import Foundation
 import Reachability
+import Moya
 extension NetworkTestViewController{
     func exampleReachability() {
         Reachability.checkState()
@@ -50,6 +51,7 @@ extension NetworkTestViewController{
     
 }
 extension NetworkTestViewController{
+    // MARK: - Sheetsu ex
     func exampleSheetsu_Create1User()  {
        /**
          why use resume
@@ -75,5 +77,9 @@ extension NetworkTestViewController{
                 }
             }
             }.resume()
+    }
+     // MARK: - Moya ex
+    func exampleMoyaBasic() {
+        
     }
 }

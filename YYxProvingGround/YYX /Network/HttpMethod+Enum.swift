@@ -10,3 +10,6 @@ import Foundation
 enum httpMethodString:String{
     case POST,GET
 }
+extension URLSessionConfiguration{
+    
+}

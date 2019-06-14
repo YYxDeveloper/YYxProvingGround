@@ -37,6 +37,7 @@
 		C277937E22B0F1F600E13109 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277937C22B0F1F600E13109 /* BasicCollectionViewController.swift */; };
 		C277938222B0FBBB00E13109 /* CheckMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277938122B0FBBB00E13109 /* CheckMan.swift */; };
 		C277938622B0FF8800E13109 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C277938522B0FF8800E13109 /* URLSession+Extension.swift */; };
+		C29E15FD22B3A5E9008AD317 /* Extension+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29E15FC22B3A5E9008AD317 /* Extension+Alamofire.swift */; };
 		C2A61A93228FD00600CCCFE8 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A26228FD00600CCCFE8 /* constant.swift */; };
 		C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A28228FD00600CCCFE8 /* SidBar.swift */; };
 		C2A61A95228FD00600CCCFE8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A29228FD00600CCCFE8 /* Global.swift */; };
@@ -191,6 +192,7 @@
 		C277937C22B0F1F600E13109 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
 		C277938122B0FBBB00E13109 /* CheckMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMan.swift; sourceTree = "<group>"; };
 		C277938522B0FF8800E13109 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		C29E15FC22B3A5E9008AD317 /* Extension+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Alamofire.swift"; sourceTree = "<group>"; };
 		C2A61A26228FD00600CCCFE8 /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		C2A61A28228FD00600CCCFE8 /* SidBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidBar.swift; sourceTree = "<group>"; };
 		C2A61A29228FD00600CCCFE8 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 		C21BA5B3229E336F00DCABD1 /* YYX3rd */ = {
 			isa = PBXGroup;
 			children = (
+				C29E15FB22B3A5BB008AD317 /* Alamofire */,
 				C277938322B0FCC400E13109 /* YYxEncapsulation */,
 				C231001D22AE517B00B15482 /* Reachability */,
 				C226886F2298266800E2884E /* Moya */,
@@ -486,6 +489,14 @@
 				C2F152D622B23493006956C8 /* URLRequest+Extension.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C29E15FB22B3A5BB008AD317 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				C29E15FC22B3A5E9008AD317 /* Extension+Alamofire.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
@@ -1131,6 +1142,7 @@
 				C2A61AB2228FD00600CCCFE8 /* URLSession+UIViewController.swift in Sources */,
 				C254F223229535B300C36CBF /* FirstViewController.swift in Sources */,
 				C2A61AC1228FD00600CCCFE8 /* Extension+UITableView.swift in Sources */,
+				C29E15FD22B3A5E9008AD317 /* Extension+Alamofire.swift in Sources */,
 				C2A61AC9228FD00600CCCFE8 /* Extension+UITextField.swift in Sources */,
 				C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */,
 				C2A61AC7228FD00600CCCFE8 /* UIButton+Extension.swift in Sources */,
