@@ -119,5 +119,8 @@ extension ViewController{
         print(uuid)
 
     }
+    func exampleCalender() {
+        //just change initView to CalenderViewController in story board
+    }
     
 }

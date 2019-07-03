@@ -53,7 +53,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //      exampleDecodeJsonDatabyUtf8(witchModel: .exampleDictionaryStructure)
 //        exampleGenerateUUID()
-        exmapleGetInfoPlistData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
