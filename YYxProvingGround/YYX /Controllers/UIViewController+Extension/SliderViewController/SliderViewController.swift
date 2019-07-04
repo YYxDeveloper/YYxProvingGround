@@ -11,7 +11,7 @@ import UIKit
 
 class SliderViewController: UIViewController  {
     let kCellIdentifier_CollectionViewCell = "kCellIdentifier_CollectionViewCell"
-
+    //https://github.com/YYxDeveloper/calenderAppiOS
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -19,19 +19,9 @@ class SliderViewController: UIViewController  {
     
     let hight:CGFloat = 200
     func configureUI(){
-        func anchorEqualCenter() {
-            //https://medium.com/@hassanahmedkhan/autolayouts-via-layout-anchors-5214b3f746a9
-            testCollectionView.translatesAutoresizingMaskIntoConstraints = false
-            testCollectionView.widthAnchor.constraint(equalToConstant: hight).isActive = true
-            testCollectionView.heightAnchor.constraint(equalToConstant: hight).isActive = true
-            testCollectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            testCollectionView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        }
-   
-        
         self.view.addSubview(testCollectionView)
       
-        anchorEqualCenter()
+        testCollectionView.anchorEqualCenter(height: hight, width: hight)
         testCollectionView.addSubview(indicatorBar)
         
 //        self.view.addConstraint(NSLayoutConstraint(item: testCollectionView, attribute: .width , relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 1, constant: 50))

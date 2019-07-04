@@ -25,11 +25,11 @@ extension UIView{
         self.topAnchor.constraint(equalTo: firstSuperView.topAnchor,constant:constant).isActive = true
         self.bottomAnchor.constraint(equalTo: firstSuperView.bottomAnchor,constant:constant).isActive = true
     }
-    func anchorEqualCenter() {
+    func anchorEqualCenter(height:CGFloat,width:CGFloat) {
         //https://medium.com/@hassanahmedkhan/autolayouts-via-layout-anchors-5214b3f746a9
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        self.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        self.widthAnchor.constraint(equalToConstant: width).isActive = true
+        self.heightAnchor.constraint(equalToConstant: height).isActive = true
         self.centerXAnchor.constraint(equalTo: firstSuperView.centerXAnchor).isActive = true
         self.centerYAnchor.constraint(equalTo: firstSuperView.centerYAnchor).isActive = true
     }

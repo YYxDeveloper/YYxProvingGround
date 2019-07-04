@@ -53,7 +53,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //      exampleDecodeJsonDatabyUtf8(witchModel: .exampleDictionaryStructure)
 //        exampleGenerateUUID()
-        exampleSliderViewController()
+//        exampleSliderViewController()
+        exampleVisualFormat()
     }
     
     override func viewWillAppear(_ animated: Bool) {

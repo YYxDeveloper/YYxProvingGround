@@ -128,5 +128,65 @@ extension ViewController{
         addSubViewWithChildController(addSubViewController: vc, toWitchView: containerView)
         
     }
+    func exampleVisualFormat() {
+        
+        var cellTopView: UIView = {
+            
+            let view = UIView()
+            view.backgroundColor = UIColor.cyan
+            view.translatesAutoresizingMaskIntoConstraints = false
+            return view
+            
+            
+        }()
+        
+        var cellBottomRightButton: UIButton = {
+            
+            let button = UIButton()
+            button.backgroundColor = UIColor.gray
+            button.translatesAutoresizingMaskIntoConstraints = false
+            
+            return button
+            
+            
+        }()
+        
+        
+        var cellBottomLeftButton: UIButton = {
+            
+            let button = UIButton()
+            button.backgroundColor = UIColor.blue
+            button.translatesAutoresizingMaskIntoConstraints = false
+            
+            return button
+            
+            
+        }()
+        func configureCell()  {
+            
+            
+            self.containerView.addSubview(cellTopView)
+            self.containerView.addSubview(cellBottomRightButton)
+            self.containerView.addSubview(cellBottomLeftButton)
+            
+            let viewDictionary:[String:Any] = [
+                "cellTopView":cellTopView,
+                "cellBottomRightButton":cellBottomRightButton,
+                "cellBottomLeftButton":cellBottomLeftButton
+            ]
+            
+            self.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-2-[cellTopView]-2-|" , options: .init(rawValue: 0), metrics: nil, views: viewDictionary))
+            
+            self.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-2-[cellBottomLeftButton]-2-[cellBottomRightButton(cellBottomLeftButton)]-2-|" , options: .init(rawValue: 0), metrics: nil, views: viewDictionary))
+            
+            self.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-2-[cellTopView]-2-[cellBottomLeftButton(cellTopView)]-2-|" , options: .init(rawValue: 0), metrics: nil, views: viewDictionary))
+            
+            self.containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-2-[cellTopView]-2-[cellBottomRightButton(cellTopView)]-2-|" , options: .init(rawValue: 0), metrics: nil, views: viewDictionary))
+            
+            
+            
+        }
+        configureCell()
+    }
     
 }
