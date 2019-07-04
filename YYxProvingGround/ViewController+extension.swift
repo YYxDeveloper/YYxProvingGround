@@ -122,5 +122,11 @@ extension ViewController{
     func exampleCalender() {
         //just change initView to CalenderViewController in story board
     }
+    func exampleSliderViewController() {
+        let vc = SliderViewController()
+        
+        addSubViewWithChildController(addSubViewController: vc, toWitchView: containerView)
+        
+    }
     
 }
