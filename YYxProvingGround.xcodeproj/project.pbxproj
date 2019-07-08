@@ -26,6 +26,7 @@
 		C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22EA549229688E2006FC04B /* RefreshContents.xib */; };
 		C231001F22AE519300B15482 /* Reachability+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231001E22AE519300B15482 /* Reachability+Extension.swift */; };
 		C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231FF4422AE45B400B15482 /* Driver+Extension.swift */; };
+		C236522D22D337D500582267 /* NetworkTestViewController+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */; };
 		C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */; };
 		C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */; };
 		C24B3CB122CDB57500071490 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B3CB022CDB57400071490 /* SliderViewController.swift */; };
@@ -184,6 +185,7 @@
 		C22EA549229688E2006FC04B /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
 		C231001E22AE519300B15482 /* Reachability+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Extension.swift"; sourceTree = "<group>"; };
 		C231FF4422AE45B400B15482 /* Driver+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extension.swift"; sourceTree = "<group>"; };
+		C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTestViewController+Moya.swift"; sourceTree = "<group>"; };
 		C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exampleTOEICVocabulary.json; sourceTree = "<group>"; };
 		C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOEICVocabularyModel.swift; sourceTree = "<group>"; };
 		C24B3CB022CDB57400071490 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
@@ -436,6 +438,26 @@
 				C231FF4422AE45B400B15482 /* Driver+Extension.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C236522A22D337A400582267 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E879C1B522421012006904A5 /* ViewController.swift */,
+				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
+				C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C236522B22D337B900582267 /* NetworkTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */,
+				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
+				C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */,
+			);
+			path = NetworkTestViewController;
 			sourceTree = "<group>";
 		};
 		C23AEC46229FC58B00334BB1 /* TOEICVocabularyModel */ = {
@@ -863,12 +885,9 @@
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
-				E879C1B522421012006904A5 /* ViewController.swift */,
-				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
-				C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */,
+				C236522A22D337A400582267 /* ViewController */,
 				C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */,
-				C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */,
-				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
+				C236522B22D337B900582267 /* NetworkTestViewController */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
@@ -1145,6 +1164,7 @@
 				C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */,
 				C22EA54822967E68006FC04B /* Timer+Extension.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
+				C236522D22D337D500582267 /* NetworkTestViewController+Moya.swift in Sources */,
 				C20594A1229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift in Sources */,
 				C2A61AB4228FD00600CCCFE8 /* Alert+UIViewController.swift in Sources */,
 				C277937D22B0F1F600E13109 /* MyCollectionViewCell.swift in Sources */,

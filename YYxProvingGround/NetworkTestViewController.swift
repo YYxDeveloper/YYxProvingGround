@@ -13,8 +13,9 @@ class NetworkTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-     exampleSheetsu_Create1User()
+//     exampleSheetsu_Create1User()
 //        exampleReachability()
+        exampleSheetSu_Read()
     }
     
 
