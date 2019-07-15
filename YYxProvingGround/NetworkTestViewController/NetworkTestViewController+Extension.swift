@@ -85,12 +85,42 @@ extension NetworkTestViewController{
          By default, always the first sheet (aka worksheet aka tab) is accessed.
          To access other sheets within a spreadsheet add /sheets/{sheet_name} path to the URL if using cURL, or pass appropriate param when using a lib.
          */
-        let url = String(format: "https://sheetsu.com/apis/v1.0su/10b85fba966d/sheets/B")
+//        let url = String(format: "https://sheetsu.com/apis/v1.0su/10b85fba966d/sheets/B")
+         let url = String(format: "https://sheetsu.com/apis/v1.0su/10b85fba966d")
         let serviceUrl = URL(string: url)
         var request = URLRequest(url: serviceUrl!)
         
         request.httpMethod = "GET"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        
+        let session = URLSession.shared
+        
+        session.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+    }
+    func sheetsuReadAnotherSheet(){
+        //        https://sheetsu.com/apis/v1.0su/10b85fba966d?offset=40
+        /**
+         sheetsu: each sheet only read 50 rows
+         & chinese code is UTF-16
+         
+         
+         */
+        let url = String(format: "https://sheetsu.com/apis/v1.0su/10b85fba966d/sheets/D")
+        let serviceUrl = URL(string: url)
+        var request = URLRequest(url: serviceUrl!)
+        
+        request.httpMethod = "GET"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        
         
         let session = URLSession.shared
         

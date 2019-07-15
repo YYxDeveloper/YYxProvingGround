@@ -24,6 +24,15 @@ func ?= <T>( left: inout T?, right: T?) {
     }
 }
 //---------
+extension Suit: CaseIterable {}
+enum Suit: String {
+    case spades = "♠"
+    case hearts = "♥"
+    case diamonds = "♦"
+    case clubs = "♣"
+}
+
+//
 extension ViewController{
     enum theJSonModel {
         case UserInformationsJsonExample
@@ -188,5 +197,14 @@ extension ViewController{
         }
         configureCell()
     }
+    // MARK: extension Array & Enum
+    func examplePrintEnumToArray(){
+        //tip: must follow CaseIterable
+        Suit.allCases.forEach {
+            print($0.rawValue)
+        }
+        
+    }
     
 }
+
