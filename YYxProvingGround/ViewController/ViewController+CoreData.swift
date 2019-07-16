@@ -18,11 +18,6 @@ extension ViewController{
         AppDelegate.giveMeAppDelegate().saveContext()
         
     }
-    func exampleCoreDate_Read() {
-        //          let predicate = NSPredicate(format: "chineseName like 'b*'")
-        let predicate2 =  NSPredicate(format: "iid == 999")
-        Driver.readDrivers(entity: Driver.self, hasPredicate: predicate2)
-    }
     func exampleCoreDataFetchWithTemplate() {
 
         let model: NSManagedObjectModel = NSManagedObjectModel.giveMeInstance()
@@ -31,5 +26,28 @@ extension ViewController{
         Driver.showDriverDatas(request: request!)
         
     }
-    
+    func exampleCoreData_SomeoneBuyCar() {
+        let viewContext = NSManagedObjectContext.giveMeViewContext()
+        
+        let driver1 = Driver(context:viewContext )
+        driver1.chineseName = "GiGi"
+        driver1.iid = Int64(8888)
+        
+        let car = Car(context: viewContext)
+        car.ownerChineseName = "aaaa"
+        
+        
+        
+        driver1.addToBetweenCar(car)
+        AppDelegate.giveMeAppDelegate().saveContext()
+        
+        
+        
+    }
+    func exampleCoreDate_ReadWhoHasRelateobject() {
+//                let predicate2 =  NSPredicate(format: "iid == 8888")        
+        let request: NSFetchRequest<Driver> = Driver.fetchRequest()
+        request.predicate = NSPredicate.giveMePrePredicatePreFixString(withcProperty: "chineseName", prefix: "G")
+        Driver.showDriverDatas(request: request as! NSFetchRequest<NSFetchRequestResult>)
+    }
 }

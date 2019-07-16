@@ -545,6 +545,7 @@
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
+				C2A61A3A228FD00600CCCFE8 /* YYxInfo.txt */,
 				C2FF469422CC5B1100EE5A02 /* Calender */,
 				C277938422B0FF4800E13109 /* Network */,
 				C205949B229BC86000E57B51 /* CoreData */,
@@ -556,7 +557,6 @@
 				C2A61A30228FD00600CCCFE8 /* Date */,
 				C2A61A38228FD00600CCCFE8 /* Extension+NSPredicate.swift */,
 				C2A61A39228FD00600CCCFE8 /* FileManager+Extension.swift */,
-				C2A61A3A228FD00600CCCFE8 /* YYxInfo.txt */,
 				C2A61A42228FD00600CCCFE8 /* IndexPath+Extension.swift */,
 				C2A61A4B228FD00600CCCFE8 /* Protocol+Extension */,
 				C2A61A53228FD00600CCCFE8 /* ToolBox */,

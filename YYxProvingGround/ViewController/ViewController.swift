@@ -55,7 +55,10 @@ class ViewController: UIViewController {
 //        exampleGenerateUUID()
 //        exampleSliderViewController()
 //        exampleVisualFormat()
-        examplePrintEnumToArray()
+//        examplePrintEnumToArray()
+        exampleCoreData_SomeoneBuyCar()
+        exampleCoreDate_ReadWhoHasRelateobject()
+//        exampleCoreData_Create()
     }
     
     override func viewWillAppear(_ animated: Bool) {

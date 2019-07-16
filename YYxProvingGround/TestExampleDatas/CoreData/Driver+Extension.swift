@@ -13,8 +13,13 @@ extension Driver{
         let viewContext = NSManagedObjectContext.giveMeViewContext()
         do {
             if let arr = try viewContext.fetch(request) as? [Driver] {
-                _ = arr.map({print($0.chineseName ?? "XXX")})
+                _ = arr.map({print($0.chineseName ?? "no chinese name")})
                 _ = arr.map({print($0.iid)})
+                _ = arr.map({
+                    let cars = $0.betweenCar?.allObjects as? [Car] ?? [Car]()
+                    _ = cars.map({print("Car owner: \($0.ownerChineseName ?? "car has no owner")")})
+                })
+                
             }
         }catch{
             YYxErrorHandler.printConvertErrorFail()
@@ -27,11 +32,5 @@ extension Driver{
         let driver1 = Driver(context:viewContext )
         driver1.chineseName = chineseName
         driver1.iid = Int64(iid)
-    }
-    static func readDrivers<T:NSManagedObject>(entity: T.Type,hasPredicate:NSPredicate?) {
-        let request = T.fetchRequest()
-        request.predicate = hasPredicate
-        Driver.showDriverDatas(request: request)
-        
     }
 }
