@@ -16,8 +16,8 @@ class NetworkTestViewController: UIViewController {
 //     exampleSheetsu_Create1User()
 //        exampleReachability()
 //        exampleSheetSu_Read()
-        let currentOrientation = UIApplication.shared.statusBarOrientation.isLandscape
-        print(currentOrientation)
+//        let currentOrientation = UIApplication.shared.statusBarOrientation.isLandscape
+//        print(currentOrientation)
         
         
        
@@ -28,14 +28,14 @@ class NetworkTestViewController: UIViewController {
 //        UIView.setAnimationsEnabled(false)
 //        UIDevice.current.setValue(UIInterfaceOrientation.portraitUpsideDown.rawValue, forKey: "orientation")
 //        UIView.setAnimationsEnabled(true)
-        let gg = UIInterfaceOrientation.landscapeLeft.rawValue
-        print(gg)
-        let rr = UIInterfaceOrientation.landscapeRight.rawValue
-        print(rr)
-        let tt = UIInterfaceOrientation.portraitUpsideDown.rawValue
-        print(tt)
-        let aa = UIInterfaceOrientation.portrait.rawValue
-        print(aa)
+//        let gg = UIInterfaceOrientation.landscapeLeft.rawValue
+//        print(gg)
+//        let rr = UIInterfaceOrientation.landscapeRight.rawValue
+//        print(rr)
+//        let tt = UIInterfaceOrientation.portraitUpsideDown.rawValue
+//        print(tt)
+//        let aa = UIInterfaceOrientation.portrait.rawValue
+//        print(aa)
 //        UIDevice.current.setValue(3, forKey: "orientation")
 //        UIViewController.attemptRotationToDeviceOrientation()
     }

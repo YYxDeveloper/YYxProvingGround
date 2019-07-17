@@ -453,6 +453,7 @@
 		C236522B22D337B900582267 /* NetworkTestViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */,
 				C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */,
 				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
 				C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */,
@@ -886,7 +887,6 @@
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				C236522A22D337A400582267 /* ViewController */,
-				C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */,
 				C236522B22D337B900582267 /* NetworkTestViewController */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
