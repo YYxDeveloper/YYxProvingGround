@@ -56,7 +56,7 @@ class ViewController: UIViewController {
 //        exampleSliderViewController()
 //        exampleVisualFormat()
 //        examplePrintEnumToArray()
-        exampleCoreData_SomeoneBuyCar()
+//        exampleCoreData_SomeoneBuyCarAndBike()
         exampleCoreDate_ReadWhoHasRelateobject()
 //        exampleCoreData_Create()
     }

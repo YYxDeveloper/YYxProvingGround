@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bike" representedClassName="Bike" syncable="YES" codeGenerationType="class">
+        <attribute name="bikeLicense" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerChineseName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="betweenBikeDriver" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Driver" inverseName="betweenBike" inverseEntity="Driver" syncable="YES"/>
+    </entity>
     <entity name="Car" representedClassName="Car" syncable="YES" codeGenerationType="class">
+        <attribute name="carLicense" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ownerChineseName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="betwweenDriver" maxCount="1" deletionRule="Nullify" destinationEntity="Driver" inverseName="betweenCar" inverseEntity="Driver" spotlightIndexingEnabled="YES" syncable="YES"/>
     </entity>
     <entity name="Driver" representedClassName="Driver" syncable="YES" codeGenerationType="class">
         <attribute name="chineseName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="iid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="betweenBike" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bike" inverseName="betweenBikeDriver" inverseEntity="Bike" syncable="YES"/>
         <relationship name="betweenCar" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Car" inverseName="betwweenDriver" inverseEntity="Car" syncable="YES"/>
     </entity>
     <fetchRequest name="MY_REQUEST1" entity="Driver" predicateString="chineseName == &quot;CiCi&quot;"/>
     <elements>
-        <element name="Car" positionX="140.01953125" positionY="67.14453125" width="128" height="73"/>
-        <element name="Driver" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Car" positionX="29.6796875" positionY="290.5625" width="128" height="90"/>
+        <element name="Driver" positionX="-173.33984375" positionY="205.41796875" width="128" height="103"/>
+        <element name="Bike" positionX="36" positionY="45" width="128" height="90"/>
     </elements>
 </model>

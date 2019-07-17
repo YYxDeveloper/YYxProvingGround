@@ -26,7 +26,7 @@ extension ViewController{
         Driver.showDriverDatas(request: request!)
         
     }
-    func exampleCoreData_SomeoneBuyCar() {
+    func exampleCoreData_SomeoneBuyCarAndBike() {
         let viewContext = NSManagedObjectContext.giveMeViewContext()
         
         let driver1 = Driver(context:viewContext )
@@ -36,9 +36,13 @@ extension ViewController{
         let car = Car(context: viewContext)
         car.ownerChineseName = "aaaa"
         
+        let bike = Bike(context: viewContext)
+        bike.ownerChineseName = "bbbb"
+        bike.bikeLicense = "xxxx-xxx"
         
         
         driver1.addToBetweenCar(car)
+        driver1.addToBetweenBike(bike)
         AppDelegate.giveMeAppDelegate().saveContext()
         
         

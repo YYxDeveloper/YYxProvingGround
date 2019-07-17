@@ -18,6 +18,12 @@ extension Driver{
                 _ = arr.map({
                     let cars = $0.betweenCar?.allObjects as? [Car] ?? [Car]()
                     _ = cars.map({print("Car owner: \($0.ownerChineseName ?? "car has no owner")")})
+                    
+                    let bikes = $0.betweenBike?.allObjects as? [Bike] ?? [Bike]()
+                    _ = bikes.map(
+                        {print("Bike owner: \($0.ownerChineseName ?? "bike has no owner"),bike license,bike license\($0.bikeLicense ?? "no bike license")")}
+                    )
+                    
                 })
                 
             }
