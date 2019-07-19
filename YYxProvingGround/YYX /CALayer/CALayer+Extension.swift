@@ -22,5 +22,8 @@ extension CALayer{
         qrCodeFrameView.borderWidth = width
         self.addSublayer(qrCodeFrameView)
     }
+    func removeThislayer() {
+        self.removeFromSuperlayer()
+    }
 }
 
