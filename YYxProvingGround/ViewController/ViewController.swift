@@ -10,7 +10,6 @@ import UIKit
 //https://stackoverflow.com/questions/25195565/how-do-you-unwrap-swift-optionals
 // MARK: - Modules
 import Foundation
-import UIKit
 import CoreData
 
 import SystemConfiguration
@@ -57,7 +56,7 @@ class ViewController: UIViewController {
 //        exampleVisualFormat()
 //        examplePrintEnumToArray()
 //        exampleCoreData_SomeoneBuyCarAndBike()
-        exampleCoreDate_ReadWhoHasRelateobject()
+//        exampleCoreDate_ReadWhoHasRelateobject()
 //        exampleCoreData_Create()
     }
     
@@ -68,10 +67,12 @@ class ViewController: UIViewController {
 //        print("xxxx\(connectedToNetwork())")
 
     }
+   
 
     @IBAction func turn(_ sender: Any) {
 //        sideBar?.turn()
          refreshControl.endRefreshing()
     }
+  
    
 }

@@ -18,6 +18,7 @@
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
 		C21BA5B1229E29C900DCABD1 /* exampleDictionaryStructure.json in Resources */ = {isa = PBXBuildFile; fileRef = C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */; };
 		C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */; };
+		C21D384F22E1B0AB0014EC92 /* ViewController+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */; };
 		C22688712298267800E2884E /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22688702298267800E2884E /* Moya.swift */; };
 		C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */; };
 		C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */; };
@@ -177,6 +178,7 @@
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
 		C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleDictionaryStructure.json; sourceTree = "<group>"; };
 		C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleDictionaryStructure.swift; sourceTree = "<group>"; };
+		C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Device.swift"; sourceTree = "<group>"; };
 		C22688702298267800E2884E /* Moya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestViewController.swift; sourceTree = "<group>"; };
 		C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTestViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -444,6 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				E879C1B522421012006904A5 /* ViewController.swift */,
+				C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
 				C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */,
 			);
@@ -1188,6 +1191,7 @@
 				C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */,
 				C2A61AB1228FD00600CCCFE8 /* Extension+UIViewController.swift in Sources */,
 				C22688712298267800E2884E /* Moya.swift in Sources */,
+				C21D384F22E1B0AB0014EC92 /* ViewController+Device.swift in Sources */,
 				C2F152D722B23493006956C8 /* URLRequest+Extension.swift in Sources */,
 				C2F152D922B23656006956C8 /* HttpMethod+Enum.swift in Sources */,
 				C2A61AB3228FD00600CCCFE8 /* Photo+UIViewController.swift in Sources */,
