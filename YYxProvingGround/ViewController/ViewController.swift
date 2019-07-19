@@ -44,20 +44,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     var refreshControl: UIRefreshControl!
-
+    
     let reactDefaultUITableViewController = ReactRowCollectionViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-//      exampleDecodeJsonDatabyUtf8(witchModel: .exampleDictionaryStructure)
-//        exampleGenerateUUID()
-//        exampleSliderViewController()
-//        exampleVisualFormat()
-//        examplePrintEnumToArray()
-//        exampleCoreData_SomeoneBuyCarAndBike()
-//        exampleCoreDate_ReadWhoHasRelateobject()
-//        exampleCoreData_Create()
+       exampleAddBoardLayer()
     }
     
     override func viewWillAppear(_ animated: Bool) {

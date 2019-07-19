@@ -19,6 +19,8 @@
 		C21BA5B1229E29C900DCABD1 /* exampleDictionaryStructure.json in Resources */ = {isa = PBXBuildFile; fileRef = C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */; };
 		C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */; };
 		C21D384F22E1B0AB0014EC92 /* ViewController+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */; };
+		C21D385122E1BD310014EC92 /* ViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D385022E1BD310014EC92 /* ViewController+View.swift */; };
+		C21D385322E1BE170014EC92 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D385222E1BE170014EC92 /* CALayer+Extension.swift */; };
 		C22688712298267800E2884E /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22688702298267800E2884E /* Moya.swift */; };
 		C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */; };
 		C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */; };
@@ -179,6 +181,8 @@
 		C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleDictionaryStructure.json; sourceTree = "<group>"; };
 		C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleDictionaryStructure.swift; sourceTree = "<group>"; };
 		C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Device.swift"; sourceTree = "<group>"; };
+		C21D385022E1BD310014EC92 /* ViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+View.swift"; sourceTree = "<group>"; };
+		C21D385222E1BE170014EC92 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		C22688702298267800E2884E /* Moya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		C22DA33F2296AD6C00CB4538 /* NetworkTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTestViewController.swift; sourceTree = "<group>"; };
 		C22DA3412296BE7200CB4538 /* NetworkTestViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTestViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -448,6 +452,7 @@
 				E879C1B522421012006904A5 /* ViewController.swift */,
 				C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
+				C21D385022E1BD310014EC92 /* ViewController+View.swift */,
 				C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */,
 			);
 			path = ViewController;
@@ -709,6 +714,7 @@
 			children = (
 				C2A61A5D228FD00600CCCFE8 /* CALayer+Animation.swift */,
 				C2A61A5E228FD00600CCCFE8 /* CAShapeLayer+Extension.swift */,
+				C21D385222E1BE170014EC92 /* CALayer+Extension.swift */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -1231,6 +1237,7 @@
 				C2A61ACB228FD00600CCCFE8 /* Extension+UIView.swift in Sources */,
 				C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */,
 				C2A61AB8228FD00600CCCFE8 /* StaticCollectionViewController.swift in Sources */,
+				C21D385322E1BE170014EC92 /* CALayer+Extension.swift in Sources */,
 				C2A61ADD228FD00600CCCFE8 /* Substring+Extension.swift in Sources */,
 				C2A61AEA228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift in Sources */,
 				C2A61AD7228FD00600CCCFE8 /* TintView.swift in Sources */,
@@ -1271,6 +1278,7 @@
 				C2A61AB6228FD00600CCCFE8 /* ToolBoxViewController.swift in Sources */,
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
 				C211F99922AFD09000A76693 /* ViewTestViewController.swift in Sources */,
+				C21D385122E1BD310014EC92 /* ViewController+View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
