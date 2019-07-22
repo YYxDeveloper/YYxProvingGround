@@ -15,12 +15,12 @@ extension CALayer{
        
     }
     func addBordLayer(witchColor:UIColor,width:CGFloat) {
-        let qrCodeFrameView = CALayer()
-        qrCodeFrameView.frame = self.bounds
+        let theLayer = CALayer()
+        theLayer.frame = self.bounds
         
-        qrCodeFrameView.borderColor = witchColor.cgColor
-        qrCodeFrameView.borderWidth = width
-        self.addSublayer(qrCodeFrameView)
+        theLayer.borderColor = witchColor.cgColor
+        theLayer.borderWidth = width
+        self.addSublayer(theLayer)
     }
     func removeThislayer() {
         self.removeFromSuperlayer()
