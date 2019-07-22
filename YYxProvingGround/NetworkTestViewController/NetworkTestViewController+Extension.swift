@@ -10,6 +10,33 @@ import Foundation
 import Reachability
 import Moya
 extension NetworkTestViewController{
+    func exampleGetGoogleSheetJson() {
+        //GoogleSheetTestExportAPI
+//        https://spreadsheets.google.com/feeds/cells/15pzC6KoPDVApwTp1U3LdVXCoDByOm_Be_cloYW7K-1Q/1/public/values?alt=json
+        
+        
+        //New Toeic高分單字大全 [有聲書]:突破900分得分策略
+//        https://spreadsheets.google.com/feeds/cells/1TPbwOmsAHzmV9sNjminUouhIuNbKCdtUOFmU6Ru529c/1/public/values?alt=json
+        let url = String(format: "https://spreadsheets.google.com/feeds/cells/1TPbwOmsAHzmV9sNjminUouhIuNbKCdtUOFmU6Ru529c/1/public/values?alt=json")
+        let serviceUrl = URL(string: url)
+        var request = URLRequest(url: serviceUrl!)
+        
+        request.httpMethod = "GET"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        
+        let session = URLSession.shared
+        
+        session.dataTask(with: request) { (data, response, error) in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: [])
+                    print(json)
+                } catch {
+                    print(error)
+                }
+            }
+            }.resume()
+    }
     func exampleReachability() {
         Reachability.checkState()
     }
@@ -48,6 +75,7 @@ extension NetworkTestViewController{
         
         task.resume()
     }
+    
     
 }
 extension NetworkTestViewController{
