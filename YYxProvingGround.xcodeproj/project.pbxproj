@@ -16,6 +16,8 @@
 		C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */; };
 		C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */; };
 		C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */; };
+		C217F6F622E5A820007D3A83 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C217F6F422E5A820007D3A83 /* QRCodeScanViewController.swift */; };
+		C217F6F722E5A820007D3A83 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C217F6F522E5A820007D3A83 /* VideoPreviewView.swift */; };
 		C21BA5B1229E29C900DCABD1 /* exampleDictionaryStructure.json in Resources */ = {isa = PBXBuildFile; fileRef = C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */; };
 		C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */; };
 		C21D384F22E1B0AB0014EC92 /* ViewController+Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */; };
@@ -180,6 +182,8 @@
 		C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD72293CF9700171535 /* ColumnCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnCollectionViewCell.swift; sourceTree = "<group>"; };
 		C2157BD82293CF9800171535 /* FormCollectionVeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormCollectionVeiwController.swift; sourceTree = "<group>"; };
+		C217F6F422E5A820007D3A83 /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
+		C217F6F522E5A820007D3A83 /* VideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
 		C21BA5AF229E29C900DCABD1 /* exampleDictionaryStructure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleDictionaryStructure.json; sourceTree = "<group>"; };
 		C21BA5B0229E29C900DCABD1 /* exampleDictionaryStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = exampleDictionaryStructure.swift; sourceTree = "<group>"; };
 		C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Device.swift"; sourceTree = "<group>"; };
@@ -385,6 +389,7 @@
 		C2157BCF2292814C00171535 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C217F6F322E5A805007D3A83 /* QRCodeScanViewController */,
 				C277937A22B0F1F600E13109 /* BasicCollectionViewController */,
 				C254F21F2295358200C36CBF /* UITabbedViewController */,
 				C2A61A6B228FD00600CCCFE8 /* Extension+UINavigationController.swift */,
@@ -404,6 +409,15 @@
 				C2157BD62293CF9700171535 /* RowCollectionViewCell.swift */,
 			);
 			path = FormCollectionVeiwController;
+			sourceTree = "<group>";
+		};
+		C217F6F322E5A805007D3A83 /* QRCodeScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C217F6F422E5A820007D3A83 /* QRCodeScanViewController.swift */,
+				C217F6F522E5A820007D3A83 /* VideoPreviewView.swift */,
+			);
+			path = QRCodeScanViewController;
 			sourceTree = "<group>";
 		};
 		C21BA5B3229E336F00DCABD1 /* YYX3rd */ = {
@@ -1201,6 +1215,7 @@
 				C2A61AAF228FD00600CCCFE8 /* FloatingPoint+Extension.swift in Sources */,
 				C2A61A9A228FD00600CCCFE8 /* Current+Date.swift in Sources */,
 				C2157BDB2293CF9800171535 /* FormCollectionVeiwController.swift in Sources */,
+				C217F6F622E5A820007D3A83 /* QRCodeScanViewController.swift in Sources */,
 				C2A61AB1228FD00600CCCFE8 /* Extension+UIViewController.swift in Sources */,
 				C22688712298267800E2884E /* Moya.swift in Sources */,
 				C21D384F22E1B0AB0014EC92 /* ViewController+Device.swift in Sources */,
@@ -1260,6 +1275,7 @@
 				C2A61ADC228FD00600CCCFE8 /* Bool+Extension.swift in Sources */,
 				C2FF469C22CC5B3100EE5A02 /* MonthView.swift in Sources */,
 				C2A61AB5228FD00600CCCFE8 /* ToolBoxManager.swift in Sources */,
+				C217F6F722E5A820007D3A83 /* VideoPreviewView.swift in Sources */,
 				C2A61AD6228FD00600CCCFE8 /* AppDelegate+Extension.swift in Sources */,
 				C2A61A9C228FD00600CCCFE8 /* DateFormatter+Extension.swift in Sources */,
 				C2A61A99228FD00600CCCFE8 /* Convert+Date.swift in Sources */,

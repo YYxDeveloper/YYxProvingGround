@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Umr-bJ-yNo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pNA-8N-0qp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -265,6 +265,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnT-EY-01M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1196" y="902"/>
+        </scene>
+        <!--Code Scan View Controller-->
+        <scene sceneID="QMe-2x-uNJ">
+            <objects>
+                <viewController id="pNA-8N-0qp" customClass="QRCodeScanViewController" customModule="YYxProvingGround" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GyZ-Kf-GVa"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Yj-R2-Mli"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="89O-6C-JWe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAs-h2-WlZ" customClass="VideoPreviewView" customModule="QRCode_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to take a photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlW-fy-8M1">
+                                        <rect key="frame" x="114" y="631" width="147" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.95384730139999996" green="1" blue="0.98941856490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3w-h5-pGO">
+                                        <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="fSJ-dC-SGN"/>
+                                            <constraint firstAttribute="height" constant="100" id="uS7-3P-rea"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QRCodeScanViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2c-1Q-Xn0">
+                                        <rect key="frame" x="0.0" y="5" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Z6X-WR-tPF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="1" green="0.13725490200000001" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="E3w-h5-pGO" firstAttribute="centerY" secondItem="IAs-h2-WlZ" secondAttribute="centerY" id="4zU-Eu-qCM"/>
+                                    <constraint firstItem="u2c-1Q-Xn0" firstAttribute="top" secondItem="IAs-h2-WlZ" secondAttribute="top" constant="5" id="6Mg-Px-9Bn"/>
+                                    <constraint firstAttribute="bottom" secondItem="vlW-fy-8M1" secondAttribute="bottom" constant="15" id="7eh-fp-o2o"/>
+                                    <constraint firstItem="u2c-1Q-Xn0" firstAttribute="leading" secondItem="IAs-h2-WlZ" secondAttribute="leading" id="NWm-TP-dOY"/>
+                                    <constraint firstItem="E3w-h5-pGO" firstAttribute="centerX" secondItem="IAs-h2-WlZ" secondAttribute="centerX" id="RcP-uc-bUz"/>
+                                    <constraint firstAttribute="trailing" secondItem="u2c-1Q-Xn0" secondAttribute="trailing" id="TYl-N0-MDS"/>
+                                    <constraint firstItem="vlW-fy-8M1" firstAttribute="centerX" secondItem="IAs-h2-WlZ" secondAttribute="centerX" id="wov-Hv-97X"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UVr-Zd-PcQ" appends="YES" id="KVT-yH-Isg"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="IAs-h2-WlZ" firstAttribute="top" secondItem="89O-6C-JWe" secondAttribute="top" id="6vR-Aa-UXI"/>
+                            <constraint firstAttribute="trailing" secondItem="IAs-h2-WlZ" secondAttribute="trailing" id="M8g-4O-5ZE"/>
+                            <constraint firstItem="IAs-h2-WlZ" firstAttribute="bottom" secondItem="3Yj-R2-Mli" secondAttribute="top" id="fNg-xy-jkS"/>
+                            <constraint firstItem="IAs-h2-WlZ" firstAttribute="leading" secondItem="89O-6C-JWe" secondAttribute="leading" id="rN9-OF-Lrr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Qa-90-6WP"/>
+                    </view>
+                    <connections>
+                        <outlet property="bordView" destination="E3w-h5-pGO" id="hvl-Ry-rbD"/>
+                        <outlet property="previewView" destination="IAs-h2-WlZ" id="A9L-cA-fxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojE-qo-CIX" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UVr-Zd-PcQ">
+                    <connections>
+                        <action selector="selectPreview:" destination="pNA-8N-0qp" id="wzp-ab-40g"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="942" y="-592"/>
         </scene>
     </scenes>
 </document>
