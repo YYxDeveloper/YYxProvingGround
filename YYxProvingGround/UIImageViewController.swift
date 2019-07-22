@@ -21,7 +21,10 @@ class UIImageViewController: UIViewController {
     func exampleGenerateQRCodeWithRedColor()  {
        
          let myString = "https://pennlabs.org"
-         theImageView.image = UIImage.giveMeQRCode(from: myString)
+        let backgroundColor = CIColor(red: 1, green: 0, blue: 0)
+        let frontGroundColor = CIColor(red: 0, green: 0, blue: 1)
+        
+        theImageView.image = UIImage.giveMeQRCode(from: myString, backgroundColor: backgroundColor, frontGroundColor: frontGroundColor)
     }
 
     /*
