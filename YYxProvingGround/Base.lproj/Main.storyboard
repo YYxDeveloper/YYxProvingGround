@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Umr-bJ-yNo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -146,6 +146,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fea-hY-UnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942" y="134"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="d2P-eb-IQu">
+            <objects>
+                <viewController id="Umr-bJ-yNo" customClass="UIImageViewController" customModule="YYxProvingGround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lxb-IX-7ir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mgr-JL-GB4">
+                                <rect key="frame" x="5" y="25" width="365" height="637"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIImageViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkq-gz-WzT">
+                                <rect key="frame" x="37.5" y="293.5" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="G6h-BG-Jmg"/>
+                                    <constraint firstAttribute="width" constant="300" id="WDo-kk-zc9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mgr-JL-GB4" firstAttribute="leading" secondItem="9vT-6l-xZS" secondAttribute="leading" constant="5" id="LXf-yw-N9B"/>
+                            <constraint firstItem="9vT-6l-xZS" firstAttribute="trailing" secondItem="mgr-JL-GB4" secondAttribute="trailing" constant="5" id="MDB-XD-xwe"/>
+                            <constraint firstItem="mgr-JL-GB4" firstAttribute="top" secondItem="9vT-6l-xZS" secondAttribute="top" constant="5" id="bl8-dx-TDu"/>
+                            <constraint firstItem="Wkq-gz-WzT" firstAttribute="centerX" secondItem="mgr-JL-GB4" secondAttribute="centerX" id="qSg-dD-V9d"/>
+                            <constraint firstItem="Wkq-gz-WzT" firstAttribute="centerY" secondItem="mgr-JL-GB4" secondAttribute="centerY" id="rvf-5d-oqK"/>
+                            <constraint firstItem="9vT-6l-xZS" firstAttribute="bottom" secondItem="mgr-JL-GB4" secondAttribute="bottom" constant="5" id="tc4-wd-sfQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9vT-6l-xZS"/>
+                    </view>
+                    <connections>
+                        <outlet property="theImageView" destination="mgr-JL-GB4" id="7wP-Zv-FNH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2v-e2-AZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.5999999999999" y="74.212893553223395"/>
         </scene>
         <!--View Test View Controller-->
         <scene sceneID="nYB-dM-MfP">

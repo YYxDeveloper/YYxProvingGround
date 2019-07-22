@@ -30,6 +30,8 @@
 		C231001F22AE519300B15482 /* Reachability+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231001E22AE519300B15482 /* Reachability+Extension.swift */; };
 		C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231FF4422AE45B400B15482 /* Driver+Extension.swift */; };
 		C236522D22D337D500582267 /* NetworkTestViewController+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */; };
+		C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */; };
+		C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */; };
 		C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */; };
 		C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */; };
 		C24B3CB122CDB57500071490 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B3CB022CDB57400071490 /* SliderViewController.swift */; };
@@ -192,6 +194,8 @@
 		C231001E22AE519300B15482 /* Reachability+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Extension.swift"; sourceTree = "<group>"; };
 		C231FF4422AE45B400B15482 /* Driver+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extension.swift"; sourceTree = "<group>"; };
 		C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTestViewController+Moya.swift"; sourceTree = "<group>"; };
+		C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewController.swift; sourceTree = "<group>"; };
+		C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exampleTOEICVocabulary.json; sourceTree = "<group>"; };
 		C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOEICVocabularyModel.swift; sourceTree = "<group>"; };
 		C24B3CB022CDB57400071490 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
@@ -730,6 +734,7 @@
 				C2A61A6D228FD00600CCCFE8 /* UIStoryBoard+Extension.swift */,
 				C2A61A6E228FD00600CCCFE8 /* UIView+Extension */,
 				C2A61A72228FD00600CCCFE8 /* UINib+Extension.swift */,
+				C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */,
 			);
 			path = "UIKit+Extension";
 			sourceTree = "<group>";
@@ -895,6 +900,7 @@
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
+				C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */,
 				C236522A22D337A400582267 /* ViewController */,
 				C236522B22D337B900582267 /* NetworkTestViewController */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
@@ -1203,6 +1209,7 @@
 				C2A61AB3228FD00600CCCFE8 /* Photo+UIViewController.swift in Sources */,
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
 				C2A61A9E228FD00600CCCFE8 /* Timezone+Extension.swift in Sources */,
+				C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */,
 				C2A61AB2228FD00600CCCFE8 /* URLSession+UIViewController.swift in Sources */,
 				C254F223229535B300C36CBF /* FirstViewController.swift in Sources */,
 				C2A61AC1228FD00600CCCFE8 /* Extension+UITableView.swift in Sources */,
@@ -1222,6 +1229,7 @@
 				C2A61AE5228FD00600CCCFE8 /* CGFloat+Extension.swift in Sources */,
 				C2A61AAA228FD00600CCCFE8 /* ExampleFileNames.swift in Sources */,
 				C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */,
+				C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */,
 				C277938622B0FF8800E13109 /* URLSession+Extension.swift in Sources */,
 				C2A61ACA228FD00600CCCFE8 /* UIStoryBoard+Extension.swift in Sources */,
 				C2A61AA6228FD00600CCCFE8 /* HorizontalSlider.swift in Sources */,
