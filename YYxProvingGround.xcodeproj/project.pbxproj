@@ -142,6 +142,7 @@
 		C2C5AFE222E841CF003A68FF /* NWPathMonitor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5AFE122E841CF003A68FF /* NWPathMonitor+Extension.swift */; };
 		C2C5AFE422E844E0003A68FF /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5AFE322E844E0003A68FF /* LocalNotificationViewController.swift */; };
 		C2C5AFE822E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5AFE722E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift */; };
+		C2C5AFEA22E84A7F003A68FF /* UNUserNotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5AFE922E84A7F003A68FF /* UNUserNotificationCenter+Extension.swift */; };
 		C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */; };
 		D5BF3C2CDC8A2E7686475A0B /* Pods_YYxProvingGroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0709F111CC381F5E0E0E9F91 /* Pods_YYxProvingGroundTests.framework */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
@@ -316,6 +317,7 @@
 		C2C5AFE122E841CF003A68FF /* NWPathMonitor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWPathMonitor+Extension.swift"; sourceTree = "<group>"; };
 		C2C5AFE322E844E0003A68FF /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
 		C2C5AFE722E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UNUserNotificationCenterDelegate.swift"; sourceTree = "<group>"; };
+		C2C5AFE922E84A7F003A68FF /* UNUserNotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UNUserNotificationCenter+Extension.swift"; sourceTree = "<group>"; };
 		C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
 		D40AB8845881983AC8989955 /* Pods-YYxProvingGround.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3ABBC6B65EFCD9C60DC259 /* Pods_YYxProvingGround.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxProvingGround.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -944,6 +946,7 @@
 			isa = PBXGroup;
 			children = (
 				C2C5AFE722E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift */,
+				C2C5AFE922E84A7F003A68FF /* UNUserNotificationCenter+Extension.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -1350,6 +1353,7 @@
 				C23BB43B22E83CF10052C971 /* Extension+UIView.swift in Sources */,
 				C23BB41E22E83CF10052C971 /* CategoryVerticalColumnCell.swift in Sources */,
 				C23BB44322E83CF10052C971 /* Data+Convert.swift in Sources */,
+				C2C5AFEA22E84A7F003A68FF /* UNUserNotificationCenter+Extension.swift in Sources */,
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
 				C23BB42922E83CF10052C971 /* MyCollectionViewCell.swift in Sources */,
 				C23BB43D22E83CF10052C971 /* Constraint+UIView.swift in Sources */,
