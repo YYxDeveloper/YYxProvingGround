@@ -12,8 +12,8 @@ class NetworkTestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-            exampleGetGoogleSheetJson()       
+        exampleNWMonitor()
+//            exampleGetGoogleSheetJson()
     }
     override func viewDidAppear(_ animated: Bool) {
 //        UIView.setAnimationsEnabled(false)

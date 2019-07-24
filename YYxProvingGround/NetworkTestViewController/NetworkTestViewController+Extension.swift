@@ -7,9 +7,15 @@
 //
 
 import Foundation
+import Network
+import UIKit
 import Reachability
 import Moya
 extension NetworkTestViewController{
+    func exampleNWMonitor() {
+       NWPathMonitor().checkNetworkStatus()
+
+    }
     func exampleGetGoogleSheetJson() {
         //GoogleSheetTestExportAPI
 //        https://spreadsheets.google.com/feeds/cells/15pzC6KoPDVApwTp1U3LdVXCoDByOm_Be_cloYW7K-1Q/1/public/values?alt=json
