@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VUb-FX-T31">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lfU-Jr-cOM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -278,7 +278,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAs-h2-WlZ" customClass="VideoPreviewView" customModule="QRCode_Example" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAs-h2-WlZ" customClass="VideoPreviewView" customModule="YYxProvingGround" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to take a photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlW-fy-8M1">
@@ -342,6 +342,66 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="942" y="-592"/>
+        </scene>
+        <!--Local Notification View Controller-->
+        <scene sceneID="HwR-he-6ng">
+            <objects>
+                <viewController id="lfU-Jr-cOM" customClass="LocalNotificationViewController" customModule="YYxProvingGround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBI-9e-aMc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The notification will fire after 5 seconds of button click." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfg-oR-wvP">
+                                <rect key="frame" x="10" y="373.5" width="355" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1G-SU-GO7">
+                                <rect key="frame" x="87" y="323.5" width="201" height="40"/>
+                                <color key="backgroundColor" red="0.42994586140000002" green="0.66666668650000005" blue="0.2251971253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Nxe-O5-19b"/>
+                                    <constraint firstAttribute="height" constant="40" id="z2t-ze-ZBM"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Set Notification"/>
+                                <connections>
+                                    <action selector="buttonCreateNotification:" destination="lfU-Jr-cOM" eventType="touchUpInside" id="LaN-l8-gTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63h-uo-Se9">
+                                <rect key="frame" x="87" y="265" width="201" height="40"/>
+                                <color key="backgroundColor" red="0.42994586140000002" green="0.66666668650000005" blue="0.2251971253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aJn-8Z-j8M"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="uuK-8f-NcA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Read Notifications"/>
+                                <connections>
+                                    <action selector="buttonReadNotifications:" destination="lfU-Jr-cOM" eventType="touchUpInside" id="gdO-pM-VKx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jfg-oR-wvP" firstAttribute="leading" secondItem="lIR-l8-8eR" secondAttribute="leading" constant="10" id="5M5-Mp-b66"/>
+                            <constraint firstItem="63h-uo-Se9" firstAttribute="leading" secondItem="U1G-SU-GO7" secondAttribute="leading" id="Rd6-fz-90z"/>
+                            <constraint firstItem="lIR-l8-8eR" firstAttribute="trailing" secondItem="jfg-oR-wvP" secondAttribute="trailing" constant="10" id="Rhb-g3-xAg"/>
+                            <constraint firstItem="U1G-SU-GO7" firstAttribute="centerX" secondItem="lIR-l8-8eR" secondAttribute="centerX" id="T6Y-QA-50r"/>
+                            <constraint firstItem="lIR-l8-8eR" firstAttribute="trailing" secondItem="63h-uo-Se9" secondAttribute="trailing" constant="87" id="dt4-su-kAI"/>
+                            <constraint firstItem="63h-uo-Se9" firstAttribute="trailing" secondItem="U1G-SU-GO7" secondAttribute="trailing" id="e3X-vs-cDt"/>
+                            <constraint firstItem="U1G-SU-GO7" firstAttribute="centerY" secondItem="lIR-l8-8eR" secondAttribute="centerY" id="rYK-1Y-wNA"/>
+                            <constraint firstItem="U1G-SU-GO7" firstAttribute="top" secondItem="63h-uo-Se9" secondAttribute="bottom" constant="18.5" id="vBi-oM-2BJ"/>
+                            <constraint firstItem="jfg-oR-wvP" firstAttribute="top" secondItem="U1G-SU-GO7" secondAttribute="bottom" constant="10" id="yLF-ZV-31F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lIR-l8-8eR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8g-Lj-igC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="-530"/>
         </scene>
     </scenes>
 </document>

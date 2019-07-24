@@ -140,6 +140,8 @@
 		C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A49228FD00600CCCFE8 /* UserInformationsModel.swift */; };
 		C2A61AAE228FD00600CCCFE8 /* PlistDictionaryExample.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */; };
 		C2C5AFE222E841CF003A68FF /* NWPathMonitor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5AFE122E841CF003A68FF /* NWPathMonitor+Extension.swift */; };
+		C2C5AFE422E844E0003A68FF /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5AFE322E844E0003A68FF /* LocalNotificationViewController.swift */; };
+		C2C5AFE822E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5AFE722E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift */; };
 		C2EA5E3A22840EEA005EDEE4 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */; };
 		D5BF3C2CDC8A2E7686475A0B /* Pods_YYxProvingGroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0709F111CC381F5E0E0E9F91 /* Pods_YYxProvingGroundTests.framework */; };
 		E879C1B422421012006904A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E879C1B322421012006904A5 /* AppDelegate.swift */; };
@@ -312,6 +314,8 @@
 		C2A61A49228FD00600CCCFE8 /* UserInformationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformationsModel.swift; sourceTree = "<group>"; };
 		C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PlistDictionaryExample.plist; sourceTree = "<group>"; };
 		C2C5AFE122E841CF003A68FF /* NWPathMonitor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWPathMonitor+Extension.swift"; sourceTree = "<group>"; };
+		C2C5AFE322E844E0003A68FF /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
+		C2C5AFE722E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UNUserNotificationCenterDelegate.swift"; sourceTree = "<group>"; };
 		C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
 		D40AB8845881983AC8989955 /* Pods-YYxProvingGround.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3ABBC6B65EFCD9C60DC259 /* Pods_YYxProvingGround.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxProvingGround.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -394,6 +398,7 @@
 		C236522A22D337A400582267 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C2C5AFE322E844E0003A68FF /* LocalNotificationViewController.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
 				C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
@@ -443,6 +448,7 @@
 		C23BB34E22E83CF00052C971 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
+				C2C5AFE522E84758003A68FF /* UserNotification */,
 				C23BB34F22E83CF00052C971 /* constant.swift */,
 				C23BB35022E83CF00052C971 /* SideBar */,
 				C23BB35222E83CF00052C971 /* UITableViewController */,
@@ -926,6 +932,22 @@
 			path = TestExampleDatas;
 			sourceTree = "<group>";
 		};
+		C2C5AFE522E84758003A68FF /* UserNotification */ = {
+			isa = PBXGroup;
+			children = (
+				C2C5AFE622E84768003A68FF /* Local */,
+			);
+			path = UserNotification;
+			sourceTree = "<group>";
+		};
+		C2C5AFE622E84768003A68FF /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				C2C5AFE722E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
 		E879C1A722421012006904A5 = {
 			isa = PBXGroup;
 			children = (
@@ -1234,6 +1256,7 @@
 				C23BB40422E83CF10052C971 /* StaticCollectionViewController.swift in Sources */,
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				C23BB42722E83CF10052C971 /* Photo+UIViewController.swift in Sources */,
+				C2C5AFE422E844E0003A68FF /* LocalNotificationViewController.swift in Sources */,
 				C23BB43A22E83CF10052C971 /* UIStoryBoard+Extension.swift in Sources */,
 				C23BB41122E83CF10052C971 /* TableViewControllerPresenter.swift in Sources */,
 				C23BB41F22E83CF10052C971 /* HorizontalSlider.swift in Sources */,
@@ -1247,6 +1270,7 @@
 				C23BB3F622E83CF10052C971 /* HttpMethod+Enum.swift in Sources */,
 				C23BB43C22E83CF10052C971 /* Animation+UIView.swift in Sources */,
 				C23BB40B22E83CF10052C971 /* Timer+Extension.swift in Sources */,
+				C2C5AFE822E847E0003A68FF /* AppDelegate+UNUserNotificationCenterDelegate.swift in Sources */,
 				C23BB44722E83CF10052C971 /* Double+Extension.swift in Sources */,
 				C23BB3F522E83CF10052C971 /* Timezone+Extension.swift in Sources */,
 				C23BB41722E83CF10052C971 /* FormCollectionVeiwController.swift in Sources */,
