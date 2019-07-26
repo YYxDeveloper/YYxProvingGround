@@ -50,7 +50,8 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-       exampleAddBoardLayer()
+//       exampleAddBoardLayer()
+        exampleTintView()
     }
     
     override func viewWillAppear(_ animated: Bool) {

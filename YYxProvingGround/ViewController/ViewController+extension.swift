@@ -38,6 +38,10 @@ extension ViewController{
         case UserInformationsJsonExample
         case exampleDictionaryStructure
     }
+    func exampleTintView()  {
+        let tintView = TintView.init(frame: containerView.bounds)
+        self.containerView.addSubview(tintView)
+    }
     func exampleDecodeJsonDatabyUtf8(witchModel:theJSonModel) {
         switch witchModel {
         case .exampleDictionaryStructure:
