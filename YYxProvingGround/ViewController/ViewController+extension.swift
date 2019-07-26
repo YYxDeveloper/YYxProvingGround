@@ -38,6 +38,9 @@ extension ViewController{
         case UserInformationsJsonExample
         case exampleDictionaryStructure
     }
+    func exampleReactRowCollectionViewController() {
+        self.addSubViewWithChildController(addSubViewController: self.reactDefaultUITableViewController, toWitchView: containerView)
+    }
     func exampleTintView()  {
         let tintView = TintView.init(frame: containerView.bounds)
         self.containerView.addSubview(tintView)

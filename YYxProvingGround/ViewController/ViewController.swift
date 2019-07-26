@@ -51,7 +51,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //       exampleAddBoardLayer()
-        exampleTintView()
+//        exampleTintView()
+        exampleReactRowCollectionViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {

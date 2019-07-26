@@ -130,7 +130,6 @@
 		C23BB45022E83CF10052C971 /* YYxViewController+3rd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BB3E022E83CF00052C971 /* YYxViewController+3rd.swift */; };
 		C23BB45122E83CF10052C971 /* Extension+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BB3E222E83CF00052C971 /* Extension+Alamofire.swift */; };
 		C23BB45222E83CF10052C971 /* CheckMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BB3E422E83CF00052C971 /* CheckMan.swift */; };
-		C23BB45322E83CF10052C971 /* Reachability+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BB3E622E83CF00052C971 /* Reachability+Extension.swift */; };
 		C23BB45422E83CF10052C971 /* YYx3rdInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = C23BB3E722E83CF00052C971 /* YYx3rdInfo.txt */; };
 		C2656D97229D1EF200781200 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2656D99229D1EF200781200 /* Localizable.strings */; };
 		C2A61AA8228FD00600CCCFE8 /* FakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A61A44228FD00600CCCFE8 /* FakeDataManager.swift */; };
@@ -302,7 +301,6 @@
 		C23BB3E022E83CF00052C971 /* YYxViewController+3rd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYxViewController+3rd.swift"; sourceTree = "<group>"; };
 		C23BB3E222E83CF00052C971 /* Extension+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Alamofire.swift"; sourceTree = "<group>"; };
 		C23BB3E422E83CF00052C971 /* CheckMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMan.swift; sourceTree = "<group>"; };
-		C23BB3E622E83CF00052C971 /* Reachability+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reachability+Extension.swift"; sourceTree = "<group>"; };
 		C23BB3E722E83CF00052C971 /* YYx3rdInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYx3rdInfo.txt; sourceTree = "<group>"; };
 		C2656D95229D1ECD00781200 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		C2656D96229D1ECD00781200 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -879,7 +877,6 @@
 				C23BB3E022E83CF00052C971 /* YYxViewController+3rd.swift */,
 				C23BB3E122E83CF00052C971 /* Alamofire */,
 				C23BB3E322E83CF00052C971 /* YYxEncapsulation */,
-				C23BB3E522E83CF00052C971 /* Reachability */,
 				C23BB3E722E83CF00052C971 /* YYx3rdInfo.txt */,
 			);
 			path = YYX3rd;
@@ -907,14 +904,6 @@
 				C23BB3E422E83CF00052C971 /* CheckMan.swift */,
 			);
 			path = YYxEncapsulation;
-			sourceTree = "<group>";
-		};
-		C23BB3E522E83CF00052C971 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				C23BB3E622E83CF00052C971 /* Reachability+Extension.swift */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		C2A61A43228FD00600CCCFE8 /* TestExampleDatas */ = {
@@ -1342,7 +1331,6 @@
 				C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */,
 				C23BB3ED22E83CF10052C971 /* MonthView.swift in Sources */,
 				C23BB40D22E83CF10052C971 /* YYxErrorHandler.swift in Sources */,
-				C23BB45322E83CF10052C971 /* Reachability+Extension.swift in Sources */,
 				C23BB42F22E83CF10052C971 /* SecondPageViewController.swift in Sources */,
 				C23BB3F222E83CF10052C971 /* Extension+Date.swift in Sources */,
 				C23BB40A22E83CF10052C971 /* CALayer+Extension.swift in Sources */,

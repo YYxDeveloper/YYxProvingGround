@@ -8,10 +8,9 @@
 
 import Foundation
 import UIKit
-import Reachability
 extension YYxViewController{
     func checkNetworkState() {
-        Reachability.checkState()
+        
     }
     func checkJailbreak() {
         

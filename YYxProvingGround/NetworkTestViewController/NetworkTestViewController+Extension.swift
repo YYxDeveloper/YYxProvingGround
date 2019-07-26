@@ -9,7 +9,6 @@
 import Foundation
 import Network
 import UIKit
-import Reachability
 import Moya
 extension NetworkTestViewController{
     func exampleNWMonitor() {
@@ -43,9 +42,7 @@ extension NetworkTestViewController{
             }
             }.resume()
     }
-    func exampleReachability() {
-        Reachability.checkState()
-    }
+  
     func exampleTestURLconnect()  {
         CheckMan.checkDefaultRequestData(urlString: "https://my-json-server.typicode.com/YYxDeveloper/FakeAPI/posts", completion: {data in
             YYxErrorHandler.printTestLog(witchStep: 1, message: data.convertToUTF8String())
