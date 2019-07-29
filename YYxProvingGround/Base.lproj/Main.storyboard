@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VUb-FX-T31">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bio-A2-uOv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -278,7 +278,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAs-h2-WlZ" customClass="VideoPreviewView" customModule="QRCode_Example" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAs-h2-WlZ" customClass="VideoPreviewView" customModule="YYxProvingGround" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to take a photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlW-fy-8M1">
@@ -342,6 +342,66 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="942" y="-592"/>
+        </scene>
+        <!--Local Notification View Controller-->
+        <scene sceneID="0O3-R0-0Mc">
+            <objects>
+                <viewController id="bio-A2-uOv" customClass="LocalNotificationViewController" customModule="YYxProvingGround" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m31-M2-oDD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The notification will fire after 5 seconds of button click." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMC-EB-g6R">
+                                <rect key="frame" x="10" y="373.5" width="355" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-B7-U1g">
+                                <rect key="frame" x="87" y="323.5" width="201" height="40"/>
+                                <color key="backgroundColor" red="0.42994586140000002" green="0.66666668650000005" blue="0.2251971253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="GvU-4B-3FO"/>
+                                    <constraint firstAttribute="height" constant="40" id="gE0-FL-w3f"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Set Notification"/>
+                                <connections>
+                                    <action selector="buttonCreateNotification:" destination="bio-A2-uOv" eventType="touchUpInside" id="hEP-eA-m0u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-5R-Mqc">
+                                <rect key="frame" x="87" y="265" width="201" height="40"/>
+                                <color key="backgroundColor" red="0.42994586140000002" green="0.66666668650000005" blue="0.2251971253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="bbE-I3-XOi"/>
+                                    <constraint firstAttribute="height" constant="40" id="t4a-Qb-Pfa"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Read Notifications"/>
+                                <connections>
+                                    <action selector="buttonReadNotifications:" destination="bio-A2-uOv" eventType="touchUpInside" id="uWO-De-Hr6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UMC-EB-g6R" firstAttribute="leading" secondItem="a7z-VH-OvP" secondAttribute="leading" constant="10" id="3ib-Ts-TII"/>
+                            <constraint firstItem="fEr-B7-U1g" firstAttribute="centerX" secondItem="a7z-VH-OvP" secondAttribute="centerX" id="DmI-rs-5n2"/>
+                            <constraint firstItem="fEr-B7-U1g" firstAttribute="centerY" secondItem="a7z-VH-OvP" secondAttribute="centerY" id="OzU-cW-cbb"/>
+                            <constraint firstItem="a7z-VH-OvP" firstAttribute="trailing" secondItem="UMC-EB-g6R" secondAttribute="trailing" constant="10" id="S5k-Zf-pPM"/>
+                            <constraint firstItem="a7z-VH-OvP" firstAttribute="trailing" secondItem="O0s-5R-Mqc" secondAttribute="trailing" constant="87" id="eBR-va-36U"/>
+                            <constraint firstItem="O0s-5R-Mqc" firstAttribute="trailing" secondItem="fEr-B7-U1g" secondAttribute="trailing" id="gsP-8o-FtZ"/>
+                            <constraint firstItem="fEr-B7-U1g" firstAttribute="top" secondItem="O0s-5R-Mqc" secondAttribute="bottom" constant="18.5" id="nIu-SH-iDp"/>
+                            <constraint firstItem="UMC-EB-g6R" firstAttribute="top" secondItem="fEr-B7-U1g" secondAttribute="bottom" constant="10" id="rQ5-mG-A2j"/>
+                            <constraint firstItem="O0s-5R-Mqc" firstAttribute="leading" secondItem="fEr-B7-U1g" secondAttribute="leading" id="saK-bp-RJJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a7z-VH-OvP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEA-IF-pNl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="-622"/>
         </scene>
     </scenes>
 </document>

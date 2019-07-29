@@ -34,6 +34,8 @@
 		C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */; };
 		C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */; };
 		C23948BC22EEC48E004D3977 /* NWPathMonitor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23948BB22EEC48E004D3977 /* NWPathMonitor+Extension.swift */; };
+		C23948BE22EEC7D3004D3977 /* LocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23948BD22EEC7D2004D3977 /* LocalNotificationViewController.swift */; };
+		C23948C222EEC9A5004D3977 /* AppDelegate+UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23948C122EEC9A5004D3977 /* AppDelegate+UserNotification.swift */; };
 		C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */; };
 		C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */; };
 		C24B3CB122CDB57500071490 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B3CB022CDB57400071490 /* SliderViewController.swift */; };
@@ -200,6 +202,8 @@
 		C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewController.swift; sourceTree = "<group>"; };
 		C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		C23948BB22EEC48E004D3977 /* NWPathMonitor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NWPathMonitor+Extension.swift"; sourceTree = "<group>"; };
+		C23948BD22EEC7D2004D3977 /* LocalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationViewController.swift; sourceTree = "<group>"; };
+		C23948C122EEC9A5004D3977 /* AppDelegate+UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UserNotification.swift"; sourceTree = "<group>"; };
 		C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exampleTOEICVocabulary.json; sourceTree = "<group>"; };
 		C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOEICVocabularyModel.swift; sourceTree = "<group>"; };
 		C24B3CB022CDB57400071490 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
@@ -459,6 +463,7 @@
 		C236522A22D337A400582267 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C23948BD22EEC7D2004D3977 /* LocalNotificationViewController.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
 				C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
@@ -585,6 +590,7 @@
 				C2A61A60228FD00600CCCFE8 /* NSCache+Extension.swift */,
 				C2A61A61228FD00600CCCFE8 /* UIKit+Extension */,
 				C2A61A7D228FD00600CCCFE8 /* AppDelegate+Extension.swift */,
+				C23948C122EEC9A5004D3977 /* AppDelegate+UserNotification.swift */,
 				C2A61A7E228FD00600CCCFE8 /* Custom UIView */,
 				C2A61A83228FD00600CCCFE8 /* StandardType */,
 				C2656D9C229D209D00781200 /* LocalizableMan.swift */,
@@ -1177,6 +1183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A61AE3228FD00600CCCFE8 /* String+Convert.swift in Sources */,
+				C23948BE22EEC7D3004D3977 /* LocalNotificationViewController.swift in Sources */,
 				C2A61AC5228FD00600CCCFE8 /* UIColor+Extension.swift in Sources */,
 				C2A61ABF228FD00600CCCFE8 /* YYxErrorHandler.swift in Sources */,
 				C2A61AA7228FD00600CCCFE8 /* IndexPath+Extension.swift in Sources */,
@@ -1259,6 +1266,7 @@
 				C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */,
 				C211F99722AFCA3B00A76693 /* YYxViewController.swift in Sources */,
 				C2FF469B22CC5B3100EE5A02 /* CalenderView.swift in Sources */,
+				C23948C222EEC9A5004D3977 /* AppDelegate+UserNotification.swift in Sources */,
 				C2A61AC3228FD00600CCCFE8 /* ReactDefaultUITableViewController.swift in Sources */,
 				C2A61AE1228FD00600CCCFE8 /* String+Greenwich.swift in Sources */,
 				C2A61AC2228FD00600CCCFE8 /* TableViewControllerPresenter.swift in Sources */,
