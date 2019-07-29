@@ -29,11 +29,11 @@
 		C22DA3442296C19B00CB4538 /* HttpsTestPostExample.json in Resources */ = {isa = PBXBuildFile; fileRef = C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */; };
 		C22EA54822967E68006FC04B /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EA54722967E68006FC04B /* Timer+Extension.swift */; };
 		C22EA54A229688E2006FC04B /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = C22EA549229688E2006FC04B /* RefreshContents.xib */; };
-		C231001F22AE519300B15482 /* Reachability+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231001E22AE519300B15482 /* Reachability+Extension.swift */; };
 		C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C231FF4422AE45B400B15482 /* Driver+Extension.swift */; };
 		C236522D22D337D500582267 /* NetworkTestViewController+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */; };
 		C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */; };
 		C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */; };
+		C23948BC22EEC48E004D3977 /* NWPathMonitor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23948BB22EEC48E004D3977 /* NWPathMonitor+Extension.swift */; };
 		C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */; };
 		C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */; };
 		C24B3CB122CDB57500071490 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B3CB022CDB57400071490 /* SliderViewController.swift */; };
@@ -195,11 +195,11 @@
 		C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HttpsTestPostExample.json; sourceTree = "<group>"; };
 		C22EA54722967E68006FC04B /* Timer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		C22EA549229688E2006FC04B /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
-		C231001E22AE519300B15482 /* Reachability+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reachability+Extension.swift"; sourceTree = "<group>"; };
 		C231FF4422AE45B400B15482 /* Driver+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+Extension.swift"; sourceTree = "<group>"; };
 		C236522C22D337D500582267 /* NetworkTestViewController+Moya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTestViewController+Moya.swift"; sourceTree = "<group>"; };
 		C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewController.swift; sourceTree = "<group>"; };
 		C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		C23948BB22EEC48E004D3977 /* NWPathMonitor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NWPathMonitor+Extension.swift"; sourceTree = "<group>"; };
 		C23AEC42229FC43400334BB1 /* exampleTOEICVocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exampleTOEICVocabulary.json; sourceTree = "<group>"; };
 		C23AEC44229FC49C00334BB1 /* TOEICVocabularyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOEICVocabularyModel.swift; sourceTree = "<group>"; };
 		C24B3CB022CDB57400071490 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
@@ -389,6 +389,7 @@
 		C2157BCF2292814C00171535 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C211F99622AFCA3B00A76693 /* YYxViewController.swift */,
 				C217F6F322E5A805007D3A83 /* QRCodeScanViewController */,
 				C277937A22B0F1F600E13109 /* BasicCollectionViewController */,
 				C254F21F2295358200C36CBF /* UITabbedViewController */,
@@ -425,7 +426,6 @@
 			children = (
 				C29E15FB22B3A5BB008AD317 /* Alamofire */,
 				C277938322B0FCC400E13109 /* YYxEncapsulation */,
-				C231001D22AE517B00B15482 /* Reachability */,
 				C226886F2298266800E2884E /* Moya */,
 			);
 			path = YYX3rd;
@@ -446,14 +446,6 @@
 				C22EA54722967E68006FC04B /* Timer+Extension.swift */,
 			);
 			path = "Timer+Extension";
-			sourceTree = "<group>";
-		};
-		C231001D22AE517B00B15482 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				C231001E22AE519300B15482 /* Reachability+Extension.swift */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		C231FF4622AE46C000B15482 /* CoreData */ = {
@@ -544,8 +536,6 @@
 		C277938322B0FCC400E13109 /* YYxEncapsulation */ = {
 			isa = PBXGroup;
 			children = (
-				C211F99622AFCA3B00A76693 /* YYxViewController.swift */,
-				C277938122B0FBBB00E13109 /* CheckMan.swift */,
 			);
 			path = YYxEncapsulation;
 			sourceTree = "<group>";
@@ -571,6 +561,8 @@
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
+				C277938122B0FBBB00E13109 /* CheckMan.swift */,
+				C23948BB22EEC48E004D3977 /* NWPathMonitor+Extension.swift */,
 				C2A61A3A228FD00600CCCFE8 /* YYxInfo.txt */,
 				C2FF469422CC5B1100EE5A02 /* Calender */,
 				C277938422B0FF4800E13109 /* Network */,
@@ -1282,6 +1274,7 @@
 				C2A61AE2228FD00600CCCFE8 /* String+Extension.swift in Sources */,
 				C2A61ACC228FD00600CCCFE8 /* Animation+UIView.swift in Sources */,
 				C2A61AA2228FD00600CCCFE8 /* CategoryVerticalColumnModel.swift in Sources */,
+				C23948BC22EEC48E004D3977 /* NWPathMonitor+Extension.swift in Sources */,
 				C2A61AA8228FD00600CCCFE8 /* FakeDataManager.swift in Sources */,
 				C2A61AC6228FD00600CCCFE8 /* UILabel+Extension.swift in Sources */,
 				C2FF469A22CC5B3100EE5A02 /* WeekdaysView.swift in Sources */,
@@ -1292,7 +1285,6 @@
 				C2A61ABB228FD00600CCCFE8 /* UIScrollView+Extension.swift in Sources */,
 				C2A61AE6228FD00600CCCFE8 /* Array+Extension.swift in Sources */,
 				C2A61ACF228FD00600CCCFE8 /* PageContainerViewController.swift in Sources */,
-				C231001F22AE519300B15482 /* Reachability+Extension.swift in Sources */,
 				C2A61ADB228FD00600CCCFE8 /* Int+Extension.swift in Sources */,
 				C2A61A9B228FD00600CCCFE8 /* Extension+Date.swift in Sources */,
 				C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */,

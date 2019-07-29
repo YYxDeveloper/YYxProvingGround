@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Reachability
 
 class CheckMan {
     static func checkDefaultRequestData(urlString:String, completion:@escaping ((_ data:Data)->())) {
@@ -30,8 +29,5 @@ class CheckMan {
             
         }
         dataTask?.resume()
-    }
-     func checkDeviceNetworkState(){
-        Reachability.checkState()
     }
 }

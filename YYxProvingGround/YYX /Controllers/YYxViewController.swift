@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import Reachability
+import Network
 class YYxViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+    
         checkNetworkState()
         checkJailbreak()
         checkInfoPlist()
@@ -20,7 +20,7 @@ class YYxViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func checkNetworkState() {
-         Reachability.checkState()
+        NWPathMonitor().checkNetworkStatus()
     }
     func checkJailbreak() {
         

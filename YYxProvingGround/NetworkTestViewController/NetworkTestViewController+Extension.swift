@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Reachability
 import Moya
+import Network
 extension NetworkTestViewController{
     func exampleGetGoogleSheetJson() {
         //GoogleSheetTestExportAPI
@@ -37,14 +37,17 @@ extension NetworkTestViewController{
             }
             }.resume()
     }
-    func exampleReachability() {
-        Reachability.checkState()
-    }
+  
     func exampleTestURLconnect()  {
         CheckMan.checkDefaultRequestData(urlString: "https://my-json-server.typicode.com/YYxDeveloper/FakeAPI/posts", completion: {data in
             YYxErrorHandler.printTestLog(witchStep: 1, message: data.convertToUTF8String())
         })
     }
+    func exampleNWMonitor() {
+        NWPathMonitor().checkNetworkStatus()
+        
+    }
+
     func examplePostData() {
         
         let url = URL(string: "https://my-json-server.typicode.com/YYxDeveloper/FakeAPI/posts")!
