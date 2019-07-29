@@ -54,4 +54,31 @@ extension ViewController{
         request.predicate = NSPredicate.giveMePrePredicatePreFixString(withcProperty: "chineseName", prefix: "G")
         Driver.showDriverDatas(request: request as! NSFetchRequest<NSFetchRequestResult>)
     }
+    func exampleCoreDataShowAllBikes()  {
+        let request: NSFetchRequest<Driver> = Driver.fetchRequest()
+        
+        Driver.showDriverDatas(request: request as! NSFetchRequest<NSFetchRequestResult>)
+    }
+    func exampleDelete1Bike() {
+        let request: NSFetchRequest<Bike> = Bike.fetchRequest()
+        //        request.predicate = NSPredicate.giveMePrePredicatePreFixString(withcProperty: "ownerChineseName", prefix: "t")
+        let viewContext = NSManagedObjectContext.giveMeViewContext()
+        do {
+            if let arr = try viewContext.fetch(request) as? [Bike] {
+                
+                
+                _ = arr.map({print($0.ownerChineseName ?? "no ownerChineseName name")})
+                for theBike in arr where theBike.ownerChineseName == "ttttt"{
+                    print("find it \(theBike.ownerChineseName)")
+                    viewContext.delete(theBike)
+                }
+                AppDelegate.giveMeAppDelegate().saveContext()
+                _ = arr.map({print($0.ownerChineseName ?? "no ownerChineseName name")})
+            }
+        }catch{
+            YYxErrorHandler.printConvertErrorFail()
+            print(error)
+        }
+        
+    }
 }

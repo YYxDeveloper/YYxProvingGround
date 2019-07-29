@@ -66,6 +66,10 @@ extension ViewController{
             
         }
     }
+    func exampleTintView()  {
+        let tintView = TintView.init(frame: containerView.bounds)
+        self.containerView.addSubview(tintView)
+    }
     //
     func exampleCreateOwnDynamicTableViewController()   {
         
