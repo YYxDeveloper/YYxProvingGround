@@ -13,4 +13,7 @@ extension ViewController{
     func exampleAddBoardLayer() {
         containerView.layer.addBordLayer(witchColor: .blue, width: 2)
     }
+    func exampleProgrammaticallyTableViewController()  {
+        addSubViewWithChildController(addSubViewController: ProgrammaticallyTableViewController(), toWitchView: containerView)
+    }
 }

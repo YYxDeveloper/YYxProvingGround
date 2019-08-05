@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		51288774F1D4ED37E2D93083 /* Pods_YYxProvingGroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB664A0C1A3B1830D0DD12D8 /* Pods_YYxProvingGroundUITests.framework */; };
 		C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */; };
 		C205949F229BE24C00E57B51 /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */; };
@@ -173,6 +174,7 @@
 		0709F111CC381F5E0E0E9F91 /* Pods_YYxProvingGroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxProvingGroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4E238365CD5083EE20F955 /* Pods-YYxProvingGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		31BA08962FDD888D5348737E /* Pods-YYxProvingGround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.release.xcconfig"; sourceTree = "<group>"; };
+		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		6E3C946B372667CB101FE289 /* Pods-YYxProvingGroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundUITests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundUITests/Pods-YYxProvingGroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7D06A1EF579342808DE75D13 /* Pods-YYxProvingGroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FC9D9E82FF8E0AA0A7AF675 /* Pods-YYxProvingGroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundUITests/Pods-YYxProvingGroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -753,6 +755,7 @@
 		C2A61A62228FD00600CCCFE8 /* UITableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */,
 				C2A61AE8228FEC5000CCCFE8 /* ReactRowCollectionViewController */,
 				C2A61A64228FD00600CCCFE8 /* ReactDefaultUITableViewController */,
 				C2A61A63228FD00600CCCFE8 /* Extension+UITableView.swift */,
@@ -1289,6 +1292,7 @@
 				C2A61AE0228FD00600CCCFE8 /* numeric.swift in Sources */,
 				C2A61ABD228FD00600CCCFE8 /* CALayer+Animation.swift in Sources */,
 				C277938222B0FBBB00E13109 /* CheckMan.swift in Sources */,
+				47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */,
 				C2A61A95228FD00600CCCFE8 /* Global.swift in Sources */,
 				C2A61ABB228FD00600CCCFE8 /* UIScrollView+Extension.swift in Sources */,
 				C2A61AE6228FD00600CCCFE8 /* Array+Extension.swift in Sources */,
