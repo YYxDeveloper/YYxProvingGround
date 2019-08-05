@@ -50,6 +50,8 @@ extension ProgrammaticallyCustomTableViewController: UITableViewDelegate, UITabl
         cell.layer.shadowOpacity = 16
         cell.layer.shadowRadius = 7
         cell.tucanNameLabel.text = nameArray[indexPath.row]
+        cell.tucanImageView.image = UIImage(named: "frozen.jpeg")
+
         
          return cell
     }
