@@ -16,4 +16,7 @@ extension ViewController{
     func exampleProgrammaticallyTableViewController()  {
         addSubViewWithChildController(addSubViewController: ProgrammaticallyTableViewController(), toWitchView: containerView)
     }
+    func exampleProgrammaticallyCustomTableViewController()  {
+        addSubViewWithChildController(addSubViewController: ProgrammaticallyCustomTableViewController(), toWitchView: containerView)
+    }
 }

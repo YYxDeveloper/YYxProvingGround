@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        exampleAddBoardLayer()
-       exampleProgrammaticallyTableViewController()
+      exampleProgrammaticallyCustomTableViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
