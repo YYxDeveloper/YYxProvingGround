@@ -50,8 +50,12 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-       exampleAddBoardLayer()
-      exampleProgrammaticallyCustomTableViewController()
+        showContainerView()
+//       exampleAddBoardLayer()
+//      exampleProgrammaticallyCustomTableViewController()
+//        exampleProgrammaticallyStackView()
+        exampleReadHTMLFile()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,4 +73,12 @@ class ViewController: UIViewController {
     }
   
    
+}
+extension ViewController{
+    func hideContainerView() {
+        containerView.isHidden = true
+    }
+    func showContainerView() {
+        containerView.isHidden = false
+    }
 }
