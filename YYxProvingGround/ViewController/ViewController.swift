@@ -54,8 +54,9 @@ class ViewController: UIViewController {
 //       exampleAddBoardLayer()
 //      exampleProgrammaticallyCustomTableViewController()
 //        exampleProgrammaticallyStackView()
-        exampleReadHTMLFile()
-        
+//        exampleReadHTMLFile()
+//        exampleConstrainAnchor()
+        exampleYYxButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
