@@ -14,6 +14,7 @@
 		47CF026822F81C61003680D5 /* HTMLTextTestFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 47CF026722F81C61003680D5 /* HTMLTextTestFile.txt */; };
 		47CF026A22F81FA5003680D5 /* ViewController+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */; };
 		47CF026C22F82A20003680D5 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */; };
+		47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */; };
 		47EAE9AC22F96F9800445D6A /* YYxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EAE9AB22F96F9800445D6A /* YYxButton.swift */; };
 		51288774F1D4ED37E2D93083 /* Pods_YYxProvingGroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB664A0C1A3B1830D0DD12D8 /* Pods_YYxProvingGroundUITests.framework */; };
 		C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */; };
@@ -188,6 +189,7 @@
 		47CF026722F81C61003680D5 /* HTMLTextTestFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HTMLTextTestFile.txt; sourceTree = "<group>"; };
 		47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+FileManager.swift"; sourceTree = "<group>"; };
 		47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
+		47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Syntax.swift"; sourceTree = "<group>"; };
 		47EAE9AB22F96F9800445D6A /* YYxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxButton.swift; sourceTree = "<group>"; };
 		6E3C946B372667CB101FE289 /* Pods-YYxProvingGroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundUITests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundUITests/Pods-YYxProvingGroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7D06A1EF579342808DE75D13 /* Pods-YYxProvingGroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 				C21D385022E1BD310014EC92 /* ViewController+View.swift */,
 				C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */,
 				47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */,
+				47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1332,6 +1335,7 @@
 				C2A61AD9228FD00600CCCFE8 /* ProgressingDashedLineCircleView.swift in Sources */,
 				C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */,
 				C2A61AB6228FD00600CCCFE8 /* ToolBoxViewController.swift in Sources */,
+				47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */,
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
 				C211F99922AFD09000A76693 /* ViewTestViewController.swift in Sources */,
 				C21D385122E1BD310014EC92 /* ViewController+View.swift in Sources */,

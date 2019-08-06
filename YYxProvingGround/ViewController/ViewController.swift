@@ -51,13 +51,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showContainerView()
-//       exampleAddBoardLayer()
-//      exampleProgrammaticallyCustomTableViewController()
-//        exampleProgrammaticallyStackView()
-//        exampleReadHTMLFile()
-        exampleConstraintAnchor()
-//        exampleProgrammaticallyStackView()
-//        exampleYYxButton()
+        exampleArrayOfReduce(theCase: .字串合併)
     }
     
     override func viewWillAppear(_ animated: Bool) {
