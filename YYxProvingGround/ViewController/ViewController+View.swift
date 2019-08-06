@@ -70,6 +70,13 @@ extension ViewController{
             
             stackView.leadingAnchor.constraint(equalTo: label2.leadingAnchor),
             stackView.topAnchor.constraint(equalTo: label2.bottomAnchor, constant: 10),
+            stackView.heightAnchor.constraint(equalToConstant: 100),
+            
+            stackView.heightAnchor.constraint(equalTo: label.heightAnchor),
+            label.heightAnchor.constraint(equalTo: stackView.heightAnchor),
+            label2.heightAnchor.constraint(equalTo: stackView.heightAnchor),
+
+            
             ])
         
         self.view = view
