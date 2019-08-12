@@ -11,6 +11,8 @@ import UIKit
 // MARK: - Modules
 import Foundation
 import CoreData
+import MessageUI
+
 
 import SystemConfiguration
 
@@ -51,7 +53,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showContainerView()
-        exampleArrayOfReduce(theCase: .字串合併)
+//        exampleArrayOfReduce(theCase: .字串合併)
+      
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,7 +68,8 @@ class ViewController: UIViewController {
 
     @IBAction func turn(_ sender: Any) {
 //        sideBar?.turn()
-         refreshControl.endRefreshing()
+//         refreshControl.endRefreshing()
+         exampleSendEmail()
     }
   
    

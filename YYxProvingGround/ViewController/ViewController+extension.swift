@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import MessageUI
+
 //------------
 //https://stackoverflow.com/questions/37442593/custom-operator-to-simplify-if-let
 infix operator ?=
