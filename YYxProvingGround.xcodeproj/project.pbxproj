@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		472A9C0F22FD3D3B00251D7A /* YYxGitIgnore.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 472A9C0E22FD3D3B00251D7A /* YYxGitIgnore.rtf */; };
+		334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 334C63802301516E003C37A5 /* YYxGitIgnore.txt */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
@@ -183,7 +183,7 @@
 		0709F111CC381F5E0E0E9F91 /* Pods_YYxProvingGroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxProvingGroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4E238365CD5083EE20F955 /* Pods-YYxProvingGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		31BA08962FDD888D5348737E /* Pods-YYxProvingGround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.release.xcconfig"; sourceTree = "<group>"; };
-		472A9C0E22FD3D3B00251D7A /* YYxGitIgnore.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = YYxGitIgnore.rtf; sourceTree = "<group>"; };
+		334C63802301516E003C37A5 /* YYxGitIgnore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxGitIgnore.txt; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
@@ -947,9 +947,9 @@
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
+				334C63802301516E003C37A5 /* YYxGitIgnore.txt */,
 				E879C1BF22421013006904A5 /* LaunchScreen.storyboard */,
 				E879C1C222421013006904A5 /* Info.plist */,
-				472A9C0E22FD3D3B00251D7A /* YYxGitIgnore.rtf */,
 				E879C1BA22421012006904A5 /* YYxProvingGround.xcdatamodeld */,
 			);
 			path = YYxProvingGround;
@@ -1086,11 +1086,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CF026822F81C61003680D5 /* HTMLTextTestFile.txt in Resources */,
-				472A9C0F22FD3D3B00251D7A /* YYxGitIgnore.rtf in Resources */,
 				C2A61AB9228FD00600CCCFE8 /* ToolBox.storyboard in Resources */,
 				C22DA3442296C19B00CB4538 /* HttpsTestPostExample.json in Resources */,
 				C2A61AAC228FD00600CCCFE8 /* UserInformationsJsonExample.json in Resources */,
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
+				334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */,
 				C254F224229535B300C36CBF /* TabbedViewController.storyboard in Resources */,
 				C2A61AA3228FD00600CCCFE8 /* CategoryHorizenTalRowCell.xib in Resources */,
 				C2A61AD0228FD00600CCCFE8 /* PageViewController.storyboard in Resources */,
