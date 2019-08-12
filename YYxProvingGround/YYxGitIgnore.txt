@@ -1,0 +1,287 @@
+{\rtf1\ansi\ansicpg950\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 #YYxGitIgnore
+\fs24 \
+
+\fs28 #{\field{\*\fldinst{HYPERLINK "https://github.com/github/gitignore"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 https://github.com/github/gitignore}}
+\fs24 \
+
+\fs28 # Xcode
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+\fs24 \
+
+\fs28 \
+\
+## Build generated
+\fs24 \
+
+\fs28 build/
+\fs24 \
+
+\fs28 DerivedData/
+\fs24 \
+
+\fs28 \
+\
+## Various settings
+\fs24 \
+
+\fs28 *.pbxuser
+\fs24 \
+
+\fs28 !default.pbxuser
+\fs24 \
+
+\fs28 *.mode1v3
+\fs24 \
+
+\fs28 !default.mode1v3
+\fs24 \
+
+\fs28 *.mode2v3
+\fs24 \
+
+\fs28 !default.mode2v3
+\fs24 \
+
+\fs28 *.perspectivev3
+\fs24 \
+
+\fs28 !default.perspectivev3
+\fs24 \
+
+\fs28 xcuserdata/
+\fs24 \
+
+\fs28 \
+\
+## Other
+\fs24 \
+
+\fs28 *.moved-aside
+\fs24 \
+
+\fs28 *.xccheckout
+\fs24 \
+
+\fs28 *.xcscmblueprint
+\fs24 \
+
+\fs28 \
+\
+## Obj-C/Swift specific
+\fs24 \
+
+\fs28 *.hmap
+\fs24 \
+
+\fs28 *.ipa
+\fs24 \
+
+\fs28 *.dSYM.zip
+\fs24 \
+
+\fs28 *.dSYM
+\fs24 \
+
+\fs28 \
+\
+# CocoaPods
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 # We recommend against adding the Pods directory to your .gitignore. However
+\fs24 \
+
+\fs28 # you should judge for yourself, the pros and cons are mentioned at:
+\fs24 \
+
+\fs28 # {\field{\*\fldinst{HYPERLINK "https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control}}
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 Pods/
+\fs24 \
+
+\fs28 build/
+\fs24 \
+
+\fs28 *.pbxuser
+\fs24 \
+
+\fs28 !default.pbxuser
+\fs24 \
+
+\fs28 *.mode1v3
+\fs24 \
+
+\fs28 !default.mode1v3
+\fs24 \
+
+\fs28 *.mode2v3
+\fs24 \
+
+\fs28 !default.mode2v3
+\fs24 \
+
+\fs28 *.perspectivev3
+\fs24 \
+
+\fs28 !default.perspectivev3
+\fs24 \
+
+\fs28 xcuserdata
+\fs24 \
+
+\fs28 *.xccheckout
+\fs24 \
+
+\fs28 *.moved-aside
+\fs24 \
+
+\fs28 DerivedData
+\fs24 \
+
+\fs28 *.hmap
+\fs24 \
+
+\fs28 *.Ripa
+\fs24 \
+
+\fs28 *.xcuserstate
+\fs24 \
+
+\fs28 contents.xcworkspacedata
+\fs24 \
+
+\fs28 project.xcworkspace
+\fs24 \
+
+\fs28 UserInterfaceState.xcuserstate
+\fs24 \
+
+\fs28 project.xcworkspace/
+\fs24 \
+
+\fs28 xcuserdata/
+\fs24 \
+
+\fs28 UserInterface.xcuserstate
+\fs24 \
+
+\fs28 # CocoaPods
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 # We recommend against adding the Pods directory to your .gitignore. However
+\fs24 \
+
+\fs28 # you should judge for yourself, the pros and cons are mentioned at:
+\fs24 \
+
+\fs28 # {\field{\*\fldinst{HYPERLINK "http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control}}
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 .DS_Store
+\fs24 \
+
+\fs28 Pods
+\fs24 \
+
+\fs28 Pods/*
+\fs24 \
+
+\fs28 \
+\
+# Carthage
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 # Add this line if you want to avoid checking in source code from Carthage dependencies.
+\fs24 \
+
+\fs28 # Carthage/Checkouts
+\fs24 \
+
+\fs28 \
+\
+Carthage/Build
+\fs24 \
+
+\fs28 \
+\
+# fastlane
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+\fs24 \
+
+\fs28 # screenshots whenever they are needed.
+\fs24 \
+
+\fs28 # For more information about the recommended setup visit:
+\fs24 \
+
+\fs28 # {\field{\*\fldinst{HYPERLINK "https://docs.fastlane.tools/best-practices/source-control/#source-control"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 https://docs.fastlane.tools/best-practices/source-control/#source-control}}
+\fs24 \
+
+\fs28 \
+\
+fastlane/report.xml
+\fs24 \
+
+\fs28 fastlane/Preview.html
+\fs24 \
+
+\fs28 fastlane/screenshots
+\fs24 \
+
+\fs28 fastlane/test_output
+\fs24 \
+
+\fs28 \
+\
+# Code Injection
+\fs24 \
+
+\fs28 #
+\fs24 \
+
+\fs28 # After new code Injection tools there's a generated folder /iOSInjectionProject
+\fs24 \
+
+\fs28 # {\field{\*\fldinst{HYPERLINK "https://github.com/johnno1962/injectionforxcode"}}{\fldrslt \cf3 \ul \ulc3 \strokec3 https://github.com/johnno1962/injectionforxcode}}
+\fs24 \
+
+\fs28 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\fs24 \cf2 \
+}
