@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 334C63802301516E003C37A5 /* YYxGitIgnore.txt */; };
-		334C63832301560E003C37A5 /* viewController+ MFMailComposeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C63822301560E003C37A5 /* viewController+ MFMailComposeViewControllerDelegate.swift */; };
+		334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */; };
 		334C6385230167E7003C37A5 /* MFMailComposeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
@@ -186,7 +186,7 @@
 		0B4E238365CD5083EE20F955 /* Pods-YYxProvingGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		31BA08962FDD888D5348737E /* Pods-YYxProvingGround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.release.xcconfig"; sourceTree = "<group>"; };
 		334C63802301516E003C37A5 /* YYxGitIgnore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxGitIgnore.txt; sourceTree = "<group>"; };
-		334C63822301560E003C37A5 /* viewController+ MFMailComposeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewController+ MFMailComposeViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewController+ MFMailCompose.swift"; sourceTree = "<group>"; };
 		334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extension.swift"; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
@@ -495,7 +495,7 @@
 				C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */,
 				47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */,
 				47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */,
-				334C63822301560E003C37A5 /* viewController+ MFMailComposeViewControllerDelegate.swift */,
+				334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1295,7 +1295,7 @@
 				E879C1B422421012006904A5 /* AppDelegate.swift in Sources */,
 				C2A61A9F228FD00600CCCFE8 /* Extension+NSPredicate.swift in Sources */,
 				C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */,
-				334C63832301560E003C37A5 /* viewController+ MFMailComposeViewControllerDelegate.swift in Sources */,
+				334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */,
 				C2A61AC0228FD00600CCCFE8 /* NSCache+Extension.swift in Sources */,
 				C2A61AB0228FD00600CCCFE8 /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
 				47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */,

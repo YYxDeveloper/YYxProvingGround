@@ -15,6 +15,7 @@ extension ViewController:MFMailComposeViewControllerDelegate{
         sendEmail()
     }
     func sendEmail()  {
+        //必須確定一定要有原生郵件app才能send
         let mailComposeViewController = MFMailComposeViewController.giveMeMFMailComposeViewControllerWithConfigration()
         mailComposeViewController.mailComposeDelegate = self
         if MFMailComposeViewController.canSendMail(){
@@ -26,7 +27,8 @@ extension ViewController:MFMailComposeViewControllerDelegate{
     
   
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        print("ttt")
+        
+        //要加cancal案案件才能動
         controller.dismiss(animated: true, completion: nil)
 
     }

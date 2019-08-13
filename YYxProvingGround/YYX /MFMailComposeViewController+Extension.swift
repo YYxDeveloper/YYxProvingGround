@@ -22,16 +22,16 @@ extension MFMailComposeViewController{
         }
         changePreferredSendingEmailAddress()
         //字串需要符合RFC5322
-        mailComposeVC.editConfigration(Recipients: ["Recipients@gmail.com"], CcRecipients: ["CcRecipients@Gmail.com"], BccRecipients: nil, subject: nil, body: "Hello mail")
+        mailComposeVC.editConfigration(Recipients: ["Recipients@gmail.com"], CcRecipients: ["notExsit1Mail@Gmail.com"], BccRecipients: nil, subject: nil, body: "Hello mail")
         
         
         return mailComposeVC
     }
     func editConfigration(Recipients:[String]?,CcRecipients:[String]?,BccRecipients:[String]?,subject:String?,body:String?)  {
-        self.setToRecipients(["yyxdev@Gmail.com"])
+        self.setToRecipients(Recipients)
         self.setCcRecipients(CcRecipients)
         self.setBccRecipients(BccRecipients)
-        self.setSubject("sssss")
-        self.setMessageBody("kkk", isHTML: false)
+        self.setSubject(subject~!)
+        self.setMessageBody(body~!, isHTML: false)
     }
 }
