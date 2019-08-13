@@ -52,8 +52,9 @@ class ViewController: UIViewController {
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        showContainerView()
-//        exampleArrayOfReduce(theCase: .字串合併)
+        hideContainerView(isHidden: false)
+//        exampleCaptureList()
+        exampleValueCapture()
       
     }
     
@@ -75,10 +76,7 @@ class ViewController: UIViewController {
    
 }
 extension ViewController{
-    func hideContainerView() {
-        containerView.isHidden = true
-    }
-    func showContainerView() {
-        containerView.isHidden = false
+    func hideContainerView(isHidden:Bool) {
+        containerView.isHidden = isHidden
     }
 }

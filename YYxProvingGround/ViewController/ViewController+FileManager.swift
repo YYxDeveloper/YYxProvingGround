@@ -12,7 +12,7 @@ import WebKit
 
 extension ViewController{
     func exampleReadHTMLFile()  {
-        hideContainerView()
+        hideContainerView(isHidden: true)
         //source:https://html-online.com/editor/'
         do {
             let fileContent = try  FileManager.default.readHTMLFileToString("HTMLTextTestFile")

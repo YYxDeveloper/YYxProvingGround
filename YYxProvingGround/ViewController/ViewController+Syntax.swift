@@ -23,6 +23,89 @@ extension ViewController{
         print(indexAndNum)
         // ["0: 7", "1: 8", "2: 9", "3: 10"]
     }
+    func exampleCaptureList() {
+//        https://qiita.com/vc7/items/7cbd642e4059f8c7be10
+//        class MYObject: NSObject {
+//
+//            var text = "my text"
+//
+//            deinit {
+//                // 為了可以清楚有被釋放，所以在釋放時印出字串
+//                debugPrint("deinit")
+//            }
+//
+//            func myMethod() {
+//                debugPrint("myMethod")
+//            }
+//
+//            // 主角就是這個叫 capture 的 closure ，為了可以存取到 self ，所以加上 lazy 這個前綴
+//            lazy var capture: ()->() = {[self.text]
+//                print(self.text)
+////                self.myMethod()
+//            }
+//        }
+////        var myObject:MYObject? = MYObject()
+////        myObject = nil
+//
+//        var myObject: MYObject? = MYObject()
+//        myObject?.capture()
+//
+//        myObject?.text = "aa"
+////        myObject = nil
+        /**111111**/
+//        var thing = "car"
+//        thing = "pp"
+//        let closure = {[thing] in
+//            print(thing)
+//        }
+//        thing = "air"
+//        print(thing)
+//        closure()
+    }
+    func exampleValueCapture(){
+        func makeUselessIncrementer(forIncrement amount: Int) -> Int {
+            var runningTotal = 0
+            func incrementer() -> Int {
+                runningTotal += amount
+                return runningTotal
+            }
+            let a = incrementer()
+            
+            return a
+        }
+        func callIncrementByTen(){
+            //函式內不是回傳函示沒法value capture
+            let incrementByTen = makeUselessIncrementer(forIncrement: 10)
+            let a1 = incrementByTen
+            
+            print(a1)
+            // returns a value of 10
+            print(incrementByTen)
+            // returns a value of 20
+            print(incrementByTen)
+            // returns a value of 30
+        }
+        
+        func makeIncrementer(forIncrement amount: Int) -> () -> Int {
+            var runningTotal = 0
+            func incrementer() -> Int {
+                runningTotal += amount
+                return runningTotal
+            }
+            return incrementer
+        }
+        func callMakeIncrementer(){
+            let incrementByTen = makeIncrementer(forIncrement: 10)
+            print(incrementByTen())
+            // returns a value of 10
+            print(incrementByTen())
+            // returns a value of 20
+            print(incrementByTen())
+            // returns a value of 30
+        }
+        callIncrementByTen()
+//        callMakeIncrementer()
+    }
     func exampleArrayOfReduce(theCase:testCase.reduce) {
         
         switch theCase {
