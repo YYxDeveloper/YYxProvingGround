@@ -22,12 +22,32 @@ extension MFMailComposeViewController{
         }
         changePreferredSendingEmailAddress()
         //字串需要符合RFC5322
-        mailComposeVC.editConfigration(Recipients: ["Recipients@gmail.com"], CcRecipients: ["notExsit1Mail@Gmail.com"], BccRecipients: nil, subject: nil, body: "Hello mail")
+        mailComposeVC.editConfigration(Recipients: ["yyxdev@gmail.com","uuu@aa.uu","ccc"], CcRecipients: ["notExsit1Mail@Gmail.com"], BccRecipients: nil, subject: nil, body: "Hello mail")
         
         
         return mailComposeVC
     }
     func editConfigration(Recipients:[String]?,CcRecipients:[String]?,BccRecipients:[String]?,subject:String?,body:String?)  {
+        
+        func checkValidate(){
+        
+           _ = Recipients?.enumerated().map({
+                   (index, recipient) in
+                print("Recipients[\(index)] isEmailForma = \(recipient.isEmailFormat())")
+           
+            })
+            _ = CcRecipients?.enumerated().map({
+                (index, recipient) in
+                print("CcRecipients[\(index)] isEmailForma = \(recipient.isEmailFormat())")
+                
+            })
+            _ = BccRecipients?.enumerated().map({
+                (index, recipient) in
+                print("BccRecipients[\(index)] isEmailForma = \(recipient.isEmailFormat())")
+                
+            })
+        }
+        checkValidate()
         self.setToRecipients(Recipients)
         self.setCcRecipients(CcRecipients)
         self.setBccRecipients(BccRecipients)

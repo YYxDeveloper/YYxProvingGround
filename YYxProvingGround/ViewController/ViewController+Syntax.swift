@@ -15,6 +15,14 @@ extension ViewController{
             case 相加,相乘,字串合併
         }
     }
+    func exampleArrayofMapWithEnumerate() {
+        let numbers = [7, 8, 9, 10]
+        let indexAndNum: [String] = numbers.enumerated().map { (index, element) in
+            return "\(index): \(element)"
+        }
+        print(indexAndNum)
+        // ["0: 7", "1: 8", "2: 9", "3: 10"]
+    }
     func exampleArrayOfReduce(theCase:testCase.reduce) {
         
         switch theCase {
