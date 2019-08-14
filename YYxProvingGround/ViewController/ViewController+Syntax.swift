@@ -15,14 +15,6 @@ extension ViewController{
             case 相加,相乘,字串合併
         }
     }
-    func exampleArrayofMapWithEnumerate() {
-        let numbers = [7, 8, 9, 10]
-        let indexAndNum: [String] = numbers.enumerated().map { (index, element) in
-            return "\(index): \(element)"
-        }
-        print(indexAndNum)
-        // ["0: 7", "1: 8", "2: 9", "3: 10"]
-    }
     func exampleCaptureList() {
 //        https://qiita.com/vc7/items/7cbd642e4059f8c7be10
 //        class MYObject: NSObject {
@@ -105,6 +97,16 @@ extension ViewController{
         }
         callIncrementByTen()
 //        callMakeIncrementer()
+    }
+    // MARK: Array -
+    
+    func exampleArrayofMapWithEnumerate() {
+        let numbers = [7, 8, 9, 10]
+        let indexAndNum: [String] = numbers.enumerated().map { (index, element) in
+            return "\(index): \(element)"
+        }
+        print(indexAndNum)
+        // ["0: 7", "1: 8", "2: 9", "3: 10"]
     }
     func exampleArrayOfReduce(theCase:testCase.reduce) {
         
