@@ -62,18 +62,23 @@ extension ViewController{
                 
                 imageView.topAnchor.sameAsTopAnchor(withView: loginNameView),
                 imageView.bottomAnchor.sameAsBottomAnchor(withView: loginNameView),
-                textField.topAnchor.sameAsTopAnchor(withView: loginNameView),
-                textField.bottomAnchor.sameAsBottomAnchor(withView: loginNameView, marginSpace: 0),
+                
 
                 imageView.leadingAnchor.sameAsLeadingAnchor(withView: loginNameView),
                 imageView.trailingKissLeading(withView: textField),
                 imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 1),
                 
+                
+                
+                ])
+            
+             NSLayoutConstraint.activate([
+                textField.topAnchor.sameAsTopAnchor(withView: loginNameView),
+                textField.bottomAnchor.sameAsBottomAnchor(withView: loginNameView, marginSpace: 0),
                 textField.leadingKissTrailing(withView: imageView),
                 textField.trailingAnchor.sameAsTrailingAnchor(withView: loginNameView, marginSpace: 0),
                 
                 ])
-            
             self.containerView = loginNameView
             
         }
