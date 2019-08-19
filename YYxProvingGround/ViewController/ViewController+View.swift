@@ -24,6 +24,63 @@ extension ViewController{
         
         containerView.addSubview(aa)
     }
+    func exampleLoginScreen() {
+        
+        self.hideContainerView(isHidden: false)
+        
+        let loginNameView = UIView()
+        loginNameView.backgroundColor = .yellow
+         loginNameView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.containerView.addSubview(loginNameView)
+        
+        func editlLoginNameView(){
+            let imageView = UIView()
+            loginNameView.addSubview(imageView)
+            imageView.backgroundColor = .blue
+            let textField = UITextField()
+            loginNameView.addSubview(textField)
+            textField.backgroundColor = .orange
+            
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            textField.translatesAutoresizingMaskIntoConstraints = false
+            
+            let margins = containerView.layoutMarginsGuide
+            
+            NSLayoutConstraint.activate([
+                
+                loginNameView.topAnchor.constraint(equalTo: margins.topAnchor, constant: 10),
+                loginNameView.rightAnchor.constraint(equalTo: margins.rightAnchor, constant: -10),
+                loginNameView.leftAnchor.constraint(equalTo: margins.leftAnchor, constant: 10),
+                 loginNameView.heightAnchor.constraint(equalToConstant: 50),
+
+                ])
+            
+            //如果用這個loginNameViewMargins會成比例辯變化
+            let loginNameViewMargins = loginNameView.layoutMarginsGuide
+            NSLayoutConstraint.activate([
+                
+                imageView.topAnchor.sameAsTopAnchor(withView: loginNameView),
+                imageView.bottomAnchor.sameAsBottomAnchor(withView: loginNameView),
+                textField.topAnchor.sameAsTopAnchor(withView: loginNameView),
+                textField.bottomAnchor.sameAsBottomAnchor(withView: loginNameView, marginSpace: 0),
+
+                imageView.leadingAnchor.sameAsLeadingAnchor(withView: loginNameView),
+                imageView.trailingKissLeading(withView: textField),
+                imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 1),
+                
+                textField.leadingKissTrailing(withView: imageView),
+                textField.trailingAnchor.sameAsTrailingAnchor(withView: loginNameView, marginSpace: 0),
+                
+                ])
+            
+            self.containerView = loginNameView
+            
+        }
+        editlLoginNameView()
+        
+        
+    }
     func exampleConstraintAnchor() {
         // autolayout
         let view = UIView()

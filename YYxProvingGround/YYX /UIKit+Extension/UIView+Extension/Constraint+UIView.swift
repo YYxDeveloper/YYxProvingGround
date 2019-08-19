@@ -9,6 +9,25 @@
 import Foundation
 import UIKit
 extension UIView{
+    func leadingKissTrailing(withView:UIView) -> NSLayoutConstraint {
+        //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
+        return self.leadingAnchor.constraint(equalTo: withView.trailingAnchor, constant: 0)
+    }
+    func trailingKissLeading(withView:UIView) -> NSLayoutConstraint {
+        
+        //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
+        return self.trailingAnchor.constraint(equalTo: withView.leadingAnchor, constant: 0)
+    }
+    func leftToRight(withView:UIView) -> NSLayoutConstraint {
+        
+        //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
+        return self.leftAnchor.constraint(equalTo: withView.rightAnchor, constant: 0)
+    }
+    func rightToLeft(withView:UIView) -> NSLayoutConstraint {
+        
+        //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
+        return self.rightAnchor.constraint(equalTo: withView.leadingAnchor, constant: 0)
+    }
     func anchorEqualParentView() {
         //https://medium.com/@hassanahmedkhan/autolayouts-via-layout-anchors-5214b3f746a9
         self.translatesAutoresizingMaskIntoConstraints = false

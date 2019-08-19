@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33254378230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */; };
+		3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */; };
 		334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 334C63802301516E003C37A5 /* YYxGitIgnore.txt */; };
 		334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */; };
 		334C6385230167E7003C37A5 /* MFMailComposeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */; };
@@ -185,6 +187,8 @@
 		0709F111CC381F5E0E0E9F91 /* Pods_YYxProvingGroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxProvingGroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4E238365CD5083EE20F955 /* Pods-YYxProvingGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		31BA08962FDD888D5348737E /* Pods-YYxProvingGround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.release.xcconfig"; sourceTree = "<group>"; };
+		33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutYAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
+		33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutXAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		334C63802301516E003C37A5 /* YYxGitIgnore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxGitIgnore.txt; sourceTree = "<group>"; };
 		334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewController+ MFMailCompose.swift"; sourceTree = "<group>"; };
 		334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -622,6 +626,8 @@
 				C2A61A7E228FD00600CCCFE8 /* Custom UIView */,
 				C2A61A83228FD00600CCCFE8 /* StandardType */,
 				C2656D9C229D209D00781200 /* LocalizableMan.swift */,
+				33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */,
+				33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */,
 			);
 			path = "YYX ";
 			sourceTree = "<group>";
@@ -1289,6 +1295,7 @@
 				C2A61ACA228FD00600CCCFE8 /* UIStoryBoard+Extension.swift in Sources */,
 				47B3FE4822F7FB3100491C15 /* StackView+Extension.swift in Sources */,
 				C2A61AA6228FD00600CCCFE8 /* HorizontalSlider.swift in Sources */,
+				33254378230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift in Sources */,
 				C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */,
 				47CF026C22F82A20003680D5 /* WKWebView+Extension.swift in Sources */,
 				C2A61AD5228FD00600CCCFE8 /* PageViewController+Extension.swift in Sources */,
@@ -1351,6 +1358,7 @@
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
 				C211F99922AFD09000A76693 /* ViewTestViewController.swift in Sources */,
 				C21D385122E1BD310014EC92 /* ViewController+View.swift in Sources */,
+				3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -53,9 +53,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideContainerView(isHidden: false)
-//        exampleCaptureList()
-        exampleValueCapture()
-      
+        exampleLoginScreen()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,13 +68,13 @@ class ViewController: UIViewController {
     @IBAction func turn(_ sender: Any) {
 //        sideBar?.turn()
 //         refreshControl.endRefreshing()
-         exampleSendEmail()
+//         exampleSendEmail()
     }
   
    
 }
 extension ViewController{
     func hideContainerView(isHidden:Bool) {
-        containerView.isHidden = isHidden
+//        containerView.isHidden = isHidden
     }
 }
