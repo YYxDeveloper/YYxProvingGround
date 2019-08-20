@@ -15,4 +15,7 @@ extension CGFloat{
     func convertInt() -> Int {
         return Int(self)
     }
+    static func giveMeMultiplierValue() -> CGFloat {
+        return CGFloat.random(in: 0...1)
+    }
 }

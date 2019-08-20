@@ -10,5 +10,10 @@ import Foundation
 import UIKit
 
 extension UIStackView{
-    
+    func distributeFillEqually(axis:NSLayoutConstraint.Axis,marginSpace:CGFloat) {
+        self.axis = axis
+        self.spacing = marginSpace
+        self.distribution = .fillEqually
+    }
 }
+

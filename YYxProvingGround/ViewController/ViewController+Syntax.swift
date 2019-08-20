@@ -54,6 +54,23 @@ extension ViewController{
 //        print(thing)
 //        closure()
     }
+    func exampleRandomGenericNumber() {
+        let r1 = Int.random(in: Int.min...Int.max)
+        print("r1 >> \(r1)")
+        let r2 = Int.random(in: 1..<10)
+         print("r2 >> \(r2)")
+
+        let r3 = CGFloat.random(in: 0...1)
+        print("r3 >> \(r3)")
+
+        let rB = Bool.random()
+        print("random Bool value >>\(rB)")
+
+        let 四大天王 = ["劉德華", "張學友", "郭富城", "彼得潘"]
+        let idol = 四大天王.randomElement()
+        print("witch idol >> \(idol)")
+        
+    }
     func exampleValueCapture(){
         func makeUselessIncrementer(forIncrement amount: Int) -> Int {
             var runningTotal = 0

@@ -66,14 +66,14 @@ extension ViewController{
 
                 imageView.leadingAnchor.sameAsLeadingAnchor(withView: loginNameView),
                 imageView.trailingKissLeading(withView: textField),
-                imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 1),
+                imageView.widthEqualHeight(withMultiplier: 0.5),
                 
                 
                 
                 ])
             
              NSLayoutConstraint.activate([
-                textField.topAnchor.sameAsTopAnchor(withView: loginNameView),
+                textField.sameAsSuperViewTopAnchor(),
                 textField.bottomAnchor.sameAsBottomAnchor(withView: loginNameView, marginSpace: 0),
                 textField.leadingKissTrailing(withView: imageView),
                 textField.trailingAnchor.sameAsTrailingAnchor(withView: loginNameView, marginSpace: 0),
@@ -85,6 +85,33 @@ extension ViewController{
         editlLoginNameView()
         
         
+    }
+    func exampleRandomCGflotMultiplier() {
+        let aa = CGFloat.giveMeMultiplierValue()
+        print(aa)
+        
+    }
+    func exampleStackView() {
+        var buttons = [UIButton]()
+        for i in 1 ... 3 {
+            let btn = UIButton(type: .system)
+            btn.setTitle("Button \(i)", for: .normal)
+            btn.translatesAutoresizingMaskIntoConstraints = false
+            btn.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            buttons.append(btn)
+        }
+        
+        //https://medium.com/@JJeremy.XUE/swift-%E8%AA%AA%E8%AA%AA-%E5%A0%86%E7%96%8A%E8%A6%96%E5%9C%96-uistack-view-557c09f24645
+        let stackView = UIStackView(arrangedSubviews: buttons)
+       stackView.distributeFillEqually(axis: .vertical, marginSpace: 10)
+        view.addSubview(stackView)
+      
+        
+        self.containerView.addSubview(stackView)
+        stackView.anchorEqualParentView()
+        
+//          stackView.setCustomSpacing(30, after: buttons.first!)
+
     }
     func exampleConstraintAnchor() {
         // autolayout
