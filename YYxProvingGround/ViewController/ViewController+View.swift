@@ -30,21 +30,21 @@ extension ViewController{
         
         let loginNameView = UIView()
         loginNameView.backgroundColor = .yellow
-         loginNameView.translatesAutoresizingMaskIntoConstraints = false
+        loginNameView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let imageView = UIView()
+        loginNameView.addSubview(imageView)
+        imageView.backgroundColor = .blue
+        let textField = UITextField()
+        loginNameView.addSubview(textField)
+        textField.backgroundColor = .orange
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        textField.translatesAutoresizingMaskIntoConstraints = false
         
         self.containerView.addSubview(loginNameView)
-        
-        func editlLoginNameView(){
-            let imageView = UIView()
-            loginNameView.addSubview(imageView)
-            imageView.backgroundColor = .blue
-            let textField = UITextField()
-            loginNameView.addSubview(textField)
-            textField.backgroundColor = .orange
-            
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            textField.translatesAutoresizingMaskIntoConstraints = false
-            
+
+        func editlLoginNameViewOutsideLayout(){
             let margins = containerView.layoutMarginsGuide
             
             NSLayoutConstraint.activate([
@@ -52,12 +52,14 @@ extension ViewController{
                 loginNameView.topAnchor.constraint(equalTo: margins.topAnchor, constant: 10),
                 loginNameView.rightAnchor.constraint(equalTo: margins.rightAnchor, constant: -10),
                 loginNameView.leftAnchor.constraint(equalTo: margins.leftAnchor, constant: 10),
-                 loginNameView.heightAnchor.constraint(equalToConstant: 50),
-
+                loginNameView.heightAnchor.constraint(equalToConstant: 50),
+                
                 ])
-            
-            //如果用這個loginNameViewMargins會成比例辯變化
-            let loginNameViewMargins = loginNameView.layoutMarginsGuide
+        }
+        editlLoginNameViewOutsideLayout()
+        
+        
+        func editlLoginNameViewInsideLayout(){
             NSLayoutConstraint.activate([
                 
                 imageView.topAnchor.sameAsTopAnchor(withView: loginNameView),
@@ -67,9 +69,7 @@ extension ViewController{
                 imageView.leadingAnchor.sameAsLeadingAnchor(withView: loginNameView),
                 imageView.trailingKissLeading(withView: textField),
                 imageView.widthEqualHeight(withMultiplier: 1),
-                
-                
-                
+             
                 ])
             
              NSLayoutConstraint.activate([
@@ -79,11 +79,10 @@ extension ViewController{
                 textField.trailingAnchor.sameAsTrailingAnchor(withView: loginNameView, marginSpace: 0),
                 
                 ])
-            self.containerView = loginNameView
+           
             
         }
-        editlLoginNameView()
-        
+        editlLoginNameViewInsideLayout()
         
     }
     func exampleRandomCGflotMultiplier() {
