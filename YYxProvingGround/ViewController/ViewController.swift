@@ -61,8 +61,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
 //        dynamicTableVC.presenter.updateDatas()
 //        print("xxxx\(connectedToNetwork())")
-        exampleRandomCGflotMultiplier()
-
+//        exampleRandomCGflotMultiplier()
     }
    
 

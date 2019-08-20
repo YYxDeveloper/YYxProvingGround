@@ -66,7 +66,7 @@ extension ViewController{
 
                 imageView.leadingAnchor.sameAsLeadingAnchor(withView: loginNameView),
                 imageView.trailingKissLeading(withView: textField),
-                imageView.widthEqualHeight(withMultiplier: 0.5),
+                imageView.widthEqualHeight(withMultiplier: 1),
                 
                 
                 
