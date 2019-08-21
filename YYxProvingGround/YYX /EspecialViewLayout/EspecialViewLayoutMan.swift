@@ -51,8 +51,9 @@ class LoginPartLayout {
             ])
         
         NSLayoutConstraint.activate([
-            textField.sameAsSuperViewTopAnchor(),
-            textField.bottomAnchor.sameAsBottomAnchor(withView: loginNameView, marginSpace: 0),
+            textField.topAnchor.sameAsTopAnchor(withView: loginNameView),
+            textField.bottomAnchor.sameAsBottomAnchor(withView: loginNameView),
+            textField.sameAsSuperViewBottomAnchor(),
             textField.leadingKissTrailing(withView: imageView),
             textField.trailingAnchor.sameAsTrailingAnchor(withView: loginNameView, marginSpace: 0),
             
