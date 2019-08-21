@@ -14,6 +14,8 @@
 		334C6385230167E7003C37A5 /* MFMailComposeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */; };
 		334F22C9230C00A300B5177B /* EspecialViewLayoutMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22C8230C00A200B5177B /* EspecialViewLayoutMan.swift */; };
 		334F22CD230CFC4D00B5177B /* ScrollViewProgrammaticallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */; };
+		334F22CF230CFF1C00B5177B /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22CE230CFF1C00B5177B /* LoginMainViewController.swift */; };
+		334F22D1230D010C00B5177B /* YYxScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D0230D010B00B5177B /* YYxScrollViewController.swift */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
@@ -196,6 +198,8 @@
 		334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extension.swift"; sourceTree = "<group>"; };
 		334F22C8230C00A200B5177B /* EspecialViewLayoutMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EspecialViewLayoutMan.swift; path = EspecialViewLayout/EspecialViewLayoutMan.swift; sourceTree = "<group>"; };
 		334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewProgrammaticallyViewController.swift; sourceTree = "<group>"; };
+		334F22CE230CFF1C00B5177B /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
+		334F22D0230D010B00B5177B /* YYxScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYxScrollViewController.swift; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
@@ -959,7 +963,9 @@
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */,
 				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
+				334F22D0230D010B00B5177B /* YYxScrollViewController.swift */,
 				334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */,
+				334F22CE230CFF1C00B5177B /* LoginMainViewController.swift */,
 				C236522A22D337A400582267 /* ViewController */,
 				C236522B22D337B900582267 /* NetworkTestViewController */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
@@ -1333,6 +1339,7 @@
 				C2A61ACE228FD00600CCCFE8 /* UINib+Extension.swift in Sources */,
 				C2A61ADC228FD00600CCCFE8 /* Bool+Extension.swift in Sources */,
 				C2FF469C22CC5B3100EE5A02 /* MonthView.swift in Sources */,
+				334F22CF230CFF1C00B5177B /* LoginMainViewController.swift in Sources */,
 				C2A61AB5228FD00600CCCFE8 /* ToolBoxManager.swift in Sources */,
 				C217F6F722E5A820007D3A83 /* VideoPreviewView.swift in Sources */,
 				C2A61AD6228FD00600CCCFE8 /* AppDelegate+Extension.swift in Sources */,
@@ -1364,6 +1371,7 @@
 				C2A61AB6228FD00600CCCFE8 /* ToolBoxViewController.swift in Sources */,
 				47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */,
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
+				334F22D1230D010C00B5177B /* YYxScrollViewController.swift in Sources */,
 				C211F99922AFD09000A76693 /* ViewTestViewController.swift in Sources */,
 				C21D385122E1BD310014EC92 /* ViewController+View.swift in Sources */,
 				3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */,
