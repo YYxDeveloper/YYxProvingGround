@@ -16,6 +16,7 @@
 		334F22CD230CFC4D00B5177B /* ScrollViewProgrammaticallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */; };
 		334F22CF230CFF1C00B5177B /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22CE230CFF1C00B5177B /* LoginMainViewController.swift */; };
 		334F22D1230D010C00B5177B /* YYxScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D0230D010B00B5177B /* YYxScrollViewController.swift */; };
+		334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D2230D027500B5177B /* UIScreen+Extension.swift */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
@@ -200,6 +201,7 @@
 		334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewProgrammaticallyViewController.swift; sourceTree = "<group>"; };
 		334F22CE230CFF1C00B5177B /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
 		334F22D0230D010B00B5177B /* YYxScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYxScrollViewController.swift; sourceTree = "<group>"; };
+		334F22D2230D027500B5177B /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
@@ -793,6 +795,7 @@
 				47B3FE4722F7FB3100491C15 /* StackView+Extension.swift */,
 				47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */,
 				47EAE9AB22F96F9800445D6A /* YYxButton.swift */,
+				334F22D2230D027500B5177B /* UIScreen+Extension.swift */,
 			);
 			path = "UIKit+Extension";
 			sourceTree = "<group>";
@@ -1327,6 +1330,7 @@
 				C21D385322E1BE170014EC92 /* CALayer+Extension.swift in Sources */,
 				C2A61ADD228FD00600CCCFE8 /* Substring+Extension.swift in Sources */,
 				C2A61AEA228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift in Sources */,
+				334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */,
 				C2A61AD7228FD00600CCCFE8 /* TintView.swift in Sources */,
 				C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */,
 				C211F99722AFCA3B00A76693 /* YYxViewController.swift in Sources */,
