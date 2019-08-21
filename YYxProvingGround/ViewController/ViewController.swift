@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         hideContainerView(isHidden: false)
 //        exampleLoginScreen()
-        exampleLoinScreen2()
+        examplePrepocessorMarco()
     }
     
     override func viewWillAppear(_ animated: Bool) {

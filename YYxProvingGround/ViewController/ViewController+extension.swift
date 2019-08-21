@@ -54,6 +54,13 @@ extension ViewController{
         }
        
     }
+    func examplePrepocessorMarco() {
+        #if DEBUG
+            print("DEBUG MODEL")
+        #else
+            print("RELEASE MODEL")
+        #endif
+    }
     func exmapleGetInfoPlistData()  {
 //        FileManager.default.showInfoPlistData()
        _ = FileManager.default.checkInfoPlistData()
