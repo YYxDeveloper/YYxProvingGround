@@ -24,9 +24,15 @@ extension ViewController{
         
         containerView.addSubview(aa)
     }
-    func exampleLoginScreen() {
+    func exampleLoinScreen2()  {
+        let boardView = UIView()
+        boardView.backgroundColor = .blue
+        boardView.translatesAutoresizingMaskIntoConstraints = false
+        self.containerView.addSubview(boardView)
         
-        self.hideContainerView(isHidden: false)
+        LoginPartLayout.layoutWhiteBoard(beConstraintView: containerView, whiteBoardView: boardView)
+    }
+    func exampleLoginScreen() {
         
         let loginNameView = UIView()
         loginNameView.backgroundColor = .yellow
@@ -43,46 +49,13 @@ extension ViewController{
         textField.translatesAutoresizingMaskIntoConstraints = false
         
         self.containerView.addSubview(loginNameView)
+        LoginPartLayout.layoutLoginNameViewOutsideLayout(containerView: containerView, loginNameView: loginNameView)
 
-        func editlLoginNameViewOutsideLayout(){
-            let margins = containerView.layoutMarginsGuide
-            
-            NSLayoutConstraint.activate([
-                
-                loginNameView.topAnchor.constraint(equalTo: margins.topAnchor, constant: 10),
-                loginNameView.rightAnchor.constraint(equalTo: margins.rightAnchor, constant: -10),
-                loginNameView.leftAnchor.constraint(equalTo: margins.leftAnchor, constant: 10),
-                loginNameView.heightAnchor.constraint(equalToConstant: 50),
-                
-                ])
-        }
-        editlLoginNameViewOutsideLayout()
+        LoginPartLayout.layoutLoginNameViewInsideLayout(loginNameView: loginNameView, imageView: imageView, textField: textField)
+//        editlLoginNameViewOutsideLayout()
         
         
-        func editlLoginNameViewInsideLayout(){
-            NSLayoutConstraint.activate([
-                
-                imageView.topAnchor.sameAsTopAnchor(withView: loginNameView),
-                imageView.bottomAnchor.sameAsBottomAnchor(withView: loginNameView),
-                
-
-                imageView.leadingAnchor.sameAsLeadingAnchor(withView: loginNameView),
-                imageView.trailingKissLeading(withView: textField),
-                imageView.widthEqualHeight(withMultiplier: 1),
-             
-                ])
-            
-             NSLayoutConstraint.activate([
-                textField.sameAsSuperViewTopAnchor(),
-                textField.bottomAnchor.sameAsBottomAnchor(withView: loginNameView, marginSpace: 0),
-                textField.leadingKissTrailing(withView: imageView),
-                textField.trailingAnchor.sameAsTrailingAnchor(withView: loginNameView, marginSpace: 0),
-                
-                ])
-           
-            
-        }
-        editlLoginNameViewInsideLayout()
+//        editlLoginNameViewInsideLayout()
         
     }
     func exampleRandomCGflotMultiplier() {
