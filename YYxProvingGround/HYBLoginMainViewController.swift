@@ -16,7 +16,7 @@ import UIKit
  reference file list:
     1. UIStackView+Extension.swif
     2. Extension+UIView.swift
-    3.
+    3. YYxScrollViewController.swift
  
  */
 
@@ -54,6 +54,7 @@ class HYBLoginMainViewController: YYxScrollViewController {
         loginInputInfoView.translatesAutoresizingMaskIntoConstraints = false
         loginInputInfoView.distributeFillEqually(axis: .vertical, marginSpace: 10)
         self.scrollContainerView.addSubview(loginInputInfoView)
+        
         userNameColumnView.becomeColumnView(witchColumntype: .userName)
         passwordColumnView.becomeColumnView(witchColumntype: .password)
         

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  YYxScrollViewController.swift
 //  UIScrollView Programmatically
 //
 //  Created by Andrea Toso on 09/02/2019.
