@@ -17,10 +17,10 @@
 		334F22CF230CFF1C00B5177B /* HYBLoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */; };
 		334F22D1230D010C00B5177B /* YYxScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D0230D010B00B5177B /* YYxScrollViewController.swift */; };
 		334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D2230D027500B5177B /* UIScreen+Extension.swift */; };
+		334F22D5230E3E7A00B5177B /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
-		47B3FE4822F7FB3100491C15 /* StackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B3FE4722F7FB3100491C15 /* StackView+Extension.swift */; };
 		47CF026822F81C61003680D5 /* HTMLTextTestFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 47CF026722F81C61003680D5 /* HTMLTextTestFile.txt */; };
 		47CF026A22F81FA5003680D5 /* ViewController+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */; };
 		47CF026C22F82A20003680D5 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */; };
@@ -202,10 +202,10 @@
 		334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBLoginMainViewController.swift; sourceTree = "<group>"; };
 		334F22D0230D010B00B5177B /* YYxScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYxScrollViewController.swift; sourceTree = "<group>"; };
 		334F22D2230D027500B5177B /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
-		47B3FE4722F7FB3100491C15 /* StackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extension.swift"; sourceTree = "<group>"; };
 		47CF026722F81C61003680D5 /* HTMLTextTestFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HTMLTextTestFile.txt; sourceTree = "<group>"; };
 		47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+FileManager.swift"; sourceTree = "<group>"; };
 		47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
@@ -791,8 +791,8 @@
 				C2A61A6D228FD00600CCCFE8 /* UIStoryBoard+Extension.swift */,
 				C2A61A6E228FD00600CCCFE8 /* UIView+Extension */,
 				C2A61A72228FD00600CCCFE8 /* UINib+Extension.swift */,
+				334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */,
 				C237EAEF22E5922C008FBD1B /* UIImage+Extension.swift */,
-				47B3FE4722F7FB3100491C15 /* StackView+Extension.swift */,
 				47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */,
 				47EAE9AB22F96F9800445D6A /* YYxButton.swift */,
 				334F22D2230D027500B5177B /* UIScreen+Extension.swift */,
@@ -1309,7 +1309,6 @@
 				C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */,
 				C277938622B0FF8800E13109 /* URLSession+Extension.swift in Sources */,
 				C2A61ACA228FD00600CCCFE8 /* UIStoryBoard+Extension.swift in Sources */,
-				47B3FE4822F7FB3100491C15 /* StackView+Extension.swift in Sources */,
 				C2A61AA6228FD00600CCCFE8 /* HorizontalSlider.swift in Sources */,
 				33254378230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift in Sources */,
 				C2157BDA2293CF9800171535 /* ColumnCollectionViewCell.swift in Sources */,
@@ -1355,6 +1354,7 @@
 				C2A61AA2228FD00600CCCFE8 /* CategoryVerticalColumnModel.swift in Sources */,
 				C23948BC22EEC48E004D3977 /* NWPathMonitor+Extension.swift in Sources */,
 				C2A61AA8228FD00600CCCFE8 /* FakeDataManager.swift in Sources */,
+				334F22D5230E3E7A00B5177B /* UIStackView+Extension.swift in Sources */,
 				C2A61AC6228FD00600CCCFE8 /* UILabel+Extension.swift in Sources */,
 				C2FF469A22CC5B3100EE5A02 /* WeekdaysView.swift in Sources */,
 				C2A61AE0228FD00600CCCFE8 /* numeric.swift in Sources */,

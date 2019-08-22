@@ -1,5 +1,5 @@
 //
-//  StackView+Extension.swift
+//  UIStackView+Extension.swift
 //  YYxProvingGround
 //
 //  Created by 呂子揚 on 2019/8/5.
