@@ -12,12 +12,12 @@
 		334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 334C63802301516E003C37A5 /* YYxGitIgnore.txt */; };
 		334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */; };
 		334C6385230167E7003C37A5 /* MFMailComposeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */; };
-		334F22C9230C00A300B5177B /* EspecialViewLayoutMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22C8230C00A200B5177B /* EspecialViewLayoutMan.swift */; };
 		334F22CD230CFC4D00B5177B /* ScrollViewProgrammaticallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */; };
 		334F22CF230CFF1C00B5177B /* HYBLoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */; };
 		334F22D1230D010C00B5177B /* YYxScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D0230D010B00B5177B /* YYxScrollViewController.swift */; };
 		334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D2230D027500B5177B /* UIScreen+Extension.swift */; };
 		334F22D5230E3E7A00B5177B /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */; };
+		334F22D7230E509400B5177B /* InputInfoColumnView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
@@ -197,12 +197,12 @@
 		334C63802301516E003C37A5 /* YYxGitIgnore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxGitIgnore.txt; sourceTree = "<group>"; };
 		334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewController+ MFMailCompose.swift"; sourceTree = "<group>"; };
 		334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extension.swift"; sourceTree = "<group>"; };
-		334F22C8230C00A200B5177B /* EspecialViewLayoutMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EspecialViewLayoutMan.swift; path = EspecialViewLayout/EspecialViewLayoutMan.swift; sourceTree = "<group>"; };
 		334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewProgrammaticallyViewController.swift; sourceTree = "<group>"; };
 		334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBLoginMainViewController.swift; sourceTree = "<group>"; };
 		334F22D0230D010B00B5177B /* YYxScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYxScrollViewController.swift; sourceTree = "<group>"; };
 		334F22D2230D027500B5177B /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputInfoColumnView+UIView.swift"; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
@@ -607,7 +607,6 @@
 		C2A61A25228FD00600CCCFE8 /* YYX  */ = {
 			isa = PBXGroup;
 			children = (
-				334F22C8230C00A200B5177B /* EspecialViewLayoutMan.swift */,
 				C277938122B0FBBB00E13109 /* CheckMan.swift */,
 				334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */,
 				C23948BB22EEC48E004D3977 /* NWPathMonitor+Extension.swift */,
@@ -868,6 +867,7 @@
 			children = (
 				C2A61A7F228FD00600CCCFE8 /* TintView */,
 				C2A61A82228FD00600CCCFE8 /* ProgressingDashedLineCircleView.swift */,
+				334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */,
 			);
 			path = "Custom UIView";
 			sourceTree = "<group>";
@@ -1321,6 +1321,7 @@
 				C2A61AC0228FD00600CCCFE8 /* NSCache+Extension.swift in Sources */,
 				C2A61AB0228FD00600CCCFE8 /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
 				47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */,
+				334F22D7230E509400B5177B /* InputInfoColumnView+UIView.swift in Sources */,
 				C2A61AA5228FD00600CCCFE8 /* CategoryVerticalColumnCell.swift in Sources */,
 				C2A61ADA228FD00600CCCFE8 /* Data+Convert.swift in Sources */,
 				C2A61ACB228FD00600CCCFE8 /* Extension+UIView.swift in Sources */,
@@ -1361,7 +1362,6 @@
 				C2A61ABD228FD00600CCCFE8 /* CALayer+Animation.swift in Sources */,
 				C277938222B0FBBB00E13109 /* CheckMan.swift in Sources */,
 				47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */,
-				334F22C9230C00A300B5177B /* EspecialViewLayoutMan.swift in Sources */,
 				C2A61A95228FD00600CCCFE8 /* Global.swift in Sources */,
 				C2A61ABB228FD00600CCCFE8 /* UIScrollView+Extension.swift in Sources */,
 				C2A61AE6228FD00600CCCFE8 /* Array+Extension.swift in Sources */,

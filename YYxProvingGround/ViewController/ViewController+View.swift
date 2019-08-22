@@ -24,40 +24,6 @@ extension ViewController{
         
         containerView.addSubview(aa)
     }
-    func exampleLoinScreen2()  {
-        let boardView = UIView()
-        boardView.backgroundColor = .blue
-        boardView.translatesAutoresizingMaskIntoConstraints = false
-        self.containerView.addSubview(boardView)
-        
-        LoginPartLayout.layoutWhiteBoard(beConstraintView: containerView, whiteBoardView: boardView)
-    }
-    func exampleLoginScreen() {
-        
-        let loginNameView = UIView()
-        loginNameView.backgroundColor = .yellow
-        loginNameView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let imageView = UIView()
-        loginNameView.addSubview(imageView)
-        imageView.backgroundColor = .blue
-        let textField = UITextField()
-        loginNameView.addSubview(textField)
-        textField.backgroundColor = .orange
-        
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.containerView.addSubview(loginNameView)
-        LoginPartLayout.layoutLoginNameViewOutsideLayout(containerView: containerView, loginNameView: loginNameView)
-
-        LoginPartLayout.layoutLoginNameViewInsideLayout(loginNameView: loginNameView, imageView: imageView, textField: textField)
-//        editlLoginNameViewOutsideLayout()
-        
-        
-//        editlLoginNameViewInsideLayout()
-        
-    }
     func exampleRandomCGflotMultiplier() {
         let aa = CGFloat.giveMeMultiplierValue()
         print(aa)

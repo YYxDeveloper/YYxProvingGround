@@ -53,7 +53,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideContainerView(isHidden: false)
-//        exampleLoginScreen()
         examplePrepocessorMarco()
     }
     
