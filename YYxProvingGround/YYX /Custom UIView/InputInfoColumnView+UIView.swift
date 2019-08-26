@@ -56,7 +56,6 @@ extension UIView{
                 dividView.topAnchor.sameAsTopAnchor(withView: dividView.firstSuperView, marginSpace: 10),
                 dividView.bottomAnchor.sameAsBottomAnchor(withView: dividView.firstSuperView, marginSpace: 10),
                 dividView.leadingKissTrailing(withView: imageView),
-//                dividView.trailingKissLeading(withView: textField),
                 dividView.trailingKissLeading(withView: textField, marginSoace: 5),
                 dividView.widthAnchor.constraint(equalToConstant: 2),
                
@@ -64,7 +63,6 @@ extension UIView{
                 textField.sameAsSuperViewBottomAnchor(),
                 textField.sameAsSuperViewTrailingAnchor(),
                 textField.heightAnchor.constraint(equalToConstant: 20),
-                
                 
                 ])
         case .password:

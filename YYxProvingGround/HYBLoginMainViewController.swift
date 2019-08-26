@@ -36,19 +36,14 @@ class HYBLoginMainViewController: YYxScrollViewController {
     
     func editInfoInputBoaderView() {
        
-        
         let userNameColumnView = UIView()
         userNameColumnView.backgroundColor = .yellow
        userNameColumnView.editColumnView()
-        
         
         let passwordColumnView = UIView()
         passwordColumnView.backgroundColor = .blue
         passwordColumnView.editColumnView()
 
-        
-        
-        
         //parent view = scrollContainerView
         let loginInputInfoView = UIStackView(arrangedSubviews: [userNameColumnView,passwordColumnView])
         loginInputInfoView.addBackgroundColorView(color: UIColor.giveMeUIColorByHex(hex: "F5F5F5"))
