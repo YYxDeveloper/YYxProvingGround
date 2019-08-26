@@ -54,7 +54,7 @@ class HYBLoginMainViewController: YYxScrollViewController {
         loginInputInfoView.addBackgroundColorView(color: UIColor.giveMeUIColorByHex(hex: "F5F5F5"))
         loginInputInfoView.translatesAutoresizingMaskIntoConstraints = false
         loginInputInfoView.distributeFillEqually(axis: .vertical, marginSpace: 10)
-        self.scrollContainerView.addSubview(loginInputInfoView)
+        self.view.addSubview(loginInputInfoView)
         
         userNameColumnView.becomeColumnView(witchColumntype: .userName, delegate: self)
         verifyColumn.becomeColumnView(witchColumntype: .verify, delegate: self)
