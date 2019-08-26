@@ -18,6 +18,7 @@
 		334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D2230D027500B5177B /* UIScreen+Extension.swift */; };
 		334F22D5230E3E7A00B5177B /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */; };
 		334F22D7230E509400B5177B /* InputInfoColumnView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */; };
+		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
@@ -203,6 +204,7 @@
 		334F22D2230D027500B5177B /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputInfoColumnView+UIView.swift"; sourceTree = "<group>"; };
+		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
@@ -974,6 +976,7 @@
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
+				33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */,
 				334C63802301516E003C37A5 /* YYxGitIgnore.txt */,
 				E879C1BF22421013006904A5 /* LaunchScreen.storyboard */,
 				E879C1C222421013006904A5 /* Info.plist */,
@@ -1129,6 +1132,7 @@
 				C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */,
 				C2A61AD8228FD00600CCCFE8 /* TintView.xib in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
+				33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */,
 				E879C1B922421012006904A5 /* Main.storyboard in Resources */,
 				C2A61AA1228FD00600CCCFE8 /* YYxInfo.txt in Resources */,
 			);
