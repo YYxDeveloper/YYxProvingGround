@@ -23,10 +23,7 @@ extension UIView{
 
 
     }
-    @objc func myTargetFunction(textField: UITextField) {
-        print("myTargetFunction")
-    }
-    func becomeColumnView(witchColumntype:columnType, delegateController:UIViewController){
+    func becomeColumnView(witchColumntype:columnType, delegate:UITextFieldDelegate?){
         let dividColor:UIColor = UIColor.giveMeUIColorByHex(hex:"E6E6E6")
         
         switch witchColumntype {
@@ -38,7 +35,7 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.delegate = delegate
             textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.请输入手机号.rawValue
             
             let dividView = UIView()
@@ -83,7 +80,7 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.delegate = delegate
             textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.请输入验证码.rawValue
             
             let verifyButton  = UIButton()
@@ -137,7 +134,7 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.delegate = delegate
             textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.passwordText.rawValue
             
             let eyeImageView = UIImageView()
@@ -187,7 +184,7 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.delegate = delegate
             textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.recommendText.rawValue
             //            textField.backgroundColor = .orange
             

@@ -56,10 +56,10 @@ class HYBLoginMainViewController: YYxScrollViewController {
         loginInputInfoView.distributeFillEqually(axis: .vertical, marginSpace: 10)
         self.scrollContainerView.addSubview(loginInputInfoView)
         
-        userNameColumnView.becomeColumnView(witchColumntype: .userName, delegateController: self)
-        verifyColumn.becomeColumnView(witchColumntype: .verify, delegateController: self)
-        passwordColumnView.becomeColumnView(witchColumntype: .password, delegateController: self)
-        recommendView.becomeColumnView(witchColumntype: .recommend, delegateController: self)
+        userNameColumnView.becomeColumnView(witchColumntype: .userName, delegate: self)
+        verifyColumn.becomeColumnView(witchColumntype: .verify, delegate: self)
+        passwordColumnView.becomeColumnView(witchColumntype: .password, delegate: self)
+        recommendView.becomeColumnView(witchColumntype: .recommend, delegate: self)
         
         UIStackView.editBoardViewConstraint(boardView: loginInputInfoView, verticlePadding: 15, horizentalPadding: 0, columnHeight: 45, howmanyColumns: 3)
         
