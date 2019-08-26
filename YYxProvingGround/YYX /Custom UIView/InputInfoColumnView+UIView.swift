@@ -62,7 +62,6 @@ extension UIView{
                 textField.sameAsSuperViewTopAnchor(),
                 textField.sameAsSuperViewBottomAnchor(),
                 textField.sameAsSuperViewTrailingAnchor(),
-                textField.heightAnchor.constraint(equalToConstant: 20),
                 
                 ])
         case .password:
