@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 extension UIView{
     
+   
+    func sameAsSuperViewTopAndBottom(withView:UIView) -> NSLayoutConstraint {
+        self.bottomAnchor.constraint(equalTo: withView.bottomAnchor)
+        return self.topAnchor.constraint(equalTo: withView.topAnchor)
+    }
     func sameAsSuperViewHeightAnchor() -> NSLayoutConstraint {
         return self.heightAnchor.constraint(equalTo: self.firstSuperView.heightAnchor, constant: 0)
     }
@@ -60,10 +65,10 @@ extension UIView{
         //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
         return self.trailingAnchor.constraint(equalTo: withView.leadingAnchor, constant: 0)
     }
-    func trailingKissLeading(withView:UIView,marginSoace:CGFloat) -> NSLayoutConstraint {
+    func trailingKissLeading(withView:UIView,marginSpace:CGFloat) -> NSLayoutConstraint {
         
         //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
-        return self.trailingAnchor.constraint(equalTo: withView.leadingAnchor, constant: -marginSoace)
+        return self.trailingAnchor.constraint(equalTo: withView.leadingAnchor, constant: -marginSpace)
     }
     func leftToRight(withView:UIView) -> NSLayoutConstraint {
         

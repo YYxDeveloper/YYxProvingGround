@@ -48,6 +48,49 @@ extension UIView{
             
             NSLayoutConstraint.activate([
                 imageView.sameAsSuperViewTopAnchor(),
+                imageView.sameAsSuperViewBottomAnchor(),
+                imageView.sameAsSuperViewLeadingAnchor(),
+                imageView.sameAsSuperViewHeightAnchor(),
+                imageView.heightEqualWidth(),
+                
+                dividView.topAnchor.sameAsTopAnchor(withView: dividView.firstSuperView, marginSpace: 10),
+                dividView.bottomAnchor.sameAsBottomAnchor(withView: dividView.firstSuperView, marginSpace: 10),
+                dividView.leadingKissTrailing(withView: imageView),
+                dividView.trailingKissLeading(withView: textField, marginSpace: 5),
+                dividView.widthAnchor.constraint(equalToConstant: 2),
+               
+                textField.sameAsSuperViewTopAnchor(),
+                textField.sameAsSuperViewBottomAnchor(),
+                textField.sameAsSuperViewTrailingAnchor(),
+                
+                ])
+        case .verify:
+            let imageView = UIImageView()
+            self.addSubview(imageView)
+            imageView.image = UIImage(named: "输入验证码")
+            //            imageView.backgroundColor = .lightGray
+            
+            let dividView = UIView()
+            self.addSubview(dividView)
+            dividView.backgroundColor = dividColor
+            
+            let textField = UITextField()
+            self.addSubview(textField)
+            textField.placeholder = "请输入验证码"
+            
+            let verifyButton  = UIButton()
+            self.addSubview(verifyButton)
+            verifyButton.setTitle("发送验证码", for: .normal)
+            verifyButton.setTitleColor(UIColor.giveMeUIColorByHex(hex: "FF666666"), for: .normal)
+            
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            textField.translatesAutoresizingMaskIntoConstraints = false
+            dividView.translatesAutoresizingMaskIntoConstraints = false
+            verifyButton.translatesAutoresizingMaskIntoConstraints = false
+            
+            
+            NSLayoutConstraint.activate([
+                imageView.sameAsSuperViewTopAnchor(),
                 imageView.sameAsSuperViewLeadingAnchor(),
                 imageView.sameAsSuperViewBottomAnchor(),
                 imageView.sameAsSuperViewHeightAnchor(),
@@ -56,24 +99,48 @@ extension UIView{
                 dividView.topAnchor.sameAsTopAnchor(withView: dividView.firstSuperView, marginSpace: 10),
                 dividView.bottomAnchor.sameAsBottomAnchor(withView: dividView.firstSuperView, marginSpace: 10),
                 dividView.leadingKissTrailing(withView: imageView),
-                dividView.trailingKissLeading(withView: textField, marginSoace: 5),
+                dividView.trailingKissLeading(withView: textField, marginSpace: 5),
                 dividView.widthAnchor.constraint(equalToConstant: 2),
-               
+                
                 textField.sameAsSuperViewTopAnchor(),
                 textField.sameAsSuperViewBottomAnchor(),
-                textField.sameAsSuperViewTrailingAnchor(),
+//                textField.sameAsSuperViewTrailingAnchor(),
+                
+    
+                
+                verifyButton.sameAsSuperViewTopAnchor(),
+                verifyButton.sameAsSuperViewBottomAnchor(),
+
+                verifyButton.leadingKissTrailing(withView: textField),
+                verifyButton.trailingAnchor.sameAsTrailingAnchor(withView: verifyButton.firstSuperView, marginSpace: 10)
+                
+                
                 
                 ])
         case .password:
-            let imageView = UIView()
+            let imageView = UIImageView()
             self.addSubview(imageView)
-            imageView.backgroundColor = .red
+            imageView.image = UIImage(named: "输入密码")
+            //            imageView.backgroundColor = .lightGray
+            
+            let dividView = UIView()
+            self.addSubview(dividView)
+            dividView.backgroundColor = dividColor
+            
             let textField = UITextField()
             self.addSubview(textField)
-            textField.backgroundColor = .green
+            textField.placeholder = "请输入6-16位数字或字母的密码"
+            
+            let eyeImageView = UIImageView()
+            eyeImageView.image = UIImage(named: "不显示密码")
+            self.addSubview(eyeImageView)
+            
             
             imageView.translatesAutoresizingMaskIntoConstraints = false
             textField.translatesAutoresizingMaskIntoConstraints = false
+            dividView.translatesAutoresizingMaskIntoConstraints = false
+            eyeImageView.translatesAutoresizingMaskIntoConstraints = false
+            
             
             NSLayoutConstraint.activate([
                 imageView.sameAsSuperViewTopAnchor(),
@@ -81,21 +148,68 @@ extension UIView{
                 imageView.sameAsSuperViewBottomAnchor(),
                 imageView.sameAsSuperViewHeightAnchor(),
                 imageView.heightEqualWidth(),
-                imageView.trailingKissLeading(withView: textField),
+                
+                dividView.topAnchor.sameAsTopAnchor(withView: dividView.firstSuperView, marginSpace: 10),
+                dividView.bottomAnchor.sameAsBottomAnchor(withView: dividView.firstSuperView, marginSpace: 10),
+                dividView.leadingKissTrailing(withView: imageView),
+                dividView.trailingKissLeading(withView: textField, marginSpace: 5),
+                dividView.widthAnchor.constraint(equalToConstant: 2),
                 
                 textField.sameAsSuperViewTopAnchor(),
                 textField.sameAsSuperViewBottomAnchor(),
-                textField.sameAsSuperViewHeightAnchor(),
-                textField.sameAsSuperViewTrailingAnchor()
+                
+               
+                
+                 eyeImageView.sameAsSuperViewTopAnchor(),
+                 eyeImageView.sameAsSuperViewBottomAnchor(),
+
+                 eyeImageView.leadingKissTrailing(withView: textField),
+                 eyeImageView.sameAsSuperViewTrailingAnchor(),
+                 eyeImageView.widthEqualHeight()
+                
                 
                 
                 ])
-        default:
-            print("not finish")
+        case .recommend:
+            let imageView = UIImageView()
+            self.addSubview(imageView)
+            imageView.image = UIImage(named: "输入邀请码")
+            //            imageView.backgroundColor = .lightGray
+            
+            let textField = UITextField()
+            self.addSubview(textField)
+            textField.placeholder = "请输推荐码（选填）"
+            //            textField.backgroundColor = .orange
+            
+            let dividView = UIView()
+            self.addSubview(dividView)
+            dividView.backgroundColor = dividColor
+            
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            textField.translatesAutoresizingMaskIntoConstraints = false
+            dividView.translatesAutoresizingMaskIntoConstraints = false
+            
+            NSLayoutConstraint.activate([
+                imageView.sameAsSuperViewTopAnchor(),
+                imageView.sameAsSuperViewBottomAnchor(),
+                imageView.sameAsSuperViewLeadingAnchor(),
+                imageView.sameAsSuperViewHeightAnchor(),
+                imageView.heightEqualWidth(),
+                
+                dividView.topAnchor.sameAsTopAnchor(withView: dividView.firstSuperView, marginSpace: 10),
+                dividView.bottomAnchor.sameAsBottomAnchor(withView: dividView.firstSuperView, marginSpace: 10),
+                dividView.leadingKissTrailing(withView: imageView),
+                dividView.trailingKissLeading(withView: textField, marginSpace: 5),
+                dividView.widthAnchor.constraint(equalToConstant: 2),
+                
+                textField.sameAsSuperViewTopAnchor(),
+                textField.sameAsSuperViewBottomAnchor(),
+                textField.sameAsSuperViewTrailingAnchor(),
+                
+                ])
+        
+        
         }
-        
-        
-        
         
     }
 }

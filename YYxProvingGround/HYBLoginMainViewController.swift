@@ -40,19 +40,29 @@ class HYBLoginMainViewController: YYxScrollViewController {
         userNameColumnView.backgroundColor = .yellow
        userNameColumnView.editColumnView()
         
+        let verifyColumn = UIView()
+        verifyColumn.backgroundColor = .blue
+        verifyColumn.editColumnView()
+        
+        
         let passwordColumnView = UIView()
-        passwordColumnView.backgroundColor = .blue
+        passwordColumnView.backgroundColor = .red
         passwordColumnView.editColumnView()
+        
+        let recommendView = UIView()
+        recommendView.editColumnView()
 
         //parent view = scrollContainerView
-        let loginInputInfoView = UIStackView(arrangedSubviews: [userNameColumnView,passwordColumnView])
+        let loginInputInfoView = UIStackView(arrangedSubviews: [userNameColumnView,passwordColumnView,verifyColumn,recommendView])
         loginInputInfoView.addBackgroundColorView(color: UIColor.giveMeUIColorByHex(hex: "F5F5F5"))
         loginInputInfoView.translatesAutoresizingMaskIntoConstraints = false
         loginInputInfoView.distributeFillEqually(axis: .vertical, marginSpace: 10)
         self.scrollContainerView.addSubview(loginInputInfoView)
         
         userNameColumnView.becomeColumnView(witchColumntype: .userName)
+        verifyColumn.becomeColumnView(witchColumntype: .verify)
         passwordColumnView.becomeColumnView(witchColumntype: .password)
+        recommendView.becomeColumnView(witchColumntype: .recommend)
         
         UIStackView.editBoardViewConstraint(boardView: loginInputInfoView, verticlePadding: 15, horizentalPadding: 0, columnHeight: 45, howmanyColumns: 3)
         
