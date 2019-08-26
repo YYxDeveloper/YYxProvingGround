@@ -25,7 +25,7 @@ class HYBLoginMainViewController: YYxScrollViewController {
         case 请输入手机号,请输入验证码,passwordText = "请输入6-16位数字或字母的密码",recommendText = "请输推荐码（选填）"
     }
     
-    var usingTextField = UITextField()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

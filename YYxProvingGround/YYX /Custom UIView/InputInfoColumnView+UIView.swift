@@ -64,9 +64,6 @@ extension UIView{
                 textField.sameAsSuperViewTrailingAnchor(),
                 
                 ])
-           
-            textField.addTarget(self, action: #selector(myTargetFunction(textField:)), for: UIControl.Event.editingChanged)
-
             
         case .verify:
             let imageView = UIImageView()
