@@ -20,6 +20,7 @@
 		334F22D7230E509400B5177B /* InputInfoColumnView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
+		33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
@@ -207,6 +208,7 @@
 		334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputInfoColumnView+UIView.swift"; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBOpenAnAccountViewController.swift; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
@@ -974,6 +976,7 @@
 				334F22D0230D010B00B5177B /* YYxScrollViewController.swift */,
 				334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */,
 				334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */,
+				33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */,
 				C236522A22D337A400582267 /* ViewController */,
 				C236522B22D337B900582267 /* NetworkTestViewController */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
@@ -1251,6 +1254,7 @@
 				C2A61AE3228FD00600CCCFE8 /* String+Convert.swift in Sources */,
 				C23948BE22EEC7D3004D3977 /* LocalNotificationViewController.swift in Sources */,
 				C2A61AC5228FD00600CCCFE8 /* UIColor+Extension.swift in Sources */,
+				33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */,
 				C2A61ABF228FD00600CCCFE8 /* YYxErrorHandler.swift in Sources */,
 				C2A61AA7228FD00600CCCFE8 /* IndexPath+Extension.swift in Sources */,
 				E879C1BC22421012006904A5 /* YYxProvingGround.xcdatamodeld in Sources */,
