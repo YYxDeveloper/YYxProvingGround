@@ -21,19 +21,16 @@ import UIKit
  */
 
 class HYBLoginMainViewController: YYxScrollViewController {
+    enum textFieldPlaceholder:String {
+        case 请输入手机号,请输入验证码,passwordText = "请输入6-16位数字或字母的密码",recommendText = "请输推荐码（选填）"
+    }
     
-    
-   
+    var usingTextField = UITextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         exampleUseInputInfoColumnsView()
-
-
     }
-    
     func editInfoInputBoaderView() {
        
         let userNameColumnView = UIView()
@@ -59,10 +56,10 @@ class HYBLoginMainViewController: YYxScrollViewController {
         loginInputInfoView.distributeFillEqually(axis: .vertical, marginSpace: 10)
         self.scrollContainerView.addSubview(loginInputInfoView)
         
-        userNameColumnView.becomeColumnView(witchColumntype: .userName)
-        verifyColumn.becomeColumnView(witchColumntype: .verify)
-        passwordColumnView.becomeColumnView(witchColumntype: .password)
-        recommendView.becomeColumnView(witchColumntype: .recommend)
+        userNameColumnView.becomeColumnView(witchColumntype: .userName, delegateController: self)
+        verifyColumn.becomeColumnView(witchColumntype: .verify, delegateController: self)
+        passwordColumnView.becomeColumnView(witchColumntype: .password, delegateController: self)
+        recommendView.becomeColumnView(witchColumntype: .recommend, delegateController: self)
         
         UIStackView.editBoardViewConstraint(boardView: loginInputInfoView, verticlePadding: 15, horizentalPadding: 0, columnHeight: 45, howmanyColumns: 3)
         
@@ -73,4 +70,31 @@ class HYBLoginMainViewController: YYxScrollViewController {
         editInfoInputBoaderView()
     }
 
+}
+extension HYBLoginMainViewController:UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        textField.becomeFirstResponder()
+        switch textField.placeholder {
+        case HYBLoginMainViewController.textFieldPlaceholder.请输入手机号.rawValue:
+            print("1")
+        case HYBLoginMainViewController.textFieldPlaceholder.passwordText.rawValue:
+            print("2")
+        case HYBLoginMainViewController.textFieldPlaceholder.请输入验证码.rawValue:
+            print("3")
+        case HYBLoginMainViewController.textFieldPlaceholder.recommendText.rawValue:
+            print("4")
+            
+        default:
+             print("5")
+        }
+//        usingTextField = textField
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

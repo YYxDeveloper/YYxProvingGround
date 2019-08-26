@@ -23,7 +23,10 @@ extension UIView{
 
 
     }
-    func becomeColumnView(witchColumntype:columnType){
+    @objc func myTargetFunction(textField: UITextField) {
+        print("myTargetFunction")
+    }
+    func becomeColumnView(witchColumntype:columnType, delegateController:UIViewController){
         let dividColor:UIColor = UIColor.giveMeUIColorByHex(hex:"E6E6E6")
         
         switch witchColumntype {
@@ -35,8 +38,8 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.placeholder = "请输入手机号"
-//            textField.backgroundColor = .orange
+            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.请输入手机号.rawValue
             
             let dividView = UIView()
             self.addSubview(dividView)
@@ -64,6 +67,10 @@ extension UIView{
                 textField.sameAsSuperViewTrailingAnchor(),
                 
                 ])
+           
+            textField.addTarget(self, action: #selector(myTargetFunction(textField:)), for: UIControl.Event.editingChanged)
+
+            
         case .verify:
             let imageView = UIImageView()
             self.addSubview(imageView)
@@ -76,7 +83,8 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.placeholder = "请输入验证码"
+            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.请输入验证码.rawValue
             
             let verifyButton  = UIButton()
             self.addSubview(verifyButton)
@@ -129,7 +137,8 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.placeholder = "请输入6-16位数字或字母的密码"
+            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.passwordText.rawValue
             
             let eyeImageView = UIImageView()
             eyeImageView.image = UIImage(named: "不显示密码")
@@ -178,7 +187,8 @@ extension UIView{
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.placeholder = "请输推荐码（选填）"
+            textField.delegate = delegateController as? UITextFieldDelegate
+            textField.placeholder = HYBLoginMainViewController.textFieldPlaceholder.recommendText.rawValue
             //            textField.backgroundColor = .orange
             
             let dividView = UIView()
