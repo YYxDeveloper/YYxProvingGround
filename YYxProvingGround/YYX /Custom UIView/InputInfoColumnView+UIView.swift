@@ -13,18 +13,30 @@ extension UIView{
     enum columnType{
         case userName,password,verify,recommend
     }
+    func editColumnView() {
+         let columnBoardColor = UIColor.giveMeUIColorByHex(hex: "CCCCCC ").cgColor
+        self.backgroundColor = .white
+        self.layer.borderColor = columnBoardColor
+        self.layer.borderWidth = 2
+        self.layer.cornerRadius = 5
+        self.translatesAutoresizingMaskIntoConstraints = false
+
+
+    }
     func becomeColumnView(witchColumntype:columnType){
-        let dividColor:UIColor = UIColor.giveMeUIColorByHex(hex:"6E6E6")
+        let dividColor:UIColor = UIColor.giveMeUIColorByHex(hex:"E6E6E6")
         
         switch witchColumntype {
         case .userName:
-            let imageView = UIView()
+            let imageView = UIImageView()
             self.addSubview(imageView)
-            imageView.backgroundColor = .lightGray
+            imageView.image = UIImage(named: "输入手机号")
+//            imageView.backgroundColor = .lightGray
             
             let textField = UITextField()
             self.addSubview(textField)
-            textField.backgroundColor = .orange
+            textField.placeholder = "请输入手机号"
+//            textField.backgroundColor = .orange
             
             let dividView = UIView()
             self.addSubview(dividView)
@@ -44,7 +56,8 @@ extension UIView{
                 dividView.topAnchor.sameAsTopAnchor(withView: dividView.firstSuperView, marginSpace: 10),
                 dividView.bottomAnchor.sameAsBottomAnchor(withView: dividView.firstSuperView, marginSpace: 10),
                 dividView.leadingKissTrailing(withView: imageView),
-                dividView.trailingKissLeading(withView: textField),
+//                dividView.trailingKissLeading(withView: textField),
+                dividView.trailingKissLeading(withView: textField, marginSoace: 5),
                 dividView.widthAnchor.constraint(equalToConstant: 2),
                
                 textField.sameAsSuperViewTopAnchor(),

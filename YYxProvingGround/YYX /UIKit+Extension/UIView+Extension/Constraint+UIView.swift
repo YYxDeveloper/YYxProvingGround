@@ -50,10 +50,20 @@ extension UIView{
         //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
         return self.leadingAnchor.constraint(equalTo: withView.trailingAnchor, constant: 0)
     }
+    func leadingKissTrailing(withView:UIView,marginSoace:CGFloat) -> NSLayoutConstraint {
+        //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
+        return self.leadingAnchor.constraint(equalTo: withView.trailingAnchor, constant: marginSoace)
+    }
+    
     func trailingKissLeading(withView:UIView) -> NSLayoutConstraint {
         
         //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
         return self.trailingAnchor.constraint(equalTo: withView.leadingAnchor, constant: 0)
+    }
+    func trailingKissLeading(withView:UIView,marginSoace:CGFloat) -> NSLayoutConstraint {
+        
+        //一定要有回傳值，不然 NSLayoutConstraint.activate會出錯
+        return self.trailingAnchor.constraint(equalTo: withView.leadingAnchor, constant: -marginSoace)
     }
     func leftToRight(withView:UIView) -> NSLayoutConstraint {
         

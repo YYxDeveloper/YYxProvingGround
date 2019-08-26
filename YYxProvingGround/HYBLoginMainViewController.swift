@@ -39,12 +39,13 @@ class HYBLoginMainViewController: YYxScrollViewController {
         
         let userNameColumnView = UIView()
         userNameColumnView.backgroundColor = .yellow
-        userNameColumnView.translatesAutoresizingMaskIntoConstraints = false
+       userNameColumnView.editColumnView()
         
         
         let passwordColumnView = UIView()
         passwordColumnView.backgroundColor = .blue
-        passwordColumnView.translatesAutoresizingMaskIntoConstraints = false
+        passwordColumnView.editColumnView()
+
         
         
         
