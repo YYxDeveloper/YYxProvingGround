@@ -21,13 +21,15 @@ class HYBOpenAnAccountViewController: UIViewController {
         
     }
     func editHeadView() {
+        let guide = view.safeAreaLayoutGuide
+        
         func constraintHeadBackgroundView(){
             self.view.addSubview(headBackgroundView)
             headBackgroundView.translatesAutoresizingMaskIntoConstraints = false
             headBackgroundView.image = UIImage(named: "bg")
             
            NSLayoutConstraint.activate([
-                headBackgroundView.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 1),
+                headBackgroundView.topAnchor.constraint(equalToSystemSpacingBelow: guide.topAnchor, multiplier: 1),
                 headBackgroundView.sameAsSuperViewLeadingAnchor(),
                 headBackgroundView.sameAsSuperViewTrailingAnchor(),
             
