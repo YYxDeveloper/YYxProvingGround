@@ -15,4 +15,5 @@ extension UILabel{
         let fontSize = self.font.pointSize
         return count * fontSize
     }
+    
 }

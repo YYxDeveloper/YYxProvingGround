@@ -24,8 +24,14 @@ extension UIView{
     func sameAsSuperViewTopAnchor() -> NSLayoutConstraint {
         return self.topAnchor.constraint(equalTo: self.firstSuperView.topAnchor, constant: 0)
     }
+    func sameAsSuperViewTopAnchor(margnSpace:CGFloat) -> NSLayoutConstraint {
+        return self.topAnchor.constraint(equalTo: self.firstSuperView.topAnchor, constant: margnSpace)
+    }
     func sameAsSuperViewBottomAnchor() -> NSLayoutConstraint {
         return self.bottomAnchor.constraint(equalTo: self.firstSuperView.bottomAnchor, constant: 0)
+    }
+    func sameAsSuperViewBottomAnchor(margnSpace:CGFloat) -> NSLayoutConstraint {
+        return self.bottomAnchor.constraint(equalTo: self.firstSuperView.bottomAnchor, constant: margnSpace)
     }
     func sameAsSuperViewRightAnchor() -> NSLayoutConstraint {
         return self.rightAnchor.constraint(equalTo: self.firstSuperView.rightAnchor, constant: 0)
@@ -36,8 +42,14 @@ extension UIView{
     func sameAsSuperViewLeadingAnchor() -> NSLayoutConstraint {
         return self.leadingAnchor.constraint(equalTo: self.firstSuperView.leadingAnchor, constant: 0)
     }
+    func sameAsSuperViewLeadingAnchor(margnSpace:CGFloat) -> NSLayoutConstraint {
+        return self.leadingAnchor.constraint(equalTo: self.firstSuperView.leadingAnchor, constant: margnSpace)
+    }
     func sameAsSuperViewTrailingAnchor() -> NSLayoutConstraint {
         return self.trailingAnchor.constraint(equalTo: self.firstSuperView.trailingAnchor, constant: 0)
+    }
+    func sameAsSuperViewTrailingAnchor(margnSpace:CGFloat) -> NSLayoutConstraint {
+        return self.trailingAnchor.constraint(equalTo: self.firstSuperView.trailingAnchor, constant: margnSpace)
     }
     func heightEqualWidth() -> NSLayoutConstraint {
         return self.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1)
