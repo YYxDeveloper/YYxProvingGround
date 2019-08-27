@@ -50,19 +50,18 @@ class HYBOpenAnAccountViewController: UIViewController {
                 headContainerView.topAnchor.constraint(equalTo: safelayoutGuide.topAnchor),
                 headContainerView.sameAsSuperViewLeadingAnchor(),
                 headContainerView.sameAsSuperViewTrailingAnchor(),
-                headContainerView.heightAnchor.constraint(equalToConstant: 130),
+                headContainerView.heightAnchor.constraint(equalToConstant: 150),
                 
                 titlesContainerView.sameAsSuperViewTopAnchor(margnSpace: topMargnSpace),
-                titlesContainerView.bottomAnchor.constraint(equalTo: logoContainerView.topAnchor),
-                titlesContainerView.heightAnchor.constraint(equalToConstant: 40),
-               
-                logoContainerView.topAnchor.constraint(equalTo: titlesContainerView.bottomAnchor),
-                logoContainerView.sameAsSuperViewBottomAnchor(),
+                titlesContainerView.bottomAnchor.constraint(equalTo: logoContainerView.topAnchor,constant: -10),
+                logoContainerView.sameAsSuperViewBottomAnchor(margnSpace: 12),
  
-                logoContainerView.sameAsSuperViewLeadingAnchor(),
-                titlesContainerView.sameAsSuperViewLeadingAnchor(),
+                logoContainerView.sameAsSuperViewLeadingAnchor(margnSpace: 30),
 
-                logoContainerView.sameAsSuperViewTrailingAnchor(),
+                logoContainerView.sameAsSuperViewTrailingAnchor(margnSpace: 30),
+                
+                
+                titlesContainerView.sameAsSuperViewLeadingAnchor(),
                 titlesContainerView.sameAsSuperViewTrailingAnchor(),
 
                 
@@ -80,15 +79,18 @@ class HYBOpenAnAccountViewController: UIViewController {
             headContainerView.addSubview(headForntgroundView)
             headForntgroundView.setAutoresizingFalse()
             headForntgroundView.image = UIImage(named: "开户背景")
+            
 
            NSLayoutConstraint.activate([
                 headBackgroundView.sameAsSuperViewTopAnchor(),
                 headBackgroundView.sameAsSuperViewLeadingAnchor(),
                 headBackgroundView.sameAsSuperViewTrailingAnchor(),
+                headBackgroundView.sameAsSuperViewBottomAnchor(),
 
                 headForntgroundView.sameAsSuperViewTopAnchor(),
                 headForntgroundView.sameAsSuperViewLeadingAnchor(),
                 headForntgroundView.sameAsSuperViewTrailingAnchor(),
+                headForntgroundView.sameAsSuperViewBottomAnchor(),
 
 
            ])
@@ -149,14 +151,15 @@ class HYBOpenAnAccountViewController: UIViewController {
         func editlogosView(){
             let logoView = UIView()
             logoView.backgroundColor = .blue
-            logoContainerView.addSubview(logoView)
             logoContainerView.addArrangedSubview(logoView)
 
             let logoView1 = UIView()
             logoView1.backgroundColor = .orange
-            logoContainerView.addSubview(logoView1)
            logoContainerView.addArrangedSubview(logoView1)
             
+            let logoView2 = UIView()
+            logoView2.backgroundColor = .red
+            logoContainerView.addArrangedSubview(logoView2)
 //            let k8LogoImageView = UIImageView()
 //            logoView.addSubview(k8LogoImageView)
 //            k8LogoImageView.image = UIImage(named: "合作logo白色")

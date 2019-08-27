@@ -53,7 +53,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideContainerView(isHidden: false)
-        examplePrepocessorMarco()
+//        examplePrepocessorMarco()
+        exampleSameAsConstraint()
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -10,6 +10,16 @@ import Foundation
 import UIKit
 
 extension ViewController{
+  
+    func exampleSameAsConstraint()  {
+        let aa = UIView()
+        aa.backgroundColor = .blue
+        self.containerView.addSubview(aa)
+        aa.sameAsSuperViewTopAndBottomAnchor()
+        aa.widthAnchor.constraint(equalToConstant: 10).isActive = true
+        aa.centerXAnchor.constraint(equalTo: aa.firstSuperView.centerXAnchor).isActive = true
+        
+    }
     func exampleAddBoardLayer() {
         containerView.layer.addBordLayer(witchColor: .blue, width: 2)
     }
