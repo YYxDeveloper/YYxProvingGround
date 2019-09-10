@@ -10,6 +10,99 @@ import Foundation
 import Moya
 import Network
 extension NetworkTestViewController{
+    func exampleNativeHttpCookie(){
+        
+        func loadHttpCookie() {
+            //load cookie dic data
+            let result = UserDefaults.standard.value(forKey: "dict")
+            print(result!)
+            
+            
+            //encode cookie & set cookie
+            let cookies = HTTPCookie.cookies(withResponseHeaderFields: result as! [String : String], for: URL(string: "https://k8webapi.ssports365.com/login/graphic-code")!)
+            for cookie in cookies {
+                //print ("hi")
+                var cookieProperties = [HTTPCookiePropertyKey: Any]()
+                cookieProperties[HTTPCookiePropertyKey.name] = cookie.name
+                cookieProperties[HTTPCookiePropertyKey.value] = cookie.value
+                cookieProperties[HTTPCookiePropertyKey.domain] = cookie.domain
+                cookieProperties[HTTPCookiePropertyKey.path] = cookie.path
+                cookieProperties[HTTPCookiePropertyKey.version] = NSNumber(value: cookie.version)
+                cookieProperties[HTTPCookiePropertyKey.expires] = cookie.expiresDate
+                
+                //                    let newCookie = HTTPCookie(properties: cookieProperties)
+                HTTPCookieStorage.shared.setCookie(cookie)
+            }
+            
+            print("xxx\(HTTPCookieStorage.shared.cookies(for: URL(string: "https://k8webapi.ssports365.com/login/graphic-code")!))")
+            var request = URLRequest(url: URL(string: "https://k8webapi.ssports365.com/login/graphic-code")!)
+            request.setDefaultSetting(body: nil, witchHttpMethod: .GET)
+            
+            let session = URLSession.giveMeURLSession()
+            session.dataTask(with: request) { (data, response, error) in
+                if let data = data {
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        
+                        print(json)
+                    } catch {
+                        print(error)
+                    }
+                }
+                }.resume()
+            
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                
+                
+                if let httpResponse = response as? HTTPURLResponse, let fields = httpResponse.allHeaderFields as? [String : String] {
+                    
+                    
+                    
+                    //                let dict:[String:String] = ["key":"Hello"]
+                    //                UserDefaults.standard.set(fields, forKey: "dict")
+                    
+                    
+                }
+            }
+            task.resume()
+            
+            
+        }
+        func saveHttpCookieAtFirst() {
+            var request = URLRequest(url: URL(string: "https://k8webapi.ssports365.com/login/graphic-code")!)
+            request.setDefaultSetting(body: nil, witchHttpMethod: .GET)
+            
+            let session = URLSession.giveMeURLSession()
+            session.dataTask(with: request) { (data, response, error) in
+                if let data = data {
+                    do {
+                        let json = try JSONSerialization.jsonObject(with: data, options: [])
+                        
+                        print(json)
+                    } catch {
+                        print(error)
+                    }
+                }
+                }.resume()
+            
+            let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                
+                
+                if let httpResponse = response as? HTTPURLResponse, let fields = httpResponse.allHeaderFields as? [String : String] {
+                    
+                    
+                    
+                    //                let dict:[String:String] = ["key":"Hello"]
+                    UserDefaults.standard.set(fields, forKey: "dict")
+                    
+                    
+                }
+            }
+            task.resume()
+        }
+        loadHttpCookie()
+        saveHttpCookieAtFirst()
+    }
     func exampleGetGoogleSheetJson() {
         //GoogleSheetTestExportAPI
 //        https://spreadsheets.google.com/feeds/cells/15pzC6KoPDVApwTp1U3LdVXCoDByOm_Be_cloYW7K-1Q/1/public/values?alt=json
