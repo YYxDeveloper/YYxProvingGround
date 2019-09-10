@@ -18,6 +18,7 @@
 		334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D2230D027500B5177B /* UIScreen+Extension.swift */; };
 		334F22D5230E3E7A00B5177B /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */; };
 		334F22D7230E509400B5177B /* InputInfoColumnView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */; };
+		33E2952D2327608D00E7097D /* Base64STextFIle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33E2952C2327608D00E7097D /* Base64STextFIle.txt */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
 		33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */; };
@@ -206,6 +207,7 @@
 		334F22D2230D027500B5177B /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputInfoColumnView+UIView.swift"; sourceTree = "<group>"; };
+		33E2952C2327608D00E7097D /* Base64STextFIle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Base64STextFIle.txt; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBOpenAnAccountViewController.swift; sourceTree = "<group>"; };
@@ -737,6 +739,7 @@
 				C22DA3432296C19B00CB4538 /* HttpsTestPostExample.json */,
 				C2A61A4A228FD00600CCCFE8 /* PlistDictionaryExample.plist */,
 				47CF026722F81C61003680D5 /* HTMLTextTestFile.txt */,
+				33E2952C2327608D00E7097D /* Base64STextFIle.txt */,
 				C2656D99229D1EF200781200 /* Localizable.strings */,
 			);
 			path = TestExampleDatas;
@@ -1140,6 +1143,7 @@
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
 				33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */,
 				E879C1B922421012006904A5 /* Main.storyboard in Resources */,
+				33E2952D2327608D00E7097D /* Base64STextFIle.txt in Resources */,
 				C2A61AA1228FD00600CCCFE8 /* YYxInfo.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
