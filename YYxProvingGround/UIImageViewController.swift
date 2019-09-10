@@ -7,17 +7,19 @@
 //
 
 import UIKit
-
 class UIImageViewController: UIViewController {
 
     @IBOutlet weak var theImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-      exampleGenerateQRCodeWithRedColor()
+        exampleBase64Image()
+//      exampleGenerateQRCodeWiqwthRedColor()
     }
- 
+    
+    func exampleBase64Image() {
+        theImageView.image = FakeDataManager.giveMeBase64String().convertBase64ToImage()
+    }
     func exampleGenerateQRCodeWithRedColor()  {
        
          let myString = "https://pennlabs.org"
