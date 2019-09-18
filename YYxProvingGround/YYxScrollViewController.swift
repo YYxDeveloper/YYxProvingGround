@@ -55,20 +55,22 @@ class YYxScrollViewController: UIViewController {
     }
     
     func setupViews(){
-//        scrollContainerView.addSubview(label1)
-//        label1.centerXAnchor.constraint(equalTo: scrollContainerView.centerXAnchor).isActive = true
-//        label1.topAnchor.constraint(equalTo: scrollContainerView.topAnchor).isActive = true
-//        label1.widthAnchor.constraint(equalTo: scrollContainerView.widthAnchor, multiplier: 3/4).isActive = true
+        //上下左右的constraint的要設才能
+        scrollContainerView.addSubview(label1)
+        label1.centerXAnchor.constraint(equalTo: scrollContainerView.centerXAnchor).isActive = true
+        label1.topAnchor.constraint(equalTo: scrollContainerView.topAnchor).isActive = true
+        label1.widthAnchor.constraint(equalTo: scrollContainerView.widthAnchor, multiplier: 3/4).isActive = true
+        label1.bottomAnchor.constraint(equalTo: scrollContainerView.bottomAnchor).isActive = true
     }
-//    let label1: UILabel = {
-//        let label = UILabel()
-//        label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum.............."
-//        label.numberOfLines = 0
-//        label.sizeToFit()
-//        label.textColor = UIColor.white
-//        label.translatesAutoresizingMaskIntoConstraints = false
-//        return label
-//    }()
+    let label1: UILabel = {
+        let label = UILabel()
+        label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum..............Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum.............Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum.............Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum.............Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum.............Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum.............Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut culpa qui officia deserunt mollit anim id est laborum............."
+        label.numberOfLines = 0
+        label.sizeToFit()
+        label.textColor = UIColor.white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
     func scrollViewContentSizeUpdate()  {
 //        print("scrollContainerView :: \(updatedHeight)")
