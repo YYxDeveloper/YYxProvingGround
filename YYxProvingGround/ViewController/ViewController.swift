@@ -43,16 +43,31 @@ func connectedToNetwork() -> Bool {
 
 
 class ViewController: UIViewController {
+   
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     var refreshControl: UIRefreshControl!
-    
+    var testType = true
+    private lazy var testLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 20, y: 400, width: 50, height: 50))
+        label.textColor = UIColor.black
+        label.lineBreakMode = .byWordWrapping
+        label.backgroundColor = UIColor.red
+        label.numberOfLines = 2
+        label.font = UIFont.preferredFont(forTextStyle: .caption1)
+        label.text = "test"
+        
+        
+        return label
+    }()
     let reactDefaultUITableViewController = ReactRowCollectionViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideContainerView(isHidden: false)
+        hideContainerView(isHidden: true)
+        
+        view.addSubview(testLabel)
 //        examplePrepocessorMarco()
 //        exampleSameAsConstraint()
     }
@@ -76,6 +91,6 @@ class ViewController: UIViewController {
 }
 extension ViewController{
     func hideContainerView(isHidden:Bool) {
-//        containerView.isHidden = isHidden
+        containerView.isHidden = isHidden
     }
 }
