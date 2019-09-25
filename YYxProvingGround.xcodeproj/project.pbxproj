@@ -29,6 +29,22 @@
 		47CF026C22F82A20003680D5 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */; };
 		47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */; };
 		47EAE9AC22F96F9800445D6A /* YYxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EAE9AB22F96F9800445D6A /* YYxButton.swift */; };
+		47EEE1EE233B526A00092A69 /* MapTestViewController+Preprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEE1ED233B526A00092A69 /* MapTestViewController+Preprocess.swift */; };
+		47F52425233B1C2900BBC752 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5241F233B1C2800BBC752 /* MapTestViewController.swift */; };
+		47F52426233B1C2900BBC752 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5241F233B1C2800BBC752 /* MapTestViewController.swift */; };
+		47F52427233B1C2900BBC752 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5241F233B1C2800BBC752 /* MapTestViewController.swift */; };
+		47F52428233B1C2900BBC752 /* LSAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F52421233B1C2800BBC752 /* LSAnnotationView.xib */; };
+		47F52429233B1C2900BBC752 /* LSAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F52421233B1C2800BBC752 /* LSAnnotationView.xib */; };
+		47F5242A233B1C2900BBC752 /* LSAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F52421233B1C2800BBC752 /* LSAnnotationView.xib */; };
+		47F5242B233B1C2900BBC752 /* UIView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52422233B1C2800BBC752 /* UIView_Extensions.swift */; };
+		47F5242C233B1C2900BBC752 /* UIView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52422233B1C2800BBC752 /* UIView_Extensions.swift */; };
+		47F5242D233B1C2900BBC752 /* UIView_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52422233B1C2800BBC752 /* UIView_Extensions.swift */; };
+		47F5242E233B1C2900BBC752 /* LSAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52423233B1C2900BBC752 /* LSAnnotation.swift */; };
+		47F5242F233B1C2900BBC752 /* LSAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52423233B1C2900BBC752 /* LSAnnotation.swift */; };
+		47F52430233B1C2900BBC752 /* LSAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52423233B1C2900BBC752 /* LSAnnotation.swift */; };
+		47F52431233B1C2900BBC752 /* LSAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52424233B1C2900BBC752 /* LSAnnotationView.swift */; };
+		47F52432233B1C2900BBC752 /* LSAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52424233B1C2900BBC752 /* LSAnnotationView.swift */; };
+		47F52433233B1C2900BBC752 /* LSAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F52424233B1C2900BBC752 /* LSAnnotationView.swift */; };
 		51288774F1D4ED37E2D93083 /* Pods_YYxProvingGroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB664A0C1A3B1830D0DD12D8 /* Pods_YYxProvingGroundUITests.framework */; };
 		C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949C229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift */; };
 		C205949F229BE24C00E57B51 /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205949E229BE24C00E57B51 /* ViewController+CoreData.swift */; };
@@ -217,6 +233,12 @@
 		47CF026B22F82A20003680D5 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
 		47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Syntax.swift"; sourceTree = "<group>"; };
 		47EAE9AB22F96F9800445D6A /* YYxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxButton.swift; sourceTree = "<group>"; };
+		47EEE1ED233B526A00092A69 /* MapTestViewController+Preprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapTestViewController+Preprocess.swift"; sourceTree = "<group>"; };
+		47F5241F233B1C2800BBC752 /* MapTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTestViewController.swift; sourceTree = "<group>"; };
+		47F52421233B1C2800BBC752 /* LSAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSAnnotationView.xib; sourceTree = "<group>"; };
+		47F52422233B1C2800BBC752 /* UIView_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Extensions.swift; sourceTree = "<group>"; };
+		47F52423233B1C2900BBC752 /* LSAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSAnnotation.swift; sourceTree = "<group>"; };
+		47F52424233B1C2900BBC752 /* LSAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSAnnotationView.swift; sourceTree = "<group>"; };
 		6E3C946B372667CB101FE289 /* Pods-YYxProvingGroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundUITests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundUITests/Pods-YYxProvingGroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7D06A1EF579342808DE75D13 /* Pods-YYxProvingGroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FC9D9E82FF8E0AA0A7AF675 /* Pods-YYxProvingGroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundUITests/Pods-YYxProvingGroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -402,6 +424,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47F5241D233B1C0900BBC752 /* MapTestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47F5241E233B1C2800BBC752 /* Controller */,
+				47F52420233B1C2800BBC752 /* View */,
+			);
+			path = MapTestViewController;
+			sourceTree = "<group>";
+		};
+		47F5241E233B1C2800BBC752 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47F5241F233B1C2800BBC752 /* MapTestViewController.swift */,
+				47EEE1ED233B526A00092A69 /* MapTestViewController+Preprocess.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47F52420233B1C2800BBC752 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47F52421233B1C2800BBC752 /* LSAnnotationView.xib */,
+				47F52422233B1C2800BBC752 /* UIView_Extensions.swift */,
+				47F52423233B1C2900BBC752 /* LSAnnotation.swift */,
+				47F52424233B1C2900BBC752 /* LSAnnotationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4EF144ED1E5560B210CC0AEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -980,6 +1031,7 @@
 				C236522A22D337A400582267 /* ViewController */,
 				C236522B22D337B900582267 /* NetworkTestViewController */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
+				47F5241D233B1C0900BBC752 /* MapTestViewController */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
 				33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */,
@@ -1136,6 +1188,7 @@
 				C21BA5B1229E29C900DCABD1 /* exampleDictionaryStructure.json in Resources */,
 				C2656D97229D1EF200781200 /* Localizable.strings in Resources */,
 				C23AEC43229FC43400334BB1 /* exampleTOEICVocabulary.json in Resources */,
+				47F52428233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
 				C2A61AD8228FD00600CCCFE8 /* TintView.xib in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
 				33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */,
@@ -1148,6 +1201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F52429233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1155,6 +1209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F5242A233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1265,6 +1320,7 @@
 				E879C1B622421012006904A5 /* ViewController.swift in Sources */,
 				C236522D22D337D500582267 /* NetworkTestViewController+Moya.swift in Sources */,
 				C20594A1229BE9CC00E57B51 /* NSManagedObjectModel+Extension.swift in Sources */,
+				47F52425233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				334C6385230167E7003C37A5 /* MFMailComposeViewController+Extension.swift in Sources */,
 				C2A61AB4228FD00600CCCFE8 /* Alert+UIViewController.swift in Sources */,
 				C277937D22B0F1F600E13109 /* MyCollectionViewCell.swift in Sources */,
@@ -1272,6 +1328,7 @@
 				C2A61ABE228FD00600CCCFE8 /* CAShapeLayer+Extension.swift in Sources */,
 				47EAE9AC22F96F9800445D6A /* YYxButton.swift in Sources */,
 				47CF026A22F81FA5003680D5 /* ViewController+FileManager.swift in Sources */,
+				47F52431233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
 				C2A61ADF228FD00600CCCFE8 /* Double+Greenwich.swift in Sources */,
 				C277937E22B0F1F600E13109 /* BasicCollectionViewController.swift in Sources */,
 				C2A61AD3228FD00600CCCFE8 /* FirstPageViewController.swift in Sources */,
@@ -1338,6 +1395,7 @@
 				C2A61ADA228FD00600CCCFE8 /* Data+Convert.swift in Sources */,
 				C2A61ACB228FD00600CCCFE8 /* Extension+UIView.swift in Sources */,
 				C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */,
+				47EEE1EE233B526A00092A69 /* MapTestViewController+Preprocess.swift in Sources */,
 				C2A61AB8228FD00600CCCFE8 /* StaticCollectionViewController.swift in Sources */,
 				C21D385322E1BE170014EC92 /* CALayer+Extension.swift in Sources */,
 				C2A61ADD228FD00600CCCFE8 /* Substring+Extension.swift in Sources */,
@@ -1370,6 +1428,7 @@
 				334F22D5230E3E7A00B5177B /* UIStackView+Extension.swift in Sources */,
 				C2A61AC6228FD00600CCCFE8 /* UILabel+Extension.swift in Sources */,
 				C2FF469A22CC5B3100EE5A02 /* WeekdaysView.swift in Sources */,
+				47F5242B233B1C2900BBC752 /* UIView_Extensions.swift in Sources */,
 				C2A61AE0228FD00600CCCFE8 /* numeric.swift in Sources */,
 				C2A61ABD228FD00600CCCFE8 /* CALayer+Animation.swift in Sources */,
 				C277938222B0FBBB00E13109 /* CheckMan.swift in Sources */,
@@ -1387,6 +1446,7 @@
 				C2A61AB6228FD00600CCCFE8 /* ToolBoxViewController.swift in Sources */,
 				47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */,
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
+				47F5242E233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
 				334F22D1230D010C00B5177B /* YYxScrollViewController.swift in Sources */,
 				C211F99922AFD09000A76693 /* ViewTestViewController.swift in Sources */,
 				C21D385122E1BD310014EC92 /* ViewController+View.swift in Sources */,
@@ -1398,7 +1458,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F5242C233B1C2900BBC752 /* UIView_Extensions.swift in Sources */,
 				E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */,
+				47F52426233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
+				47F5242F233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
+				47F52432233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1406,7 +1470,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F5242D233B1C2900BBC752 /* UIView_Extensions.swift in Sources */,
 				E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */,
+				47F52427233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
+				47F52430233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
+				47F52433233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
