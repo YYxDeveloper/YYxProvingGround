@@ -18,6 +18,7 @@ class MapTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         preprocessInfoPlist()
+        exampleGeoCoderAddressString()
         self.locationManager.delegate = self
         self.locationManager.activityType = .other
         self.locationManager.distanceFilter = 10

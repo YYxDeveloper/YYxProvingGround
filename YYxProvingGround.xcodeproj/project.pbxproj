@@ -30,6 +30,9 @@
 		47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */; };
 		47EAE9AC22F96F9800445D6A /* YYxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EAE9AB22F96F9800445D6A /* YYxButton.swift */; };
 		47EEE1EE233B526A00092A69 /* MapTestViewController+Preprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEE1ED233B526A00092A69 /* MapTestViewController+Preprocess.swift */; };
+		47EEE1F0233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEE1EF233B775C00092A69 /* MapTestViewController+Extension.swift */; };
+		47EEE1F1233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEE1EF233B775C00092A69 /* MapTestViewController+Extension.swift */; };
+		47EEE1F2233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEE1EF233B775C00092A69 /* MapTestViewController+Extension.swift */; };
 		47F52425233B1C2900BBC752 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5241F233B1C2800BBC752 /* MapTestViewController.swift */; };
 		47F52426233B1C2900BBC752 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5241F233B1C2800BBC752 /* MapTestViewController.swift */; };
 		47F52427233B1C2900BBC752 /* MapTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5241F233B1C2800BBC752 /* MapTestViewController.swift */; };
@@ -234,6 +237,7 @@
 		47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Syntax.swift"; sourceTree = "<group>"; };
 		47EAE9AB22F96F9800445D6A /* YYxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxButton.swift; sourceTree = "<group>"; };
 		47EEE1ED233B526A00092A69 /* MapTestViewController+Preprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapTestViewController+Preprocess.swift"; sourceTree = "<group>"; };
+		47EEE1EF233B775C00092A69 /* MapTestViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapTestViewController+Extension.swift"; sourceTree = "<group>"; };
 		47F5241F233B1C2800BBC752 /* MapTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTestViewController.swift; sourceTree = "<group>"; };
 		47F52421233B1C2800BBC752 /* LSAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSAnnotationView.xib; sourceTree = "<group>"; };
 		47F52422233B1C2800BBC752 /* UIView_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Extensions.swift; sourceTree = "<group>"; };
@@ -438,6 +442,7 @@
 			children = (
 				47F5241F233B1C2800BBC752 /* MapTestViewController.swift */,
 				47EEE1ED233B526A00092A69 /* MapTestViewController+Preprocess.swift */,
+				47EEE1EF233B775C00092A69 /* MapTestViewController+Extension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1405,6 +1410,7 @@
 				C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */,
 				C211F99722AFCA3B00A76693 /* YYxViewController.swift in Sources */,
 				C2FF469B22CC5B3100EE5A02 /* CalenderView.swift in Sources */,
+				47EEE1F0233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */,
 				C23948C222EEC9A5004D3977 /* AppDelegate+UserNotification.swift in Sources */,
 				C2A61AC3228FD00600CCCFE8 /* ReactDefaultUITableViewController.swift in Sources */,
 				C2A61AE1228FD00600CCCFE8 /* String+Greenwich.swift in Sources */,
@@ -1459,6 +1465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F5242C233B1C2900BBC752 /* UIView_Extensions.swift in Sources */,
+				47EEE1F1233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */,
 				E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */,
 				47F52426233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				47F5242F233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
@@ -1471,6 +1478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F5242D233B1C2900BBC752 /* UIView_Extensions.swift in Sources */,
+				47EEE1F2233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */,
 				E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */,
 				47F52427233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				47F52430233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
