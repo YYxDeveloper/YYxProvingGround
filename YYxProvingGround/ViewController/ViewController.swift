@@ -67,6 +67,11 @@ class ViewController: UIViewController {
         btn.setBackgroundColor(.red, for: .normal)
         return btn
     }()
+    var obserString =  "the string"{
+        didSet{
+            codeLabel.text = obserString
+        }
+    }
     let reactDefaultUITableViewController = ReactRowCollectionViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
@@ -76,6 +81,8 @@ class ViewController: UIViewController {
         
         wantCodeButton()
         wantCodeLabel()
+        codeLabel.text = obserString
+        
         //數值透過didset將UI連動
 //        examplePrepocessorMarco()
 //        exampleSameAsConstraint()
@@ -109,7 +116,7 @@ extension ViewController{
         
     }
     @objc func clickCodeBtn() {
-        
+        obserString = "it is change"
     }
     func wantCodeLabel() {
         containerView.addSubview(codeLabel)
