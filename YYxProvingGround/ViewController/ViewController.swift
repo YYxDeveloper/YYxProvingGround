@@ -48,8 +48,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     var refreshControl: UIRefreshControl!
     var testType = true
-    private lazy var testLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 20, y: 400, width: 50, height: 50))
+    lazy var codeLabel: UILabel = {
+        let label = UILabel(frame: CGRect.zero)
         label.textColor = UIColor.black
         label.lineBreakMode = .byWordWrapping
         label.backgroundColor = UIColor.red
@@ -60,14 +60,23 @@ class ViewController: UIViewController {
         
         return label
     }()
+    lazy var codeButton:UIButton = {
+        
+        let btn = UIButton()
+        btn.setTitle("codeBtn", for: .normal)
+        btn.setBackgroundColor(.red, for: .normal)
+        return btn
+    }()
     let reactDefaultUITableViewController = ReactRowCollectionViewController()
     var sideBar:SideBar?
     var  cookingTimer = CookingTimer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideContainerView(isHidden: true)
+        hideContainerView(isHidden: false)
         
-        view.addSubview(testLabel)
+        wantCodeButton()
+        wantCodeLabel()
+        //數值透過didset將UI連動
 //        examplePrepocessorMarco()
 //        exampleSameAsConstraint()
     }
@@ -92,5 +101,19 @@ class ViewController: UIViewController {
 extension ViewController{
     func hideContainerView(isHidden:Bool) {
         containerView.isHidden = isHidden
+    }
+    func wantCodeButton() {
+        view.addSubview(codeButton)
+        codeButton.anchorEqualCenter(height: 50, width: 50)
+        codeButton.addTarget(self, action: #selector(clickCodeBtn), for: .touchUpInside)
+        
+    }
+    @objc func clickCodeBtn() {
+        
+    }
+    func wantCodeLabel() {
+        containerView.addSubview(codeLabel)
+        //因為沒有addsubView,要做完這部才能拉layout，所以勢必會分成兩部
+        codeLabel.anchorEqualParentView()
     }
 }
