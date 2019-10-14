@@ -46,6 +46,7 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var enterTextField: UITextField!
     var refreshControl: UIRefreshControl!
     var testType = true
     lazy var codeLabel: UILabel = {
