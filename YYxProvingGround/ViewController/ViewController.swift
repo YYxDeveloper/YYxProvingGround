@@ -85,12 +85,6 @@ class ViewController: UIViewController {
         codeLabel.text = obserString
         
         
-        let aa = "aaaaaa"
-        aa.checkIsEmailFormat()
-        
-        //一定要宣告是NS系列才能用橋接方法
-        let bb:NSString = "bbbbbb"
-        bb.checkIsPwdFormat()
         
         //數值透過didset將UI連動
 //        examplePrepocessorMarco()

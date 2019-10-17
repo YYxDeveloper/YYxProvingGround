@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 extension ViewController{
+    func exampleDetectkeyboardShowing() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        //after
+//        deinit {
+//            NotificationCenter.default.removeObserver(self)
+//        }
+    }
     func exampleDeviceOrientation() {
         print("must override viewDidLayoutSubviews & supportedInterfaceOrientations")
     }
@@ -18,5 +25,8 @@ extension ViewController{
     }
     override open var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
         return .all
+    }
+    @objc func keyboardWillShow() {
+        print("鍵盤即將彈出")
     }
 }
