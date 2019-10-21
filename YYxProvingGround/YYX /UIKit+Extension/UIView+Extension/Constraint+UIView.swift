@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 extension UIView{
-    
+    func setTopConstraintEqualStatusBar() {
+        self.topAnchor.constraint(equalTo: self.firstSuperView.topAnchor, constant: 0).isActive = true
+    }
     func sameAsSuperViewTopAndBottomAnchor() {
         self.setAutoresizingFalse()
         self.topAnchor.constraint(equalTo: firstSuperView.topAnchor).isActive = true

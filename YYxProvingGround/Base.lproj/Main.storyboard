@@ -424,7 +424,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-4F-N2u">
-                                <rect key="frame" x="0.0" y="24" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="tQ2-2f-QcO"/>
@@ -441,7 +441,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="c7G-4F-N2u" firstAttribute="top" secondItem="VzH-7y-bhc" secondAttribute="top" constant="-20" id="Etg-ac-im2"/>
+                            <constraint firstItem="c7G-4F-N2u" firstAttribute="top" secondItem="VzH-7y-bhc" secondAttribute="top" id="Etg-ac-im2"/>
                             <constraint firstItem="c7G-4F-N2u" firstAttribute="leading" secondItem="VzH-7y-bhc" secondAttribute="leading" id="Gfk-cl-VMX"/>
                             <constraint firstItem="VzH-7y-bhc" firstAttribute="bottom" secondItem="2MY-lX-eeq" secondAttribute="bottom" constant="286" id="ImN-HH-s1l"/>
                             <constraint firstItem="2MY-lX-eeq" firstAttribute="centerX" secondItem="c7G-4F-N2u" secondAttribute="centerX" id="MVZ-1N-ONc"/>
@@ -600,10 +600,9 @@
         <!--Navigation Controller-->
         <scene sceneID="6wa-VX-f7q">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jgu-Sa-pbs" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Jgu-Sa-pbs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qm8-wv-sKI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

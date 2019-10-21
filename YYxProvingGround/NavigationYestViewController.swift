@@ -13,7 +13,9 @@ class NavigationYestViewController: UIViewController {
     @IBOutlet weak var topMarginTestView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        view.topAnchor
+//        topMarginTestView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+        topMarginTestView.setTopConstraintEqualStatusBar()
         // Do any additional setup after loading the view.
     }
     
@@ -28,23 +30,4 @@ class NavigationYestViewController: UIViewController {
     }
     */
 
-}
-extension UIView {
-    func findConstraint(layoutAttribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
-        if let constraints = superview?.constraints {
-            for constraint in constraints where itemMatch(constraint: constraint, layoutAttribute: layoutAttribute) {
-                return constraint
-            }
-        }
-        return nil
-    }
-
-    func itemMatch(constraint: NSLayoutConstraint, layoutAttribute: NSLayoutConstraint.Attribute) -> Bool {
-        if let firstItem = constraint.firstItem as? UIView, let secondItem = constraint.secondItem as? UIView {
-            let firstItemMatch = firstItem == self && constraint.firstAttribute == layoutAttribute
-            let secondItemMatch = secondItem == self && constraint.secondAttribute == layoutAttribute
-            return firstItemMatch || secondItemMatch
-        }
-        return false
-    }
 }
