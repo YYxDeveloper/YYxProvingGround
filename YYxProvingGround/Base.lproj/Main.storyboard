@@ -450,7 +450,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VzH-7y-bhc"/>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="EfA-Oa-8gc"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="EfA-Oa-8gc"/>
                     <connections>
                         <outlet property="topMarginTestView" destination="c7G-4F-N2u" id="OBU-Xi-EQF"/>
                     </connections>
@@ -473,7 +473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3x-li-phE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5622" y="-1033"/>
+            <point key="canvasLocation" x="5617" y="-1033"/>
         </scene>
         <!--Local Notification View Controller-->
         <scene sceneID="0O3-R0-0Mc">
