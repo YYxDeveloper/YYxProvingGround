@@ -8,17 +8,22 @@
 
 import UIKit
 
+
 class NavigationYestViewController: UIViewController {
 
     @IBOutlet weak var topMarginTestView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.topAnchor
-//        topMarginTestView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         topMarginTestView.setTopConstraintEqualStatusBar()
-        // Do any additional setup after loading the view.
-    }
+
     
+      
+    }
+    override func viewWillAppear(_ animated: Bool) {
+       self.modalPresentationCapturesStatusBarAppearance = false
+
+//                 statusBar.isHidden = true
+    }
 
     /*
     // MARK: - Navigation

@@ -10,7 +10,14 @@ import Foundation
 import UIKit
 
 extension ViewController{
-  
+    func exampleHideStatusBarOnlyOnce() {
+        //https://medium.com/@JJeremy.XUE/swift-玩玩-status-bar-狀態列-df4e17691da8
+        //由於只能複寫之後都是read only因此只能在初始化時設定一次
+        //-可全專案或個別VC設定
+//        override var prefersStatusBarHidden: Bool {
+//        return true
+//        }
+    }
     func exampleSameAsConstraint()  {
         let aa = UIView()
         aa.backgroundColor = .blue
