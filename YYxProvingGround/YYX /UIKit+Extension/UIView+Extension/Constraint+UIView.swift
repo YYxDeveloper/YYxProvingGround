@@ -9,8 +9,15 @@
 import Foundation
 import UIKit
 extension UIView{
+    //this function will WARNING
+    /**
+                    not warning soluion by storyboard
+                    https://medium.com/@apppeterpan/設定背景圖片的-top-間距條件對象是-superview-不是-top-layout-guide-8d8b46
+     */
     func setTopAnchorEqualStatusBarTop(witchViewController:UIViewController){
-          self.topAnchor.constraint(equalTo: witchViewController.view.topAnchor, constant: 0).isActive = true
+        let statusHeight = UIApplication.shared.statusBarFrame.size.height // 20 or 40
+             print("statusHeight=\(statusHeight)")
+        self.topAnchor.constraint(equalTo: witchViewController.view.bottomAnchor, constant: 0).isActive = true
     }
     func sameAsSuperViewTopAndBottomAnchor() {
         self.setAutoresizingFalse()
