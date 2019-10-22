@@ -14,7 +14,8 @@ class NavigationYestViewController: UIViewController {
     @IBOutlet weak var topMarginTestView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        topMarginTestView.setTopConstraintEqualStatusBar()
+//        topMarginTestView.setTopConstraintEqualStatusBar()
+        topMarginTestView.setTopAnchorEqualStatusBarTop(witchViewController: self)
 
     
       

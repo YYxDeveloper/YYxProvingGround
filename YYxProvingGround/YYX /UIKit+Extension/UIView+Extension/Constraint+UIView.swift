@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 extension UIView{
-    func setTopConstraintEqualStatusBar() {
-        self.topAnchor.constraint(equalTo: self.firstSuperView.topAnchor, constant: 0).isActive = true
+    func setTopAnchorEqualStatusBarTop(witchViewController:UIViewController){
+          self.topAnchor.constraint(equalTo: witchViewController.view.topAnchor, constant: 0).isActive = true
     }
     func sameAsSuperViewTopAndBottomAnchor() {
         self.setAutoresizingFalse()
