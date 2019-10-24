@@ -124,5 +124,8 @@ extension ViewController{
         
         return (isReachable && !needsConnection)
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
 
 }
