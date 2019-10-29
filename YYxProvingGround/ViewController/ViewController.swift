@@ -71,6 +71,7 @@ class ViewController: UIViewController {
 //        dynamicTableVC.presenter.updateDatas()
 //        print("xxxx\(connectedToNetwork())")
 //        exampleRandomCGflotMultiplier()
+     
     }
    
 
@@ -79,7 +80,6 @@ class ViewController: UIViewController {
 //         refreshControl.endRefreshing()
 //         exampleSendEmail()
     }
-  
    
 }
 extension ViewController{

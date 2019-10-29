@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 enum fileType:String {
     case json,txt,plist
 }
@@ -191,6 +192,28 @@ extension FileManager{
         return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         
     }
+    func savePNGImage(image: UIImage,withName:String) -> Bool {
+             guard let data = image.jpegData(compressionQuality: 1) ?? image.pngData() else {
+                 return false
+             }
+             guard let directory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) as NSURL else {
+                 return false
+             }
+             do {
+                 try data.write(to: directory.appendingPathComponent("\(withName).png")!)
+                 return true
+             } catch {
+                 print(error.localizedDescription)
+                 return false
+             }
+         }
+         func loadPNGImage(named: String) -> UIImage? {
+             if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+                 return UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path)
+             }
+             return nil
+         }
+
     // MARK: - about Jailbtoken
      func isJailbtoken() -> Bool {
         

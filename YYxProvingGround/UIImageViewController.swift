@@ -13,10 +13,25 @@ class UIImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        exampleBase64Image()
+//        exampleBase64Image()
 //      exampleGenerateQRCodeWiqwthRedColor()
+//        exampleSaveAndLoadImage(whatDoYouWant: .SaveImage)
+        exampleSaveAndLoadImage(whatDoYouWant: .LoadImage)
+
+        
     }
-    
+    enum WhatDoYouWant {
+        case LoadImage,SaveImage
+    }
+    func exampleSaveAndLoadImage(whatDoYouWant:WhatDoYouWant) {
+        switch whatDoYouWant {
+        case .LoadImage:
+            theImageView.image = FileManager.default.loadPNGImage(named: "snake")
+        case .SaveImage:
+             FileManager.default.savePNGImage(image: UIImage(named: "snake")!, withName: "snake")
+       
+        }
+    }
     func exampleBase64Image() {
         theImageView.image = FakeDataManager.giveMeBase64String().convertBase64ToImage()
     }
@@ -38,5 +53,5 @@ class UIImageViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+  
 }
