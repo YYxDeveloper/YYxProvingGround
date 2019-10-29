@@ -29,6 +29,14 @@ extension ViewController{
         }
        
     }
+    func exampleCustomFlag() {
+        #if DEBUGtoNAVI
+            //survey keynote "flag"
+            print("DEBUGtoNAVI")
+        #else
+            print("else of DEBUGtoNAVI")
+        #endif
+    }
     func examplePrepocessorMarco() {
         #if DEBUG
             print("DEBUG MODEL")

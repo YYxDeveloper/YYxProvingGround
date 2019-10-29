@@ -1689,11 +1689,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXKNLAW2VW;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = YYxProvingGround/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUGtoNAVI";
 				PRODUCT_BUNDLE_IDENTIFIER = yyx.YYxProvingGround;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1708,6 +1710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXKNLAW2VW;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = YYxProvingGround/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
