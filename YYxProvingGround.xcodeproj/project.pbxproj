@@ -19,6 +19,12 @@
 		334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D2230D027500B5177B /* UIScreen+Extension.swift */; };
 		334F22D5230E3E7A00B5177B /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */; };
 		334F22D7230E509400B5177B /* InputInfoColumnView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */; };
+		3366DAEE23681814005F1B1A /* Register.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3366DAED23681814005F1B1A /* Register.xcassets */; };
+		3366DAEF23681814005F1B1A /* Register.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3366DAED23681814005F1B1A /* Register.xcassets */; };
+		3366DAF023681814005F1B1A /* Register.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3366DAED23681814005F1B1A /* Register.xcassets */; };
+		3366DAF2236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
+		3366DAF3236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
+		3366DAF4236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		33A1E1BE235D973A008F8A0C /* NavigationYestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
@@ -228,6 +234,8 @@
 		334F22D2230D027500B5177B /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		334F22D4230E3E7A00B5177B /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputInfoColumnView+UIView.swift"; sourceTree = "<group>"; };
+		3366DAED23681814005F1B1A /* Register.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Register.xcassets; sourceTree = "<group>"; };
+		3366DAF1236818AA005F1B1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationYestViewController.swift; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -432,6 +440,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3366DAEC236817B2005F1B1A /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3366DAED23681814005F1B1A /* Register.xcassets */,
+				3366DAF1236818AA005F1B1A /* RegisterViewController.swift */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
 		47F5241D233B1C0900BBC752 /* MapTestViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1031,6 +1048,7 @@
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
+				3366DAEC236817B2005F1B1A /* RegisterViewController */,
 				3329BF34235EB3DD00683A00 /* Operator+Extension.swift */,
 				C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */,
 				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
@@ -1191,6 +1209,7 @@
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
 				334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */,
 				C254F224229535B300C36CBF /* TabbedViewController.storyboard in Resources */,
+				3366DAEE23681814005F1B1A /* Register.xcassets in Resources */,
 				C2A61AA3228FD00600CCCFE8 /* CategoryHorizenTalRowCell.xib in Resources */,
 				C2A61AD0228FD00600CCCFE8 /* PageViewController.storyboard in Resources */,
 				C2A61AA9228FD00600CCCFE8 /* PlistArrayExample.plist in Resources */,
@@ -1213,6 +1232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F52429233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
+				3366DAEF23681814005F1B1A /* Register.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,6 +1241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F5242A233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
+				3366DAF023681814005F1B1A /* Register.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1323,6 +1344,7 @@
 				33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */,
 				C2A61ABF228FD00600CCCFE8 /* YYxErrorHandler.swift in Sources */,
 				C2A61AA7228FD00600CCCFE8 /* IndexPath+Extension.swift in Sources */,
+				3366DAF2236818AA005F1B1A /* RegisterViewController.swift in Sources */,
 				E879C1BC22421012006904A5 /* YYxProvingGround.xcdatamodeld in Sources */,
 				C2A61A97228FD00600CCCFE8 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
 				C2157BD92293CF9800171535 /* RowCollectionViewCell.swift in Sources */,
@@ -1474,6 +1496,7 @@
 			files = (
 				47F5242C233B1C2900BBC752 /* UIView_Extensions.swift in Sources */,
 				47EEE1F1233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */,
+				3366DAF3236818AA005F1B1A /* RegisterViewController.swift in Sources */,
 				E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */,
 				47F52426233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				47F5242F233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
@@ -1487,6 +1510,7 @@
 			files = (
 				47F5242D233B1C2900BBC752 /* UIView_Extensions.swift in Sources */,
 				47EEE1F2233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */,
+				3366DAF4236818AA005F1B1A /* RegisterViewController.swift in Sources */,
 				E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */,
 				47F52427233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				47F52430233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
