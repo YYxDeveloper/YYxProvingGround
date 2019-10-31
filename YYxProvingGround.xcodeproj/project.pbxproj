@@ -10,6 +10,10 @@
 		33254378230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */; };
 		3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */; };
 		3329BF35235EB3DD00683A00 /* Operator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329BF34235EB3DD00683A00 /* Operator+Extension.swift */; };
+		3342B2F22369A14800793669 /* FamilyMemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */; };
+		3342B2F62369A25A00793669 /* EachFamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */; };
+		3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F72369A68B00793669 /* MainEventsViewController.swift */; };
+		3342B2FA2369A9BA00793669 /* MainEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F92369A9BA00793669 /* MainEventTableViewCell.swift */; };
 		334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 334C63802301516E003C37A5 /* YYxGitIgnore.txt */; };
 		334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */; };
 		334C6385230167E7003C37A5 /* MFMailComposeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */; };
@@ -225,6 +229,10 @@
 		33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutYAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutXAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		3329BF34235EB3DD00683A00 /* Operator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Extension.swift"; sourceTree = "<group>"; };
+		3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberListViewController.swift; sourceTree = "<group>"; };
+		3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachFamilyTableViewCell.swift; sourceTree = "<group>"; };
+		3342B2F72369A68B00793669 /* MainEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventsViewController.swift; sourceTree = "<group>"; };
+		3342B2F92369A9BA00793669 /* MainEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventTableViewCell.swift; sourceTree = "<group>"; };
 		334C63802301516E003C37A5 /* YYxGitIgnore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxGitIgnore.txt; sourceTree = "<group>"; };
 		334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewController+ MFMailCompose.swift"; sourceTree = "<group>"; };
 		334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -440,6 +448,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3342B2F32369A14C00793669 /* LUsPassqort */ = {
+			isa = PBXGroup;
+			children = (
+				3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */,
+				3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */,
+				3342B2F42369A22B00793669 /* MainEventsList */,
+			);
+			path = LUsPassqort;
+			sourceTree = "<group>";
+		};
+		3342B2F42369A22B00793669 /* MainEventsList */ = {
+			isa = PBXGroup;
+			children = (
+				3342B2F72369A68B00793669 /* MainEventsViewController.swift */,
+				3342B2F92369A9BA00793669 /* MainEventTableViewCell.swift */,
+			);
+			path = MainEventsList;
+			sourceTree = "<group>";
+		};
 		3366DAEC236817B2005F1B1A /* RegisterViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1050,6 +1077,7 @@
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				3366DAEC236817B2005F1B1A /* RegisterViewController */,
 				3329BF34235EB3DD00683A00 /* Operator+Extension.swift */,
+				3342B2F32369A14C00793669 /* LUsPassqort */,
 				C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */,
 				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
 				334F22D0230D010B00B5177B /* YYxScrollViewController.swift */,
@@ -1386,6 +1414,7 @@
 				C2F152D722B23493006956C8 /* URLRequest+Extension.swift in Sources */,
 				C2F152D922B23656006956C8 /* HttpMethod+Enum.swift in Sources */,
 				C2A61AB3228FD00600CCCFE8 /* Photo+UIViewController.swift in Sources */,
+				3342B2F22369A14800793669 /* FamilyMemberListViewController.swift in Sources */,
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
 				C2A61A9E228FD00600CCCFE8 /* Timezone+Extension.swift in Sources */,
 				C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */,
@@ -1435,6 +1464,7 @@
 				C2A61ADD228FD00600CCCFE8 /* Substring+Extension.swift in Sources */,
 				C2A61AEA228FECBE00CCCFE8 /* ReactRowCollectionViewController.swift in Sources */,
 				334F22D3230D027500B5177B /* UIScreen+Extension.swift in Sources */,
+				3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */,
 				C2A61AD7228FD00600CCCFE8 /* TintView.swift in Sources */,
 				C205949D229BC87D00E57B51 /* NSManagedObjectContext+Extension.swift in Sources */,
 				C211F99722AFCA3B00A76693 /* YYxViewController.swift in Sources */,
@@ -1474,10 +1504,12 @@
 				C2A61ACF228FD00600CCCFE8 /* PageContainerViewController.swift in Sources */,
 				C2A61ADB228FD00600CCCFE8 /* Int+Extension.swift in Sources */,
 				C2A61A9B228FD00600CCCFE8 /* Extension+Date.swift in Sources */,
+				3342B2FA2369A9BA00793669 /* MainEventTableViewCell.swift in Sources */,
 				C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */,
 				C2A61AA0228FD00600CCCFE8 /* FileManager+Extension.swift in Sources */,
 				C2A61AD9228FD00600CCCFE8 /* ProgressingDashedLineCircleView.swift in Sources */,
 				C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */,
+				3342B2F62369A25A00793669 /* EachFamilyTableViewCell.swift in Sources */,
 				C2A61AB6228FD00600CCCFE8 /* ToolBoxViewController.swift in Sources */,
 				47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */,
 				C2A61AAD228FD00600CCCFE8 /* UserInformationsModel.swift in Sources */,
