@@ -471,6 +471,7 @@
 		3342B2F32369A14C00793669 /* LUsPassqort */ = {
 			isa = PBXGroup;
 			children = (
+				338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */,
 				3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */,
 				3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */,
 				3342B2F42369A22B00793669 /* MainEventsList */,
@@ -1113,7 +1114,6 @@
 				47F5241D233B1C0900BBC752 /* MapTestViewController */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
 				3342B2F32369A14C00793669 /* LUsPassqort */,
-				338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
 				33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */,
 				334C63802301516E003C37A5 /* YYxGitIgnore.txt */,
