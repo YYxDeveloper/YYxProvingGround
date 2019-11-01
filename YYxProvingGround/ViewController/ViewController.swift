@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         wantCodeLabel()
         codeLabel.text = obserString
         
-        
+        exampleCryptoSwift()
         
         //數值透過didset將UI連動
 //        examplePrepocessorMarco()

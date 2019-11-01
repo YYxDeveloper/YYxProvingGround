@@ -10,6 +10,8 @@
 		33254378230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */; };
 		3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */; };
 		3329BF35235EB3DD00683A00 /* Operator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329BF34235EB3DD00683A00 /* Operator+Extension.swift */; };
+		332C8F2E236AF6BD00164B8A /* theCryptoSwift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */; };
+		332C8F30236BD84D00164B8A /* ViewController+3rd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C8F2F236BD84D00164B8A /* ViewController+3rd.swift */; };
 		3342B2F22369A14800793669 /* FamilyMemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */; };
 		3342B2F62369A25A00793669 /* EachFamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */; };
 		3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F72369A68B00793669 /* MainEventsViewController.swift */; };
@@ -29,6 +31,12 @@
 		3366DAF2236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		3366DAF3236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		3366DAF4236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
+		338D10CF236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
+		338D10D0236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
+		338D10D1236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
+		338D10D3236AF0C3005F7855 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D10D2236AF0C3005F7855 /* MainViewController.swift */; };
+		338D10D4236AF0C3005F7855 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D10D2236AF0C3005F7855 /* MainViewController.swift */; };
+		338D10D5236AF0C3005F7855 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D10D2236AF0C3005F7855 /* MainViewController.swift */; };
 		33A1E1BE235D973A008F8A0C /* NavigationYestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
@@ -229,6 +237,8 @@
 		33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutYAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutXAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		3329BF34235EB3DD00683A00 /* Operator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Extension.swift"; sourceTree = "<group>"; };
+		332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "theCryptoSwift .swift"; sourceTree = "<group>"; };
+		332C8F2F236BD84D00164B8A /* ViewController+3rd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+3rd.swift"; sourceTree = "<group>"; };
 		3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberListViewController.swift; sourceTree = "<group>"; };
 		3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachFamilyTableViewCell.swift; sourceTree = "<group>"; };
 		3342B2F72369A68B00793669 /* MainEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventsViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +254,8 @@
 		334F22D6230E509400B5177B /* InputInfoColumnView+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputInfoColumnView+UIView.swift"; sourceTree = "<group>"; };
 		3366DAED23681814005F1B1A /* Register.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Register.xcassets; sourceTree = "<group>"; };
 		3366DAF1236818AA005F1B1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainLUsPassqort.storyboard; sourceTree = "<group>"; };
+		338D10D2236AF0C3005F7855 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationYestViewController.swift; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -448,12 +460,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		332C8F2C236AF6A400164B8A /* CryptoSwift  */ = {
+			isa = PBXGroup;
+			children = (
+				332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */,
+			);
+			path = "CryptoSwift ";
+			sourceTree = "<group>";
+		};
 		3342B2F32369A14C00793669 /* LUsPassqort */ = {
 			isa = PBXGroup;
 			children = (
 				3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */,
 				3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */,
 				3342B2F42369A22B00793669 /* MainEventsList */,
+				338D10D2236AF0C3005F7855 /* MainViewController.swift */,
 			);
 			path = LUsPassqort;
 			sourceTree = "<group>";
@@ -578,6 +599,7 @@
 			children = (
 				C29E15FB22B3A5BB008AD317 /* Alamofire */,
 				C277938322B0FCC400E13109 /* YYxEncapsulation */,
+				332C8F2C236AF6A400164B8A /* CryptoSwift  */,
 				C226886F2298266800E2884E /* Moya */,
 			);
 			path = YYX3rd;
@@ -613,6 +635,7 @@
 			children = (
 				C23948BD22EEC7D2004D3977 /* LocalNotificationViewController.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
+				332C8F2F236BD84D00164B8A /* ViewController+3rd.swift */,
 				C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
 				C21D385022E1BD310014EC92 /* ViewController+View.swift */,
@@ -1077,7 +1100,6 @@
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				3366DAEC236817B2005F1B1A /* RegisterViewController */,
 				3329BF34235EB3DD00683A00 /* Operator+Extension.swift */,
-				3342B2F32369A14C00793669 /* LUsPassqort */,
 				C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */,
 				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
 				334F22D0230D010B00B5177B /* YYxScrollViewController.swift */,
@@ -1090,6 +1112,8 @@
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
 				47F5241D233B1C0900BBC752 /* MapTestViewController */,
 				E879C1B722421012006904A5 /* Main.storyboard */,
+				3342B2F32369A14C00793669 /* LUsPassqort */,
+				338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */,
 				E879C1BD22421013006904A5 /* Assets.xcassets */,
 				33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */,
 				334C63802301516E003C37A5 /* YYxGitIgnore.txt */,
@@ -1249,6 +1273,7 @@
 				47F52428233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
 				C2A61AD8228FD00600CCCFE8 /* TintView.xib in Resources */,
 				E879C1BE22421013006904A5 /* Assets.xcassets in Resources */,
+				338D10CF236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */,
 				33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */,
 				E879C1B922421012006904A5 /* Main.storyboard in Resources */,
 				C2A61AA1228FD00600CCCFE8 /* YYxInfo.txt in Resources */,
@@ -1260,6 +1285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F52429233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
+				338D10D0236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */,
 				3366DAEF23681814005F1B1A /* Register.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1269,6 +1295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F5242A233B1C2900BBC752 /* LSAnnotationView.xib in Resources */,
+				338D10D1236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */,
 				3366DAF023681814005F1B1A /* Register.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1420,6 +1447,7 @@
 				C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */,
 				C2A61AB2228FD00600CCCFE8 /* URLSession+UIViewController.swift in Sources */,
 				C254F223229535B300C36CBF /* FirstViewController.swift in Sources */,
+				332C8F30236BD84D00164B8A /* ViewController+3rd.swift in Sources */,
 				C2A61AC1228FD00600CCCFE8 /* Extension+UITableView.swift in Sources */,
 				C29E15FD22B3A5E9008AD317 /* Extension+Alamofire.swift in Sources */,
 				C2A61AC9228FD00600CCCFE8 /* Extension+UITextField.swift in Sources */,
@@ -1447,6 +1475,7 @@
 				C2A61AD5228FD00600CCCFE8 /* PageViewController+Extension.swift in Sources */,
 				E879C1B422421012006904A5 /* AppDelegate.swift in Sources */,
 				C2A61A9F228FD00600CCCFE8 /* Extension+NSPredicate.swift in Sources */,
+				332C8F2E236AF6BD00164B8A /* theCryptoSwift .swift in Sources */,
 				33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */,
 				C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */,
 				334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */,
@@ -1499,6 +1528,7 @@
 				C277938222B0FBBB00E13109 /* CheckMan.swift in Sources */,
 				47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */,
 				C2A61A95228FD00600CCCFE8 /* Global.swift in Sources */,
+				338D10D3236AF0C3005F7855 /* MainViewController.swift in Sources */,
 				C2A61ABB228FD00600CCCFE8 /* UIScrollView+Extension.swift in Sources */,
 				C2A61AE6228FD00600CCCFE8 /* Array+Extension.swift in Sources */,
 				C2A61ACF228FD00600CCCFE8 /* PageContainerViewController.swift in Sources */,
@@ -1533,6 +1563,7 @@
 				47F52426233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				47F5242F233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
 				47F52432233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
+				338D10D4236AF0C3005F7855 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1547,6 +1578,7 @@
 				47F52427233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				47F52430233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
 				47F52433233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
+				338D10D5236AF0C3005F7855 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
