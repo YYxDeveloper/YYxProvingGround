@@ -15,7 +15,7 @@ class MainEventsViewController: UIViewController {
     let names = ["魔國臻","bbbbb","廣末涼子","國國國國國"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     

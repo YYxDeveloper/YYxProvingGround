@@ -15,5 +15,15 @@ extension UILabel{
         let fontSize = self.font.pointSize
         return count * fontSize
     }
+    func editCornerRadius(redius:CGFloat)  {
+//        self.eventTitle.layer.cornerRadius = 10
+//            self.eventTitle.layer.backgroundColor = UIColor.yellow.cgColor
+       
+        
+        self.backgroundColor = .clear
+        
+        self.layer.cornerRadius = redius
+        
+    }
     
 }

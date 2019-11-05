@@ -599,7 +599,6 @@
 			isa = PBXGroup;
 			children = (
 				C29E15FB22B3A5BB008AD317 /* Alamofire */,
-				C277938322B0FCC400E13109 /* YYxEncapsulation */,
 				332C8F2C236AF6A400164B8A /* CryptoSwift  */,
 				C226886F2298266800E2884E /* Moya */,
 			);
@@ -711,13 +710,6 @@
 				C277937C22B0F1F600E13109 /* BasicCollectionViewController.swift */,
 			);
 			path = BasicCollectionViewController;
-			sourceTree = "<group>";
-		};
-		C277938322B0FCC400E13109 /* YYxEncapsulation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = YYxEncapsulation;
 			sourceTree = "<group>";
 		};
 		C277938422B0FF4800E13109 /* Network */ = {

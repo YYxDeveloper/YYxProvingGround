@@ -16,7 +16,13 @@ class MainEventTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        layoutView.shake(keyPath: .transatiolnX, isRepeat: true, duration: Double.random(in: 1.0...2.0), shakeLevel: 0.05)
+        eventTitle.backgroundColor = .clear
+
+        eventTitle.layer.cornerRadius = 10
+        eventTitle.layer.backgroundColor = UIColor.yellow.cgColor
+        eventTitle.widthAnchor.constraint(equalToConstant: eventTitle.fontWidth).isActive = true
+        layoutView.layer.cornerRadius = 10
+        print("xxxxx \(eventTitle.fontWidth)")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
