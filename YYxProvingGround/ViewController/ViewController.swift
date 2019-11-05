@@ -18,6 +18,7 @@ import SystemConfiguration
 
 class ViewController: UIViewController {
    
+    @IBOutlet weak var fontTestLabel: UILabel!
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var enterTextField: UITextField!
@@ -57,8 +58,8 @@ class ViewController: UIViewController {
         wantCodeButton()
         wantCodeLabel()
         codeLabel.text = obserString
-        
-        exampleCryptoSwift()
+        exampleFontLength()
+//        exampleCryptoSwift()
         
         //數值透過didset將UI連動
 //        examplePrepocessorMarco()

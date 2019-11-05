@@ -11,6 +11,11 @@ import UIKit
 import MessageUI
 
 extension ViewController{
+    func exampleFontLength()  {
+        fontTestLabel.text = "xxx"
+        let aa = fontTestLabel.fontWidth
+        print(aa)
+    }
     enum theJSonModel {
         case UserInformationsJsonExample
         case exampleDictionaryStructure

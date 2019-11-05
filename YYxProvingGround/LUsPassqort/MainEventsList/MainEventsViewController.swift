@@ -41,6 +41,7 @@ extension MainEventsViewController:UITableViewDelegate,UITableViewDataSource,UIS
        let cell =  tableView.dequeueReusableCell(withIdentifier: "MainEventTableViewCell", for: indexPath) as! MainEventTableViewCell
         cell.eventTitle.text = names[indexPath.row]
         
+        cell.reloadLayout()
 
           return cell
       }

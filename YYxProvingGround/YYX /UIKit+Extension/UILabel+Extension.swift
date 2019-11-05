@@ -13,6 +13,7 @@ extension UILabel{
     var fontWidth:CGFloat{
         let count = CGFloat((self.text?.count ?? IntZero))
         let fontSize = self.font.pointSize
+        print("xxx::\(self.text)")
         return count * fontSize
     }
     func editCornerRadius(redius:CGFloat)  {

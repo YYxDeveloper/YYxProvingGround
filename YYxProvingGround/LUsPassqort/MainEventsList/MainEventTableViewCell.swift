@@ -13,6 +13,8 @@ class MainEventTableViewCell: UITableViewCell {
     @IBOutlet weak var layoutView: UIView!
     @IBOutlet weak var eventTitle: UILabel!
     @IBOutlet weak var eventIcon: UIImageView!
+    @IBOutlet weak var leftStackView: UIStackView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,14 +22,18 @@ class MainEventTableViewCell: UITableViewCell {
 
         eventTitle.layer.cornerRadius = 10
         eventTitle.layer.backgroundColor = UIColor.yellow.cgColor
-        eventTitle.widthAnchor.constraint(equalToConstant: eventTitle.fontWidth).isActive = true
         layoutView.layer.cornerRadius = 10
-        print("xxxxx \(eventTitle.fontWidth)")
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
+    }
+    func reloadLayout()  {
+        leftStackView.widthAnchor.constraint(equalToConstant: eventTitle.fontWidth * 1.5).isActive = true
+        print("xxxxx \(eventTitle.fontWidth):::\(eventTitle.width):::\(leftStackView.width)")
+
     }
 
 }
