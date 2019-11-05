@@ -9,6 +9,8 @@
 import Foundation
 extension ViewController{
     func exampleCryptoSwift() {
+        //http://ijecorp.blogspot.com/2013/08/python-m2crypto-aes-encrypt-decrypt.html
+        //加密知識
         let key = "abcdefghijklmnop" // 128bit(16文字)のキーを入れる
               let iv =  "1234567890123456" // データをシフト演算するキー128bit(16文字)
               let json = "{\"id\":2,\"name\":\"ほげほげ君\",\"hobby\":\"ボルダリング\"}" // 暗号化・復号するjson
