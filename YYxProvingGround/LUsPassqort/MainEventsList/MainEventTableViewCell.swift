@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//custom tableView example
 class MainEventTableViewCell: UITableViewCell {
 
     @IBOutlet weak var layoutView: UIView!
