@@ -11,7 +11,6 @@
 		3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */; };
 		3329BF35235EB3DD00683A00 /* Operator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329BF34235EB3DD00683A00 /* Operator+Extension.swift */; };
 		332C8F2E236AF6BD00164B8A /* theCryptoSwift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */; };
-		332C8F30236BD84D00164B8A /* ViewController+3rd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C8F2F236BD84D00164B8A /* ViewController+3rd.swift */; };
 		3342B2F22369A14800793669 /* FamilyMemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */; };
 		3342B2F62369A25A00793669 /* EachFamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */; };
 		3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F72369A68B00793669 /* MainEventsViewController.swift */; };
@@ -38,6 +37,7 @@
 		338D10D4236AF0C3005F7855 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D10D2236AF0C3005F7855 /* MainViewController.swift */; };
 		338D10D5236AF0C3005F7855 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D10D2236AF0C3005F7855 /* MainViewController.swift */; };
 		33A1E1BE235D973A008F8A0C /* NavigationYestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */; };
+		33ABAF27237AA66400B276ED /* ViewController+CryptoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF26237AA66400B276ED /* ViewController+CryptoSwift.swift */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
 		33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */; };
@@ -238,7 +238,6 @@
 		33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutXAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		3329BF34235EB3DD00683A00 /* Operator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Extension.swift"; sourceTree = "<group>"; };
 		332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "theCryptoSwift .swift"; sourceTree = "<group>"; };
-		332C8F2F236BD84D00164B8A /* ViewController+3rd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+3rd.swift"; sourceTree = "<group>"; };
 		3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberListViewController.swift; sourceTree = "<group>"; };
 		3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachFamilyTableViewCell.swift; sourceTree = "<group>"; };
 		3342B2F72369A68B00793669 /* MainEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventsViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +256,7 @@
 		338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainLUsPassqort.storyboard; sourceTree = "<group>"; };
 		338D10D2236AF0C3005F7855 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationYestViewController.swift; sourceTree = "<group>"; };
+		33ABAF26237AA66400B276ED /* ViewController+CryptoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CryptoSwift.swift"; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBOpenAnAccountViewController.swift; sourceTree = "<group>"; };
@@ -464,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */,
+				33ABAF26237AA66400B276ED /* ViewController+CryptoSwift.swift */,
 			);
 			path = "CryptoSwift ";
 			sourceTree = "<group>";
@@ -635,7 +636,6 @@
 			children = (
 				C23948BD22EEC7D2004D3977 /* LocalNotificationViewController.swift */,
 				E879C1B522421012006904A5 /* ViewController.swift */,
-				332C8F2F236BD84D00164B8A /* ViewController+3rd.swift */,
 				C21D384E22E1B0AB0014EC92 /* ViewController+Device.swift */,
 				C2EA5E3922840EEA005EDEE4 /* ViewController+extension.swift */,
 				C21D385022E1BD310014EC92 /* ViewController+View.swift */,
@@ -1435,11 +1435,11 @@
 				C2A61AB3228FD00600CCCFE8 /* Photo+UIViewController.swift in Sources */,
 				3342B2F22369A14800793669 /* FamilyMemberListViewController.swift in Sources */,
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
+				33ABAF27237AA66400B276ED /* ViewController+CryptoSwift.swift in Sources */,
 				C2A61A9E228FD00600CCCFE8 /* Timezone+Extension.swift in Sources */,
 				C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */,
 				C2A61AB2228FD00600CCCFE8 /* URLSession+UIViewController.swift in Sources */,
 				C254F223229535B300C36CBF /* FirstViewController.swift in Sources */,
-				332C8F30236BD84D00164B8A /* ViewController+3rd.swift in Sources */,
 				C2A61AC1228FD00600CCCFE8 /* Extension+UITableView.swift in Sources */,
 				C29E15FD22B3A5E9008AD317 /* Extension+Alamofire.swift in Sources */,
 				C2A61AC9228FD00600CCCFE8 /* Extension+UITextField.swift in Sources */,
