@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterTextField: UITextField!
     var refreshControl: UIRefreshControl!
     var testType = true
+    
     lazy var codeLabel: UILabel = {
         let label = UILabel(frame: CGRect.zero)
         label.textColor = UIColor.black
@@ -59,7 +60,11 @@ class ViewController: UIViewController {
         wantCodeLabel()
         codeLabel.text = obserString
         
-        exampleCryptoSwift()
+        
+        
+        
+        exampleChaCha20()
+//        exampleAESCryptoSwift()
         
 //        exampleFontLength()
 //        exampleCryptoSwift()

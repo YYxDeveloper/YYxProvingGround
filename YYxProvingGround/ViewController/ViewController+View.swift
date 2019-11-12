@@ -18,6 +18,9 @@ extension ViewController{
 //        return true
 //        }
     }
+    func examplePinCodeiew() {
+        
+    }
     func exampleSameAsConstraint()  {
         let aa = UIView()
         aa.backgroundColor = .blue
