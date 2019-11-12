@@ -66,5 +66,8 @@ extension ViewController{
             
         }
     }
+    func exampleBlowfish() {
+      
+    }
 
 }

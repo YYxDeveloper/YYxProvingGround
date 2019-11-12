@@ -19,7 +19,9 @@ extension ViewController{
 //        }
     }
     func examplePinCodeiew() {
-        
+        let vc = PinCodeViewController()
+        addSubViewWithChildController(addSubViewController: vc, toWitchView: view)
+
     }
     func exampleSameAsConstraint()  {
         let aa = UIView()

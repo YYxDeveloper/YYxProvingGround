@@ -17,7 +17,13 @@ import MessageUI
 import SystemConfiguration
 
 class ViewController: UIViewController {
-   
+   let pinCodeInputView: PinCodeInputView<ItemView> = .init(
+         digit: 6,
+         itemSpacing: 8,
+         itemFactory: {
+             return ItemView()
+     },
+         autoresizes: true)
     @IBOutlet weak var fontTestLabel: UILabel!
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
@@ -62,8 +68,8 @@ class ViewController: UIViewController {
         
         
         
-        
-        exampleChaCha20()
+        examplePinCodeiew()
+//        exampleChaCha20()
 //        exampleAESCryptoSwift()
         
 //        exampleFontLength()
