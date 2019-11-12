@@ -10,7 +10,7 @@
 		33254378230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */; };
 		3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */; };
 		3329BF35235EB3DD00683A00 /* Operator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329BF34235EB3DD00683A00 /* Operator+Extension.swift */; };
-		332C8F2E236AF6BD00164B8A /* theCryptoSwift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */; };
+		332C8F2E236AF6BD00164B8A /* String+CryptoSwift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C8F2D236AF6BC00164B8A /* String+CryptoSwift .swift */; };
 		3342B2F22369A14800793669 /* FamilyMemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */; };
 		3342B2F62369A25A00793669 /* EachFamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */; };
 		3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F72369A68B00793669 /* MainEventsViewController.swift */; };
@@ -38,6 +38,7 @@
 		338D10D5236AF0C3005F7855 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338D10D2236AF0C3005F7855 /* MainViewController.swift */; };
 		33A1E1BE235D973A008F8A0C /* NavigationYestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */; };
 		33ABAF27237AA66400B276ED /* ViewController+CryptoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF26237AA66400B276ED /* ViewController+CryptoSwift.swift */; };
+		33ABAF29237AB18F00B276ED /* EncryptionAES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF28237AB18F00B276ED /* EncryptionAES.swift */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
 		33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */; };
@@ -237,7 +238,7 @@
 		33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutYAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutXAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		3329BF34235EB3DD00683A00 /* Operator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Extension.swift"; sourceTree = "<group>"; };
-		332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "theCryptoSwift .swift"; sourceTree = "<group>"; };
+		332C8F2D236AF6BC00164B8A /* String+CryptoSwift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CryptoSwift .swift"; sourceTree = "<group>"; };
 		3342B2F12369A14800793669 /* FamilyMemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMemberListViewController.swift; sourceTree = "<group>"; };
 		3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachFamilyTableViewCell.swift; sourceTree = "<group>"; };
 		3342B2F72369A68B00793669 /* MainEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventsViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +258,7 @@
 		338D10D2236AF0C3005F7855 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationYestViewController.swift; sourceTree = "<group>"; };
 		33ABAF26237AA66400B276ED /* ViewController+CryptoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CryptoSwift.swift"; sourceTree = "<group>"; };
+		33ABAF28237AB18F00B276ED /* EncryptionAES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionAES.swift; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBOpenAnAccountViewController.swift; sourceTree = "<group>"; };
@@ -463,8 +465,9 @@
 		332C8F2C236AF6A400164B8A /* CryptoSwift  */ = {
 			isa = PBXGroup;
 			children = (
-				332C8F2D236AF6BC00164B8A /* theCryptoSwift .swift */,
+				332C8F2D236AF6BC00164B8A /* String+CryptoSwift .swift */,
 				33ABAF26237AA66400B276ED /* ViewController+CryptoSwift.swift */,
+				33ABAF28237AB18F00B276ED /* EncryptionAES.swift */,
 			);
 			path = "CryptoSwift ";
 			sourceTree = "<group>";
@@ -1437,6 +1440,7 @@
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
 				33ABAF27237AA66400B276ED /* ViewController+CryptoSwift.swift in Sources */,
 				C2A61A9E228FD00600CCCFE8 /* Timezone+Extension.swift in Sources */,
+				33ABAF29237AB18F00B276ED /* EncryptionAES.swift in Sources */,
 				C237EAF022E5922C008FBD1B /* UIImage+Extension.swift in Sources */,
 				C2A61AB2228FD00600CCCFE8 /* URLSession+UIViewController.swift in Sources */,
 				C254F223229535B300C36CBF /* FirstViewController.swift in Sources */,
@@ -1467,7 +1471,7 @@
 				C2A61AD5228FD00600CCCFE8 /* PageViewController+Extension.swift in Sources */,
 				E879C1B422421012006904A5 /* AppDelegate.swift in Sources */,
 				C2A61A9F228FD00600CCCFE8 /* Extension+NSPredicate.swift in Sources */,
-				332C8F2E236AF6BD00164B8A /* theCryptoSwift .swift in Sources */,
+				332C8F2E236AF6BD00164B8A /* String+CryptoSwift .swift in Sources */,
 				33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */,
 				C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */,
 				334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */,

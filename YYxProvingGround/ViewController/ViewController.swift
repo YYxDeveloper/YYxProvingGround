@@ -58,7 +58,10 @@ class ViewController: UIViewController {
         wantCodeButton()
         wantCodeLabel()
         codeLabel.text = obserString
-        exampleFontLength()
+        
+        exampleCryptoSwift()
+        
+//        exampleFontLength()
 //        exampleCryptoSwift()
         
         //數值透過didset將UI連動
