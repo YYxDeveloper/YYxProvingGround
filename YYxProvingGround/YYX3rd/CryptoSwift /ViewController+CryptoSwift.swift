@@ -24,7 +24,7 @@ extension ViewController{
             let aes = EncryptionAES()
 
             // jsonを暗号化
-            let jsonEncrypted = try! aes.encrypt(key: key, iv: iv, text: json)
+            let jsonEncrypted =  aes.encrypt(key: key, iv: iv, text: json)
             print(jsonEncrypted)
             
             // jsonを復号
