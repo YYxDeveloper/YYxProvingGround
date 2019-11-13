@@ -149,7 +149,7 @@ extension NetworkTestViewController{
          request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         // insert json data to the request
         do {
-            let theData:Data? = try FileManager.default.readJsonFileFromBundle("HttpsTestPostExample").data(using: .utf8)
+            let theData:Data? = try FileManager.default.readUTF8FileFromBundle("HttpsTestPostExample").data(using: .utf8)
              request.httpBody = theData
         } catch  {
             print("a")

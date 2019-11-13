@@ -21,7 +21,7 @@ extension ViewController{
         do {
             let key = "abcdefghijklmnop" // 128bit(16文字)のキーを入れる
             let iv =  "1234567890123456" // データをシフト演算するキー128bit(16文字)
-            let json = try FileManager.default.readJsonFileFromBundle("HttpsTestPostExample") // 暗号化・復号するjson
+            let json = try FileManager.default.readUTF8FileFromBundle("HttpsTestPostExample") // 暗号化・復号するjson
 
             // EncryptionAESのインスタンス化
             let aes = EncryptionAES()
@@ -68,15 +68,37 @@ extension ViewController{
     }
     func exampleDecodeWithAES() {
            FileManager.default.decodeJsonDatabyUtf8FromBundle(fileName: "UserInformationsJsonExample", modelType: UserInformations.self, compelete: { data in
-                    _ = data.userProfiles.map({data in
-                        data.key = "dogisfundogisfun"
-                        print(data.encrypName~!)
+                    _ = data.userProfiles.map({eachData in
+                        eachData.encrypName = eachData.name.aesEncrypt(key: "dogisfundogisfun", iv: "dogisfundogisfun")
+                       
                         
                     })
-                
-                   
+            
+                   do{
+                    let encryptValueString = data.toJSONData()~!.convertToUTF8String()
+                    print(encryptValueString~!)
+                    
+                    
+                    let key = "hangge.com123456hangge.com123456"
+//
+                                
+                   //iv 為8到12位
+                    let iv = "aaaaaaaaaaaa"
+//                    print("密钥偏移量：\(iv)")
+                    //使用ChaCha20加密模式
+                    let chiper = try ChaCha20(key: key.bytes, iv: iv.bytes)
+                                
+                    //开始加密
+                    let encryptedString = try chiper.encrypt(encryptValueString.bytes).toBase64()~!
+                    print(encryptedString)
+                    
+                   }catch{}
               })
        }
+    func exampleDecodedChaChaToTXT() {
+        
+    }
    
 
 }
+

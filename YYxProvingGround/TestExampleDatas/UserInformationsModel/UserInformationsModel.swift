@@ -15,17 +15,9 @@ class userProfile: Codable {
 //    "name":"John",
 //    "age":30,
 //    "cars":[ "Ford", "BMW", "Fiat" ]
-    var key:String?{
-        didSet{
-            _ = self.encrypName
-        }
-    }
-    private let iv =  "1234567890123456" 
     let name:String
     let age:String
     let cars:[String]
-    lazy var encrypName:String? = {
-           return self.name.aesEncrypt(key: key~!, iv: iv)
-    }()
+    var encrypName:String?
 
 }
