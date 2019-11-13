@@ -68,9 +68,14 @@ extension ViewController{
     }
     func exampleDecodeWithAES() {
            FileManager.default.decodeJsonDatabyUtf8FromBundle(fileName: "UserInformationsJsonExample", modelType: UserInformations.self, compelete: { data in
-            print(data.userProfiles[3].encrypName)
-            _ = data.userProfiles.map({data in print("  xxx:: \(data.encrypName~!)")})
+                    _ = data.userProfiles.map({data in
+                        data.key = "dogisfundogisfun"
+                        print(data.encrypName~!)
+                        
                     })
+                
+                   
+              })
        }
    
 
