@@ -66,9 +66,9 @@ class ViewController: UIViewController {
         wantCodeLabel()
         codeLabel.text = obserString
         
-        
-        
-        examplePinCodeiew()
+//        exampleDecodeJsonDatabyUtf8(witchModel: .UserInformationsJsonExample)
+       exampleDecodeWithAES()
+//        examplePinCodeiew()
 //        exampleChaCha20()
 //        exampleAESCryptoSwift()
         
