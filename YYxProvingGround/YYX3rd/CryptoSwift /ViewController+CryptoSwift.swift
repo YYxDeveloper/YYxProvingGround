@@ -67,6 +67,9 @@ extension ViewController{
         }
     }
     func exampleDecodeWithAES() {
+            let key = "dogisfundogisfun"
+            let iv  = "gggggggggggggggg"
+        
            FileManager.default.decodeJsonDatabyUtf8FromBundle(fileName: "UserInformationsJsonExample", modelType: UserInformations.self, compelete: { data in
                     _ = data.userProfiles.map({eachData in
                         eachData.encrypName = eachData.name.aesEncrypt(key: "dogisfundogisfun", iv: "dogisfundogisfun")
@@ -75,23 +78,16 @@ extension ViewController{
                     })
             
                    do{
-                    let encryptValueString = data.toJSONData()~!.convertToUTF8String()
-                    print(encryptValueString~!)
+                    let modelToJsonString = data.toJSONData()~!.convertToUTF8String()
+                    print("modelToJsonString~! :: \(modelToJsonString~!)")
                     
+                    let aesEncryptString = modelToJsonString.aesEncrypt(key: key, iv: iv)
+                    print("aesEncryptString~! :: \(aesEncryptString~!)")
                     
-                    let key = "hangge.com123456hangge.com123456"
+                    let aesDecryptString = aesEncryptString?.aesDecrypt(key: key, iv: iv)
+                    print("aesDecryptString :: \(aesDecryptString~!)")
+                    
 //
-                                
-                   //iv 為8到12位
-                    let iv = "aaaaaaaaaaaa"
-//                    print("密钥偏移量：\(iv)")
-                    //使用ChaCha20加密模式
-                    let chiper = try ChaCha20(key: key.bytes, iv: iv.bytes)
-                                
-                    //开始加密
-                    let encryptedString = try chiper.encrypt(encryptValueString.bytes).toBase64()~!
-                    print(encryptedString)
-                    
                    }catch{}
               })
        }
