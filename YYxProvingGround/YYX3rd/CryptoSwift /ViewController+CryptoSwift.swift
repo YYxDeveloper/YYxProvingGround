@@ -91,10 +91,6 @@ extension ViewController{
                    }catch{}
               })
        }
-    func exampleDecodedChaChaToTXT() {
-        
-    }
-   
 
 }
 
