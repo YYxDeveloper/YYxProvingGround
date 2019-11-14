@@ -66,8 +66,11 @@ class ViewController: UIViewController {
         wantCodeLabel()
         codeLabel.text = obserString
         
+        
+        
+        exampleFaceIDAndTouchID()
 //        exampleDecodeJsonDatabyUtf8(witchModel: .UserInformationsJsonExample)
-       exampleDecodeWithAES()
+//       exampleDecodeWithAES()
 //        examplePinCodeiew()
 //        exampleChaCha20()
 //        exampleAESCryptoSwift()
