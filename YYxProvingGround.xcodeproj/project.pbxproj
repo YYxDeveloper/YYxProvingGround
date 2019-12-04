@@ -60,6 +60,7 @@
 		33ABAF59237AC65400B276ED /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF58237AC65300B276ED /* PinCodeViewController.swift */; };
 		33ABAF5A237AC65400B276ED /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF58237AC65300B276ED /* PinCodeViewController.swift */; };
 		33ABAF5B237AC65400B276ED /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF58237AC65300B276ED /* PinCodeViewController.swift */; };
+		33D9A37023979B32001BC2AC /* AppDelegateForiOS13.zip in Resources */ = {isa = PBXBuildFile; fileRef = 33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
 		33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */; };
@@ -289,6 +290,7 @@
 		33ABAF47237AC3A800B276ED /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		33ABAF48237AC3A900B276ED /* ItemAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAppearance.swift; sourceTree = "<group>"; };
 		33ABAF58237AC65300B276ED /* PinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
+		33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = AppDelegateForiOS13.zip; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBOpenAnAccountViewController.swift; sourceTree = "<group>"; };
@@ -1129,6 +1131,7 @@
 		E879C1B222421012006904A5 /* YYxProvingGround */ = {
 			isa = PBXGroup;
 			children = (
+				33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */,
 				C21BA5B3229E336F00DCABD1 /* YYX3rd */,
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
 				C2A61A25228FD00600CCCFE8 /* YYX  */,
@@ -1292,6 +1295,7 @@
 				C2A61AB9228FD00600CCCFE8 /* ToolBox.storyboard in Resources */,
 				C22DA3442296C19B00CB4538 /* HttpsTestPostExample.json in Resources */,
 				C2A61AAC228FD00600CCCFE8 /* UserInformationsJsonExample.json in Resources */,
+				33D9A37023979B32001BC2AC /* AppDelegateForiOS13.zip in Resources */,
 				3360F530237C011A00DB73BD /* EncodedUserInformationsAESExample.json in Resources */,
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
 				334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */,
