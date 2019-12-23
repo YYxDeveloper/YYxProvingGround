@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import MessageUI
+import Combine
 
 extension ViewController{
     func exampleFontLength()  {
@@ -32,32 +33,32 @@ extension ViewController{
             })
             
         }
-       
+        
     }
     func exampleCustomFlag() {
         #if DEBUGtoNAVI
-            //survey keynote "flag"
-            print("DEBUGtoNAVI")
+        //survey keynote "flag"
+        print("DEBUGtoNAVI")
         #else
-            print("else of DEBUGtoNAVI")
+        print("else of DEBUGtoNAVI")
         #endif
     }
     func examplePrepocessorMarco() {
         #if DEBUG
-            print("DEBUG MODEL")
+        print("DEBUG MODEL")
         #else
-            print("RELEASE MODEL")
+        print("RELEASE MODEL")
         #endif
     }
     func exmapleGetInfoPlistData()  {
-//        FileManager.default.showInfoPlistData()
-       _ = FileManager.default.checkInfoPlistData()
+        //        FileManager.default.showInfoPlistData()
+        _ = FileManager.default.checkInfoPlistData()
         
     }
     func exampleMVVMBindingForInstance()  {
         self.cookingTimer.start()
         self.cookingTimer.countingTime.addObserver{ [weak self] (timeStr,sec) in
-                        print("!!\(timeStr)")
+            print("!!\(timeStr)")
             //             print("!!@\(sec)")
             
             
@@ -71,10 +72,10 @@ extension ViewController{
     func exampleCreateOwnDynamicTableViewController()   {
         
         self.addSubViewWithChildController(addSubViewController: reactDefaultUITableViewController, toWitchView: view)
-         let fakeDatas = ["ray","sam","bill","jay","11ray","11sam","11bill","j11ay","11ray","22sam","22bill","22jay","r22ay","33sam","33bill","33jay","ray","sam","bill","jay","ray","sam","bill","jay","ray","sam","bill","jay","ray","sam","bill","jay"]
+        let fakeDatas = ["ray","sam","bill","jay","11ray","11sam","11bill","j11ay","11ray","22sam","22bill","22jay","r22ay","33sam","33bill","33jay","ray","sam","bill","jay","ray","sam","bill","jay","ray","sam","bill","jay","ray","sam","bill","jay"]
         reactDefaultUITableViewController.presenter.updateDatasFirstTime(cellRequiment: fakeDatas)
         
-
+        
         
     }
     func exampleColumnCollectionView() {
@@ -111,9 +112,9 @@ extension ViewController{
         
     }
     func exampleWakeMeOnce() {
-      Timer.wakeMeOnce(duration: 5, repeats: false, timeUp: {
+        Timer.wakeMeOnce(duration: 5, repeats: false, timeUp: {
             print(("sss"))
-      })
+        })
     }
     func exampleLocalization() {
         turnBtn.setTitle(LocalizableMan.giveMeLocalizedString(withKey: "aa"), for: .normal)
@@ -127,7 +128,7 @@ extension ViewController{
     func exampleGenerateUUID() {
         let uuid = String.giveMeRandomUUID()
         print(uuid)
-
+        
     }
     func exampleCalender() {
         //just change initView to CalenderViewController in story board
@@ -138,6 +139,9 @@ extension ViewController{
         addSubViewWithChildController(addSubViewController: vc, toWitchView: containerView)
         
     }
+    @available(iOS 13.0, *)
+    @available(iOS 13.0, *)
+    
     func exampleVisualFormat() {
         
         var cellTopView: UIView = {
@@ -205,6 +209,57 @@ extension ViewController{
             print($0.rawValue)
         }
         
+    }
+    @available(iOS 13.0, *)
+    func exampleCombine_assign() {
+        //Assign 可以很方便地将接收到的值通过 KeyPath 设置到指定的 Class 上（不支持 Struct）
+        
+        
+        class Student {
+            let name: String
+            var score: Int
+            
+            init(name: String, score: Int) {
+                self.name = name
+                self.score = score
+            }
+        }
+        
+        
+        let student = Student(name: "Jack", score: 90)
+        print(student.score)
+        let observer = Subscribers.Assign(object: student, keyPath: \.score)
+        let publisher = PassthroughSubject<Int, Never>()
+        publisher.subscribe(observer)
+        publisher.send(91)
+        print(student.score)
+        publisher.send(100)
+        print(student.score)
+        
+        
+    }
+    /**
+     https://www.jianshu.com/p/df8535b40079
+     */
+    @available(iOS 13.0, *)
+    func exampleCombine_sink() {
+        
+    }
+    @available(iOS 13.0, *)
+    func exampleCombine_CurrentValueSubject() {
+//        CurrentValueSubject : 包含单个值并且当值改变时发布新元素的subject
+        let a = CurrentValueSubject<Int, NSError>(1)
+        a.sink(receiveCompletion: {
+            print("xx11\($0)")
+        }, receiveValue: {
+            print("xx22\($0)")
+        })
+        
+        a.value = 2
+        a.value = 3
+        a.send(4)
+//        a.send(completion: Subscribers.Completion<NSError>.finishe         a.send(completion: Subscribers.Cocxmpletion<NSError>.failure(NSError(domain: "domain", code: 500, userInfo: ["errorMsg":"error"])))
+        a.value = 5
     }
     
 }

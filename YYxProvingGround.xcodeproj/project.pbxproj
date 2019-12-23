@@ -64,6 +64,15 @@
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D58423137C7900F9DBA2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */; };
 		33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */; };
+		33F7DD4423B08B9C00F40DD5 /* ReactRelationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */; };
+		33F7DD4523B08B9C00F40DD5 /* ReactRelationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */; };
+		33F7DD4623B08B9C00F40DD5 /* ReactRelationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */; };
+		33F7DD4923B08F5F00F40DD5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4823B08F5F00F40DD5 /* ViewModel.swift */; };
+		33F7DD4A23B08F5F00F40DD5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4823B08F5F00F40DD5 /* ViewModel.swift */; };
+		33F7DD4B23B08F5F00F40DD5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4823B08F5F00F40DD5 /* ViewModel.swift */; };
+		33F7DD4D23B08F6C00F40DD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4C23B08F6C00F40DD5 /* Model.swift */; };
+		33F7DD4E23B08F6C00F40DD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4C23B08F6C00F40DD5 /* Model.swift */; };
+		33F7DD4F23B08F6C00F40DD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4C23B08F6C00F40DD5 /* Model.swift */; };
 		47347E9722F7E14200F9A433 /* ProgrammaticallyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */; };
 		47347E9922F7E45800F9A433 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9822F7E45800F9A433 /* ListCell.swift */; };
 		47347E9B22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */; };
@@ -294,6 +303,9 @@
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D58323137C7900F9DBA2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBOpenAnAccountViewController.swift; sourceTree = "<group>"; };
+		33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactRelationalViewController.swift; sourceTree = "<group>"; };
+		33F7DD4823B08F5F00F40DD5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		33F7DD4C23B08F6C00F40DD5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		47347E9622F7E14200F9A433 /* ProgrammaticallyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyTableViewController.swift; sourceTree = "<group>"; };
 		47347E9822F7E45800F9A433 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		47347E9A22F7E4DF00F9A433 /* ProgrammaticallyCustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticallyCustomTableViewController.swift; sourceTree = "<group>"; };
@@ -532,6 +544,16 @@
 				3366DAF1236818AA005F1B1A /* RegisterViewController.swift */,
 			);
 			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		33F7DD4723B08F2400F40DD5 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */,
+				33F7DD4823B08F5F00F40DD5 /* ViewModel.swift */,
+				33F7DD4C23B08F6C00F40DD5 /* Model.swift */,
+			);
+			name = MVVM;
 			sourceTree = "<group>";
 		};
 		47F5241D233B1C0900BBC752 /* MapTestViewController */ = {
@@ -1145,6 +1167,7 @@
 				334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */,
 				33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */,
 				33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */,
+				33F7DD4723B08F2400F40DD5 /* MVVM */,
 				C236522A22D337A400582267 /* ViewController */,
 				C236522B22D337B900582267 /* NetworkTestViewController */,
 				C22EA549229688E2006FC04B /* RefreshContents.xib */,
@@ -1485,6 +1508,7 @@
 				C2F152D922B23656006956C8 /* HttpMethod+Enum.swift in Sources */,
 				C2A61AB3228FD00600CCCFE8 /* Photo+UIViewController.swift in Sources */,
 				3342B2F22369A14800793669 /* FamilyMemberListViewController.swift in Sources */,
+				33F7DD4923B08F5F00F40DD5 /* ViewModel.swift in Sources */,
 				C2A61ADE228FD00600CCCFE8 /* Double+Extension.swift in Sources */,
 				33ABAF27237AA66400B276ED /* ViewController+CryptoSwift.swift in Sources */,
 				C2A61A9E228FD00600CCCFE8 /* Timezone+Extension.swift in Sources */,
@@ -1507,8 +1531,10 @@
 				C2A61A9D228FD00600CCCFE8 /* GreenwichDateConverter.swift in Sources */,
 				C24B3CB122CDB57500071490 /* SliderViewController.swift in Sources */,
 				C24B3CB322CDB57D00071490 /* CustomCollectionViewCell.swift in Sources */,
+				33F7DD4423B08B9C00F40DD5 /* ReactRelationalViewController.swift in Sources */,
 				C2A61AE5228FD00600CCCFE8 /* CGFloat+Extension.swift in Sources */,
 				C2A61AAA228FD00600CCCFE8 /* ExampleFileNames.swift in Sources */,
+				33F7DD4D23B08F6C00F40DD5 /* Model.swift in Sources */,
 				C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */,
 				C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */,
 				C277938622B0FF8800E13109 /* URLSession+Extension.swift in Sources */,
@@ -1610,14 +1636,17 @@
 				33ABAF4D237AC3A900B276ED /* ItemType.swift in Sources */,
 				33ABAF53237AC3AA00B276ED /* String+Validation.swift in Sources */,
 				3366DAF3236818AA005F1B1A /* RegisterViewController.swift in Sources */,
+				33F7DD4A23B08F5F00F40DD5 /* ViewModel.swift in Sources */,
 				E879C1CC22421013006904A5 /* YYxProvingGroundTests.swift in Sources */,
 				33ABAF5A237AC65400B276ED /* PinCodeViewController.swift in Sources */,
 				33ABAF4A237AC3A900B276ED /* ItemView.swift in Sources */,
+				33F7DD4E23B08F6C00F40DD5 /* Model.swift in Sources */,
 				47F52426233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				33ABAF50237AC3A900B276ED /* PinCodeInputView.swift in Sources */,
 				47F5242F233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
 				47F52432233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
 				338D10D4236AF0C3005F7855 /* MainViewController.swift in Sources */,
+				33F7DD4523B08B9C00F40DD5 /* ReactRelationalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1631,14 +1660,17 @@
 				33ABAF4E237AC3A900B276ED /* ItemType.swift in Sources */,
 				33ABAF54237AC3AA00B276ED /* String+Validation.swift in Sources */,
 				3366DAF4236818AA005F1B1A /* RegisterViewController.swift in Sources */,
+				33F7DD4B23B08F5F00F40DD5 /* ViewModel.swift in Sources */,
 				E879C1D722421013006904A5 /* YYxProvingGroundUITests.swift in Sources */,
 				33ABAF5B237AC65400B276ED /* PinCodeViewController.swift in Sources */,
 				33ABAF4B237AC3A900B276ED /* ItemView.swift in Sources */,
+				33F7DD4F23B08F6C00F40DD5 /* Model.swift in Sources */,
 				47F52427233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				33ABAF51237AC3AA00B276ED /* PinCodeInputView.swift in Sources */,
 				47F52430233B1C2900BBC752 /* LSAnnotation.swift in Sources */,
 				47F52433233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
 				338D10D5236AF0C3005F7855 /* MainViewController.swift in Sources */,
+				33F7DD4623B08B9C00F40DD5 /* ReactRelationalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1854,7 +1886,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45JU735M24;
+				DEVELOPMENT_TEAM = LXKNLAW2VW;
 				INFOPLIST_FILE = YYxProvingGroundTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1897,7 +1929,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45JU735M24;
+				DEVELOPMENT_TEAM = LXKNLAW2VW;
 				INFOPLIST_FILE = YYxProvingGroundUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

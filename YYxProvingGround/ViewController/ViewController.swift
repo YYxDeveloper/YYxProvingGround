@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         
         
         
-        exampleFaceIDAndTouchID()
+//        exampleFaceIDAndTouchID()
 //        exampleDecodeJsonDatabyUtf8(witchModel: .UserInformationsJsonExample)
 //       exampleDecodeWithAES()
 //        examplePinCodeiew()
@@ -81,6 +81,12 @@ class ViewController: UIViewController {
         //數值透過didset將UI連動
 //        examplePrepocessorMarco()
 //        exampleSameAsConstraint()
+        if #available(iOS 13.0, *) {
+//            exampleCombine_assign()
+            exampleCombine_CurrentValueSubject()
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
