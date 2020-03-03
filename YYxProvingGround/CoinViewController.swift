@@ -12,9 +12,6 @@ class CoinViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        UIApplication.shared.applicationSupportsShakeToEdit = true
-//           self.becomeFirstResponder()
-        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         
