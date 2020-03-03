@@ -15,6 +15,7 @@
 		3342B2F62369A25A00793669 /* EachFamilyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */; };
 		3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F72369A68B00793669 /* MainEventsViewController.swift */; };
 		3342B2FA2369A9BA00793669 /* MainEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F92369A9BA00793669 /* MainEventTableViewCell.swift */; };
+		334B2386240E27E800502F7A /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B2385240E27E800502F7A /* CoinViewController.swift */; };
 		334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 334C63802301516E003C37A5 /* YYxGitIgnore.txt */; };
 		334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */; };
 		334C6385230167E7003C37A5 /* MFMailComposeViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */; };
@@ -274,6 +275,7 @@
 		3342B2F52369A25A00793669 /* EachFamilyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachFamilyTableViewCell.swift; sourceTree = "<group>"; };
 		3342B2F72369A68B00793669 /* MainEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventsViewController.swift; sourceTree = "<group>"; };
 		3342B2F92369A9BA00793669 /* MainEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventTableViewCell.swift; sourceTree = "<group>"; };
+		334B2385240E27E800502F7A /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoinViewController.swift; path = YYxProvingGround/CoinViewController.swift; sourceTree = SOURCE_ROOT; };
 		334C63802301516E003C37A5 /* YYxGitIgnore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxGitIgnore.txt; sourceTree = "<group>"; };
 		334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewController+ MFMailCompose.swift"; sourceTree = "<group>"; };
 		334C6384230167E7003C37A5 /* MFMailComposeViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -1166,6 +1168,7 @@
 				334F22CC230CFC4B00B5177B /* ScrollViewProgrammaticallyViewController.swift */,
 				334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */,
 				33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */,
+				334B2385240E27E800502F7A /* CoinViewController.swift */,
 				33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */,
 				33F7DD4723B08F2400F40DD5 /* MVVM */,
 				C236522A22D337A400582267 /* ViewController */,
@@ -1579,6 +1582,7 @@
 				C2A61ACE228FD00600CCCFE8 /* UINib+Extension.swift in Sources */,
 				C2A61ADC228FD00600CCCFE8 /* Bool+Extension.swift in Sources */,
 				C2FF469C22CC5B3100EE5A02 /* MonthView.swift in Sources */,
+				334B2386240E27E800502F7A /* CoinViewController.swift in Sources */,
 				334F22CF230CFF1C00B5177B /* HYBLoginMainViewController.swift in Sources */,
 				C2A61AB5228FD00600CCCFE8 /* ToolBoxManager.swift in Sources */,
 				C217F6F722E5A820007D3A83 /* VideoPreviewView.swift in Sources */,
