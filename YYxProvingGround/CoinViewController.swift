@@ -32,7 +32,7 @@ class CoinViewController: UIViewController {
         
         let y = motion?.gravity.y ?? 0.0
         
-        if fabs(Float(y)) >= fabs(Float(x)) {
+        if abs(Float(y)) >= abs(Float(x)) {
             
             if y >= 0 {
                 
