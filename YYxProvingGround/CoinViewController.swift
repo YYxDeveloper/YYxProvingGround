@@ -20,6 +20,7 @@ class CoinViewController: UIViewController {
         super.viewDidLoad()
         
         
+        exmpleRXNotificationBinding()
         //        NotificationCenter.default.rx.notification(notificationName).subscribe(onNext: { notification in
         //            guard let aa = notification.object as? UIDevice else{return}
         //
@@ -120,6 +121,18 @@ class CoinViewController: UIViewController {
     }
     override func becomeFirstResponder() -> Bool {
         return true
+    }
+    func exmpleRXNotificationBinding() {
+        let notificationName = Notification.Name(UIDevice.orientationDidChangeNotification.rawValue)
+               
+               NotificationCenter.default.rx.notification(notificationName)
+                   //            .observeOn(MainScheduler.instance)
+                   .subscribe(onNext: { data in
+                       guard let aa = data.object as? UIDevice else{return}
+                       
+                       print(aa.orientation.rawValue)
+                   })
+                   .disposed(by: disposeBag)
     }
     /*
      // MARK: - Navigation
