@@ -20,37 +20,10 @@ class CoinViewController: UIViewController {
         super.viewDidLoad()
         
         
-        exmpleRXNotificationBinding()
-        //        NotificationCenter.default.rx.notification(notificationName).subscribe(onNext: { notification in
-        //            guard let aa = notification.object as? UIDevice else{return}
-        //
-        //            print(aa.orientation.rawValue)
-        //            })
-        //            .disposed(by: cc)
-        //
-       
-        
-        //              guard let manager = motionManager else { return }
-        
-        //        motionManager.startDeviceMotionUpdates(to: motionQueue) { deviceMotion, error in
-        //            guard let motion = deviceMotion else { return }
-        
-        
-        //            print(motion)
-        
-        // Dispatch gravity updates to main queue, since they affect UI.
-        //            DispatchQueue.main.async {
-        //                //                      self.gravity.gravityDirection = CGVector(dx: gravity.x * 3.5,
-        //                //                                                               dy: -gravity.y * 3.5)
-        //
-        //                self.handle(motion)
-        //
-        //            }
-        //        }
-        
-        
+//        exmpleRXNotificationBinding()
         //      exampleRoundoffDecimalNumber()
         //       exampleConvertToDegreed()
+//        exampleCoreMotionManager()
         
     }
     func handle(_ motion: CMDeviceMotion?) {
@@ -105,6 +78,23 @@ class CoinViewController: UIViewController {
         print(roundedValue1) // returns 0.0833
         print(roundedValue2) // returns 0.0832
     }
+    func exampleCoreMotionManager() {
+        motionManager.startDeviceMotionUpdates(to: motionQueue) { deviceMotion, error in
+            guard let motion = deviceMotion else { return }
+            
+            
+            print(motion)
+            
+            //         Dispatch gravity updates to main queue, since they affect UI.
+            DispatchQueue.main.async {
+                //                      self.gravity.gravityDirection = CGVector(dx: gravity.x * 3.5,
+                //                                                               dy: -gravity.y * 3.5)
+                
+                self.handle(motion)
+                
+            }
+        }
+    }
     func exampleConvertToDegreed()  {
         
         let number:Double = -0.000181
@@ -124,15 +114,15 @@ class CoinViewController: UIViewController {
     }
     func exmpleRXNotificationBinding() {
         let notificationName = Notification.Name(UIDevice.orientationDidChangeNotification.rawValue)
-               
-               NotificationCenter.default.rx.notification(notificationName)
-                   //            .observeOn(MainScheduler.instance)
-                   .subscribe(onNext: { data in
-                       guard let aa = data.object as? UIDevice else{return}
-                       
-                       print(aa.orientation.rawValue)
-                   })
-                   .disposed(by: disposeBag)
+        
+        NotificationCenter.default.rx.notification(notificationName)
+            //            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { data in
+                guard let aa = data.object as? UIDevice else{return}
+                
+                print(aa.orientation.rawValue)
+            })
+            .disposed(by: disposeBag)
     }
     /*
      // MARK: - Navigation
