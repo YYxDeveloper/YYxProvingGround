@@ -19,23 +19,7 @@ class CalenderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.title = "My Calender"
-//        self.navigationController?.navigationBar.isTranslucent=false
-//        self.view.backgroundColor=Style.bgColor
-//
-//        //
-//        self.navigationController?.setNavigationBarHidden(true, animated: false)
-//
-//        view.addSubview(calenderView)
-//        calenderView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
-//        calenderView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12).isActive=true
-//        calenderView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive=true
-//        //calenderView hieht is constant = 365
-//        calenderView.heightAnchor.constraint(equalToConstant: 365).isActive=true
-////        calenderView.backgroundColor = .red
-//
-//        let rightBarBtn = UIBarButtonItem(title: "Light", style: .plain, target: self, action: #selector(rightBarBtnAction))
-//        self.navigationItem.rightBarButtonItem = rightBarBtn
+      showCalenderView()
     }
     override func viewWillAppear(_ animated: Bool) {
     }
@@ -63,6 +47,25 @@ class CalenderViewController: UIViewController {
         v.translatesAutoresizingMaskIntoConstraints=false
         return v
     }()
+    func showCalenderView() {
+          self.title = "My Calender"
+                self.navigationController?.navigationBar.isTranslucent=false
+                self.view.backgroundColor=Style.bgColor
+
+                //
+                self.navigationController?.setNavigationBarHidden(true, animated: false)
+
+                view.addSubview(calenderView)
+                calenderView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive=true
+                calenderView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -12).isActive=true
+                calenderView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 12).isActive=true
+                //calenderView hieht is constant = 365
+                calenderView.heightAnchor.constraint(equalToConstant: 365).isActive=true
+        //        calenderView.backgroundColor = .red
+
+                let rightBarBtn = UIBarButtonItem(title: "Light", style: .plain, target: self, action: #selector(rightBarBtnAction))
+                self.navigationItem.rightBarButtonItem = rightBarBtn
+    }
    
     
 }
