@@ -277,6 +277,7 @@ extension ViewController{
 //        a.send(completion: Subscribers.Completion<NSError>.finishe         a.send(completion: Subscribers.Cocxmpletion<NSError>.failure(NSError(domain: "domain", code: 500, userInfo: ["errorMsg":"error"])))
         a.value = 5
     }
+    ///https://itisjoe.gitbooks.io/swiftgo/content/uikit/uidatepicker.html
     func exampleDatePicker() {
         let fullScreenSize = UIScreen.main.bounds.size
         
