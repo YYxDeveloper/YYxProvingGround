@@ -133,6 +133,22 @@ extension ViewController{
     func exampleCalender() {
         //just change initView to CalenderViewController in story board
     }
+    func exampleCompareDateIsEqual() {
+          let currentYear = Calendar.current.component(.year, from: Date())
+
+                let dateComponents = DateComponents(calendar: Calendar.current,year: currentYear, month: 2, day: 7, hour: 18, minute: 30)
+                let aadateComponents = DateComponents(calendar: Calendar.current,year: currentYear, month: 2, day: 7, hour: 18, minute: 20)
+
+                let cc = dateComponents.date
+                let yy = aadateComponents.date
+                if let yy = yy, let cc = cc {
+                    if yy == cc {
+                        print("ccc")
+                    }else{
+                        print("aaa")
+                    }
+                }
+      }
     func exampleSliderViewController() {
         let vc = SliderViewController()
         
