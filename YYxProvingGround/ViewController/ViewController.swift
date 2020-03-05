@@ -17,6 +17,7 @@ import MessageUI
 import SystemConfiguration
 
 class ViewController: UIViewController {
+    var myDatePicker: UIDatePicker!
    let pinCodeInputView: PinCodeInputView<ItemView> = .init(
          digit: 6,
          itemSpacing: 8,
@@ -87,6 +88,7 @@ class ViewController: UIViewController {
         } else {
             // Fallback on earlier versions
         }
+        exampleDatePicker()
     }
     
     override func viewWillAppear(_ animated: Bool) {
