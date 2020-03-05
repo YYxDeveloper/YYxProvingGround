@@ -37,7 +37,9 @@ class CalenderViewController: UIViewController {
         let rightBarBtn = UIBarButtonItem(title: "Light", style: .plain, target: self, action: #selector(rightBarBtnAction))
         self.navigationItem.rightBarButtonItem = rightBarBtn
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+//        exampleCompareDateIsEqual()
+    }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         calenderView.myCollectionView.collectionViewLayout.invalidateLayout()
@@ -62,6 +64,23 @@ class CalenderViewController: UIViewController {
         v.translatesAutoresizingMaskIntoConstraints=false
         return v
     }()
+    
+    func exampleCompareDateIsEqual() {
+        let currentYear = Calendar.current.component(.year, from: Date())
+
+              let dateComponents = DateComponents(calendar: Calendar.current,year: currentYear, month: 2, day: 7, hour: 18, minute: 30)
+              let aadateComponents = DateComponents(calendar: Calendar.current,year: currentYear, month: 2, day: 7, hour: 18, minute: 20)
+
+              let cc = dateComponents.date
+              let yy = aadateComponents.date
+              if let yy = yy, let cc = cc {
+                  if yy == cc {
+                      print("ccc")
+                  }else{
+                      print("aaa")
+                  }
+              }
+    }
     
 }
 
