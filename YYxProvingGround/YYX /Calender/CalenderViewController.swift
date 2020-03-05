@@ -13,7 +13,7 @@ enum MyTheme {
     case dark
 }
 
-class CalenderViewController: UIViewController,WWCalendarTimeSelectorProtocol {
+class CalenderViewController: UIViewController {
     
     var theme = MyTheme.dark
     
