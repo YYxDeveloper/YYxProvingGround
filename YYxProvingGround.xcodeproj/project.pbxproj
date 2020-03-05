@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3309E05F24111075003D9675 /* EditDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309E05E24111075003D9675 /* EditDetailViewController.swift */; };
 		33254378230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */; };
 		3325437A230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */; };
 		3329BF35235EB3DD00683A00 /* Operator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329BF34235EB3DD00683A00 /* Operator+Extension.swift */; };
@@ -267,6 +268,7 @@
 		0709F111CC381F5E0E0E9F91 /* Pods_YYxProvingGroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYxProvingGroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B4E238365CD5083EE20F955 /* Pods-YYxProvingGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGroundTests.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGroundTests/Pods-YYxProvingGroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		31BA08962FDD888D5348737E /* Pods-YYxProvingGround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYxProvingGround.release.xcconfig"; path = "Target Support Files/Pods-YYxProvingGround/Pods-YYxProvingGround.release.xcconfig"; sourceTree = "<group>"; };
+		3309E05E24111075003D9675 /* EditDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDetailViewController.swift; sourceTree = "<group>"; };
 		33254377230A9F3800890321 /* NSLayoutYAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutYAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		33254379230AA95900890321 /* NSLayoutXAxisAnchor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutXAxisAnchor+Extension.swift"; sourceTree = "<group>"; };
 		3329BF34235EB3DD00683A00 /* Operator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operator+Extension.swift"; sourceTree = "<group>"; };
@@ -1169,6 +1171,7 @@
 				334F22CE230CFF1C00B5177B /* HYBLoginMainViewController.swift */,
 				33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */,
 				334B2385240E27E800502F7A /* CoinViewController.swift */,
+				3309E05E24111075003D9675 /* EditDetailViewController.swift */,
 				33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */,
 				33F7DD4723B08F2400F40DD5 /* MVVM */,
 				C236522A22D337A400582267 /* ViewController */,
@@ -1539,6 +1542,7 @@
 				C2A61AAA228FD00600CCCFE8 /* ExampleFileNames.swift in Sources */,
 				33F7DD4D23B08F6C00F40DD5 /* Model.swift in Sources */,
 				C2A61A94228FD00600CCCFE8 /* SidBar.swift in Sources */,
+				3309E05F24111075003D9675 /* EditDetailViewController.swift in Sources */,
 				C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */,
 				C277938622B0FF8800E13109 /* URLSession+Extension.swift in Sources */,
 				C2A61ACA228FD00600CCCFE8 /* UIStoryBoard+Extension.swift in Sources */,
