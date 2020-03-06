@@ -36,3 +36,13 @@ extension Array  where Element: SignedInteger {
         return  self.reduce(self.first, { $0! < $1 ? $0 : $1 }) ?? 0
     }
 }
+extension Array{
+    ///Check Array contain object not nil when getting object by index
+    func checkContainElement()->Bool{
+        if self.contains(where: {$0 != nil}) {
+            return false
+        }else{
+            return true
+        }
+    }
+}
