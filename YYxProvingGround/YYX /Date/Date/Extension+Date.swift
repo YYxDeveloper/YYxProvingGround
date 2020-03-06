@@ -22,7 +22,7 @@ extension Date{
 }
 
 extension Date {
-
+    //https://medium.com/@iosGuaGua6648/ios-date-extension-1a39beda0f44
     init?(fromString string: String, formatType: DateFormatType) {
 
         guard !string.isEmpty else {
