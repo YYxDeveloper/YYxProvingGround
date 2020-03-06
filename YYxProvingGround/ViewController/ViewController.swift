@@ -88,7 +88,8 @@ class ViewController: UIViewController {
         } else {
             // Fallback on earlier versions
         }
-        exampleDatePicker()
+//        exampleDatePicker()
+        exampleDateAppend1Day()
     }
     
     override func viewWillAppear(_ animated: Bool) {

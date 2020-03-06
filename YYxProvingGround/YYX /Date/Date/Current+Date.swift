@@ -13,6 +13,8 @@ extension Date{
     static let  currentYear = Calendar.current.component(.year, from: Date())
     static let  currentMonth =  Calendar.current.component(.month, from: Date())
     static let  currentDay =  Calendar.current.component(.day, from: Date())
+    static let  currentHour = Calendar.current.component(.hour, from: Date())
+
     static let  currentDate:Date =  Calendar.current.date(from: DateComponents(year: Date.currentYear, month: Date.currentMonth)) ?? Date()
     static let  currentTimezone = TimeZone.current
  
