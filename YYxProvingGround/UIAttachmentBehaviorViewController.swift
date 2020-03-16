@@ -15,11 +15,27 @@ class UIAttachmentBehaviorViewController: UIViewController {
     var attachment: UIAttachmentBehavior?
     var goButton = UIButton()
     var animator = UIDynamicAnimator()
-    var secVc = SecondViewController()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("didLoad")
+        //       example_animation_attemp()
+//        example_animation_colisionWithBounce()
+    }
+    func example_animation_colisionWithBounce() {
+        createSquare()
+        createFirstSmallView()
+        createSecondSmallView()
+        let  animator = UIDynamicAnimator(referenceView: view)
+        let gravityBehavior = UIGravityBehavior(items: [squareView])
+        let collisionBehavior = UICollisionBehavior(items:  [squareView])
+        collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+        
+        animator .addBehavior(gravityBehavior)
+        animator.addBehavior(collisionBehavior)
+        self.animator = animator
+        
+    }
+    func example_animation_attemp() {
         title = "Attachment"
         createSquare()
         createFirstSmallView()
@@ -28,7 +44,6 @@ class UIAttachmentBehaviorViewController: UIViewController {
         createCollisionAndAttachment()
         createdGoButton()
     }
-    
     func createSquare() {
         squareView = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
         squareView.center = view.center
@@ -62,16 +77,16 @@ class UIAttachmentBehaviorViewController: UIViewController {
         animator.addBehavior(collision)
         animator.addBehavior(attachment!)
     }
-     func createdGoButton() {
-             goButton = UIButton(type: .system)
-             goButton.frame = CGRect(x: 170, y: 800, width: 80, height: 20)
-             goButton.setTitle("NextVC", for: .normal)
-             goButton.setTitleColor(.blue, for: .normal)
-             goButton.addTarget(self, action: #selector(goNextVc(sender:)), for: .touchUpInside)
-             view.addSubview(goButton)
-         }
-       
-      
+    func createdGoButton() {
+        goButton = UIButton(type: .system)
+        goButton.frame = CGRect(x: 170, y: 800, width: 80, height: 20)
+        goButton.setTitle("NextVC", for: .normal)
+        goButton.setTitleColor(.blue, for: .normal)
+        goButton.addTarget(self, action: #selector(goNextVc(sender:)), for: .touchUpInside)
+        view.addSubview(goButton)
+    }
+    
+    
     // objc functions
     @objc func gesture(param: UIPanGestureRecognizer) {
         let tapPoint = param.location(in: view)
@@ -81,11 +96,9 @@ class UIAttachmentBehaviorViewController: UIViewController {
     }
     @objc func goNextVc (sender: Any?) {
         
-        let secVc = SecondViewController()
-        navigationController?.pushViewController(secVc, animated: true)
         
     }
-
-
+    
+    
 }
 
