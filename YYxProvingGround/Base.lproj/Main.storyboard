@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="CRa-rU-SVh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIAttachmentBehaviorViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upv-pW-jqE">
+                                <rect key="frame" x="45.5" y="323" width="284.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="upv-pW-jqE" firstAttribute="centerY" secondItem="3fr-Mt-rTa" secondAttribute="centerY" id="EhO-zK-amM"/>
+                            <constraint firstItem="upv-pW-jqE" firstAttribute="centerX" secondItem="3fr-Mt-rTa" secondAttribute="centerX" id="S4d-VH-tbC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3fr-Mt-rTa"/>
                     </view>
                 </viewController>
