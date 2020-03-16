@@ -38,6 +38,7 @@
 		3366DAF3236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		3366DAF4236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		3367BA3E24121F1F00AC29A1 /* DateFormatType+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367BA3D24121F1F00AC29A1 /* DateFormatType+Date.swift */; };
+		336800F9241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336800F8241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift */; };
 		338D10CF236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
 		338D10D0236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
 		338D10D1236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
@@ -298,6 +299,7 @@
 		3366DAED23681814005F1B1A /* Register.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Register.xcassets; sourceTree = "<group>"; };
 		3366DAF1236818AA005F1B1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3367BA3D24121F1F00AC29A1 /* DateFormatType+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatType+Date.swift"; sourceTree = "<group>"; };
+		336800F8241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAttachmentBehaviorViewController.swift; sourceTree = "<group>"; };
 		338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainLUsPassqort.storyboard; sourceTree = "<group>"; };
 		338D10D2236AF0C3005F7855 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationYestViewController.swift; sourceTree = "<group>"; };
@@ -1172,6 +1174,7 @@
 				E879C1B322421012006904A5 /* AppDelegate.swift */,
 				3366DAEC236817B2005F1B1A /* RegisterViewController */,
 				3329BF34235EB3DD00683A00 /* Operator+Extension.swift */,
+				336800F8241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift */,
 				C237EAED22E58BAB008FBD1B /* UIImageViewController.swift */,
 				C211F99822AFD09000A76693 /* ViewTestViewController.swift */,
 				334F22D0230D010B00B5177B /* YYxScrollViewController.swift */,
@@ -1517,6 +1520,7 @@
 				33ABAF4C237AC3A900B276ED /* ItemType.swift in Sources */,
 				C217F6F622E5A820007D3A83 /* QRCodeScanViewController.swift in Sources */,
 				C2A61AB1228FD00600CCCFE8 /* Extension+UIViewController.swift in Sources */,
+				336800F9241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift in Sources */,
 				C22688712298267800E2884E /* Moya.swift in Sources */,
 				33A1E1BE235D973A008F8A0C /* NavigationYestViewController.swift in Sources */,
 				C21D384F22E1B0AB0014EC92 /* ViewController+Device.swift in Sources */,

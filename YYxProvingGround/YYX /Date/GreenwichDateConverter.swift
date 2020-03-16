@@ -45,6 +45,7 @@ class GreenwichDateConverter {
         self.originDate = uTC0Date!
         var interval = Double()
         
+        
         switch  self.initTimeZone {
         case .GMT:
             interval = TimeInterval(TimeZone.current.secondsFromGMT() - TimeZone.giveMEGreenwichTimezone().secondsFromGMT())
