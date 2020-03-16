@@ -30,11 +30,20 @@ enum CAKeyframeRotationKeyPath:String {
     case transatiolnZ = "transform.rotation.z"
 }
 extension UIView{
+    func turnAround(duration:CFTimeInterval) {
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration/2, delay: 0, animations: {
+            self.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        }, completion: {data in
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration/2, delay: 0, animations: {
+                self.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+            })
+        })
+    }
     func fade(toPoint:CGPoint,isRepeat:Bool) {
-//        let aa = CGAffineTransform.init(translationX: 100
-//            , y: 0)
+        //        let aa = CGAffineTransform.init(translationX: 100
+        //            , y: 0)
         self.transform = CGAffineTransform.init(translationX: toPoint.x
-                    , y: toPoint.y)
+            , y: toPoint.y)
         if isRepeat {
             UIView.animate(withDuration: 2, delay: 1, options: [.repeat], animations: {
                 self.alpha = 0.5
@@ -42,7 +51,7 @@ extension UIView{
             }, completion:  { (Bool) -> Void in
                 print("finish")
             })
-
+            
         }else{
             UIView.animate(withDuration: 2, delay: 1, options: [], animations: {
                 self.alpha = 0.5
@@ -50,15 +59,15 @@ extension UIView{
             }, completion:  { (Bool) -> Void in
                 print("finish")
             })
-
+            
         }
     }
     func addGradientLayer(witchColors:[CGColor]) {
-    var gradientLayer: CAGradientLayer!
-    gradientLayer = CAGradientLayer()
-    gradientLayer.frame = self.bounds
-    gradientLayer.colors = witchColors
-    self.layer.addSublayer(gradientLayer)
+        var gradientLayer: CAGradientLayer!
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = witchColors
+        self.layer.addSublayer(gradientLayer)
     }
     func keepRandomShakeX() {
         var randomFromZeroToOne = CGFloat(Float(arc4random()) / Float(UINT32_MAX))
@@ -75,28 +84,28 @@ extension UIView{
     }
     func keepRotation(keyPath:CABasicRotationKeyPath){
         let rotateAnimation = CABasicAnimation.init(keyPath:keyPath.rawValue )
-                rotateAnimation.duration = 1
-                rotateAnimation.toValue = 360
-                rotateAnimation.repeatCount = Float.infinity
+        rotateAnimation.duration = 1
+        rotateAnimation.toValue = 360
+        rotateAnimation.repeatCount = Float.infinity
         self.layer.add(rotateAnimation, forKey: keyPath.rawValue)
     }
-
+    
     func shake(keyPath:CAKeyframeTranslationKeyPath,isRepeat:Bool,duration:Double,shakeLevel:CGFloat) {
         let ViewWidth = self.frame.size.width
         let shakeLevel = ViewWidth * shakeLevel
         
-            let shakeAnimation = CAKeyframeAnimation.init(keyPath: keyPath.rawValue)
-            shakeAnimation.duration = duration
+        let shakeAnimation = CAKeyframeAnimation.init(keyPath: keyPath.rawValue)
+        shakeAnimation.duration = duration
         if isRepeat {
             shakeAnimation.repeatCount = Float.infinity
         }
-            shakeAnimation.values = [0,shakeLevel,-shakeLevel,0]
-            self.layer.add(shakeAnimation, forKey: keyPath.rawValue)
+        shakeAnimation.values = [0,shakeLevel,-shakeLevel,0]
+        self.layer.add(shakeAnimation, forKey: keyPath.rawValue)
     }
     func scaleOnce(scale:CGFloat,translation:CGPoint,duration:Double) {
-          let moveRightTransform = CGAffineTransform.init(translationX: translation.x
+        let moveRightTransform = CGAffineTransform.init(translationX: translation.x
             , y: translation.y)
-          let scaleUpTransform = CGAffineTransform.init(scaleX: scale, y: scale)
+        let scaleUpTransform = CGAffineTransform.init(scaleX: scale, y: scale)
         UIView.animate(withDuration: duration) {
             let moveScaleTransform = scaleUpTransform.concatenating(moveRightTransform)
             self.transform = moveScaleTransform        }
