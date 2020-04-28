@@ -1,18 +1,18 @@
 PODS:
-  - Alamofire (4.7.3)
-  - CryptoSwift (1.1.3)
+  - Alamofire (4.9.1)
+  - CryptoSwift (1.3.1)
   - Moya (13.0.0):
     - Moya/Core (= 13.0.0)
   - Moya/Core (13.0.0):
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
   - Result (4.1.0)
-  - RxCocoa (5.0.1):
+  - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.1):
+  - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+  - RxSwift (5.1.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -22,9 +22,8 @@ DEPENDENCIES:
   - RxSwift (~> 5)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Alamofire
   trunk:
+    - Alamofire
     - CryptoSwift
     - Result
     - RxCocoa
@@ -42,13 +41,13 @@ CHECKOUT OPTIONS:
     :tag: 13.0.0
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  CryptoSwift: 6b6e488df0598b3e9fa49254ed1a65e8c1b1e10b
-  Moya: dfa2ccc6c57122f051f8ce7b521c2aaf298fbf24
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CryptoSwift: f12f037f6d0fcd6d48c96db0071b653de64e6c4d
+  Moya: cda4eabd0fc89965c7bc298af2756fe1b110e7f6
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
 PODFILE CHECKSUM: 6d2fa483daba914e4ba5b4ffc3243910f73db6bd
 

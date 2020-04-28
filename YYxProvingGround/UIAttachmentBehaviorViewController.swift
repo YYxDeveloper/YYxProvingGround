@@ -18,14 +18,14 @@ class UIAttachmentBehaviorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //       example_animation_attemp()
-//        example_animation_colisionWithBounce()
-//       example_animtion_turnAround()
+        example_animation_attemp()
+        example_animation_colisionWithBounce()
+        example_animtion_turnAround()
     }
     func example_animtion_turnAround() {
         createSquare()
-               createFirstSmallView()
-               squareView.turnAround(duration: 6)
+        createFirstSmallView()
+        squareView.turnAround(duration: 6)
     }
     func example_animation_colisionWithBounce() {
         createSquare()
