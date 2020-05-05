@@ -21,7 +21,7 @@ extension ViewController{
         do {
             let key = "abcdefghijklmnop" // 128bit(16文字)のキーを入れる
             let iv =  "1234567890123456" // データをシフト演算するキー128bit(16文字)
-            let json = try FileManager.default.readUTF8FileFromBundle("HttpsTestPostExample") // 暗号化・復号するjson
+            let json = try FileManager.default.readUTF8FileFromBundle("HttpsTestPostExample", type: .txt) // 暗号化・復号するjson
 
             // EncryptionAESのインスタンス化
             let aes = EncryptionAES()
