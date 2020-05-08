@@ -31,6 +31,10 @@
 		3366DAF3236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		3366DAF4236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		336800F9241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336800F8241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift */; };
+		337251F424656495000ECB19 /* WaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337251F124656495000ECB19 /* WaterFallLayout.swift */; };
+		337251F524656495000ECB19 /* LineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337251F224656495000ECB19 /* LineLayout.swift */; };
+		337251F624656495000ECB19 /* CirCleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337251F324656495000ECB19 /* CirCleLayout.swift */; };
+		337251F82465654C000ECB19 /* CircleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337251F72465654C000ECB19 /* CircleCollectionViewController.swift */; };
 		338D10CF236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
 		338D10D0236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
 		338D10D1236AF00C005F7855 /* MainLUsPassqort.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */; };
@@ -292,6 +296,10 @@
 		3366DAED23681814005F1B1A /* Register.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Register.xcassets; sourceTree = "<group>"; };
 		3366DAF1236818AA005F1B1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		336800F8241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAttachmentBehaviorViewController.swift; sourceTree = "<group>"; };
+		337251F124656495000ECB19 /* WaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallLayout.swift; sourceTree = "<group>"; };
+		337251F224656495000ECB19 /* LineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayout.swift; sourceTree = "<group>"; };
+		337251F324656495000ECB19 /* CirCleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleLayout.swift; sourceTree = "<group>"; };
+		337251F72465654C000ECB19 /* CircleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCollectionViewController.swift; sourceTree = "<group>"; };
 		338D10CE236AF00C005F7855 /* MainLUsPassqort.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainLUsPassqort.storyboard; sourceTree = "<group>"; };
 		338D10D2236AF0C3005F7855 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationYestViewController.swift; sourceTree = "<group>"; };
@@ -556,6 +564,17 @@
 				3366DAF1236818AA005F1B1A /* RegisterViewController.swift */,
 			);
 			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		337251F02465648D000ECB19 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				337251F224656495000ECB19 /* LineLayout.swift */,
+				337251F124656495000ECB19 /* WaterFallLayout.swift */,
+				337251F324656495000ECB19 /* CirCleLayout.swift */,
+				337251F72465654C000ECB19 /* CircleCollectionViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		33A97E5824610F7600805C9F /* YYX */ = {
@@ -1176,6 +1195,7 @@
 		E879C1B222421012006904A5 /* YYxProvingGround */ = {
 			isa = PBXGroup;
 			children = (
+				337251F02465648D000ECB19 /* New Group */,
 				33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */,
 				C21BA5B3229E336F00DCABD1 /* YYX3rd */,
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
@@ -1519,6 +1539,7 @@
 				3309E06524121290003D9675 /* DateSelectItem.swift in Sources */,
 				33A97F1024610F7600805C9F /* FloatingPoint+Extension.swift in Sources */,
 				33A97F2124610F7600805C9F /* NSCache+Extension.swift in Sources */,
+				337251F424656495000ECB19 /* WaterFallLayout.swift in Sources */,
 				47CF026A22F81FA5003680D5 /* ViewController+FileManager.swift in Sources */,
 				33A97F4A24610F7600805C9F /* UIImageView+Extension.swift in Sources */,
 				33A97F1B24610F7600805C9F /* CAShapeLayer+Extension.swift in Sources */,
@@ -1526,6 +1547,7 @@
 				33A97EFA24610F7600805C9F /* NWPathMonitor+Extension.swift in Sources */,
 				47F52431233B1C2900BBC752 /* LSAnnotationView.swift in Sources */,
 				33ABAF55237AC3AA00B276ED /* ItemAppearance.swift in Sources */,
+				337251F82465654C000ECB19 /* CircleCollectionViewController.swift in Sources */,
 				33A97F5F24610F7600805C9F /* InputInfoColumnView+UIView.swift in Sources */,
 				33A97F1124610F7600805C9F /* StandardTypeUnwrappedable+Protocol.swift in Sources */,
 				C23AEC45229FC49C00334BB1 /* TOEICVocabularyModel.swift in Sources */,
@@ -1575,6 +1597,7 @@
 				33F7DD4D23B08F6C00F40DD5 /* Model.swift in Sources */,
 				3309E05F24111075003D9675 /* EditDetailViewController.swift in Sources */,
 				C237EAEE22E58BAB008FBD1B /* UIImageViewController.swift in Sources */,
+				337251F624656495000ECB19 /* CirCleLayout.swift in Sources */,
 				33A97F5E24610F7600805C9F /* ProgressingDashedLineCircleView.swift in Sources */,
 				E879C1B422421012006904A5 /* AppDelegate.swift in Sources */,
 				33A97F4824610F7600805C9F /* PageViewController.swift in Sources */,
@@ -1605,6 +1628,7 @@
 				47EEE1F0233B775C00092A69 /* MapTestViewController+Extension.swift in Sources */,
 				33ABAF52237AC3AA00B276ED /* String+Validation.swift in Sources */,
 				33A97F0424610F7600805C9F /* GreenwichDateConverter.swift in Sources */,
+				337251F524656495000ECB19 /* LineLayout.swift in Sources */,
 				3309E06124121161003D9675 /* ViewController+Date.swift in Sources */,
 				33A97EF924610F7600805C9F /* LocalizableMan.swift in Sources */,
 				33A97F6824610F7600805C9F /* String+Greenwich.swift in Sources */,
