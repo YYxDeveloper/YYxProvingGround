@@ -570,7 +570,7 @@
 			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
-		337251F02465648D000ECB19 /* New Group */ = {
+		337251F02465648D000ECB19 /* collectionCustomLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
 				337251F224656495000ECB19 /* LineLayout.swift */,
@@ -578,7 +578,7 @@
 				337251F324656495000ECB19 /* CirCleLayout.swift */,
 				337251F72465654C000ECB19 /* CircleCollectionViewController.swift */,
 			);
-			path = "New Group";
+			path = collectionCustomLayoutExample;
 			sourceTree = "<group>";
 		};
 		33A97E5824610F7600805C9F /* YYX */ = {
@@ -1201,7 +1201,7 @@
 		E879C1B222421012006904A5 /* YYxProvingGround */ = {
 			isa = PBXGroup;
 			children = (
-				337251F02465648D000ECB19 /* New Group */,
+				337251F02465648D000ECB19 /* collectionCustomLayoutExample */,
 				33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */,
 				C21BA5B3229E336F00DCABD1 /* YYX3rd */,
 				C2A61A43228FD00600CCCFE8 /* TestExampleDatas */,
