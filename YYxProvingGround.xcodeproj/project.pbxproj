@@ -17,6 +17,7 @@
 		3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F72369A68B00793669 /* MainEventsViewController.swift */; };
 		3342B2FA2369A9BA00793669 /* MainEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3342B2F92369A9BA00793669 /* MainEventTableViewCell.swift */; };
 		3345E07F2468F20100C6DD0C /* ViewContrller+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3345E07E2468F20100C6DD0C /* ViewContrller+Animation.swift */; };
+		3345E0812469048000C6DD0C /* Interactive-Animation-master.zip in Resources */ = {isa = PBXBuildFile; fileRef = 3345E0802469048000C6DD0C /* Interactive-Animation-master.zip */; };
 		334B2386240E27E800502F7A /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B2385240E27E800502F7A /* CoinViewController.swift */; };
 		334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 334C63802301516E003C37A5 /* YYxGitIgnore.txt */; };
 		334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */; };
@@ -287,6 +288,7 @@
 		3342B2F72369A68B00793669 /* MainEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventsViewController.swift; sourceTree = "<group>"; };
 		3342B2F92369A9BA00793669 /* MainEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventTableViewCell.swift; sourceTree = "<group>"; };
 		3345E07E2468F20100C6DD0C /* ViewContrller+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewContrller+Animation.swift"; sourceTree = "<group>"; };
+		3345E0802469048000C6DD0C /* Interactive-Animation-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Interactive-Animation-master.zip"; sourceTree = "<group>"; };
 		334B2385240E27E800502F7A /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoinViewController.swift; path = YYxProvingGround/CoinViewController.swift; sourceTree = SOURCE_ROOT; };
 		334C63802301516E003C37A5 /* YYxGitIgnore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YYxGitIgnore.txt; sourceTree = "<group>"; };
 		334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "viewController+ MFMailCompose.swift"; sourceTree = "<group>"; };
@@ -1104,6 +1106,7 @@
 				334C63822301560E003C37A5 /* viewController+ MFMailCompose.swift */,
 				3309E06024121161003D9675 /* ViewController+Date.swift */,
 				3345E07E2468F20100C6DD0C /* ViewContrller+Animation.swift */,
+				3345E0802469048000C6DD0C /* Interactive-Animation-master.zip */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1373,6 +1376,7 @@
 				E879C1C122421013006904A5 /* LaunchScreen.storyboard in Resources */,
 				33A97F3724610F7600805C9F /* TabbedViewController.storyboard in Resources */,
 				334C63812301516E003C37A5 /* YYxGitIgnore.txt in Resources */,
+				3345E0812469048000C6DD0C /* Interactive-Animation-master.zip in Resources */,
 				3366DAEE23681814005F1B1A /* Register.xcassets in Resources */,
 				3360F52E237C007C00DB73BD /* EncodedUserInformationsJsonExample.txt in Resources */,
 				C2A61AA9228FD00600CCCFE8 /* PlistArrayExample.plist in Resources */,
