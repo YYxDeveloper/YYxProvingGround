@@ -83,13 +83,19 @@ class ViewController: UIViewController {
 //        examplePrepocessorMarco()
 //        exampleSameAsConstraint()
         if #available(iOS 13.0, *) {
+            
+            //combine framework test
 //            exampleCombine_assign()
-            exampleCombine_CurrentValueSubject()
+//            exampleCombine_CurrentValueSubject()
         } else {
             // Fallback on earlier versions
         }
 //        exampleDatePicker()
-        exampleDateAppend1Day()
+//        exampleDateAppend1Day()
+//        exampleUIViewPropertyAnimator()
+//        exampleUIViewPropertyAnimatorRotate()
+        exampleUIViewPropertyAnimatorWithCompletion()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

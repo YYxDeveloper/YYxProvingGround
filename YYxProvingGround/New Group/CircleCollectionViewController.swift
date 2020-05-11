@@ -9,7 +9,7 @@
 import UIKit
 //http://www.cocoachina.com/cms/wap.php?action=article&id=16784
 class CircleCollectionViewController: UICollectionViewController {
-    var cellCount = 5
+    var cellCount = 10
       
       public lazy var cellHeight:[CGFloat] = { //changed private to public
           var arr:[CGFloat] = []
