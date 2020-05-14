@@ -94,7 +94,9 @@ class ViewController: UIViewController {
 //        exampleDateAppend1Day()
 //        exampleUIViewPropertyAnimator()
 //        exampleUIViewPropertyAnimatorRotate()
-        exampleUIViewPropertyAnimatorWithCompletion()
+//        exampleUIViewPropertyAnimatorWithCompletion()
+        turnBtn.imageView?.contentMode = .scaleAspectFit
+
         
     }
     
