@@ -97,9 +97,10 @@ class ViewController: UIViewController {
 //        exampleUIViewPropertyAnimatorRotate()
 //        exampleUIViewPropertyAnimatorWithCompletion()
 
-        
+//        let image = generateQRCode(from: "Hacking with Swift is the best iOS coding tutorial I've ever read!")
+        let image = UIImage.giveMeQRCode(from: "aaaa", backgroundColor: .red, frontGroundColor: .blue)
+        turnBtn .setImage(image, for: .normal)
     }
-    
     override func viewWillAppear(_ animated: Bool) {
     }
     override func viewDidAppear(_ animated: Bool) {
