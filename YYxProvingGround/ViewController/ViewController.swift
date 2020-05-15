@@ -66,7 +66,8 @@ class ViewController: UIViewController {
         wantCodeButton()
         wantCodeLabel()
         codeLabel.text = obserString
-        
+        turnBtn.imageView?.contentMode = .scaleAspectFit
+
         
         
 //        exampleFaceIDAndTouchID()
@@ -95,7 +96,6 @@ class ViewController: UIViewController {
 //        exampleUIViewPropertyAnimator()
 //        exampleUIViewPropertyAnimatorRotate()
 //        exampleUIViewPropertyAnimatorWithCompletion()
-        turnBtn.imageView?.contentMode = .scaleAspectFit
 
         
     }
