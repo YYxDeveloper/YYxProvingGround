@@ -19,6 +19,7 @@ extension ViewController:MFMailComposeViewControllerDelegate{
         let mailComposeViewController = MFMailComposeViewController.giveMeMFMailComposeViewControllerWithConfigration()
         mailComposeViewController.mailComposeDelegate = self
         if MFMailComposeViewController.canSendMail(){
+            //要在viewWillApear才能呼叫
             self.present(mailComposeViewController, animated: true, completion: nil)
         }else{
             print("Can't send email")
