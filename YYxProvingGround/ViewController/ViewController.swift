@@ -66,7 +66,8 @@ class ViewController: UIViewController {
         wantCodeButton()
         wantCodeLabel()
         codeLabel.text = obserString
-        
+        turnBtn.imageView?.contentMode = .scaleAspectFit
+
         
         
 //        exampleFaceIDAndTouchID()
@@ -83,15 +84,23 @@ class ViewController: UIViewController {
 //        examplePrepocessorMarco()
 //        exampleSameAsConstraint()
         if #available(iOS 13.0, *) {
+            
+            //combine framework test
 //            exampleCombine_assign()
-            exampleCombine_CurrentValueSubject()
+//            exampleCombine_CurrentValueSubject()
         } else {
             // Fallback on earlier versions
         }
 //        exampleDatePicker()
-        exampleDateAppend1Day()
+//        exampleDateAppend1Day()
+//        exampleUIViewPropertyAnimator()
+//        exampleUIViewPropertyAnimatorRotate()
+//        exampleUIViewPropertyAnimatorWithCompletion()
+
+//        let image = generateQRCode(from: "Hacking with Swift is the best iOS coding tutorial I've ever read!")
+        let image = UIImage.giveMeQRCode(from: "aaaa", backgroundColor: .red, frontGroundColor: .blue)
+        turnBtn .setImage(image, for: .normal)
     }
-    
     override func viewWillAppear(_ animated: Bool) {
     }
     override func viewDidAppear(_ animated: Bool) {
