@@ -14,14 +14,14 @@ extension ViewController{
         //https://medium.com/@JJeremy.XUE/swift-玩玩-status-bar-狀態列-df4e17691da8
         //由於只能複寫之後都是read only因此只能在初始化時設定一次
         //-可全專案或個別VC設定
-//        override var prefersStatusBarHidden: Bool {
-//        return true
-//        }
+        //        override var prefersStatusBarHidden: Bool {
+        //        return true
+        //        }
     }
     func examplePinCodeiew() {
         let vc = PinCodeViewController()
         addSubViewWithChildController(addSubViewController: vc, toWitchView: view)
-
+        
     }
     func exampleSameAsConstraint()  {
         let aa = UIView()
@@ -63,15 +63,15 @@ extension ViewController{
         
         //https://medium.com/@JJeremy.XUE/swift-%E8%AA%AA%E8%AA%AA-%E5%A0%86%E7%96%8A%E8%A6%96%E5%9C%96-uistack-view-557c09f24645
         let stackView = UIStackView(arrangedSubviews: buttons)
-       stackView.distributeFillEqually(axis: .vertical, marginSpace: 10)
+        stackView.distributeFillEqually(axis: .vertical, marginSpace: 10)
         view.addSubview(stackView)
-      
+        
         
         self.containerView.addSubview(stackView)
         stackView.anchorEqualParentView()
         
-//          stackView.setCustomSpacing(30, after: buttons.first!)
-
+        //          stackView.setCustomSpacing(30, after: buttons.first!)
+        
     }
     func exampleConstraintAnchor() {
         // autolayout
@@ -124,18 +124,18 @@ extension ViewController{
             stackView.heightAnchor.constraint(equalTo: label.heightAnchor),
             label.heightAnchor.constraint(equalTo: stackView.heightAnchor),
             label2.heightAnchor.constraint(equalTo: stackView.heightAnchor),
-
             
-            ])
+            
+        ])
         
         self.view = view
-    
+        
     }
     func exampleProgrammaticallyStackView() {
         func hideContainerView(){
             containerView.isHidden = true
         }
-       hideContainerView()
+        hideContainerView()
         
         let rows: [[(String, Int)]] = [               //two dimensional array of tuples: 6 rows by 2 columns
             [("rat",    2008), ("ox",      2009)],
@@ -234,5 +234,56 @@ extension ViewController{
         //Don't have to give a name to the instance of NSLayoutConstraint.
         biggestVerticalStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true;
     }
-    
+    func exampleViewAddShadow() {
+        //stack won't fire
+        let turnBtnW = enterTextField.frame.width
+        let  turnBtnH = enterTextField.frame.height
+        let origin = enterTextField.frame.origin
+        
+        enterTextField.layer.shadowPath = UIBezierPath(rect: turnBtn.bounds).cgPath
+        enterTextField.layer.shadowRadius = 5
+        enterTextField.layer.shadowOffset = .zero
+        enterTextField.layer.shadowOpacity = 1
+    }
+    func exampleViewAddShadow1() {
+        //https://www.hackingwithswift.com/articles/155/advanced-uiview-shadow-effects-using-shadowpath
+        let shadowSize: CGFloat = 20
+        let shadowDistance: CGFloat = 20
+        let contactRect = CGRect(x: -shadowSize, y: enterTextField.frame.height - (shadowSize * 0.4), width: enterTextField.frame.width + shadowSize * 2, height: shadowSize)
+        enterTextField.layer.shadowPath = UIBezierPath(ovalIn: contactRect).cgPath
+        enterTextField.layer.shadowRadius = 5
+        enterTextField.layer.shadowOpacity = 0.4
+        
+    }
+    func exampleViewAddShadow2(){
+        //https://www.hackingwithswift.com/articles/155/advanced-uiview-shadow-effects-using-shadowpath
+        let shadowRadius: CGFloat = 5
+        
+        // how wide and high the shadow should be, where 1.0 is identical to the view
+        let shadowWidth: CGFloat = 1.25
+        let shadowHeight: CGFloat = 0.5
+        
+        let shadowPath = UIBezierPath()
+        
+        let height = enterTextField.frame.height
+        let width = enterTextField.frame.width
+        shadowPath.move(to: CGPoint(x: shadowRadius / 2, y: height - shadowRadius / 2))
+        shadowPath.addLine(to: CGPoint(x: width - shadowRadius / 2, y: height - shadowRadius / 2))
+        shadowPath.addLine(to: CGPoint(x: width * shadowWidth, y: height + (height * shadowHeight)))
+        shadowPath.addLine(to: CGPoint(x: width * -(shadowWidth - 1), y: height + (height * shadowHeight)))
+        enterTextField.layer.shadowPath = shadowPath.cgPath
+        enterTextField.layer.shadowRadius = shadowRadius
+        enterTextField.layer.shadowOffset = .zero
+        enterTextField.layer.shadowOpacity = 0.2
+    }
+    func exampleViewAddShadow3() {
+        let height = enterTextField.frame.height
+        let width = enterTextField.frame.width
+       let shadowSize: CGFloat = 10
+       let shadowDistance: CGFloat = -height - 10
+       let contactRect = CGRect(x: shadowSize, y: height + shadowDistance, width: width - shadowSize * 2, height: shadowSize)
+       enterTextField.layer.shadowPath = UIBezierPath(ovalIn: contactRect).cgPath
+       enterTextField.layer.shadowRadius = 5
+       enterTextField.layer.shadowOpacity = 0.4
+    }
 }

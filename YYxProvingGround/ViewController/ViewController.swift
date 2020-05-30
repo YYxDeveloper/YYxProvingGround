@@ -17,6 +17,7 @@ import MessageUI
 import SystemConfiguration
 
 class ViewController: UIViewController {
+    @IBOutlet weak var stackView: UIStackView!
     var myDatePicker: UIDatePicker!
    let pinCodeInputView: PinCodeInputView<ItemView> = .init(
          digit: 6,
@@ -67,9 +68,10 @@ class ViewController: UIViewController {
         wantCodeLabel()
         codeLabel.text = obserString
         turnBtn.imageView?.contentMode = .scaleAspectFit
-
         
-        
+        exampleViewAddShadow3()
+//        exampleViewAddShadow2()
+//        exampleViewAddShadow1()
 //        exampleFaceIDAndTouchID()
 //        exampleDecodeJsonDatabyUtf8(witchModel: .UserInformationsJsonExample)
 //       exampleDecodeWithAES()
