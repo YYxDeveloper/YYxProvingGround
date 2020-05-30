@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIAttachmentBehaviorViewController: UIViewController {
+class UIAttachmentBehaviorViewController: UIViewController, UIDynamicAnimatorDelegate {
     var squareView = UIView()
     var secondSmallView = UIView()
     var firstSmallView = UIView()
@@ -18,9 +18,11 @@ class UIAttachmentBehaviorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        example_animation_attemp()
+        animator = UIDynamicAnimator(referenceView: view)
+        animator.delegate = self
+//        example_animation_attemp()
         example_animation_colisionWithBounce()
-        example_animtion_turnAround()
+//        example_animtion_turnAround()
     }
     func example_animtion_turnAround() {
         createSquare()
@@ -29,16 +31,28 @@ class UIAttachmentBehaviorViewController: UIViewController {
     }
     func example_animation_colisionWithBounce() {
         createSquare()
-        createFirstSmallView()
-        createSecondSmallView()
-        let  animator = UIDynamicAnimator(referenceView: view)
+//        createFirstSmallView()
+//        createSecondSmallView()
         let gravityBehavior = UIGravityBehavior(items: [squareView])
         let collisionBehavior = UICollisionBehavior(items:  [squareView])
         collisionBehavior.translatesReferenceBoundsIntoBoundary = true
-        
+
         animator .addBehavior(gravityBehavior)
         animator.addBehavior(collisionBehavior)
-        self.animator = animator
+
+        
+      
+        
+    }
+    func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
+          UIView.animate(withDuration: 0.5, animations: {[unowned self] in
+                  
+                  let squareViewLocation = CGPoint(x: self.squareView.frame.origin.x, y: self.squareView.frame.origin.y - 20 )
+                  self.squareView.frame = CGRect(origin: squareViewLocation,size: self.squareView.frame.size
+                         )
+              })
+    }
+    func dynamicAnimatorWillResume(_ animator: UIDynamicAnimator) {
         
     }
     func example_animation_attemp() {

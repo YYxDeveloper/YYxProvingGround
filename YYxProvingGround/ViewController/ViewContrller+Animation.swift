@@ -55,4 +55,22 @@ extension ViewController{
         }
         animator.startAnimation()
     }
+    
+    func exampleAnchorAnimation()  {
+        
+        //https://www.joshqn.com/animating-nslayoutanchor-constraints-and-the-pitfalls-involved-swift-4-0/
+        tView.backgroundColor = .blue
+        view.addSubview(tView)
+        
+        tView.translatesAutoresizingMaskIntoConstraints = false
+          tView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+          tView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+          
+          // ***** [2] *****
+          activeViewConstraints = [
+            tView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            tView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+          ]
+    }
+    
 }

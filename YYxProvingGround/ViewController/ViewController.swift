@@ -18,14 +18,24 @@ import SystemConfiguration
 
 class ViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
+    let tView = UIView()
+    
+    var activeViewConstraints: [NSLayoutConstraint] = [] {
+        willSet {
+            NSLayoutConstraint.deactivate(activeViewConstraints)
+        }
+        didSet {
+            NSLayoutConstraint.activate(activeViewConstraints)
+        }
+    }
     var myDatePicker: UIDatePicker!
-   let pinCodeInputView: PinCodeInputView<ItemView> = .init(
-         digit: 6,
-         itemSpacing: 8,
-         itemFactory: {
-             return ItemView()
-     },
-         autoresizes: true)
+    let pinCodeInputView: PinCodeInputView<ItemView> = .init(
+        digit: 6,
+        itemSpacing: 8,
+        itemFactory: {
+            return ItemView()
+    },
+        autoresizes: true)
     @IBOutlet weak var fontTestLabel: UILabel!
     @IBOutlet weak var turnBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
@@ -79,47 +89,68 @@ class ViewController: UIViewController {
 //        exampleChaCha20()
 //        exampleAESCryptoSwift()
         
-//        exampleFontLength()
-//        exampleCryptoSwift()
+        
+        
+        //        exampleFaceIDAndTouchID()
+        //        exampleDecodeJsonDatabyUtf8(witchModel: .UserInformationsJsonExample)
+        //       exampleDecodeWithAES()
+        //        examplePinCodeiew()
+        //        exampleChaCha20()
+        //        exampleAESCryptoSwift()
+        
+        //        exampleFontLength()
+        //        exampleCryptoSwift()
         
         //數值透過didset將UI連動
-//        examplePrepocessorMarco()
-//        exampleSameAsConstraint()
+        //        examplePrepocessorMarco()
+        //        exampleSameAsConstraint()
         if #available(iOS 13.0, *) {
             
             //combine framework test
-//            exampleCombine_assign()
-//            exampleCombine_CurrentValueSubject()
+            //            exampleCombine_assign()
+            //            exampleCombine_CurrentValueSubject()
         } else {
             // Fallback on earlier versions
         }
-//        exampleDatePicker()
-//        exampleDateAppend1Day()
-//        exampleUIViewPropertyAnimator()
-//        exampleUIViewPropertyAnimatorRotate()
-//        exampleUIViewPropertyAnimatorWithCompletion()
-
-//        let image = generateQRCode(from: "Hacking with Swift is the best iOS coding tutorial I've ever read!")
+        //        exampleDatePicker()
+        //        exampleDateAppend1Day()
+        //        exampleUIViewPropertyAnimator()
+        //        exampleUIViewPropertyAnimatorRotate()
+        //        exampleUIViewPropertyAnimatorWithCompletion()
+        
+        //        let image = generateQRCode(from: "Hacking with Swift is the best iOS coding tutorial I've ever read!")
         let image = UIImage.giveMeQRCode(from: "aaaa", backgroundColor: .red, frontGroundColor: .blue)
         turnBtn .setImage(image, for: .normal)
+        
+        exampleAnchorAnimation()
     }
     override func viewWillAppear(_ animated: Bool) {
     }
     override func viewDidAppear(_ animated: Bool) {
-//        dynamicTableVC.presenter.updateDatas()
-//        print("xxxx\(connectedToNetwork())")
-//        exampleRandomCGflotMultiplier()
-     
+        //        dynamicTableVC.presenter.updateDatas()
+        //        print("xxxx\(connectedToNetwork())")
+        //        exampleRandomCGflotMultiplier()
+        
     }
-   
-
+    
+    
     @IBAction func turn(_ sender: Any) {
-//        sideBar?.turn()
-//         refreshControl.endRefreshing()
-//         exampleSendEmail()
+        //        sideBar?.turn()
+        //         refreshControl.endRefreshing()
+        //         exampleSendEmail()
+        // ***** [3] *****
+        activeViewConstraints = [
+            tView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            tView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+        ]
+        
+        UIView.animate(withDuration: 0.33, delay: 0.5, options: .curveEaseInOut, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+        
     }
-   
 }
+
 extension ViewController{
     func hideContainerView(isHidden:Bool) {
         containerView.isHidden = isHidden
@@ -165,5 +196,5 @@ extension ViewController{
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
     }
-
+    
 }
