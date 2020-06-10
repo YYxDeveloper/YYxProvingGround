@@ -17,6 +17,7 @@ import MessageUI
 import SystemConfiguration
 
 class ViewController: UIViewController {
+    @IBOutlet weak var `switch`: UISwitch!
     @IBOutlet weak var stackView: UIStackView!
     let tView = UIView()
     
@@ -78,8 +79,16 @@ class ViewController: UIViewController {
         wantCodeLabel()
         codeLabel.text = obserString
         turnBtn.imageView?.contentMode = .scaleAspectFit
-        
-        exampleViewAddShadow3()
+        //        topShadowView.roundCorners(corners: [.topRight, .topLeft], radius: 20)
+                
+                let maskPath1 = UIBezierPath(roundedRect: fontTestLabel.bounds,
+                                             byRoundingCorners: [.topRight, .topLeft],
+                                             cornerRadii: CGSize(width: 50, height: 50))
+                let maskLayer1 = CAShapeLayer()
+                maskLayer1.frame = fontTestLabel.bounds
+                maskLayer1.path = maskPath1.cgPath
+                    fontTestLabel.layer.mask = maskLayer1
+//        exampleViewAddShadow3()
 //        exampleViewAddShadow2()
 //        exampleViewAddShadow1()
 //        exampleFaceIDAndTouchID()

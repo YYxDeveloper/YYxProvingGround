@@ -142,7 +142,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gw9-Ah-ibD">
-                                <rect key="frame" x="0.0" y="650" width="375" height="17"/>
+                                <rect key="frame" x="20" y="607" width="335" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rxV-HV-YsS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -160,22 +164,31 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WUI-OV-F4W">
+                                <rect key="frame" x="0.0" y="340" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="AeO-oW-y1X"/>
+                                    <constraint firstAttribute="width" constant="47" id="ffV-cM-Tfa"/>
+                                </constraints>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="WUI-OV-F4W" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1SD-rD-RkX"/>
                             <constraint firstItem="p6n-e7-gX6" firstAttribute="top" secondItem="6i1-5e-wqM" secondAttribute="bottom" constant="10" id="4jF-1O-brk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gw9-Ah-ibD" secondAttribute="trailing" id="HD7-0v-tc8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gw9-Ah-ibD" secondAttribute="trailing" constant="20" id="HD7-0v-tc8"/>
                             <constraint firstItem="ChX-Ii-k7S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I1R-VF-zNS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gw9-Ah-ibD" secondAttribute="bottom" id="MVi-Qp-Rnf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gw9-Ah-ibD" secondAttribute="bottom" constant="10" id="MVi-Qp-Rnf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p6n-e7-gX6" secondAttribute="trailing" constant="50" id="OVI-lH-0RF"/>
                             <constraint firstItem="8af-gK-yfU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QRr-al-GaM"/>
                             <constraint firstItem="6i1-5e-wqM" firstAttribute="top" secondItem="ChX-Ii-k7S" secondAttribute="bottom" constant="5" id="Rza-LV-7kf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6i1-5e-wqM" secondAttribute="trailing" constant="10" id="T9J-sC-ksg"/>
                             <constraint firstItem="8af-gK-yfU" firstAttribute="top" secondItem="p6n-e7-gX6" secondAttribute="bottom" constant="72" id="WKg-wn-Qdi"/>
                             <constraint firstItem="6i1-5e-wqM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cin-M5-iCP"/>
+                            <constraint firstItem="WUI-OV-F4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eew-C1-cPL"/>
                             <constraint firstItem="ChX-Ii-k7S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f8f-Jo-pXu"/>
                             <constraint firstItem="p6n-e7-gX6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="iC5-A6-DG4"/>
-                            <constraint firstItem="gw9-Ah-ibD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nPz-oa-2Ge"/>
+                            <constraint firstItem="gw9-Ah-ibD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nPz-oa-2Ge"/>
                             <constraint firstItem="6i1-5e-wqM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pTY-f0-Yps"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -186,6 +199,7 @@
                         <outlet property="enterTextField" destination="p6n-e7-gX6" id="Dp6-sW-HiH"/>
                         <outlet property="fontTestLabel" destination="gw9-Ah-ibD" id="mwu-BJ-PvI"/>
                         <outlet property="stackView" destination="8af-gK-yfU" id="VSx-om-Qei"/>
+                        <outlet property="switch" destination="WUI-OV-F4W" id="O9b-4C-QcF"/>
                         <outlet property="turnBtn" destination="ChX-Ii-k7S" id="zrP-hl-fCD"/>
                     </connections>
                 </viewController>
