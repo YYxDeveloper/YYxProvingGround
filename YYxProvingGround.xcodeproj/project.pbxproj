@@ -33,6 +33,8 @@
 		3366DAF3236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		3366DAF4236818AA005F1B1A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366DAF1236818AA005F1B1A /* RegisterViewController.swift */; };
 		336800F9241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336800F8241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift */; };
+		336A63BE249B097900E446CF /* Anchor+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A63BD249B097900E446CF /* Anchor+UIView.swift */; };
+		336A63C0249B0A0D00E446CF /* SameAsSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336A63BF249B0A0D00E446CF /* SameAsSuperView.swift */; };
 		337251F424656495000ECB19 /* WaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337251F124656495000ECB19 /* WaterFallLayout.swift */; };
 		337251F524656495000ECB19 /* LineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337251F224656495000ECB19 /* LineLayout.swift */; };
 		337251F624656495000ECB19 /* CirCleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337251F324656495000ECB19 /* CirCleLayout.swift */; };
@@ -301,6 +303,8 @@
 		3366DAED23681814005F1B1A /* Register.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Register.xcassets; sourceTree = "<group>"; };
 		3366DAF1236818AA005F1B1A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		336800F8241F5C200017FFA6 /* UIAttachmentBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAttachmentBehaviorViewController.swift; sourceTree = "<group>"; };
+		336A63BD249B097900E446CF /* Anchor+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anchor+UIView.swift"; sourceTree = "<group>"; };
+		336A63BF249B0A0D00E446CF /* SameAsSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SameAsSuperView.swift; sourceTree = "<group>"; };
 		337251F124656495000ECB19 /* WaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallLayout.swift; sourceTree = "<group>"; };
 		337251F224656495000ECB19 /* LineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayout.swift; sourceTree = "<group>"; };
 		337251F324656495000ECB19 /* CirCleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleLayout.swift; sourceTree = "<group>"; };
@@ -932,6 +936,8 @@
 				33A97ED624610F7600805C9F /* Extension+UIView.swift */,
 				33A97ED724610F7600805C9F /* Animation+UIView.swift */,
 				33A97ED824610F7600805C9F /* Constraint+UIView.swift */,
+				336A63BD249B097900E446CF /* Anchor+UIView.swift */,
+				336A63BF249B0A0D00E446CF /* SameAsSuperView.swift */,
 				33F101152490801900877F17 /* Inspectable+UIView.swift */,
 			);
 			path = "UIView+Extension";
@@ -1542,6 +1548,7 @@
 				33A97F2024610F7600805C9F /* NSLayoutXAxisAnchor+Extension.swift in Sources */,
 				47F52425233B1C2900BBC752 /* MapTestViewController.swift in Sources */,
 				33A97F5324610F7600805C9F /* UIScreen+Extension.swift in Sources */,
+				336A63BE249B097900E446CF /* Anchor+UIView.swift in Sources */,
 				C205949F229BE24C00E57B51 /* ViewController+CoreData.swift in Sources */,
 				33A97EFD24610F7600805C9F /* MonthView.swift in Sources */,
 				33A97F6A24610F7600805C9F /* String+Convert.swift in Sources */,
@@ -1632,6 +1639,7 @@
 				47EEE1EE233B526A00092A69 /* MapTestViewController+Preprocess.swift in Sources */,
 				33A97F4F24610F7600805C9F /* YYxButton.swift in Sources */,
 				33A97F6B24610F7600805C9F /* CGFloat+Extension.swift in Sources */,
+				336A63C0249B0A0D00E446CF /* SameAsSuperView.swift in Sources */,
 				33A97F6524610F7600805C9F /* Double+Extension.swift in Sources */,
 				3342B2F82369A68B00793669 /* MainEventsViewController.swift in Sources */,
 				33A97EFE24610F7600805C9F /* CalenderViewController.swift in Sources */,
