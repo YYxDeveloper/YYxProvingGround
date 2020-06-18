@@ -185,6 +185,7 @@
 		33ABAF5A237AC65400B276ED /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF58237AC65300B276ED /* PinCodeViewController.swift */; };
 		33ABAF5B237AC65400B276ED /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABAF58237AC65300B276ED /* PinCodeViewController.swift */; };
 		33D9A37023979B32001BC2AC /* AppDelegateForiOS13.zip in Resources */ = {isa = PBXBuildFile; fileRef = 33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */; };
+		33F101162490801900877F17 /* Inspectable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F101152490801900877F17 /* Inspectable+UIView.swift */; };
 		33F2D53223137A4800F9DBA2 /* K8LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */; };
 		33F2D5862313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */; };
 		33F7DD4423B08B9C00F40DD5 /* ReactRelationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */; };
@@ -436,6 +437,7 @@
 		33ABAF48237AC3A900B276ED /* ItemAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAppearance.swift; sourceTree = "<group>"; };
 		33ABAF58237AC65300B276ED /* PinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
 		33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = AppDelegateForiOS13.zip; sourceTree = "<group>"; };
+		33F101152490801900877F17 /* Inspectable+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inspectable+UIView.swift"; sourceTree = "<group>"; };
 		33F2D53123137A4800F9DBA2 /* K8LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = K8LoginAssets.xcassets; sourceTree = "<group>"; };
 		33F2D5852313EF6300F9DBA2 /* HYBOpenAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBOpenAnAccountViewController.swift; sourceTree = "<group>"; };
 		33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactRelationalViewController.swift; sourceTree = "<group>"; };
@@ -930,6 +932,7 @@
 				33A97ED624610F7600805C9F /* Extension+UIView.swift */,
 				33A97ED724610F7600805C9F /* Animation+UIView.swift */,
 				33A97ED824610F7600805C9F /* Constraint+UIView.swift */,
+				33F101152490801900877F17 /* Inspectable+UIView.swift */,
 			);
 			path = "UIView+Extension";
 			sourceTree = "<group>";
@@ -1624,6 +1627,7 @@
 				33A97F5424610F7600805C9F /* Extension+UIView.swift in Sources */,
 				33A97F4524610F7600805C9F /* SecondPageViewController.swift in Sources */,
 				33A97EFF24610F7600805C9F /* WeekdaysView.swift in Sources */,
+				33F101162490801900877F17 /* Inspectable+UIView.swift in Sources */,
 				33A97F0E24610F7600805C9F /* IndexPath+Extension.swift in Sources */,
 				47EEE1EE233B526A00092A69 /* MapTestViewController+Preprocess.swift in Sources */,
 				33A97F4F24610F7600805C9F /* YYxButton.swift in Sources */,
