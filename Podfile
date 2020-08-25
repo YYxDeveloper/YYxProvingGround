@@ -8,9 +8,12 @@ target 'YYxProvingGround' do
   # Pods for YYxProvingGround
 	pod 'Moya', :git => 'https://github.com/Moya/Moya.git', :tag => '13.0.0'
 	pod 'Alamofire'
-	pod 'CryptoSwift'
+	pod 'CryptoSwift', '~> 0.15.0'
+
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'RxDataSources', '~> 4.0'
+
   target 'YYxProvingGroundTests' do
     inherit! :search_paths
     # Pods for testing
