@@ -13,6 +13,7 @@ target 'YYxProvingGround' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'RxDataSources', '~> 4.0'
+  pod 'SnapKit', '~> 5.0.0'
 
   target 'YYxProvingGroundTests' do
     inherit! :search_paths

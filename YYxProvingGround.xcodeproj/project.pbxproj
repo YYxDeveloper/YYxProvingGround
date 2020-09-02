@@ -199,6 +199,9 @@
 		33F7DD4D23B08F6C00F40DD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4C23B08F6C00F40DD5 /* Model.swift */; };
 		33F7DD4E23B08F6C00F40DD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4C23B08F6C00F40DD5 /* Model.swift */; };
 		33F7DD4F23B08F6C00F40DD5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7DD4C23B08F6C00F40DD5 /* Model.swift */; };
+		33F7E82E24FD26730013AC4B /* YYxMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7E82D24FD26730013AC4B /* YYxMapViewController.swift */; };
+		33F7E83324FF47C50013AC4B /* YYxTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7E83224FF47C50013AC4B /* YYxTemplateViewController.swift */; };
+		33F7E83524FF48120013AC4B /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7E83424FF48120013AC4B /* TemplateView.swift */; };
 		47CF026822F81C61003680D5 /* HTMLTextTestFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 47CF026722F81C61003680D5 /* HTMLTextTestFile.txt */; };
 		47CF026A22F81FA5003680D5 /* ViewController+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */; };
 		47D7E9D922F982E5005F9530 /* ViewController+Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */; };
@@ -447,6 +450,9 @@
 		33F7DD4323B08B9C00F40DD5 /* ReactRelationalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactRelationalViewController.swift; sourceTree = "<group>"; };
 		33F7DD4823B08F5F00F40DD5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		33F7DD4C23B08F6C00F40DD5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		33F7E82D24FD26730013AC4B /* YYxMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxMapViewController.swift; sourceTree = "<group>"; };
+		33F7E83224FF47C50013AC4B /* YYxTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYxTemplateViewController.swift; sourceTree = "<group>"; };
+		33F7E83424FF48120013AC4B /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
 		47CF026722F81C61003680D5 /* HTMLTextTestFile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HTMLTextTestFile.txt; sourceTree = "<group>"; };
 		47CF026922F81FA5003680D5 /* ViewController+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+FileManager.swift"; sourceTree = "<group>"; };
 		47D7E9D822F982E5005F9530 /* ViewController+Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Syntax.swift"; sourceTree = "<group>"; };
@@ -1016,6 +1022,15 @@
 			name = MVVM;
 			sourceTree = "<group>";
 		};
+		33F7E83124FF479D0013AC4B /* YYxTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				33F7E83224FF47C50013AC4B /* YYxTemplateViewController.swift */,
+				33F7E83424FF48120013AC4B /* TemplateView.swift */,
+			);
+			path = YYxTemplate;
+			sourceTree = "<group>";
+		};
 		47F5241D233B1C0900BBC752 /* MapTestViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1210,6 +1225,7 @@
 		E879C1B222421012006904A5 /* YYxProvingGround */ = {
 			isa = PBXGroup;
 			children = (
+				33F7E83124FF479D0013AC4B /* YYxTemplate */,
 				337251F02465648D000ECB19 /* collectionCustomLayoutExample */,
 				33D9A36F23979B32001BC2AC /* AppDelegateForiOS13.zip */,
 				C21BA5B3229E336F00DCABD1 /* YYX3rd */,
@@ -1229,6 +1245,7 @@
 				3309E05E24111075003D9675 /* EditDetailViewController.swift */,
 				3309E0642412128F003D9675 /* DateSelectItem.swift */,
 				33A1E1BD235D973A008F8A0C /* NavigationYestViewController.swift */,
+				33F7E82D24FD26730013AC4B /* YYxMapViewController.swift */,
 				33F7DD4723B08F2400F40DD5 /* MVVM */,
 				C236522A22D337A400582267 /* ViewController */,
 				C236522B22D337B900582267 /* NetworkTestViewController */,
@@ -1559,6 +1576,7 @@
 				337251F424656495000ECB19 /* WaterFallLayout.swift in Sources */,
 				47CF026A22F81FA5003680D5 /* ViewController+FileManager.swift in Sources */,
 				33A97F4A24610F7600805C9F /* UIImageView+Extension.swift in Sources */,
+				33F7E83324FF47C50013AC4B /* YYxTemplateViewController.swift in Sources */,
 				33A97F1B24610F7600805C9F /* CAShapeLayer+Extension.swift in Sources */,
 				33A97F3424610F7600805C9F /* CategoryVerticalColumnCell.swift in Sources */,
 				33A97EFA24610F7600805C9F /* NWPathMonitor+Extension.swift in Sources */,
@@ -1626,6 +1644,7 @@
 				33A97F5924610F7600805C9F /* UINib+Extension.swift in Sources */,
 				C22DA3402296AD6C00CB4538 /* NetworkTestViewController.swift in Sources */,
 				33A97F1C24610F7600805C9F /* CALayer+Extension.swift in Sources */,
+				33F7E83524FF48120013AC4B /* TemplateView.swift in Sources */,
 				33A97F3F24610F7600805C9F /* MyCollectionViewCell.swift in Sources */,
 				334C63832301560E003C37A5 /* viewController+ MFMailCompose.swift in Sources */,
 				C231FF4522AE45B400B15482 /* Driver+Extension.swift in Sources */,
@@ -1681,6 +1700,7 @@
 				33A97F3624610F7600805C9F /* FirstViewController.swift in Sources */,
 				33A97F1F24610F7600805C9F /* YYxErrorHandler.swift in Sources */,
 				3342B2FA2369A9BA00793669 /* MainEventTableViewCell.swift in Sources */,
+				33F7E82E24FD26730013AC4B /* YYxMapViewController.swift in Sources */,
 				C21BA5B2229E29C900DCABD1 /* exampleDictionaryStructure.swift in Sources */,
 				C22DA3422296BE7200CB4538 /* NetworkTestViewController+Extension.swift in Sources */,
 				3342B2F62369A25A00793669 /* EachFamilyTableViewCell.swift in Sources */,
