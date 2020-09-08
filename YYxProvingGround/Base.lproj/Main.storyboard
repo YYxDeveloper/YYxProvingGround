@@ -1396,19 +1396,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FwJ-ZZ-lav">
-                                <rect key="frame" x="20" y="0.0" width="335" height="200"/>
+                                <rect key="frame" x="20" y="0.0" width="335" height="500"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="2D6-0q-YWy"/>
+                                    <constraint firstAttribute="height" constant="500" id="2D6-0q-YWy"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="ldi-Ow-r2e" id="zUA-eU-lF5"/>
                                 </connections>
                             </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH6-Qz-IIx">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIJ-rm-GZo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <state key="normal" title="action1"/>
+                                        <connections>
+                                            <action selector="action1:" destination="ldi-Ow-r2e" eventType="touchUpInside" id="xxK-CR-Z9o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PXt-df-45b"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KuR-CX-FU5" firstAttribute="bottom" secondItem="YH6-Qz-IIx" secondAttribute="bottom" id="Xv8-zB-d1g"/>
                             <constraint firstItem="KuR-CX-FU5" firstAttribute="trailing" secondItem="FwJ-ZZ-lav" secondAttribute="trailing" constant="20" id="cAx-Dl-o0r"/>
+                            <constraint firstItem="KuR-CX-FU5" firstAttribute="trailing" secondItem="YH6-Qz-IIx" secondAttribute="trailing" id="dL4-2S-9Xo"/>
                             <constraint firstItem="FwJ-ZZ-lav" firstAttribute="leading" secondItem="KuR-CX-FU5" secondAttribute="leading" constant="20" id="jIV-sY-7Bu"/>
+                            <constraint firstItem="YH6-Qz-IIx" firstAttribute="leading" secondItem="KuR-CX-FU5" secondAttribute="leading" id="n81-AL-ggg"/>
                             <constraint firstItem="FwJ-ZZ-lav" firstAttribute="top" secondItem="KuR-CX-FU5" secondAttribute="top" id="o0H-Es-NyI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KuR-CX-FU5"/>

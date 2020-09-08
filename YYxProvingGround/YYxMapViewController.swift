@@ -29,6 +29,8 @@ import SnapKit
 class YYxMapViewController: UIViewController {
     
     let testAddresses = ["臺北市中正區延平南路96號","臺北市文林路235號"]
+    let homeCoordinate  = CLLocationCoordinate2D(latitude: 25.025913, longitude: 121.557058)
+    let homeAddress = "台北市信義區信安街93號6樓"
     
     //信義活動中心
     //台北市信義區信義路五段106號
@@ -40,10 +42,19 @@ class YYxMapViewController: UIViewController {
         super.viewDidLoad()
 //        example_CreateCoordinateByAddrres()
 //        example_ConvertAddrresToCoordinate()
-        
+      example_Create1MKPointAnnotation()
         
       
         
+    }
+    @IBAction func action1(_ sender: Any) {
+        let annotation = MKPointAnnotation()
+        annotation.title = "home"
+        annotation.subtitle = homeAddress
+        annotation.coordinate = homeCoordinate
+        theMapView.showAnnotations([annotation], animated: true)
+
+//        theMapView.selectAnnotation(annotation, animated: true)
     }
     
     
@@ -61,6 +72,15 @@ extension YYxMapViewController{
 }
 //example
 extension YYxMapViewController{
+    func example_Create1MKPointAnnotation() {
+        let annotation = MKPointAnnotation()
+        annotation.title = "信義活動中心"
+        annotation.subtitle = testAddress
+        annotation.coordinate = testCoordinate
+        
+        theMapView.showAnnotations([annotation], animated: true)
+        theMapView.selectAnnotation(annotation, animated: true)
+    }
     func example_CreateCoordinateByAddrres() {
         locationAddress()
     }
