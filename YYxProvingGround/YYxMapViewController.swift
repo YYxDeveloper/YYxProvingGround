@@ -11,6 +11,15 @@ import MapKit
 import CoreLocation
 import SnapKit
 
+//左下角起點逆時針
+let parkBorderCoordinate:[CLLocationCoordinate2D] =
+    [
+        CLLocationCoordinate2D(latitude: 25.026104, longitude: 121.557475),
+        CLLocationCoordinate2D(latitude: 25.025970, longitude: 121.559101),
+        CLLocationCoordinate2D(latitude: 25.027041, longitude: 121.559099),
+        CLLocationCoordinate2D(latitude: 25.027070, longitude: 121.558253)
+    ]
+
 /**
  https://hiking.biji.co/index.php?q=review&act=info&review_id=5989
  
