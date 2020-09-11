@@ -18,8 +18,8 @@ let parkBorderCoordinate:[CLLocationCoordinate2D] =
         CLLocationCoordinate2D(latitude: 25.025970, longitude: 121.559101),
         CLLocationCoordinate2D(latitude: 25.027041, longitude: 121.559099),
         CLLocationCoordinate2D(latitude: 25.027070, longitude: 121.558253)
-    ]
-
+]
+let parkCenter =  CLLocationCoordinate2D(latitude:25.026541, longitude: 121.558505)
 /**
  https://hiking.biji.co/index.php?q=review&act=info&review_id=5989
  
@@ -29,14 +29,18 @@ let parkBorderCoordinate:[CLLocationCoordinate2D] =
  (3).若取到小數第3位，則誤差值約為 111 公尺
  (4).若取到小數第2位，則誤差值約為   1.1 公里
  (5).若取到小數第1位，則誤差值約為   11 公里
-
+ 
  台灣本島大約位於北緯22度到25度之間，每一個經度的距離大約是101公里到103公里之間，若取中間值102公里來算，小數第5位的值約為1.02公尺，因此在提供座標值時，其實應該要到小數第５位較為合適，誤差比較少。
  
  
  
  */
-class YYxMapViewController: UIViewController {
+@available(iOS 13.0, *)
+class YYxMapViewController: UIViewController,MKMapViewDelegate {
+    //臺北市政府警察局信義分局
+    let policeStationCpprdinate = CLLocationCoordinate2D(latitude: 25.033160, longitude: 121.567707)
     
+    //
     let testAddresses = ["臺北市中正區延平南路96號","臺北市文林路235號"]
     let homeCoordinate  = CLLocationCoordinate2D(latitude: 25.025913, longitude: 121.557058)
     let homeAddress = "台北市信義區信安街93號6樓"
@@ -49,28 +53,49 @@ class YYxMapViewController: UIViewController {
     @IBOutlet weak var theMapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        example_CreateCoordinateByAddrres()
-//        example_ConvertAddrresToCoordinate()
-      example_Create1MKPointAnnotation()
+        //        example_CreateCoordinateByAddrres()
+        //        example_ConvertAddrresToCoordinate()
+//        example_Create1MKPointAnnotation()
+        example_DrawRectangle()
+        example_setMapRegion()
+        example_addOverlays()
         
-      
-        
+     
     }
+   
     @IBAction func action1(_ sender: Any) {
         let annotation = MKPointAnnotation()
         annotation.title = "home"
         annotation.subtitle = homeAddress
         annotation.coordinate = homeCoordinate
         theMapView.showAnnotations([annotation], animated: true)
-
-//        theMapView.selectAnnotation(annotation, animated: true)
+        
+        //        theMapView.selectAnnotation(annotation, animated: true)
     }
-    
-    
-    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if overlay is MKPolyline {
+            let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+            polylineRenderer.strokeColor = .orange
+            polylineRenderer.lineWidth = 5
+            return polylineRenderer
+        } else if overlay is MKPolygon {
+            let polygonView = MKPolygonRenderer(overlay: overlay)
+            polygonView.fillColor = .blue
+            return polygonView
+        } else if overlay is MKCircle{
+            let renderer = MKCircleRenderer(overlay: overlay)
+               renderer.fillColor = UIColor.green.withAlphaComponent(0.5)
+               renderer.strokeColor = UIColor.orange
+               renderer.lineWidth = 2
+               return renderer
+            
+        }
+        return MKPolylineRenderer(overlay: overlay)
+    }
 }
 
 
+@available(iOS 13.0, *)
 extension YYxMapViewController{
     struct planceModel:Codable {
         let name:String
@@ -80,32 +105,54 @@ extension YYxMapViewController{
     }
 }
 //example
+@available(iOS 13.0, *)
 extension YYxMapViewController{
+    func example_DrawRectangle(){
+        let polygon = MKPolygon(coordinates: parkBorderCoordinate, count: parkBorderCoordinate.count)
+        theMapView.addOverlay(polygon)
+    }
+    @available(iOS 13.0, *)
     func example_Create1MKPointAnnotation() {
-        let annotation = MKPointAnnotation()
-        annotation.title = "信義活動中心"
-        annotation.subtitle = testAddress
-        annotation.coordinate = testCoordinate
+        //        let annotation = MKPointAnnotation()
+        //        annotation.title = "信義活動中心"
+        //        annotation.subtitle = testAddress
+        //        annotation.coordinate = testCoordinate
+        //
+        //        theMapView.showAnnotations([annotation], animated: true)
+        //        theMapView.selectAnnotation(annotation, animated: true)
         
-        theMapView.showAnnotations([annotation], animated: true)
-        theMapView.selectAnnotation(annotation, animated: true)
+        
+//
+//        let annotation = MKPointAnnotation()
+//        annotation.title = "Park"
+//        annotation.subtitle = "信義414公園"
+//        annotation.coordinate =  CLLocationCoordinate2D(latitude:  25.026506, longitude: 121.558423)
+//        theMapView.showAnnotations([annotation], animated: true)
+        
+    }
+    func example_setMapRegion() {
+        theMapView.setRegion(MKCoordinateRegion(center: parkCenter, latitudinalMeters: CLLocationDistance(exactly: 500)!, longitudinalMeters: CLLocationDistance(exactly: 500)!), animated: true)
+    }
+    func example_addOverlays() {
+        let circlOverlays = MKCircle(center: parkCenter, radius: 100)
+        theMapView.addOverlay(circlOverlays)
     }
     func example_CreateCoordinateByAddrres() {
         locationAddress()
     }
     func example_ConvertAddrresToCoordinate() {
-//        let stationAddress1 = testAddress[0]
-//        convertAddrresToCoordinate(address: stationAddress1)
+        //        let stationAddress1 = testAddress[0]
+        //        convertAddrresToCoordinate(address: stationAddress1)
         
-
+        
         let geocoder = CLGeocoder()
-       
+        
         
         geocoder.geocodeAddressString(testAddress) {
             placemarks, error in
             let placemark = placemarks?.first
-//            let lat = placemark?.location?.coordinate.latitude
-//            let lon = placemark?.location?.coordinate.longitude
+            //            let lat = placemark?.location?.coordinate.latitude
+            //            let lon = placemark?.location?.coordinate.longitude
             
             guard let location = placemark?.location else {return}
             print("yyx location Lat: \(location.coordinate.latitude), Lon: \(location.coordinate.longitude)")
@@ -116,6 +163,7 @@ extension YYxMapViewController{
 }
 
 
+@available(iOS 13.0, *)
 extension YYxMapViewController{
     //https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/mapkit%E7%B6%93%E7%B7%AF%E5%BA%A6%E8%BD%89%E6%8F%9B%E5%9C%B0%E5%9D%80-9fe365f6c610
     //for iOS 11.0
@@ -166,13 +214,33 @@ extension YYxMapViewController{
             }
             
             guard let marks = placeMarks else {return}
-          
+            
             print(marks)
             
         })
-
+        
     }
+    
+    
+    
+}
+extension UIView {
+    func roundCorners(corners:  CACornerMask, radius: CGFloat) {
+        self.layer.cornerRadius = radius
+        self.clipsToBounds = false
+        self.layer.maskedCorners = corners
+    }
+    
+    func showBoardLine(lineColor:UIColor) {
+        self.layer.borderColor = lineColor.cgColor
+        self.layer.borderWidth = 0.5
+        
+    }
+    func setYJDefaultShadow(){
+           self.layer.shadowColor = UIColor.black.cgColor
+           self.layer.shadowOffset = CGSize(width: 1, height: 1)
+           self.layer.shadowOpacity = 0.1
+           self.layer.shadowRadius = 10
+       }
  
-    
-    
 }
