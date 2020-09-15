@@ -12,6 +12,7 @@ class TemplateView: UIView {
     var viewModel:YYxTemplateViewModel?
     override init(frame: CGRect) {
         super.init(frame: frame)
+        settingThisView()
         addSubViews()
         layoutSubViews()
     }
@@ -19,6 +20,9 @@ class TemplateView: UIView {
         
     }
     private func layoutSubViews(){
+        
+    }
+    private func settingThisView(){
         
     }
     required init?(coder: NSCoder) {

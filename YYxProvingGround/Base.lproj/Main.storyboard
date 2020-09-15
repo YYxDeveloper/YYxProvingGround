@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ldi-Ow-r2e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ldi-Ow-r2e">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -1404,11 +1404,25 @@
                                     <outlet property="delegate" destination="ldi-Ow-r2e" id="zUA-eU-lF5"/>
                                 </connections>
                             </mapView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH6-Qz-IIx">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YH6-Qz-IIx">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1x-NC-iOu">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                                        <state key="normal" title="zoom"/>
+                                        <connections>
+                                            <action selector="zoom:" destination="ldi-Ow-r2e" eventType="touchUpInside" id="RVw-zM-5PH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-93-fOn">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="40"/>
+                                        <state key="normal" title="router"/>
+                                        <connections>
+                                            <action selector="router:" destination="ldi-Ow-r2e" eventType="touchUpInside" id="Rbr-NR-9dP"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIJ-rm-GZo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <rect key="frame" x="250" y="0.0" width="125" height="40"/>
                                         <state key="normal" title="action1"/>
                                         <connections>
                                             <action selector="action1:" destination="ldi-Ow-r2e" eventType="touchUpInside" id="xxK-CR-Z9o"/>
